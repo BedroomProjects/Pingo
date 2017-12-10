@@ -7,3 +7,6 @@ c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingTester\WatanyaP
 c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingTester\WatanyaPingTester\obj\Debug\WatanyaPingTester.exe
 c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingTester\WatanyaPingTester\obj\Debug\WatanyaPingTester.pdb
 c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingTester\WatanyaPingTester\obj\Debug\WatanyaPingTester.Form1.resources
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe.config
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.exe
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.pdb

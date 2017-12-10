@@ -12,6 +12,7 @@ namespace PingAppTest
         private Ping pingObj;
         private PingReply pingReplyObj;
         private String ipAddress;
+        private bool reachable = false, pending = true;
 
         public PingClass()
         {
@@ -23,13 +24,31 @@ namespace PingAppTest
             this.ipAddress = ipAddress;
         }
 
-        public bool getResponse()
-        {
+        public void ping() {
             pingReplyObj = pingObj.Send(ipAddress);
-            if (pingReplyObj.Status == IPStatus.Success)
-                return true;
+            if (pingReplyObj.Status == IPStatus.Success) {
+                reachable = true;
+                pending = false;
+            }
             else
-                return false;
+            {
+                if (pingReplyObj.Status == IPStatus.TimedOut)
+                    pending = true;
+                else
+                    pending = false;
+
+                reachable = false;
+            }
         }
+
+        public bool isReacable(){
+            return true;
+        }
+
+        public bool isPending()
+        {
+            return pending;
+        }
+
     }
 }
