@@ -37,7 +37,7 @@ namespace WatanyaPingTester
         {
             for (int i = 0; i < ants.Count; i++)
             {
-                ants[i].ping();
+                //ants[i].ping();
             }
         }
 
@@ -51,7 +51,7 @@ namespace WatanyaPingTester
 
         static void Main(string[] args)
         {
-            NetworkNode a = new NetworkNode("Sokhna 1", "10.0.10.101");
+            /*NetworkNode a = new NetworkNode("Sokhna 1", "10.0.10.101");
             ants.Add(a);
 
             a = new NetworkNode("Sokhna 2", "10.0.10.102");
@@ -70,11 +70,11 @@ namespace WatanyaPingTester
             ants.Add(a);
 
             updateNetwork();
-            updateDisplay();
+            updateDisplay();*/
 
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
         }
     }
 }

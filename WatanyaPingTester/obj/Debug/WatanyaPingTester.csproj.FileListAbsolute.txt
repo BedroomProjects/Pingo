@@ -16,3 +16,12 @@ C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingTester\ob
 C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Form1.resources
 C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resources.resources
 C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache
+D:\Fahim\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe.config
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.exe
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.pdb
+D:\Fahim\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe
+D:\Fahim\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.pdb
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csprojResolveAssemblyReference.cache
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Form1.resources
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resources.resources
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache

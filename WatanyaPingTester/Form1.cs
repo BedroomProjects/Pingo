@@ -16,5 +16,11 @@ namespace WatanyaPingTester
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            NetworkNode m1 = new NetworkNode("M1", "Anttena", "Cairo - Sokhna", "192.168.1.1");
+            label1.Text = m1.getStatus();
+        }
     }
 }

@@ -41,8 +41,8 @@ namespace WatanyaPingTester
             }
         }
 
-        public bool isReacable(){
-            return true;
+        public bool isReachable(){
+            return reachable;
         }
 
         public bool isPending()
