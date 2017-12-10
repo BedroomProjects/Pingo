@@ -37,7 +37,7 @@ namespace WatanyaPingTester
         {
             for (int i = 0; i < ants.Count; i++)
             {
-                ants[i].sendPing();
+                ants[i].ping();
             }
         }
 
@@ -69,11 +69,8 @@ namespace WatanyaPingTester
             a = new Antenna("M1.4", "10.0.10.110");
             ants.Add(a);
 
-            while (true)
-            {
-                updateNetwork();
-                updateDisplay();
-            }
+            updateNetwork();
+            updateDisplay();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

@@ -32,9 +32,17 @@ namespace WatanyaPingTester
                 pending = false;
             }
             else
-                if (rp.Status == IPStatus.TimedOut) pending = true;
-                else pending = false;
-            reachable = false;
+            {
+                if (rp.Status == IPStatus.TimedOut) 
+                { 
+                    pending = true; 
+                }
+                else
+                {
+                    pending = false;
+                    reachable = false;
+                }
+            }
         }
 
         public void sendPing()
@@ -61,4 +69,3 @@ namespace WatanyaPingTester
         }
     }
 }
-s

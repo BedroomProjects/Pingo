@@ -1,1 +1,9 @@
 c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingTester\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe.config
+c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingTester\WatanyaPingTester\obj\Debug\WatanyaPingTester.csprojResolveAssemblyReference.cache
+c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingTester\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resources.resources
+c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingTester\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache
+c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingTester\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe
+c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingTester\WatanyaPingTester\bin\Debug\WatanyaPingTester.pdb
+c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingTester\WatanyaPingTester\obj\Debug\WatanyaPingTester.exe
+c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingTester\WatanyaPingTester\obj\Debug\WatanyaPingTester.pdb
+c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingTester\WatanyaPingTester\obj\Debug\WatanyaPingTester.Form1.resources
