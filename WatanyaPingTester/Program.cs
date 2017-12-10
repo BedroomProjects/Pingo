@@ -13,7 +13,7 @@ namespace WatanyaPingTester
 {
     static class Program
     {
-        static List<Antenna> ants = new List<Antenna>();
+        static List<NetworkNode> ants = new List<NetworkNode>();
 
         //static void sendPing()
         //{
@@ -28,9 +28,9 @@ namespace WatanyaPingTester
         //    Console.WriteLine("Done.");
         //}
 
-        static void displayAntennaStatus(Antenna a)
+        static void displayAntennaStatus(NetworkNode a)
         {
-            Console.WriteLine(a.getName() + "(" + a.getIP() + "): " + a.getStatus());
+            Console.WriteLine(a.getName() + " (" + a.getIP() + "): " + a.getStatus());
         }
 
         static void updateNetwork()
@@ -51,30 +51,30 @@ namespace WatanyaPingTester
 
         static void Main(string[] args)
         {
-            Antenna a = new Antenna("Sokhna 1", "10.0.10.101");
+            NetworkNode a = new NetworkNode("Sokhna 1", "10.0.10.101");
             ants.Add(a);
 
-            a = new Antenna("Sokhna 2", "10.0.10.102");
+            a = new NetworkNode("Sokhna 2", "10.0.10.102");
             ants.Add(a);
 
-            a = new Antenna("M1.1", "10.0.10.103");
+            a = new NetworkNode("M1.1", "10.0.10.103");
             ants.Add(a);
 
-            a = new Antenna("M1.2", "10.0.10.104");
+            a = new NetworkNode("M1.2", "10.0.10.104");
             ants.Add(a);
 
-            a = new Antenna("M1.3", "10.0.10.105");
+            a = new NetworkNode("M1.3", "10.0.10.105");
             ants.Add(a);
 
-            a = new Antenna("M1.4", "10.0.10.110");
+            a = new NetworkNode("M1.4", "10.0.10.110");
             ants.Add(a);
 
             updateNetwork();
             updateDisplay();
 
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new Form1());
         }
     }
 }

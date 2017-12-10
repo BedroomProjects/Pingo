@@ -7,18 +7,16 @@ using System.Net.NetworkInformation;
 
 namespace WatanyaPingTester
 {
-    class Antenna
+    class NetworkNode
     {
-        private string ip;
-        private string name;
-        private bool reachable;
-        bool pending = true;
+        private string ip, name, type, road;
+        private PingClass pingObj;
+        private bool reachable = false, pending = false;
 
-        public Antenna(string n, string i)
+        public NetworkNode(string name, string ipAddress)
         {
-            this.ip = i;
-            this.name = n;
-            //sendPing();
+            this.ip = ipAddress;
+            this.name = name;
         }
 
         public void ping()

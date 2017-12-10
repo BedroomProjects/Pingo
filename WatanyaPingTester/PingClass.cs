@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.NetworkInformation;
 
-namespace PingAppTest
+namespace WatanyaPingTester
 {
     class PingClass
     {
