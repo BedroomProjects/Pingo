@@ -1,0 +1,7 @@
+c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingoConsole\WatanyaPingoConsole\bin\Debug\WatanyaPingoConsole.exe.config
+c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingoConsole\WatanyaPingoConsole\bin\Debug\WatanyaPingoConsole.exe
+c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingoConsole\WatanyaPingoConsole\bin\Debug\WatanyaPingoConsole.pdb
+c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingoConsole\WatanyaPingoConsole\obj\Debug\WatanyaPingoConsole.exe
+c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingoConsole\WatanyaPingoConsole\obj\Debug\WatanyaPingoConsole.pdb
+c:\users\hq-pc3\documents\visual studio 2013\Projects\WatanyaPingoConsole\WatanyaPingoConsole\obj\Debug\WatanyaPingoConsole.csprojResolveAssemblyReference.cache
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\WatanyaPingoConsole\WatanyaPingoConsole\obj\Debug\WatanyaPingoConsole.csproj.ResolveComReference.cache
