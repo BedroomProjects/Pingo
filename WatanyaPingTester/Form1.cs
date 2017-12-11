@@ -15,8 +15,17 @@ namespace WatanyaPingTester
         public Form1()
         {
             InitializeComponent();
-        }
+            
+            listView1.View = View.Details;
+            listView1.GridLines = true;
+            listView1.FullRowSelect = true;
 
+            listView1.Columns.Add("Index");
+            listView1.Columns.Add("Name");
+            listView1.Columns.Add("IP");
+            listView1.Columns.Add("Status");
+        }
+        
         private void button1_Click(object sender, EventArgs e)
         {
             List<NetworkNode> ants = new List<NetworkNode>();
@@ -28,14 +37,21 @@ namespace WatanyaPingTester
             ants.Add(m1);
             m1 = new NetworkNode("M3", "Anttena", "Cairo - Sokhna", "10.0.10.115");
             ants.Add(m1);
-
-            //label2.Text = ants.ElementAt(0).getStatus();
-            //label4.Text = ants.ElementAt(1).getStatus();
-            //label6.Text = ants.ElementAt(2).getStatus();
-            //label8.Text = ants.ElementAt(3).getStatus();
-
-            int x = 0;
-            x = x++;
+            
+            string[] itemsArr = new string[4];
+            string[] status_imgs = { "red_x.png", "green_mark.png" };
+            
+            ListViewItem listItem;
+            int j = 1;
+            for (int i = 0; i < ants.Count(); i++)
+            {
+                itemsArr[0] = j++.ToString();
+                itemsArr[1] = ants.ElementAt(i).getName();
+                itemsArr[2] = ants.ElementAt(i).getIP();
+                itemsArr[3] = ants.ElementAt(i).getStatus();
+                listItem = new ListViewItem(itemsArr);
+                listView1.Items.Add(listItem);
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
