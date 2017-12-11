@@ -8,29 +8,19 @@ using System.Threading;
 using System.Diagnostics;
 using System.Net.NetworkInformation;
 
-namespace WatanyaPingTester
+namespace WatanyaPingoConsole
 {
+
     static class ConsoleProgram
     {
-        public static int timePerPing = 2;
+        public static int timePerPing = 3;
         static List<NetworkNode> ants = new List<NetworkNode>();
 
-        //static void sendPing()
-        //{
-        //    string ip = "198.162.0.101";
-        //    Ping ping = new Ping();
-        //    PingReply rp;
-        //    rp = ping.Send(ip);
-        //    if (rp.Status == IPStatus.Success)
-        //        Console.WriteLine("Yos");
-        //    else
-        //        Console.WriteLine("Nop");
-        //    Console.WriteLine("Done.");
-        //}
 
         static void displayAntennaStatus(NetworkNode a)
         {
             Console.Write(a.getName() + " (" + a.getIP() + "): ");
+            Console.SetCursorPosition(35, Console.CursorTop);
             if (a.getStatus() == "Success")
             {
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -169,11 +159,47 @@ namespace WatanyaPingTester
             a = new NetworkNode("Gendaly 1 Ant. 1", "10.0.10.117");
             ants.Add(a);
 
+            // Voda 4253
+            a = new NetworkNode("Vodafone 4253 1", "10.0.10.119");
+            ants.Add(a);
+
+            a = new NetworkNode("Vodafone 4253 2", "10.0.10.120");
+            ants.Add(a);
+
+            a = new NetworkNode("Vodafone 4253 3", "10.0.10.140");
+            ants.Add(a);
+
+            // Voda 4200
+            a = new NetworkNode("Vodafone 4200 1", "10.0.10.137");
+            ants.Add(a);
+
+            a = new NetworkNode("Vodafone 4200 2", "10.0.10.141");
+            ants.Add(a);
+
+            a = new NetworkNode("Vodafone 4200 3", "10.0.10.142");
+            ants.Add(a);
+
             // Kilo 61
             a = new NetworkNode("Kilo 61", "10.0.10.143");
             ants.Add(a);
 
+            // Kilo 59
+            a = new NetworkNode("Kilo 59", "10.0.10.155");
+            ants.Add(a);
+
+            // Voda 4254
+            a = new NetworkNode("Vodafone 4254 1", "10.0.10.122");
+            ants.Add(a);
+
+            a = new NetworkNode("Vodafone 4254 2", "10.0.10.152");
+            ants.Add(a);
+
+            //ExcelToNode.getExcelFile();
+            //ants = ExcelToNode.getNodesFromExcel();
+            //// this method desplays the ips one by one
             //updateNetworkAndDisplay();
+
+            //// this loop is for realtime update of the status of the ips
             while (true)
             {
                 Console.SetCursorPosition(0, 0);
@@ -182,6 +208,8 @@ namespace WatanyaPingTester
                 Console.WriteLine("=====");
                 Thread.Sleep(timePerPing * 1000);
             }
+
+            Console.ReadKey();
             
         }
     }
