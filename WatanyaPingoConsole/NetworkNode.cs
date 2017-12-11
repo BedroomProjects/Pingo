@@ -60,8 +60,8 @@ namespace WatanyaPingTester
             }
             else
             {
-                if (rp.Status == IPStatus.TimedOut) return "Timeout";
-                else return "Not Reachable";
+                if (rp.Status == IPStatus.TimedOut) return "Fail";
+                else return "Fail";
             }
         }
     }

@@ -30,7 +30,23 @@ namespace WatanyaPingTester
 
         static void displayAntennaStatus(NetworkNode a)
         {
-            Console.WriteLine(a.getName() + " (" + a.getIP() + "): " + a.getStatus());
+            Console.Write(a.getName() + " (" + a.getIP() + "): ");
+            if (a.getStatus() == "Success")
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(a.getStatus());
+            }
+            else if (a.getStatus() == "Fail")
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(a.getStatus());
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine(a.getStatus());
+            }
+            Console.ResetColor();
         }
 
         public static void ClearCurrentConsoleLine()

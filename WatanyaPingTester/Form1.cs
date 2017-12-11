@@ -33,6 +33,7 @@ namespace WatanyaPingTester
             //label4.Text = ants.ElementAt(1).getStatus();
             //label6.Text = ants.ElementAt(2).getStatus();
             //label8.Text = ants.ElementAt(3).getStatus();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
