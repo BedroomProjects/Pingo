@@ -9,9 +9,9 @@ namespace WatanyaPingoConsole
 {
     class NetworkNode
     {
-        private string ip, name, type, road;
+        string ip, name, type, road;
         PingReply rp;
-        private bool reachable = false, pending = true;
+        bool reachable = false, pending = true;
 
         public NetworkNode(string name, string ipAddress)
         {
@@ -22,17 +22,25 @@ namespace WatanyaPingoConsole
         public void ping()
         {
             Ping ping = new Ping();
-            rp = ping.Send(ip);
-            if (rp.Status == IPStatus.Success)
+            try
             {
-                reachable = true;
+                rp = ping.Send(ip);
+                if (rp.Status == IPStatus.Success)
+                {
+                    reachable = true;
+                }
+                else
+                {
+
+                    reachable = false;
+                }
+                pending = false;
             }
-            else
+            catch (Exception e)
             {
-                
                 reachable = false;
+                pending = false;
             }
-            pending = false;
         }
 
         public void sendPing()
@@ -54,14 +62,21 @@ namespace WatanyaPingoConsole
         public string getStatus()
         {
             if (pending) return "Pending...";
-            if (rp.Status == IPStatus.Success)
+            try
             {
-                return "Success";
+                if (rp.Status == IPStatus.Success)
+                {
+                    return "Success";
+                }
+                else
+                {
+                    if (rp.Status == IPStatus.TimedOut) return "Fail";
+                    else return "Fail";
+                }
             }
-            else
+            catch (Exception e)
             {
-                if (rp.Status == IPStatus.TimedOut) return "Fail";
-                else return "Fail";
+                return "Fail";
             }
         }
     }
