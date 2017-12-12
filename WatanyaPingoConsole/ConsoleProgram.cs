@@ -15,12 +15,13 @@ namespace WatanyaPingoConsole
     {
         public static int timePerPing = 3;
         static List<NetworkNode> ants = new List<NetworkNode>();
-
+        public static string sokhnaFileName = @"\sokhna_scheme.xlsx";
+        public static string alexFileName = @"\alex_scheme.xlsx";
 
         static void displayAntennaStatus(NetworkNode a)
         {
-            Console.Write(a.getName() + " (" + a.getIP() + "): ");
-            Console.SetCursorPosition(35, Console.CursorTop);
+            Console.Write("(" + a.getIP() + "): " + a.getName());
+            Console.SetCursorPosition(45, Console.CursorTop);
             if (a.getStatus() == "Success")
             {
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -86,6 +87,8 @@ namespace WatanyaPingoConsole
 
         static void Main(string[] args)
         {
+            Console.SetWindowSize(60, 60);
+            Console.SetWindowPosition(0, 0);
 
             //// MOKATTAM
             //NetworkNode a = new NetworkNode("Mokattam Ant. 1", "10.0.10.101");
@@ -112,7 +115,7 @@ namespace WatanyaPingoConsole
 
             //a = new NetworkNode("M1 Ant. 5", "10.0.10.110");
             //ants.Add(a);
-            
+
             //// DEGLA
             ////a = new NetworkNode("Degla Swtich", "10.0.10.193");
             ////ants.Add(a);
@@ -205,8 +208,15 @@ namespace WatanyaPingoConsole
             //a = new NetworkNode("Vodafone 4254 2", "10.0.10.152");
             //ants.Add(a);
 
-            ExcelToNode.getExcelFile(@"\sokhna_scheme.xlsx");
+            Console.WriteLine("Preparing Data...");
+            string fileName = alexFileName;
+
+            ExcelToNode.getExcelFile(fileName);
             ants = convertStringsToNodes(ExcelToNode.getResult());
+
+            Console.SetCursorPosition(0, 0);
+            Console.WriteLine(fileName);
+            Console.WriteLine("=====");
 
             //// this method desplays the ips one by one
             //updateNetworkAndDisplay();
@@ -214,7 +224,7 @@ namespace WatanyaPingoConsole
             //// this loop is for realtime update of the status of the ips
             while (true)
             {
-                Console.SetCursorPosition(0, 0);
+                Console.SetCursorPosition(0, 2);
                 updateNetwork();
                 updateDisplay();
                 Console.WriteLine("=====");

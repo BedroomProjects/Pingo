@@ -11,7 +11,7 @@ namespace WatanyaPingoConsole
     {
         string ip, name, type, road;
         PingReply rp;
-        bool reachable = false, pending = true;
+        bool reachable = false, pending = true, error = false;
 
         public NetworkNode(string name, string ipAddress)
         {
@@ -38,8 +38,9 @@ namespace WatanyaPingoConsole
             }
             catch (Exception e)
             {
-                reachable = false;
                 pending = false;
+                reachable = false;
+                error = true;
             }
         }
 
@@ -70,13 +71,13 @@ namespace WatanyaPingoConsole
                 }
                 else
                 {
-                    if (rp.Status == IPStatus.TimedOut) return "Fail";
+                    if (rp.Status == IPStatus.TimedOut) return "Timeout";
                     else return "Fail";
                 }
             }
             catch (Exception e)
             {
-                return "Fail";
+                return "Error";
             }
         }
     }
