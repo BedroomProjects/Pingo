@@ -11,7 +11,7 @@ namespace WatanyaPingTester
     {
         private string ipAddress, name, type, road;
         private PingClass pingObj;
-        private bool reachable = false, pending = false;
+        private bool reachable, pending;
 
         public NetworkNode(string name, string type, string road, string ipAddress)
         {
