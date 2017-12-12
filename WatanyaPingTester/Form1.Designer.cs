@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridView1 = new System.Windows.Forms.DataGridView();
-            this.ping2 = new System.Windows.Forms.Button();
             this.index = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ip = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pic = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ping2 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +45,8 @@
             // 
             this.gridView1.AllowUserToAddRows = false;
             this.gridView1.AllowUserToDeleteRows = false;
-            this.gridView1.AllowUserToOrderColumns = true;
+            this.gridView1.AllowUserToResizeColumns = false;
+            this.gridView1.AllowUserToResizeRows = false;
             this.gridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -54,20 +57,11 @@
             this.pic});
             this.gridView1.Location = new System.Drawing.Point(12, 12);
             this.gridView1.Name = "gridView1";
+            this.gridView1.ReadOnly = true;
             this.gridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.gridView1.RowHeadersVisible = false;
             this.gridView1.Size = new System.Drawing.Size(454, 500);
             this.gridView1.TabIndex = 10;
-            // 
-            // ping2
-            // 
-            this.ping2.Location = new System.Drawing.Point(192, 518);
-            this.ping2.Name = "ping2";
-            this.ping2.Size = new System.Drawing.Size(92, 48);
-            this.ping2.TabIndex = 11;
-            this.ping2.Text = "Ping";
-            this.ping2.UseVisualStyleBackColor = true;
-            this.ping2.Click += new System.EventHandler(this.ping2_Click);
             // 
             // index
             // 
@@ -92,17 +86,58 @@
             // 
             // pic
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.NullValue = "System.Drawing.Image";
-            this.pic.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.NullValue = "System.Drawing.Image";
+            this.pic.DefaultCellStyle = dataGridViewCellStyle10;
             this.pic.HeaderText = "Status Pic";
             this.pic.Name = "pic";
+            this.pic.ReadOnly = true;
+            // 
+            // ping2
+            // 
+            this.ping2.Location = new System.Drawing.Point(374, 518);
+            this.ping2.Name = "ping2";
+            this.ping2.Size = new System.Drawing.Size(92, 48);
+            this.ping2.TabIndex = 11;
+            this.ping2.Text = "Ping";
+            this.ping2.UseVisualStyleBackColor = true;
+            this.ping2.Click += new System.EventHandler(this.ping2_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Cairo - Sokhna",
+            "Cairo - Alexandria"});
+            this.comboBox1.Location = new System.Drawing.Point(12, 518);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBox1.Size = new System.Drawing.Size(141, 21);
+            this.comboBox1.TabIndex = 12;
+            this.comboBox1.Text = "أختر الطريق";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Antenna",
+            "Switch",
+            "Server",
+            "All"});
+            this.comboBox2.Location = new System.Drawing.Point(192, 518);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 13;
+            this.comboBox2.Text = "أختر نوع الجهاز";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(476, 578);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.ping2);
             this.Controls.Add(this.gridView1);
             this.Name = "Form1";
@@ -121,6 +156,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ip;
         private System.Windows.Forms.DataGridViewTextBoxColumn status;
         private System.Windows.Forms.DataGridViewImageColumn pic;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
 

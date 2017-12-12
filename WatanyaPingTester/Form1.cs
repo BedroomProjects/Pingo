@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,6 +18,7 @@ namespace WatanyaPingTester
         ImageList imageList = new ImageList();
         string[] status_imgs = { "red_x.png", "green_mark.png" };
         List<NetworkNode> ants;
+        string path, markPath, xPath;
 
         public Form1()
         {
@@ -36,7 +38,20 @@ namespace WatanyaPingTester
             
             try {
                 //string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Data\Names.txt");
-                string[] imageFiles = Directory.GetFiles(@"G:\Fahim\Pingo\WatanyaPingTester\res");
+                path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+                path += "\\..\\..\\res";
+                markPath = path + "\\green_mark.ico";
+                xPath = path + "\\red_x.ico";
+
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result;
+                // Displays the MessageBox.
+                result = MessageBox.Show(markPath, "Error", buttons);
+
+                
+                
+                //string[] imageFiles = Directory.GetFiles(@"G:\Fahim\New folder\Pingo\WatanyaPingTester\res");
+                string[] imageFiles = Directory.GetFiles(@path);
                 foreach (var file in imageFiles)
                 {
                     //Add images to Imagelist
@@ -64,6 +79,7 @@ namespace WatanyaPingTester
         
         private void ping2_Click(object sender, EventArgs e)
         {
+            gridView1.Rows.Clear();
             var row = new string[4];
             int j = 1;
             for (int i = 0; i < ants.Count(); i++)
@@ -73,15 +89,12 @@ namespace WatanyaPingTester
                 row[2] = ants.ElementAt(i).getIP();
                 row[3] = ants.ElementAt(i).getStatus();
                 
-                //DataGridViewImageColumn imgCol = new DataGridViewImageColumn();
                 Image img;
-                //Icon img = new Icon(this.GetType(), @"G:\Fahim\Pingo\WatanyaPingTester\res\green_mark.ico");
                 if(ants.ElementAt(i).isReachable())
-                    img = Image.FromFile(@"G:\Fahim\Pingo\WatanyaPingTester\res\green_mark.ico");
+                    img = Image.FromFile(@markPath);
                 else
-                    img = Image.FromFile(@"G:\Fahim\Pingo\WatanyaPingTester\res\red_x.ico");
+                    img = Image.FromFile(@xPath);
 
-                //pic.Image = img;
                 gridView1.Rows.Add(row);
                 gridView1.Rows[i].Cells[4].Value = img;
             }
