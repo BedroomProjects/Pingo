@@ -15,8 +15,8 @@ namespace WatanyaPingoConsole
     {
         public static int timePerPing = 3;
         static List<NetworkNode> ants = new List<NetworkNode>();
-        public static string sokhnaFileName = @"\sokhna_scheme.xlsx";
-        public static string alexFileName = @"\alex_scheme.xlsx";
+        public static string sokhnaFileName = @"sokhna_scheme.xlsx";
+        public static string alexFileName = @"alex_scheme.xlsx";
 
         static void displayAntennaStatus(NetworkNode a)
         {
@@ -92,8 +92,8 @@ namespace WatanyaPingoConsole
 
         static void Main(string[] args)
         {
-            Console.SetWindowSize(60, 60);
-            Console.SetWindowPosition(0, 0);
+            Console.SetWindowSize((Console.LargestWindowWidth)/3, Console.LargestWindowHeight);
+            Console.SetWindowPosition(Console.WindowLeft, Console.WindowTop);
 
             //// MOKATTAM
             //NetworkNode a = new NetworkNode("Mokattam Ant. 1", "10.0.10.101");

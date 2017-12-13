@@ -16,19 +16,19 @@ namespace WatanyaPingoConsole
 
         public static void getExcelFile(string fileName)
         {
-            //string curFileDirectory = Directory.GetCurrentDirectory() + fileName;
-            string curFileDirectory = @"C:\Network Schemes" + fileName;  
+            //string filePath = Directory.GetCurrentDirectory() + fileName;
+            //string filePath = @"C:\Network Schemes" + fileName;  
+            string filePath = Path.Combine(Environment.CurrentDirectory, @"Data\", fileName);
             try
             {
                 //Create COM Objects. Create a COM object for everything that is referenced
                 Excel.Application xlApp = new Excel.Application();
-                Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(curFileDirectory);
+                Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(filePath);
                 Excel._Worksheet xlWorksheet = xlWorkbook.Sheets[1];
                 Excel.Range xlRange = xlWorksheet.UsedRange;
 
                 int rowCount = xlRange.Rows.Count;
                 int colCount = xlRange.Columns.Count;
-
 
                 for (int i = 1; i <= rowCount; i++)
                 {
@@ -61,7 +61,7 @@ namespace WatanyaPingoConsole
             catch (Exception e)
             {
                 Console.SetCursorPosition(0, 4);
-                Console.WriteLine("Error: Can not read excel file " + curFileDirectory + "\nCheck if file exists.");
+                Console.WriteLine("Error: Can not read excel file '" + filePath + "'\nCheck if file exists.");
             }
         }
 

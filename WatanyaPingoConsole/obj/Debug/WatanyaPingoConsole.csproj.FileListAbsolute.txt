@@ -16,3 +16,14 @@ C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\
 C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\bin\Debug\WatanyaPingoConsole.application
 C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\obj\Debug\WatanyaPingoConsole.exe.manifest
 C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\obj\Debug\WatanyaPingoConsole.application
+D:\Pingo\WatanyaPingoConsole\bin\Debug\WatanyaPingoConsole.exe.config
+D:\Pingo\WatanyaPingoConsole\obj\Debug\WatanyaPingoConsole.csproj.ResolveComReference.cache
+D:\Pingo\WatanyaPingoConsole\obj\Debug\WatanyaPingoConsole.exe
+D:\Pingo\WatanyaPingoConsole\obj\Debug\WatanyaPingoConsole.pdb
+D:\Pingo\WatanyaPingoConsole\bin\Debug\WatanyaPingoConsole.exe.manifest
+D:\Pingo\WatanyaPingoConsole\bin\Debug\WatanyaPingoConsole.application
+D:\Pingo\WatanyaPingoConsole\bin\Debug\WatanyaPingoConsole.exe
+D:\Pingo\WatanyaPingoConsole\bin\Debug\WatanyaPingoConsole.pdb
+D:\Pingo\WatanyaPingoConsole\obj\Debug\WatanyaPingoConsole.csprojResolveAssemblyReference.cache
+D:\Pingo\WatanyaPingoConsole\obj\Debug\WatanyaPingoConsole.exe.manifest
+D:\Pingo\WatanyaPingoConsole\obj\Debug\WatanyaPingoConsole.application
