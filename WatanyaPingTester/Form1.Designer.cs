@@ -28,132 +28,136 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.gridView1 = new System.Windows.Forms.DataGridView();
+            this.index = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ip = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pic = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ping2 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // gridView1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(117, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "المقطم";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.gridView1.AllowUserToAddRows = false;
+            this.gridView1.AllowUserToDeleteRows = false;
+            this.gridView1.AllowUserToResizeColumns = false;
+            this.gridView1.AllowUserToResizeRows = false;
+            this.gridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.index,
+            this.name,
+            this.ip,
+            this.status,
+            this.pic});
+            this.gridView1.Location = new System.Drawing.Point(12, 12);
+            this.gridView1.Name = "gridView1";
+            this.gridView1.ReadOnly = true;
+            this.gridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.gridView1.RowHeadersVisible = false;
+            this.gridView1.Size = new System.Drawing.Size(454, 500);
+            this.gridView1.TabIndex = 10;
             // 
-            // button1
+            // index
             // 
-            this.button1.Location = new System.Drawing.Point(228, 167);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 49);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.index.HeaderText = "Index";
+            this.index.Name = "index";
+            this.index.Width = 50;
             // 
-            // label2
+            // name
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(117, 99);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.name.HeaderText = "Name";
+            this.name.Name = "name";
             // 
-            // label3
+            // ip
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(204, 71);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(22, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "M1";
+            this.ip.HeaderText = "IP";
+            this.ip.Name = "ip";
             // 
-            // label4
+            // status
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(204, 99);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.status.HeaderText = "Status";
+            this.status.Name = "status";
             // 
-            // label5
+            // pic
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(285, 71);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(22, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "M2";
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.NullValue = "System.Drawing.Image";
+            this.pic.DefaultCellStyle = dataGridViewCellStyle10;
+            this.pic.HeaderText = "Status Pic";
+            this.pic.Name = "pic";
+            this.pic.ReadOnly = true;
             // 
-            // label6
+            // ping2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(285, 99);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "label6";
+            this.ping2.Location = new System.Drawing.Point(374, 518);
+            this.ping2.Name = "ping2";
+            this.ping2.Size = new System.Drawing.Size(92, 48);
+            this.ping2.TabIndex = 11;
+            this.ping2.Text = "Ping";
+            this.ping2.UseVisualStyleBackColor = true;
+            this.ping2.Click += new System.EventHandler(this.ping2_Click);
             // 
-            // label7
+            // comboBox1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(361, 71);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(22, 13);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "M3";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Cairo - Sokhna",
+            "Cairo - Alexandria"});
+            this.comboBox1.Location = new System.Drawing.Point(12, 518);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBox1.Size = new System.Drawing.Size(141, 21);
+            this.comboBox1.TabIndex = 12;
+            this.comboBox1.Text = "أختر الطريق";
             // 
-            // label8
+            // comboBox2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(360, 99);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "label8";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Antenna",
+            "Switch",
+            "Server",
+            "All"});
+            this.comboBox2.Location = new System.Drawing.Point(192, 518);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 13;
+            this.comboBox2.Text = "أختر نوع الجهاز";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 312);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(476, 578);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.ping2);
+            this.Controls.Add(this.gridView1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView gridView1;
+        private System.Windows.Forms.Button ping2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn index;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ip;
+        private System.Windows.Forms.DataGridViewTextBoxColumn status;
+        private System.Windows.Forms.DataGridViewImageColumn pic;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
 

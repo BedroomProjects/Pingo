@@ -11,7 +11,7 @@ namespace WatanyaPingTester
     {
         private string ipAddress, name, type, road;
         private PingClass pingObj;
-        //private bool reachable = false, pending = false;
+        private bool reachable, pending;
 
         public NetworkNode(string name, string type, string road, string ipAddress)
         {
@@ -42,6 +42,11 @@ namespace WatanyaPingTester
             return ipAddress;
         }
 
+        public bool isReachable()
+        {
+            return reachable;
+        }
+
         public string getStatus()
         {
             pingObj.setIP(ipAddress);
@@ -49,9 +54,11 @@ namespace WatanyaPingTester
             //if (pingObj.isPending()) return "Pending...";
             if (pingObj.isReachable())
             {
+                reachable = true;
                 return "Reachable";
             }
-            else { 
+            else {
+                reachable = false;
                 return "Not Reachable"; 
             }
         }

@@ -27,7 +27,7 @@ namespace WatanyaPingTester
         public void ping() {
             pingReplyObj = pingObj.Send(ipAddress);
             if (pingReplyObj.Status == IPStatus.Success) {
-                reachable = true;
+                this.reachable = true;
                 pending = false;
             }
             else
@@ -37,7 +37,7 @@ namespace WatanyaPingTester
                 else
                     pending = false;
 
-                reachable = false;
+                this.reachable = false;
             }
         }
 
