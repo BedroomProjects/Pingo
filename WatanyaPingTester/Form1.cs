@@ -43,10 +43,10 @@ namespace WatanyaPingTester
                 markPath = path + "\\green_mark.ico";
                 xPath = path + "\\red_x.ico";
 
-                MessageBoxButtons buttons = MessageBoxButtons.OK;
-                DialogResult result;
-                // Displays the MessageBox.
-                result = MessageBox.Show(markPath, "Error", buttons);
+                //MessageBoxButtons buttons = MessageBoxButtons.OK;
+                //DialogResult result;
+                //// Displays the MessageBox.
+                //result = MessageBox.Show(markPath, "Error", buttons);
 
                 
                 
