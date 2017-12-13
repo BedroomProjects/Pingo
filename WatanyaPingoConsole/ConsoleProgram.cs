@@ -22,14 +22,19 @@ namespace WatanyaPingoConsole
         {
             Console.Write("(" + a.getIP() + "): " + a.getName());
             Console.SetCursorPosition(45, Console.CursorTop);
-            if (a.getStatus() == "Success")
+            if (a.getStatus() == "Online")
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine(a.getStatus());
             }
-            else if (a.getStatus() == "Fail")
+            else if (a.getStatus() == "Offline")
             {
                 Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(a.getStatus());
+            }
+            else if (a.getStatus() == "Timeout")
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine(a.getStatus());
             }
             else
@@ -209,7 +214,7 @@ namespace WatanyaPingoConsole
             //ants.Add(a);
 
             Console.WriteLine("Preparing Data...");
-            string fileName = alexFileName;
+            string fileName = sokhnaFileName;
 
             ExcelToNode.getExcelFile(fileName);
             ants = convertStringsToNodes(ExcelToNode.getResult());
@@ -218,10 +223,10 @@ namespace WatanyaPingoConsole
             Console.WriteLine(fileName);
             Console.WriteLine("=====");
 
-            //// this method desplays the ips one by one
+            //// this method desplays the IPs one by one
             //updateNetworkAndDisplay();
 
-            //// this loop is for realtime update of the status of the ips
+            //// this loop is for realtime update of the status of the IPs
             while (true)
             {
                 Console.SetCursorPosition(0, 2);

@@ -67,12 +67,12 @@ namespace WatanyaPingoConsole
             {
                 if (rp.Status == IPStatus.Success)
                 {
-                    return "Success";
+                    return "Online";
                 }
                 else
                 {
                     if (rp.Status == IPStatus.TimedOut) return "Timeout";
-                    else return "Fail";
+                    else return "Offline";
                 }
             }
             catch (Exception e)
