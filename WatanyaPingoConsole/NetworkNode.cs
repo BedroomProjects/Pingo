@@ -31,7 +31,6 @@ namespace WatanyaPingoConsole
                 }
                 else
                 {
-
                     reachable = false;
                 }
                 pending = false;

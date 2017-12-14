@@ -1,0 +1,11 @@
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\bin\Release\WatanyaPingoConsole.exe.config
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.csproj.ResolveComReference.cache
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\bin\Release\WatanyaPingoConsole.exe.manifest
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\bin\Release\WatanyaPingoConsole.application
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\bin\Release\WatanyaPingoConsole.exe
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\bin\Release\WatanyaPingoConsole.pdb
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.csprojResolveAssemblyReference.cache
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.exe.manifest
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.application
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.exe
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.pdb
