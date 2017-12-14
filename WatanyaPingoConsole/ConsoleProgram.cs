@@ -17,6 +17,7 @@ namespace WatanyaPingoConsole
         static List<NetworkNode> ants = new List<NetworkNode>();
         public static string sokhnaFileName = @"sokhna_scheme.xlsx";
         public static string alexFileName = @"alex_scheme.xlsx";
+        public static int consoleChoice = 1;
 
         static void displayAntennaStatus(NetworkNode a)
         {
@@ -43,6 +44,25 @@ namespace WatanyaPingoConsole
                 Console.WriteLine(a.getStatus());
             }
             Console.ResetColor();
+        }
+
+        public static void displayMenu()
+        {
+            Console.SetCursorPosition(0, 2);
+            if (consoleChoice == 1)
+            {
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.WriteLine("Sokhna Road Network");
+                Console.ResetColor();
+                Console.WriteLine("Alexandria Road Network");
+            }
+            else
+            {
+                Console.WriteLine("Sokhna Road Network");
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.WriteLine("Alexandria Road Network");
+                Console.ResetColor();
+            }
         }
 
         public static void ClearCurrentConsoleLine()
@@ -94,127 +114,33 @@ namespace WatanyaPingoConsole
         {
             Console.SetWindowSize((Console.LargestWindowWidth)/3, Console.LargestWindowHeight);
             Console.SetWindowPosition(Console.WindowLeft, Console.WindowTop);
+            consoleChoice = 1;
+            Console.WriteLine("Choose the Network you want to ping:\n");
+            displayMenu();
+            ConsoleKeyInfo keyinfo;
+            do
+            {
+                keyinfo = Console.ReadKey();
+                if ((keyinfo.Key == ConsoleKey.DownArrow) || (keyinfo.Key == ConsoleKey.UpArrow))
+                {
+                    if (consoleChoice == 2) consoleChoice = 1; else consoleChoice++;
+                    displayMenu();
+                }
+            }
+            while (keyinfo.Key != ConsoleKey.Enter);
 
-            //// MOKATTAM
-            //NetworkNode a = new NetworkNode("Mokattam Ant. 1", "10.0.10.101");
-            //ants.Add(a);
-
-            //a = new NetworkNode("Mokattam Ant. 2", "10.0.10.102");
-            //ants.Add(a);
-
-            //// M1
-            ////a = new NetworkNode("M1 Swtich", "192.168.1.160");
-            ////ants.Add(a);
-
-            //a = new NetworkNode("M1 Ant. 1", "10.0.10.103");
-            //ants.Add(a);
-
-            //a = new NetworkNode("M1 Ant. 2", "10.0.10.104");
-            //ants.Add(a);
-
-            //a = new NetworkNode("M1 Ant. 3", "10.0.10.106");
-            //ants.Add(a);
-
-            //a = new NetworkNode("M1 Ant. 4", "10.0.10.108");
-            //ants.Add(a);
-
-            //a = new NetworkNode("M1 Ant. 5", "10.0.10.110");
-            //ants.Add(a);
-
-            //// DEGLA
-            ////a = new NetworkNode("Degla Swtich", "10.0.10.193");
-            ////ants.Add(a);
-
-            //a = new NetworkNode("Degla Ant. 1", "10.0.10.107");
-            //ants.Add(a);
-
-            //// CAIRO
-            ////a = new NetworkNode("Cairo Swtich", "192.168.1.10");
-            ////ants.Add(a);
-
-            //a = new NetworkNode("Cairo Ant. 1", "192.168.1.109");
-            //ants.Add(a);
-
-            //a = new NetworkNode("Cairo Ant. 2", "10.0.10.105");
-            //ants.Add(a);
-
-            //// M2
-            ////a = new NetworkNode("M2 Switch", "192.168.1.161");
-            ////ants.Add(a);
-
-            //a = new NetworkNode("M2 Ant. 1", "10.0.10.111");
-            //ants.Add(a);
-
-            //a = new NetworkNode("M2 Ant. 2", "10.0.10.112");
-            //ants.Add(a);
-
-            //a = new NetworkNode("M2 Ant. 3", "10.0.10.114");
-            //ants.Add(a);
-
-            //// TOHAMY
-            ////a = new NetworkNode("Tohamy Switch", "10.0.10.113");
-            ////ants.Add(a);
-
-            //a = new NetworkNode("Tohamy Ant. 1", "10.0.10.113");
-            //ants.Add(a);
-
-            //// M3
-            ////a = new NetworkNode("M3 Switch", "192.168.1.162");
-            ////ants.Add(a);
-
-            //a = new NetworkNode("M3 Ant. 1", "10.0.10.115");
-            //ants.Add(a);
-
-            //a = new NetworkNode("M3 Ant. 2", "10.0.10.116");
-            //ants.Add(a);
-
-            //a = new NetworkNode("M3 Ant. 3", "10.0.10.118");
-            //ants.Add(a);
-
-            //// Gendaly 1
-            ////a = new NetworkNode("Gendaly 1 Switch", "192.168.1.184");
-            ////ants.Add(a);
-
-            //a = new NetworkNode("Gendaly 1 Ant. 1", "10.0.10.117");
-            //ants.Add(a);
-
-            //// Voda 4253
-            //a = new NetworkNode("Vodafone 4253 1", "10.0.10.119");
-            //ants.Add(a);
-
-            //a = new NetworkNode("Vodafone 4253 2", "10.0.10.120");
-            //ants.Add(a);
-
-            //a = new NetworkNode("Vodafone 4253 3", "10.0.10.140");
-            //ants.Add(a);
-
-            //// Voda 4200
-            //a = new NetworkNode("Vodafone 4200 1", "10.0.10.137");
-            //ants.Add(a);
-
-            //a = new NetworkNode("Vodafone 4200 2", "10.0.10.141");
-            //ants.Add(a);
-
-            //a = new NetworkNode("Vodafone 4200 3", "10.0.10.142");
-            //ants.Add(a);
-
-            //// Kilo 61
-            //a = new NetworkNode("Kilo 61", "10.0.10.143");
-            //ants.Add(a);
-
-            //// Kilo 59
-            //a = new NetworkNode("Kilo 59", "10.0.10.155");
-            //ants.Add(a);
-
-            //// Voda 4254
-            //a = new NetworkNode("Vodafone 4254 1", "10.0.10.122");
-            //ants.Add(a);
-
-            //a = new NetworkNode("Vodafone 4254 2", "10.0.10.152");
-            //ants.Add(a);
-
+            Console.Clear();
+            Console.SetCursorPosition(0, 0);
             Console.WriteLine("Preparing Data...");
             string fileName = sokhnaFileName;
+            if (consoleChoice == 1)
+            {
+                fileName = sokhnaFileName;
+            }
+            else
+            {
+                fileName = alexFileName;
+            }
 
             ExcelToNode.getExcelFile(fileName);
             ants = convertStringsToNodes(ExcelToNode.getResult());
