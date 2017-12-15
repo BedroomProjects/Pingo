@@ -43,3 +43,13 @@ G:\Fahim\New folder\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csprojRe
 G:\Fahim\New folder\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Form1.resources
 G:\Fahim\New folder\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resources.resources
 G:\Fahim\New folder\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache
+E:\Tareq\Projects\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe.config
+E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.exe
+E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.pdb
+E:\Tareq\Projects\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe
+E:\Tareq\Projects\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.pdb
+E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csprojResolveAssemblyReference.cache
+E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.ResolveComReference.cache
+E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Form1.resources
+E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resources.resources
+E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache

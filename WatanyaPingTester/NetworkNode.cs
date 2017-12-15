@@ -9,16 +9,18 @@ namespace WatanyaPingTester
 {
     class NetworkNode
     {
-        private string ipAddress, name, type, road;
+        private string ipAddress, name, nodeType, road, nextNode, placeType;
         private PingClass pingObj;
         private bool reachable, pending;
 
-        public NetworkNode(string name, string type, string road, string ipAddress)
+        public NetworkNode(string name, string placeType, string ipAddress, string type, string road, string nextNode)
         {
             this.name = name;
-            this.type = type;
+            this.nodeType = type;
             this.road = road;
             this.ipAddress = ipAddress;
+            this.placeType = placeType;
+            this.nextNode = nextNode;
             pingObj = new PingClass();
         }
 
@@ -27,9 +29,9 @@ namespace WatanyaPingTester
             return name;
         }
 
-        public string getType()
+        public string getNodeType()
         {
-            return type;
+            return nodeType;
         }
 
         public string getRoad()
@@ -40,6 +42,16 @@ namespace WatanyaPingTester
         public string getIP()
         {
             return ipAddress;
+        }
+
+        public string getNextNode()
+        {
+            return nextNode;
+        }
+
+        public string getPlaceType()
+        {
+            return placeType;
         }
 
         public bool isReachable()
@@ -57,9 +69,10 @@ namespace WatanyaPingTester
                 reachable = true;
                 return "Reachable";
             }
-            else {
+            else
+            {
                 reachable = false;
-                return "Not Reachable"; 
+                return "Not Reachable";
             }
         }
     }

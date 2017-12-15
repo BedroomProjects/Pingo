@@ -9,6 +9,7 @@ using System.Text;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 
 namespace WatanyaPingTester
@@ -17,24 +18,19 @@ namespace WatanyaPingTester
     {
         ImageList imageList = new ImageList();
         string[] status_imgs = { "red_x.png", "green_mark.png" };
-        List<NetworkNode> ants;
+        List<NetworkNode> nodes;
         string path, markPath, xPath;
+        ExcelToNode etn = new ExcelToNode();
+        string fileName = "test.xlsx";
 
         public Form1()
         {
             InitializeComponent();
 
             // Data
-            ants = new List<NetworkNode>();
-            NetworkNode a = new NetworkNode("Mokattam", "Anttena", "Cairo - Sokhna", "10.0.10.101");
-            ants.Add(a);
-            NetworkNode m1 = new NetworkNode("M1", "Anttena", "Cairo - Sokhna", "10.0.10.103");
-            ants.Add(m1);
-            m1 = new NetworkNode("M2", "Anttena", "Cairo - Sokhna", "10.0.10.111");
-            ants.Add(m1);
-            m1 = new NetworkNode("M3", "Anttena", "Cairo - Sokhna", "10.0.10.115");
-            ants.Add(m1);
             
+            
+            nodes = etn.getNetworkNodes(fileName);
             
             try {
                 //string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Data\Names.txt");
@@ -48,9 +44,6 @@ namespace WatanyaPingTester
                 //// Displays the MessageBox.
                 //result = MessageBox.Show(markPath, "Error", buttons);
 
-                
-                
-                //string[] imageFiles = Directory.GetFiles(@"G:\Fahim\New folder\Pingo\WatanyaPingTester\res");
                 string[] imageFiles = Directory.GetFiles(@path);
                 foreach (var file in imageFiles)
                 {
@@ -82,15 +75,16 @@ namespace WatanyaPingTester
             gridView1.Rows.Clear();
             var row = new string[4];
             int j = 1;
-            for (int i = 0; i < ants.Count(); i++)
+
+            for (int i = 0; i < nodes.Count(); i++)
             {
                 row[0] = j++.ToString();
-                row[1] = ants.ElementAt(i).getName();
-                row[2] = ants.ElementAt(i).getIP();
-                row[3] = ants.ElementAt(i).getStatus();
+                row[1] = nodes.ElementAt(i).getName();
+                row[2] = nodes.ElementAt(i).getIP();
+                row[3] = nodes.ElementAt(i).getStatus();
                 
                 Image img;
-                if(ants.ElementAt(i).isReachable())
+                if(nodes.ElementAt(i).isReachable())
                     img = Image.FromFile(@markPath);
                 else
                     img = Image.FromFile(@xPath);
