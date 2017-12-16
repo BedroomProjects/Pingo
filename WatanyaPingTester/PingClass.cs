@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Net.NetworkInformation;
 
 namespace WatanyaPingTester
@@ -12,7 +12,7 @@ namespace WatanyaPingTester
         private Ping pingObj;
         private PingReply pingReplyObj;
         private String ipAddress;
-        private bool reachable = false, pending = true;
+        private bool reachable = false, pending = true, error = false;
 
         public PingClass()
         {
@@ -25,20 +25,37 @@ namespace WatanyaPingTester
         }
 
         public void ping() {
-            pingReplyObj = pingObj.Send(ipAddress);
-            if (pingReplyObj.Status == IPStatus.Success) {
-                this.reachable = true;
-                pending = false;
-            }
-            else
+            try
             {
-                if (pingReplyObj.Status == IPStatus.TimedOut)
-                    pending = true;
-                else
+                pingReplyObj = pingObj.Send(ipAddress);
+                if (pingReplyObj.Status == IPStatus.Success)
+                {
+                    this.reachable = true;
                     pending = false;
+                }
+                else
+                {
+                    if (pingReplyObj.Status == IPStatus.TimedOut)
+                        pending = true;
+                    else
+                        pending = false;
 
-                this.reachable = false;
+                    this.reachable = false;
+                }
             }
+            catch (Exception e)
+            {
+                pending = false;
+                reachable = false;
+                error = true;
+            }
+        }
+       
+
+        public void sendPing()
+        {
+            Thread t = new Thread(ping);
+            t.Start();
         }
 
         public bool isReachable(){

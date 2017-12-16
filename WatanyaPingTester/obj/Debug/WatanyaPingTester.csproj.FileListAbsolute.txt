@@ -53,3 +53,4 @@ E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.Res
 E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Form1.resources
 E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resources.resources
 E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache
+C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.ResolveComReference.cache

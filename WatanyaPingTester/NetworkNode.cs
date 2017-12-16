@@ -62,12 +62,12 @@ namespace WatanyaPingTester
         public string getStatus()
         {
             pingObj.setIP(ipAddress);
-            pingObj.ping();
+            pingObj.sendPing();
             //if (pingObj.isPending()) return "Pending...";
             if (pingObj.isReachable())
             {
                 reachable = true;
-                return "Reachable";
+                return "Online";
             }
             else
             {

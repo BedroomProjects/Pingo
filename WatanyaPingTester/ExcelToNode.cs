@@ -18,7 +18,7 @@ namespace WatanyaPingTester
         public void getDataFromExcel(string fileName)
         {
             // Excel File Path
-            string filePath = Path.Combine(Environment.CurrentDirectory, @"..\..\data", fileName);
+            string filePath = Path.Combine(Environment.CurrentDirectory, @"data", fileName);
             nodes = new List<NetworkNode>();
             try
             {
