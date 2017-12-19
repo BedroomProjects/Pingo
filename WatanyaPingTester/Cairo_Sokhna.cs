@@ -161,57 +161,58 @@ namespace WatanyaPingTester
                     nodesStatusList = new List<string>();
                     for (int i = 0; i < nodes.Count(); i++)
                     {
-                        nodesStatusList.Add(nodes.ElementAt(i).getStatus());
-                        string ipString = nodes.ElementAt(i).getIP();
-                        int firstDotIndex = ipString.IndexOf(".");
-                        int lastDotIndex = ipString.LastIndexOf(".") + 1;
-                        string temp = ipString.Substring(lastDotIndex);
-                        int secondDotIndex = ipString.IndexOf(".", ipString.IndexOf(".") + 1);
-                        int ipNetworkLength = firstDotIndex;
-
-                        if (nodes.ElementAt(i).isReachable())
+                        try
                         {
-                            if (ipString.Substring(0, ipNetworkLength).Equals("192") || ipString.Substring(0, ipNetworkLength).Equals("172"))
+                            nodesStatusList.Add(nodes.ElementAt(i).getStatus());
+                            string ipString = nodes.ElementAt(i).getIP();
+                            int firstDotIndex = ipString.IndexOf(".");
+                            int lastDotIndex = ipString.LastIndexOf(".") + 1;
+                            string temp = ipString.Substring(lastDotIndex);
+                            int secondDotIndex = ipString.IndexOf(".", ipString.IndexOf(".") + 1);
+                            int ipNetworkLength = firstDotIndex;
+
+                            if (nodes.ElementAt(i).isReachable())
                             {
-                                var control = this.Controls.OfType<Label>()
-                                           .FirstOrDefault(c => c.Name == "s" + temp);
-                                control.ForeColor = Color.Black;
-                                control.BackColor = Color.Lime;
-                            }
-                            else if (ipString.Substring(0, ipNetworkLength).Equals("10"))
-                            {
-                                var control = this.Controls.OfType<Label>()
-                                           .FirstOrDefault(c => c.Name == "a" + temp);
-                                control.ForeColor = Color.Black;
-                                control.BackColor = Color.Lime;
+                                if (ipString.Substring(0, ipNetworkLength).Equals("192") || ipString.Substring(0, ipNetworkLength).Equals("172"))
+                                {
+                                    var control = this.Controls.OfType<Label>()
+                                               .FirstOrDefault(c => c.Name == "s" + temp);
+                                    control.ForeColor = Color.Black;
+                                    control.BackColor = Color.Lime;
+                                }
+                                else if (ipString.Substring(0, ipNetworkLength).Equals("10"))
+                                {
+                                    var control = this.Controls.OfType<Label>()
+                                               .FirstOrDefault(c => c.Name == "a" + temp);
+                                    control.ForeColor = Color.Black;
+                                    control.BackColor = Color.Lime;
+                                }
+
                             }
 
-                        }
+                            else
+                            {
+                                if (ipString.Substring(0, ipNetworkLength).Equals("192") || ipString.Substring(0, ipNetworkLength).Equals("172"))
+                                {
+                                    var control = this.Controls.OfType<Label>()
+                                               .FirstOrDefault(c => c.Name == "s" + temp);
+                                    control.ForeColor = Color.White;
+                                    control.BackColor = Color.Red;
+                                }
+                                else if (ipString.Substring(0, firstDotIndex).Equals("10"))
+                                {
+                                    var control = this.Controls.OfType<Label>()
+                                               .FirstOrDefault(c => c.Name == "a" + temp);
+                                    control.ForeColor = Color.White;
+                                    control.BackColor = Color.Red;
+                                }
 
-                        else {
-                            if (ipString.Substring(0, ipNetworkLength).Equals("192") || ipString.Substring(0, ipNetworkLength).Equals("172"))
-                            {
-                                var control = this.Controls.OfType<Label>()
-                                           .FirstOrDefault(c => c.Name == "s" + temp);
-                                control.ForeColor = Color.White;
-                                control.BackColor = Color.Red;
                             }
-                            else if (ipString.Substring(0, firstDotIndex).Equals("10"))
-                            {
-                                var control = this.Controls.OfType<Label>()
-                                           .FirstOrDefault(c => c.Name == "a" + temp);
-                                control.ForeColor = Color.White;
-                                control.BackColor = Color.Red;
-                            }
- 
-                        }
+                        }catch(Exception e){}
                     }
-                    Thread.Sleep(20000);
+                    Thread.Sleep(2000);
                 }
-                catch (Exception ex)
-                {
-                    continue;
-                }
+                catch (Exception ex){}
             }
         }
 
