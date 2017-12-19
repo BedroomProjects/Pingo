@@ -30,10 +30,10 @@ namespace WatanyaPingTester
             // Makes form appear in normal size
             this.WindowState = FormWindowState.Normal;
             // Makes form appear with no upper bar
-            //this.FormBorderStyle = FormBorderStyle.None;
+            this.FormBorderStyle = FormBorderStyle.None;
             // Makes form appear in full screen
-            //this.WindowState = FormWindowState.Maximized;
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.WindowState = FormWindowState.Maximized;
+            //this.FormBorderStyle = FormBorderStyle.FixedSingle;
 
             t = new Thread(updateStatus);
 
@@ -154,7 +154,7 @@ namespace WatanyaPingTester
 
         private void updateStatus()
         {
-            while (true)
+            while (running)
             {
                 try
                 {

@@ -121,7 +121,7 @@
             // 
             // a100
             // 
-            this.a100.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.a100.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a100.AutoSize = true;
             this.a100.Location = new System.Drawing.Point(1163, 102);
             this.a100.Name = "a100";
@@ -132,8 +132,9 @@
             // 
             // a101
             // 
+            this.a101.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a101.AutoSize = true;
-            this.a101.Location = new System.Drawing.Point(1024, 141);
+            this.a101.Location = new System.Drawing.Point(989, 140);
             this.a101.Name = "a101";
             this.a101.Size = new System.Drawing.Size(35, 13);
             this.a101.TabIndex = 3;
@@ -141,6 +142,7 @@
             // 
             // a102
             // 
+            this.a102.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a102.AutoSize = true;
             this.a102.Location = new System.Drawing.Point(989, 93);
             this.a102.Name = "a102";
@@ -150,8 +152,9 @@
             // 
             // s160
             // 
+            this.s160.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s160.AutoSize = true;
-            this.s160.Location = new System.Drawing.Point(834, 43);
+            this.s160.Location = new System.Drawing.Point(784, 43);
             this.s160.Name = "s160";
             this.s160.Size = new System.Drawing.Size(35, 13);
             this.s160.TabIndex = 5;
@@ -159,8 +162,9 @@
             // 
             // a103
             // 
+            this.a103.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a103.AutoSize = true;
-            this.a103.Location = new System.Drawing.Point(837, 73);
+            this.a103.Location = new System.Drawing.Point(804, 73);
             this.a103.Name = "a103";
             this.a103.Size = new System.Drawing.Size(35, 13);
             this.a103.TabIndex = 6;
@@ -168,8 +172,9 @@
             // 
             // a110
             // 
+            this.a110.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a110.AutoSize = true;
-            this.a110.Location = new System.Drawing.Point(837, 124);
+            this.a110.Location = new System.Drawing.Point(820, 123);
             this.a110.Name = "a110";
             this.a110.Size = new System.Drawing.Size(35, 13);
             this.a110.TabIndex = 7;
@@ -177,8 +182,9 @@
             // 
             // a106
             // 
+            this.a106.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a106.AutoSize = true;
-            this.a106.Location = new System.Drawing.Point(662, 43);
+            this.a106.Location = new System.Drawing.Point(649, 43);
             this.a106.Name = "a106";
             this.a106.Size = new System.Drawing.Size(35, 13);
             this.a106.TabIndex = 8;
@@ -186,8 +192,9 @@
             // 
             // s108
             // 
+            this.s108.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s108.AutoSize = true;
-            this.s108.Location = new System.Drawing.Point(665, 73);
+            this.s108.Location = new System.Drawing.Point(649, 73);
             this.s108.Name = "s108";
             this.s108.Size = new System.Drawing.Size(35, 13);
             this.s108.TabIndex = 9;
@@ -195,8 +202,9 @@
             // 
             // s109
             // 
+            this.s109.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s109.AutoSize = true;
-            this.s109.Location = new System.Drawing.Point(490, 123);
+            this.s109.Location = new System.Drawing.Point(443, 123);
             this.s109.Name = "s109";
             this.s109.Size = new System.Drawing.Size(35, 13);
             this.s109.TabIndex = 10;
@@ -204,8 +212,9 @@
             // 
             // a104
             // 
+            this.a104.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a104.AutoSize = true;
-            this.a104.Location = new System.Drawing.Point(665, 123);
+            this.a104.Location = new System.Drawing.Point(649, 112);
             this.a104.Name = "a104";
             this.a104.Size = new System.Drawing.Size(35, 13);
             this.a104.TabIndex = 11;
@@ -213,8 +222,9 @@
             // 
             // a107
             // 
+            this.a107.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a107.AutoSize = true;
-            this.a107.Location = new System.Drawing.Point(490, 30);
+            this.a107.Location = new System.Drawing.Point(455, 32);
             this.a107.Name = "a107";
             this.a107.Size = new System.Drawing.Size(35, 13);
             this.a107.TabIndex = 12;
@@ -222,8 +232,9 @@
             // 
             // s193
             // 
+            this.s193.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s193.AutoSize = true;
-            this.s193.Location = new System.Drawing.Point(469, 60);
+            this.s193.Location = new System.Drawing.Point(466, 61);
             this.s193.Name = "s193";
             this.s193.Size = new System.Drawing.Size(35, 13);
             this.s193.TabIndex = 13;
@@ -231,8 +242,9 @@
             // 
             // s10
             // 
+            this.s10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s10.AutoSize = true;
-            this.s10.Location = new System.Drawing.Point(446, 181);
+            this.s10.Location = new System.Drawing.Point(443, 187);
             this.s10.Name = "s10";
             this.s10.Size = new System.Drawing.Size(35, 13);
             this.s10.TabIndex = 15;
@@ -240,8 +252,9 @@
             // 
             // a105
             // 
+            this.a105.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a105.AutoSize = true;
-            this.a105.Location = new System.Drawing.Point(510, 181);
+            this.a105.Location = new System.Drawing.Point(443, 164);
             this.a105.Name = "a105";
             this.a105.Size = new System.Drawing.Size(35, 13);
             this.a105.TabIndex = 16;
@@ -249,8 +262,9 @@
             // 
             // a113
             // 
+            this.a113.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a113.AutoSize = true;
-            this.a113.Location = new System.Drawing.Point(493, 270);
+            this.a113.Location = new System.Drawing.Point(466, 270);
             this.a113.Name = "a113";
             this.a113.Size = new System.Drawing.Size(35, 13);
             this.a113.TabIndex = 17;
@@ -258,6 +272,7 @@
             // 
             // s190
             // 
+            this.s190.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s190.AutoSize = true;
             this.s190.Location = new System.Drawing.Point(446, 304);
             this.s190.Name = "s190";
@@ -267,8 +282,9 @@
             // 
             // a111
             // 
+            this.a111.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a111.AutoSize = true;
-            this.a111.Location = new System.Drawing.Point(664, 213);
+            this.a111.Location = new System.Drawing.Point(649, 212);
             this.a111.Name = "a111";
             this.a111.Size = new System.Drawing.Size(35, 13);
             this.a111.TabIndex = 19;
@@ -276,8 +292,9 @@
             // 
             // s161
             // 
+            this.s161.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s161.AutoSize = true;
-            this.s161.Location = new System.Drawing.Point(665, 245);
+            this.s161.Location = new System.Drawing.Point(618, 242);
             this.s161.Name = "s161";
             this.s161.Size = new System.Drawing.Size(41, 13);
             this.s161.TabIndex = 20;
@@ -285,8 +302,9 @@
             // 
             // a112
             // 
+            this.a112.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a112.AutoSize = true;
-            this.a112.Location = new System.Drawing.Point(643, 303);
+            this.a112.Location = new System.Drawing.Point(632, 304);
             this.a112.Name = "a112";
             this.a112.Size = new System.Drawing.Size(41, 13);
             this.a112.TabIndex = 21;
@@ -294,8 +312,9 @@
             // 
             // a114
             // 
+            this.a114.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a114.AutoSize = true;
-            this.a114.Location = new System.Drawing.Point(730, 303);
+            this.a114.Location = new System.Drawing.Point(709, 304);
             this.a114.Name = "a114";
             this.a114.Size = new System.Drawing.Size(41, 13);
             this.a114.TabIndex = 22;
@@ -303,8 +322,9 @@
             // 
             // a115
             // 
+            this.a115.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a115.AutoSize = true;
-            this.a115.Location = new System.Drawing.Point(899, 230);
+            this.a115.Location = new System.Drawing.Point(890, 229);
             this.a115.Name = "a115";
             this.a115.Size = new System.Drawing.Size(41, 13);
             this.a115.TabIndex = 23;
@@ -312,8 +332,9 @@
             // 
             // a116
             // 
+            this.a116.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a116.AutoSize = true;
-            this.a116.Location = new System.Drawing.Point(964, 229);
+            this.a116.Location = new System.Drawing.Point(953, 242);
             this.a116.Name = "a116";
             this.a116.Size = new System.Drawing.Size(41, 13);
             this.a116.TabIndex = 24;
@@ -321,8 +342,9 @@
             // 
             // s162
             // 
+            this.s162.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s162.AutoSize = true;
-            this.s162.Location = new System.Drawing.Point(908, 261);
+            this.s162.Location = new System.Drawing.Point(899, 261);
             this.s162.Name = "s162";
             this.s162.Size = new System.Drawing.Size(41, 13);
             this.s162.TabIndex = 25;
@@ -330,6 +352,7 @@
             // 
             // a118
             // 
+            this.a118.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a118.AutoSize = true;
             this.a118.Location = new System.Drawing.Point(902, 304);
             this.a118.Name = "a118";
@@ -339,6 +362,7 @@
             // 
             // s184
             // 
+            this.s184.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s184.AutoSize = true;
             this.s184.Location = new System.Drawing.Point(1157, 164);
             this.s184.Name = "s184";
@@ -348,8 +372,9 @@
             // 
             // a117
             // 
+            this.a117.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a117.AutoSize = true;
-            this.a117.Location = new System.Drawing.Point(1141, 199);
+            this.a117.Location = new System.Drawing.Point(1130, 197);
             this.a117.Name = "a117";
             this.a117.Size = new System.Drawing.Size(41, 13);
             this.a117.TabIndex = 28;
@@ -357,8 +382,9 @@
             // 
             // a143
             // 
+            this.a143.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a143.AutoSize = true;
-            this.a143.Location = new System.Drawing.Point(1141, 303);
+            this.a143.Location = new System.Drawing.Point(1130, 321);
             this.a143.Name = "a143";
             this.a143.Size = new System.Drawing.Size(41, 13);
             this.a143.TabIndex = 29;
@@ -366,8 +392,9 @@
             // 
             // s187
             // 
+            this.s187.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s187.AutoSize = true;
-            this.s187.Location = new System.Drawing.Point(269, 261);
+            this.s187.Location = new System.Drawing.Point(242, 261);
             this.s187.Name = "s187";
             this.s187.Size = new System.Drawing.Size(41, 13);
             this.s187.TabIndex = 30;
@@ -375,8 +402,9 @@
             // 
             // label21
             // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(258, 292);
+            this.label21.Location = new System.Drawing.Point(242, 291);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(70, 13);
             this.label21.TabIndex = 31;
@@ -384,8 +412,9 @@
             // 
             // s186
             // 
+            this.s186.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s186.AutoSize = true;
-            this.s186.Location = new System.Drawing.Point(81, 260);
+            this.s186.Location = new System.Drawing.Point(69, 261);
             this.s186.Name = "s186";
             this.s186.Size = new System.Drawing.Size(41, 13);
             this.s186.TabIndex = 32;
@@ -393,6 +422,7 @@
             // 
             // a139
             // 
+            this.a139.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a139.AutoSize = true;
             this.a139.Location = new System.Drawing.Point(69, 291);
             this.a139.Name = "a139";
@@ -402,6 +432,7 @@
             // 
             // a138
             // 
+            this.a138.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a138.AutoSize = true;
             this.a138.Location = new System.Drawing.Point(25, 430);
             this.a138.Name = "a138";
@@ -411,8 +442,9 @@
             // 
             // a136
             // 
+            this.a136.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a136.AutoSize = true;
-            this.a136.Location = new System.Drawing.Point(130, 430);
+            this.a136.Location = new System.Drawing.Point(111, 430);
             this.a136.Name = "a136";
             this.a136.Size = new System.Drawing.Size(41, 13);
             this.a136.TabIndex = 35;
@@ -420,8 +452,9 @@
             // 
             // s169
             // 
+            this.s169.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s169.AutoSize = true;
-            this.s169.Location = new System.Drawing.Point(81, 478);
+            this.s169.Location = new System.Drawing.Point(79, 476);
             this.s169.Name = "s169";
             this.s169.Size = new System.Drawing.Size(41, 13);
             this.s169.TabIndex = 36;
@@ -429,8 +462,9 @@
             // 
             // a135
             // 
+            this.a135.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a135.AutoSize = true;
-            this.a135.Location = new System.Drawing.Point(95, 595);
+            this.a135.Location = new System.Drawing.Point(69, 599);
             this.a135.Name = "a135";
             this.a135.Size = new System.Drawing.Size(41, 13);
             this.a135.TabIndex = 37;
@@ -438,8 +472,9 @@
             // 
             // a51
             // 
+            this.a51.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a51.AutoSize = true;
-            this.a51.Location = new System.Drawing.Point(261, 462);
+            this.a51.Location = new System.Drawing.Point(242, 462);
             this.a51.Name = "a51";
             this.a51.Size = new System.Drawing.Size(41, 13);
             this.a51.TabIndex = 38;
@@ -447,8 +482,9 @@
             // 
             // a133
             // 
+            this.a133.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a133.AutoSize = true;
-            this.a133.Location = new System.Drawing.Point(258, 516);
+            this.a133.Location = new System.Drawing.Point(242, 516);
             this.a133.Name = "a133";
             this.a133.Size = new System.Drawing.Size(41, 13);
             this.a133.TabIndex = 39;
@@ -456,8 +492,9 @@
             // 
             // s100
             // 
+            this.s100.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s100.AutoSize = true;
-            this.s100.Location = new System.Drawing.Point(242, 568);
+            this.s100.Location = new System.Drawing.Point(233, 578);
             this.s100.Name = "s100";
             this.s100.Size = new System.Drawing.Size(41, 13);
             this.s100.TabIndex = 40;
@@ -465,8 +502,9 @@
             // 
             // a134
             // 
+            this.a134.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a134.AutoSize = true;
-            this.a134.Location = new System.Drawing.Point(261, 659);
+            this.a134.Location = new System.Drawing.Point(242, 679);
             this.a134.Name = "a134";
             this.a134.Size = new System.Drawing.Size(41, 13);
             this.a134.TabIndex = 41;
@@ -474,8 +512,9 @@
             // 
             // s1
             // 
+            this.s1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s1.AutoSize = true;
-            this.s1.Location = new System.Drawing.Point(493, 393);
+            this.s1.Location = new System.Drawing.Point(466, 393);
             this.s1.Name = "s1";
             this.s1.Size = new System.Drawing.Size(41, 13);
             this.s1.TabIndex = 42;
@@ -483,6 +522,7 @@
             // 
             // a22
             // 
+            this.a22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a22.AutoSize = true;
             this.a22.Location = new System.Drawing.Point(446, 445);
             this.a22.Name = "a22";
@@ -492,8 +532,9 @@
             // 
             // a132
             // 
+            this.a132.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a132.AutoSize = true;
-            this.a132.Location = new System.Drawing.Point(446, 516);
+            this.a132.Location = new System.Drawing.Point(424, 516);
             this.a132.Name = "a132";
             this.a132.Size = new System.Drawing.Size(41, 13);
             this.a132.TabIndex = 44;
@@ -501,8 +542,9 @@
             // 
             // a131
             // 
+            this.a131.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a131.AutoSize = true;
-            this.a131.Location = new System.Drawing.Point(443, 549);
+            this.a131.Location = new System.Drawing.Point(424, 549);
             this.a131.Name = "a131";
             this.a131.Size = new System.Drawing.Size(41, 13);
             this.a131.TabIndex = 45;
@@ -510,8 +552,9 @@
             // 
             // s168
             // 
+            this.s168.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s168.AutoSize = true;
-            this.s168.Location = new System.Drawing.Point(550, 549);
+            this.s168.Location = new System.Drawing.Point(526, 540);
             this.s168.Name = "s168";
             this.s168.Size = new System.Drawing.Size(41, 13);
             this.s168.TabIndex = 46;
@@ -519,8 +562,9 @@
             // 
             // a130
             // 
+            this.a130.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a130.AutoSize = true;
-            this.a130.Location = new System.Drawing.Point(449, 668);
+            this.a130.Location = new System.Drawing.Point(440, 660);
             this.a130.Name = "a130";
             this.a130.Size = new System.Drawing.Size(41, 13);
             this.a130.TabIndex = 47;
@@ -528,8 +572,9 @@
             // 
             // s167
             // 
+            this.s167.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s167.AutoSize = true;
-            this.s167.Location = new System.Drawing.Point(601, 644);
+            this.s167.Location = new System.Drawing.Point(576, 644);
             this.s167.Name = "s167";
             this.s167.Size = new System.Drawing.Size(41, 13);
             this.s167.TabIndex = 48;
@@ -537,8 +582,9 @@
             // 
             // a129
             // 
+            this.a129.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a129.AutoSize = true;
-            this.a129.Location = new System.Drawing.Point(601, 679);
+            this.a129.Location = new System.Drawing.Point(594, 679);
             this.a129.Name = "a129";
             this.a129.Size = new System.Drawing.Size(41, 13);
             this.a129.TabIndex = 49;
@@ -546,8 +592,9 @@
             // 
             // a119
             // 
+            this.a119.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a119.AutoSize = true;
-            this.a119.Location = new System.Drawing.Point(784, 409);
+            this.a119.Location = new System.Drawing.Point(769, 409);
             this.a119.Name = "a119";
             this.a119.Size = new System.Drawing.Size(41, 13);
             this.a119.TabIndex = 50;
@@ -555,8 +602,9 @@
             // 
             // a140
             // 
+            this.a140.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a140.AutoSize = true;
-            this.a140.Location = new System.Drawing.Point(908, 409);
+            this.a140.Location = new System.Drawing.Point(899, 409);
             this.a140.Name = "a140";
             this.a140.Size = new System.Drawing.Size(41, 13);
             this.a140.TabIndex = 51;
@@ -565,8 +613,9 @@
             // 
             // s163
             // 
+            this.s163.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s163.AutoSize = true;
-            this.s163.Location = new System.Drawing.Point(873, 430);
+            this.s163.Location = new System.Drawing.Point(857, 445);
             this.s163.Name = "s163";
             this.s163.Size = new System.Drawing.Size(41, 13);
             this.s163.TabIndex = 52;
@@ -574,8 +623,9 @@
             // 
             // a120
             // 
+            this.a120.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a120.AutoSize = true;
-            this.a120.Location = new System.Drawing.Point(908, 462);
+            this.a120.Location = new System.Drawing.Point(899, 461);
             this.a120.Name = "a120";
             this.a120.Size = new System.Drawing.Size(41, 13);
             this.a120.TabIndex = 53;
@@ -583,8 +633,9 @@
             // 
             // a141
             // 
+            this.a141.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a141.AutoSize = true;
-            this.a141.Location = new System.Drawing.Point(1095, 409);
+            this.a141.Location = new System.Drawing.Point(1061, 430);
             this.a141.Name = "a141";
             this.a141.Size = new System.Drawing.Size(41, 13);
             this.a141.TabIndex = 54;
@@ -592,8 +643,9 @@
             // 
             // a142
             // 
+            this.a142.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a142.AutoSize = true;
-            this.a142.Location = new System.Drawing.Point(1163, 393);
+            this.a142.Location = new System.Drawing.Point(1141, 409);
             this.a142.Name = "a142";
             this.a142.Size = new System.Drawing.Size(41, 13);
             this.a142.TabIndex = 55;
@@ -601,6 +653,7 @@
             // 
             // s170
             // 
+            this.s170.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s170.AutoSize = true;
             this.s170.Location = new System.Drawing.Point(1061, 487);
             this.s170.Name = "s170";
@@ -610,8 +663,9 @@
             // 
             // a137
             // 
+            this.a137.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a137.AutoSize = true;
-            this.a137.Location = new System.Drawing.Point(1199, 461);
+            this.a137.Location = new System.Drawing.Point(1181, 461);
             this.a137.Name = "a137";
             this.a137.Size = new System.Drawing.Size(41, 13);
             this.a137.TabIndex = 57;
@@ -619,8 +673,9 @@
             // 
             // s185
             // 
+            this.s185.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s185.AutoSize = true;
-            this.s185.Location = new System.Drawing.Point(1163, 549);
+            this.s185.Location = new System.Drawing.Point(1141, 549);
             this.s185.Name = "s185";
             this.s185.Size = new System.Drawing.Size(41, 13);
             this.s185.TabIndex = 58;
@@ -628,6 +683,7 @@
             // 
             // a127
             // 
+            this.a127.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a127.AutoSize = true;
             this.a127.Location = new System.Drawing.Point(1157, 611);
             this.a127.Name = "a127";
@@ -637,8 +693,9 @@
             // 
             // a123
             // 
+            this.a123.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a123.AutoSize = true;
-            this.a123.Location = new System.Drawing.Point(804, 630);
+            this.a123.Location = new System.Drawing.Point(798, 630);
             this.a123.Name = "a123";
             this.a123.Size = new System.Drawing.Size(41, 13);
             this.a123.TabIndex = 60;
@@ -646,8 +703,9 @@
             // 
             // a128
             // 
+            this.a128.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a128.AutoSize = true;
-            this.a128.Location = new System.Drawing.Point(804, 679);
+            this.a128.Location = new System.Drawing.Point(798, 679);
             this.a128.Name = "a128";
             this.a128.Size = new System.Drawing.Size(41, 13);
             this.a128.TabIndex = 61;
@@ -655,6 +713,7 @@
             // 
             // s166
             // 
+            this.s166.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s166.AutoSize = true;
             this.s166.Location = new System.Drawing.Point(934, 630);
             this.s166.Name = "s166";
@@ -664,8 +723,9 @@
             // 
             // a126
             // 
+            this.a126.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a126.AutoSize = true;
-            this.a126.Location = new System.Drawing.Point(1016, 659);
+            this.a126.Location = new System.Drawing.Point(989, 652);
             this.a126.Name = "a126";
             this.a126.Size = new System.Drawing.Size(41, 13);
             this.a126.TabIndex = 63;
@@ -673,8 +733,9 @@
             // 
             // s164
             // 
+            this.s164.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.s164.AutoSize = true;
-            this.s164.Location = new System.Drawing.Point(762, 527);
+            this.s164.Location = new System.Drawing.Point(699, 549);
             this.s164.Name = "s164";
             this.s164.Size = new System.Drawing.Size(41, 13);
             this.s164.TabIndex = 64;
@@ -682,6 +743,7 @@
             // 
             // a122
             // 
+            this.a122.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a122.AutoSize = true;
             this.a122.Location = new System.Drawing.Point(730, 578);
             this.a122.Name = "a122";
@@ -691,8 +753,9 @@
             // 
             // a152
             // 
+            this.a152.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.a152.AutoSize = true;
-            this.a152.Location = new System.Drawing.Point(850, 527);
+            this.a152.Location = new System.Drawing.Point(833, 528);
             this.a152.Name = "a152";
             this.a152.Size = new System.Drawing.Size(41, 13);
             this.a152.TabIndex = 66;
