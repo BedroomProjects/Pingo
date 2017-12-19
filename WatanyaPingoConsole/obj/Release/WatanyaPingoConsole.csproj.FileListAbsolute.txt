@@ -9,3 +9,17 @@ C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\
 C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.application
 C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.exe
 C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.pdb
+E:\Pingo\WatanyaPingoConsole\bin\Release\WatanyaPingoConsole.exe.config
+E:\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.csproj.ResolveComReference.cache
+E:\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.exe
+E:\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.pdb
+E:\Pingo\WatanyaPingoConsole\bin\Release\WatanyaPingoConsole.exe.manifest
+E:\Pingo\WatanyaPingoConsole\bin\Release\WatanyaPingoConsole.application
+E:\Pingo\WatanyaPingoConsole\bin\Release\WatanyaPingoConsole.exe
+E:\Pingo\WatanyaPingoConsole\bin\Release\WatanyaPingoConsole.pdb
+E:\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.csprojResolveAssemblyReference.cache
+E:\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.Properties.Resources.resources
+E:\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.csproj.GenerateResource.Cache
+E:\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.exe.manifest
+E:\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.application
+E:\Pingo\WatanyaPingoConsole\obj\Release\WatanyaPingoConsole.SchemeForm.resources

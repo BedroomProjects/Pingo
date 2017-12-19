@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Diagnostics;
 using System.Net.NetworkInformation;
+using System.Windows.Forms;
 
 namespace WatanyaPingoConsole
 {
@@ -119,6 +120,11 @@ namespace WatanyaPingoConsole
 
         static void Main(string[] args)
         {
+
+            Application.EnableVisualStyles();
+            SchemeForm scheme = new SchemeForm();
+            Application.Run(scheme);
+
             // specifing the size and position of the console
             Console.SetWindowSize((Console.LargestWindowWidth)/3, Console.LargestWindowHeight);
             Console.SetWindowPosition(Console.WindowLeft, Console.WindowTop);
