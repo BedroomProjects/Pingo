@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridView1 = new System.Windows.Forms.DataGridView();
             this.ping2 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -55,17 +55,18 @@
             this.ip,
             this.status,
             this.pic});
-            this.gridView1.Location = new System.Drawing.Point(12, 12);
+            this.gridView1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gridView1.Location = new System.Drawing.Point(0, 0);
             this.gridView1.Name = "gridView1";
             this.gridView1.ReadOnly = true;
             this.gridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.gridView1.RowHeadersVisible = false;
-            this.gridView1.Size = new System.Drawing.Size(462, 716);
+            this.gridView1.Size = new System.Drawing.Size(485, 478);
             this.gridView1.TabIndex = 10;
             // 
             // ping2
             // 
-            this.ping2.Location = new System.Drawing.Point(373, 734);
+            this.ping2.Location = new System.Drawing.Point(382, 496);
             this.ping2.Name = "ping2";
             this.ping2.Size = new System.Drawing.Size(92, 48);
             this.ping2.TabIndex = 11;
@@ -79,7 +80,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Cairo - Sokhna",
             "Cairo - Alexandria"});
-            this.comboBox1.Location = new System.Drawing.Point(12, 734);
+            this.comboBox1.Location = new System.Drawing.Point(12, 496);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboBox1.Size = new System.Drawing.Size(141, 21);
@@ -94,7 +95,7 @@
             "Antenna",
             "Switch",
             "All"});
-            this.comboBox2.Location = new System.Drawing.Point(159, 734);
+            this.comboBox2.Location = new System.Drawing.Point(212, 496);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
@@ -127,22 +128,25 @@
             this.status.HeaderText = "Status";
             this.status.Name = "status";
             this.status.ReadOnly = true;
+            this.status.Width = 110;
             // 
             // pic
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.NullValue = "System.Drawing.Image";
-            this.pic.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.NullValue = "System.Drawing.Image";
+            this.pic.DefaultCellStyle = dataGridViewCellStyle4;
             this.pic.HeaderText = "Status Pic";
             this.pic.Name = "pic";
             this.pic.ReadOnly = true;
-            this.pic.Width = 90;
+            this.pic.Width = 120;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(485, 806);
+            this.AutoScroll = true;
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(485, 551);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.ping2);

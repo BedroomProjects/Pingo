@@ -37,7 +37,6 @@ namespace WatanyaPingTester
 
             t = new Thread(updateStatus);
             
-            
             try {
                 path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
                 path += "\\..\\..\\res";
