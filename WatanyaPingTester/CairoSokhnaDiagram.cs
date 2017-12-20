@@ -22,6 +22,7 @@ namespace WatanyaPingTester
         List<string> nodesStatusList;
         static Thread t;
         bool running = false;
+        ToolTip ttip = new ToolTip();
 
         public CairoSokhnaDiagram()
         {
@@ -56,8 +57,12 @@ namespace WatanyaPingTester
                     if (ipString.Substring(0, firstDotIndex).Equals("10") || ipString.Equals("192.168.1.108") || ipString.Equals("192.168.1.109"))
                     {
                         var control = (PictureBox)this.GetControlByName(this, "p" + temp);
+                        var control1 = (Label)this.GetControlByName(this, "l" + temp);
+                        control1.Text = ipString;
                         control.Image = Image.FromFile(redLEDPath);
                         control.SizeMode = PictureBoxSizeMode.Zoom;
+                        control.MouseHover += new EventHandler(pictureBoxMouseHoverEventHandler);
+                        control.MouseLeave += new EventHandler(pictureBoxMouseLeaveEventHandler);
                     }
                 }
             }
@@ -207,5 +212,25 @@ namespace WatanyaPingTester
                 catch (Exception ex) { }
             }
         }
+
+        private void pictureBoxMouseHoverEventHandler(object sender, System.EventArgs e)
+        {
+            
+            PictureBox p = (PictureBox)sender;
+            string labelName = p.Name.Replace("p", "l");
+            //var control = this.Controls.OfType<Label>().FirstOrDefault(c => c.Name == labelName);
+            var control = (Label)this.GetControlByName(this, labelName);
+            control.Visible = true;
+        }
+
+        private void pictureBoxMouseLeaveEventHandler(object sender, System.EventArgs e)
+        {
+            PictureBox p = (PictureBox)sender;
+            string labelName = p.Name.Replace("p", "l");
+            //var control = this.Controls.OfType<Label>().FirstOrDefault(c => c.Name == labelName);
+            var control = (Label)this.GetControlByName(this, labelName);
+            control.Visible = false;
+        }
+
     }
 }
