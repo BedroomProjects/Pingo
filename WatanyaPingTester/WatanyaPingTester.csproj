@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CairoSokhnaDiagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CairoSokhnaDiagram.Designer.cs">
+      <DependentUpon>CairoSokhnaDiagram.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cairo_Sokhna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     <Compile Include="PingClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CairoSokhnaDiagram.resx">
+      <DependentUpon>CairoSokhnaDiagram.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cairo_Sokhna.resx">
       <DependentUpon>Cairo_Sokhna.cs</DependentUpon>
     </EmbeddedResource>

@@ -13,36 +13,57 @@ using System.Threading;
 
 namespace WatanyaPingTester
 {
-    public partial class Cairo_Sokhna : Form
+    public partial class CairoSokhnaDiagram : Form
     {
         List<NetworkNode> nodes;
-        string path, markPath, xPath;
+        string path, greenLEDPath, redLEDPath, yellowLEDPath;
         ExcelToNode etn = new ExcelToNode();
         string fileName = "test.xlsx";
         List<string> nodesStatusList;
         static Thread t;
         bool running = false;
 
-        public Cairo_Sokhna()
+        public CairoSokhnaDiagram()
         {
             InitializeComponent();
-            // Makes form appear in normal size
-            this.WindowState = FormWindowState.Normal;
-            // Makes form appear with no upper bar
-            this.FormBorderStyle = FormBorderStyle.None;
-            // Makes form appear in full screen
+
+            // full screen above taskbar
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
-            //this.FormBorderStyle = FormBorderStyle.FixedSingle;
 
             t = new Thread(updateStatus);
 
+            nodes = etn.getNetworkNodes(fileName);
+
             try
             {
-                path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                path += "\\..\\..\\res";
-                markPath = path + "\\green_mark.ico";
-                xPath = path + "\\red_x.ico";
-                string[] imageFiles = Directory.GetFiles(@path);
+                path = Path.Combine(Environment.CurrentDirectory, @"res");
+                greenLEDPath = Path.Combine(path, @"green.png");
+                redLEDPath = Path.Combine(path, @"red.png");
+                yellowLEDPath = Path.Combine(path, @"yellow.png");
+
+                for (int i = 0; i < nodes.Count(); i++)
+                {
+                    string ipString = nodes.ElementAt(i).getIP();
+                    nodes.ElementAt(i).getStatus();
+                    int firstDotIndex = ipString.IndexOf(".");
+                    int lastDotIndex = ipString.LastIndexOf(".") + 1;
+                    int secondDotIndex = ipString.IndexOf(".", ipString.IndexOf(".") + 1);
+                    int ipNetworkLength = firstDotIndex;
+
+                    string temp = ipString.Substring(lastDotIndex);
+
+                    if (ipString.Substring(0, ipNetworkLength).Equals("192") || ipString.Substring(0, ipNetworkLength).Equals("172"))
+                    {
+                        continue;
+                    }
+                    else if (ipString.Substring(0, firstDotIndex).Equals("10"))
+                    {
+                        var control = (PictureBox)this.GetControlByName(this, "p" + temp);
+                        control.Image = Image.FromFile(redLEDPath);
+                        control.SizeMode = PictureBoxSizeMode.Zoom;
+                    }
+                }
             }
             catch (Exception e)
             {
@@ -52,9 +73,21 @@ namespace WatanyaPingTester
 
                 // Displays the MessageBox.
                 result = MessageBox.Show(e.Message, "Error", buttons);
-
             }
-            
+        }
+
+        public Control GetControlByName(Control ParentCntl, string NameToSearch)
+        {
+            if (ParentCntl.Name == NameToSearch)
+                return ParentCntl;
+
+            foreach (Control ChildCntl in ParentCntl.Controls)
+            {
+                Control ResultCntl = GetControlByName(ChildCntl, NameToSearch);
+                if (ResultCntl != null)
+                    return ResultCntl;
+            }
+            return null;
         }
 
         private void pingBtn_Click(object sender, EventArgs e)
@@ -76,7 +109,7 @@ namespace WatanyaPingTester
             else
             {
                 running = true;
-                nodes = etn.getNetworkNodes(fileName);
+
 
                 for (int i = 0; i < nodes.Count(); i++)
                 {
@@ -94,19 +127,13 @@ namespace WatanyaPingTester
                         {
                             if (ipString.Substring(0, ipNetworkLength).Equals("192") || ipString.Substring(0, ipNetworkLength).Equals("172"))
                             {
-                                var control = this.Controls.OfType<Label>()
-                                           .FirstOrDefault(c => c.Name == "s" + temp);
-                                control.Text = nodes.ElementAt(i).getIP();
-                                control.ForeColor = Color.Black;
-                                control.BackColor = Color.Lime;
+                                continue;
                             }
                             else if (ipString.Substring(0, firstDotIndex).Equals("10"))
                             {
-                                var control = this.Controls.OfType<Label>()
-                                           .FirstOrDefault(c => c.Name == "a" + temp);
-                                control.Text = nodes.ElementAt(i).getIP();
-                                control.ForeColor = Color.Black;
-                                control.BackColor = Color.Lime;
+                                var control = (PictureBox)this.GetControlByName(this, "p" + temp);
+                                control.Image = Image.FromFile(greenLEDPath);
+                                control.SizeMode = PictureBoxSizeMode.Zoom;
                             }
 
                         }
@@ -116,38 +143,23 @@ namespace WatanyaPingTester
 
                             if (ipString.Substring(0, ipNetworkLength).Equals("192") || ipString.Substring(0, ipNetworkLength).Equals("172"))
                             {
-                                var control = this.Controls.OfType<Label>()
-                                           .FirstOrDefault(c => c.Name == "s" + temp);
-                                control.Text = nodes.ElementAt(i).getIP();
-                                control.ForeColor = Color.White;
-                                control.BackColor = Color.Red;
+                                continue;
                             }
                             else if (ipString.Substring(0, ipNetworkLength).Equals("10"))
                             {
-                                var control = this.Controls.OfType<Label>()
-                                           .FirstOrDefault(c => c.Name == "a" + temp);
-                                control.Text = nodes.ElementAt(i).getIP();
-                                control.ForeColor = Color.White;
-                                control.BackColor = Color.Red;
+                                var control = (PictureBox)this.GetControlByName(this, "p" + temp);
+                                control.Image = Image.FromFile(redLEDPath);
+                                control.SizeMode = PictureBoxSizeMode.Zoom;
                             }
 
                         }
                     }
                     catch (Exception r) { }
                 }
-                //pingBtn.Text = "Stop!";
                 t = new Thread(updateStatus);
                 t.Start();
             }
-        }
 
-        private void a100_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label41_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -174,17 +186,13 @@ namespace WatanyaPingTester
                             {
                                 if (ipString.Substring(0, ipNetworkLength).Equals("192") || ipString.Substring(0, ipNetworkLength).Equals("172"))
                                 {
-                                    var control = this.Controls.OfType<Label>()
-                                               .FirstOrDefault(c => c.Name == "s" + temp);
-                                    control.ForeColor = Color.Black;
-                                    control.BackColor = Color.Lime;
+                                    continue;
                                 }
                                 else if (ipString.Substring(0, ipNetworkLength).Equals("10"))
                                 {
-                                    var control = this.Controls.OfType<Label>()
-                                               .FirstOrDefault(c => c.Name == "a" + temp);
-                                    control.ForeColor = Color.Black;
-                                    control.BackColor = Color.Lime;
+                                    var control = (PictureBox)this.GetControlByName(this, "p" + temp);
+                                    control.Image = Image.FromFile(greenLEDPath);
+                                    control.SizeMode = PictureBoxSizeMode.Zoom;
                                 }
 
                             }
@@ -193,33 +201,23 @@ namespace WatanyaPingTester
                             {
                                 if (ipString.Substring(0, ipNetworkLength).Equals("192") || ipString.Substring(0, ipNetworkLength).Equals("172"))
                                 {
-                                    var control = this.Controls.OfType<Label>()
-                                               .FirstOrDefault(c => c.Name == "s" + temp);
-                                    control.ForeColor = Color.White;
-                                    control.BackColor = Color.Red;
+                                    continue;
                                 }
                                 else if (ipString.Substring(0, firstDotIndex).Equals("10"))
                                 {
-                                    var control = this.Controls.OfType<Label>()
-                                               .FirstOrDefault(c => c.Name == "a" + temp);
-                                    control.ForeColor = Color.White;
-                                    control.BackColor = Color.Red;
+                                    var control = (PictureBox)this.GetControlByName(this, "p" + temp);
+                                    control.Image = Image.FromFile(redLEDPath);
+                                    control.SizeMode = PictureBoxSizeMode.Zoom;
                                 }
 
                             }
-                        }catch(Exception e){}
+                        }
+                        catch (Exception e) { }
                     }
                     Thread.Sleep(2000);
                 }
-                catch (Exception ex){}
+                catch (Exception ex) { }
             }
-        }
-
-        private void exitBtn_Click(object sender, EventArgs e)
-        {
-            running = false;
-            t.Abort();
-            this.Close();
         }
     }
 }
