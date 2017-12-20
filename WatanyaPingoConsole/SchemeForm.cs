@@ -94,6 +94,8 @@ namespace WatanyaPingoConsole
                         sn.setLabel(cLabel);
                         cLabel.Text = "" + sn.getIP();
                         sn.setPic(cPic);
+                        cPic.MouseHover += new EventHandler(pictureBoxMouseHoverEventHandler);
+                        cPic.MouseLeave += new EventHandler(pictureBoxMouseLeaveEventHandler);
                         //cLabel.Visible = false;
                         //cLabel.Invoke((MethodInvoker)(() => cLabel.Text = "ID: " + sn.getID()));
                     }
@@ -149,6 +151,25 @@ namespace WatanyaPingoConsole
         {
             Thread t = new Thread(continousUpdate);
             t.Start();
+        }
+
+        private void pictureBoxMouseHoverEventHandler(object sender, System.EventArgs e)
+        {
+
+            PictureBox p = (PictureBox)sender;
+            string labelName = p.Name.Replace("p", "l");
+            var control = this.Controls.OfType<Label>().FirstOrDefault(c => c.Name == labelName);
+            //var control = (Label)this.GetControlByName(this, labelName);
+            control.Visible = true;
+        }
+
+        private void pictureBoxMouseLeaveEventHandler(object sender, System.EventArgs e)
+        {
+            PictureBox p = (PictureBox)sender;
+            string labelName = p.Name.Replace("p", "l");
+            var control = this.Controls.OfType<Label>().FirstOrDefault(c => c.Name == labelName);
+            //var control = (Label)this.GetControlByName(this, labelName);
+            control.Visible = false;
         }
 
         /// /// /// ///
@@ -224,6 +245,14 @@ namespace WatanyaPingoConsole
         private void label21_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+                for (int i = 0; i < schemeNodes.Count; i++)
+                {
+                    schemeNodes[i].getLabel().Visible = !checkBox1.Checked;
+                }
         }
 
     }

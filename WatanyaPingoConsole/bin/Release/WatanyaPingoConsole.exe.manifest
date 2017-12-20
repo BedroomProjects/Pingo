@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WatanyaPingoConsole.exe" size="248808">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WatanyaPingoConsole.exe" size="250344">
       <assemblyIdentity name="WatanyaPingoConsole" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ye69AAUPwKYjsT/IGanTXATIMMiiAtlkXBezVw4p9M4=</dsig:DigestValue>
+        <dsig:DigestValue>6Ze5TnsWuBCfqoJuUa5qgJHPHJEtbJw0+E3Zto3qoY0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

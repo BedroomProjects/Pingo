@@ -141,6 +141,7 @@
             this.l30 = new System.Windows.Forms.Label();
             this.l91 = new System.Windows.Forms.Label();
             this.p91 = new System.Windows.Forms.PictureBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.p1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p3)).BeginInit();
@@ -392,7 +393,6 @@
             this.l26.Size = new System.Drawing.Size(104, 16);
             this.l26.TabIndex = 15;
             this.l26.Text = "169.254.1.26";
-            this.l26.Click += new System.EventHandler(this.label16_Click);
             // 
             // l13
             // 
@@ -417,7 +417,6 @@
             this.l82.Size = new System.Drawing.Size(104, 16);
             this.l82.TabIndex = 17;
             this.l82.Text = "169.254.1.82";
-            this.l82.Click += new System.EventHandler(this.label18_Click);
             // 
             // l32
             // 
@@ -430,7 +429,6 @@
             this.l32.Size = new System.Drawing.Size(104, 16);
             this.l32.TabIndex = 18;
             this.l32.Text = "169.254.1.32";
-            this.l32.Click += new System.EventHandler(this.label19_Click);
             // 
             // l38
             // 
@@ -443,7 +441,6 @@
             this.l38.Size = new System.Drawing.Size(104, 16);
             this.l38.TabIndex = 19;
             this.l38.Text = "169.254.1.38";
-            this.l38.Click += new System.EventHandler(this.label20_Click);
             // 
             // l33
             // 
@@ -456,7 +453,6 @@
             this.l33.Size = new System.Drawing.Size(104, 16);
             this.l33.TabIndex = 20;
             this.l33.Text = "169.254.1.33";
-            this.l33.Click += new System.EventHandler(this.label21_Click);
             // 
             // l37
             // 
@@ -469,7 +465,6 @@
             this.l37.Size = new System.Drawing.Size(104, 16);
             this.l37.TabIndex = 21;
             this.l37.Text = "169.254.1.37";
-            this.l37.Click += new System.EventHandler(this.label22_Click);
             // 
             // l45
             // 
@@ -723,7 +718,6 @@
             this.l83.Size = new System.Drawing.Size(104, 16);
             this.l83.TabIndex = 42;
             this.l83.Text = "169.254.1.83";
-            this.l83.Click += new System.EventHandler(this.label43_Click);
             // 
             // l76
             // 
@@ -1411,6 +1405,18 @@
             this.p91.TabIndex = 113;
             this.p91.TabStop = false;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.checkBox1.Location = new System.Drawing.Point(990, 719);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(66, 17);
+            this.checkBox1.TabIndex = 114;
+            this.checkBox1.Text = "Hide IPs";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // SchemeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1419,6 +1425,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1082, 748);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.p91);
             this.Controls.Add(this.l91);
             this.Controls.Add(this.l30);
@@ -1710,5 +1717,6 @@
         private System.Windows.Forms.Label l30;
         private System.Windows.Forms.Label l91;
         private System.Windows.Forms.PictureBox p91;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
