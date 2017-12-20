@@ -13,42 +13,6 @@ namespace WatanyaPingTester
 {
     static class Program
     {
-        static List<NetworkNode> ants = new List<NetworkNode>();
-
-        //static void sendPing()
-        //{
-        //    string ip = "198.162.0.101";
-        //    Ping ping = new Ping();
-        //    PingReply rp;
-        //    rp = ping.Send(ip);
-        //    if (rp.Status == IPStatus.Success)
-        //        Console.WriteLine("Yos");
-        //    else
-        //        Console.WriteLine("Nop");
-        //    Console.WriteLine("Done.");
-        //}
-
-        static void displayAntennaStatus(NetworkNode a)
-        {
-            Console.WriteLine(a.getName() + " (" + a.getIP() + "): " + a.getStatus());
-        }
-
-        static void updateNetwork()
-        {
-            for (int i = 0; i < ants.Count; i++)
-            {
-                //ants[i].ping();
-            }
-        }
-
-        static void updateDisplay()
-        {
-            for (int i = 0; i < ants.Count; i++)
-            {
-                displayAntennaStatus(ants[i]);
-            }
-        }
-
         static void Main(string[] args)
         {
 

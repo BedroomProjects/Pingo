@@ -53,11 +53,7 @@ namespace WatanyaPingTester
 
                     string temp = ipString.Substring(lastDotIndex);
 
-                    if (ipString.Substring(0, ipNetworkLength).Equals("192") || ipString.Substring(0, ipNetworkLength).Equals("172"))
-                    {
-                        continue;
-                    }
-                    else if (ipString.Substring(0, firstDotIndex).Equals("10"))
+                    if (ipString.Substring(0, firstDotIndex).Equals("10") || ipString.Equals("192.168.1.108") || ipString.Equals("192.168.1.109"))
                     {
                         var control = (PictureBox)this.GetControlByName(this, "p" + temp);
                         control.Image = Image.FromFile(redLEDPath);
@@ -125,11 +121,7 @@ namespace WatanyaPingTester
                     {
                         if (nodes.ElementAt(i).isReachable())
                         {
-                            if (ipString.Substring(0, ipNetworkLength).Equals("192") || ipString.Substring(0, ipNetworkLength).Equals("172"))
-                            {
-                                continue;
-                            }
-                            else if (ipString.Substring(0, firstDotIndex).Equals("10"))
+                            if (ipString.Substring(0, firstDotIndex).Equals("10") || ipString.Equals("192.168.1.108") || ipString.Equals("192.168.1.109"))
                             {
                                 var control = (PictureBox)this.GetControlByName(this, "p" + temp);
                                 control.Image = Image.FromFile(greenLEDPath);
@@ -141,11 +133,7 @@ namespace WatanyaPingTester
                         else
                         {
 
-                            if (ipString.Substring(0, ipNetworkLength).Equals("192") || ipString.Substring(0, ipNetworkLength).Equals("172"))
-                            {
-                                continue;
-                            }
-                            else if (ipString.Substring(0, ipNetworkLength).Equals("10"))
+                            if (ipString.Substring(0, ipNetworkLength).Equals("10") || ipString.Equals("192.168.1.108") || ipString.Equals("192.168.1.109"))
                             {
                                 var control = (PictureBox)this.GetControlByName(this, "p" + temp);
                                 control.Image = Image.FromFile(redLEDPath);
