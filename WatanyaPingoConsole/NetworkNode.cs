@@ -7,7 +7,7 @@ using System.Net.NetworkInformation;
 
 namespace WatanyaPingoConsole
 {
-    class NetworkNode
+    public class NetworkNode
     {
         string ip, name, type, road;
         PingReply rp;

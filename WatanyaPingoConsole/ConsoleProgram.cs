@@ -121,10 +121,6 @@ namespace WatanyaPingoConsole
         static void Main(string[] args)
         {
 
-            Application.EnableVisualStyles();
-            SchemeForm scheme = new SchemeForm();
-            Application.Run(scheme);
-
             // specifing the size and position of the console
             Console.SetWindowSize((Console.LargestWindowWidth)/3, Console.LargestWindowHeight);
             Console.SetWindowPosition(Console.WindowLeft, Console.WindowTop);
@@ -165,6 +161,10 @@ namespace WatanyaPingoConsole
             Console.SetCursorPosition(0, 0);
             Console.WriteLine(fileName);
             Console.WriteLine("=====");
+
+            Application.EnableVisualStyles();
+            SchemeForm scheme = new SchemeForm(ants);
+            Application.Run(scheme);
 
             //// this method desplays the IPs one by one
             //updateNetworkAndDisplay();

@@ -94,6 +94,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SchemeNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -147,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="antenna_key.ico" />
+    <EmbeddedResource Include="imgs\green-icon.bmp" />
+    <EmbeddedResource Include="imgs\red-icon.bmp" />
+    <EmbeddedResource Include="imgs\yellow-icon.bmp" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SchemeForm.resx">
