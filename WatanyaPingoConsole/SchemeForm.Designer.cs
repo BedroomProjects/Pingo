@@ -142,6 +142,13 @@
             this.l91 = new System.Windows.Forms.Label();
             this.p91 = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.p1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p3)).BeginInit();
@@ -198,17 +205,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.p92)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p91)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // l1
             // 
             this.l1.AutoSize = true;
             this.l1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l1.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l1.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l1.ForeColor = System.Drawing.Color.Lime;
             this.l1.Location = new System.Drawing.Point(904, 34);
             this.l1.Name = "l1";
-            this.l1.Size = new System.Drawing.Size(96, 16);
+            this.l1.Size = new System.Drawing.Size(81, 17);
             this.l1.TabIndex = 0;
             this.l1.Text = "169.254.1.1";
             // 
@@ -216,11 +227,11 @@
             // 
             this.l3.AutoSize = true;
             this.l3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l3.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l3.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l3.ForeColor = System.Drawing.Color.Lime;
             this.l3.Location = new System.Drawing.Point(802, 34);
             this.l3.Name = "l3";
-            this.l3.Size = new System.Drawing.Size(96, 16);
+            this.l3.Size = new System.Drawing.Size(81, 17);
             this.l3.TabIndex = 1;
             this.l3.Text = "169.254.1.3";
             this.l3.Click += new System.EventHandler(this.label2_Click);
@@ -229,11 +240,11 @@
             // 
             this.l6.AutoSize = true;
             this.l6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l6.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l6.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l6.ForeColor = System.Drawing.Color.Lime;
             this.l6.Location = new System.Drawing.Point(700, 101);
             this.l6.Name = "l6";
-            this.l6.Size = new System.Drawing.Size(96, 16);
+            this.l6.Size = new System.Drawing.Size(81, 17);
             this.l6.TabIndex = 2;
             this.l6.Text = "169.254.1.6";
             this.l6.Click += new System.EventHandler(this.label3_Click);
@@ -242,11 +253,11 @@
             // 
             this.l7.AutoSize = true;
             this.l7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l7.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l7.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l7.ForeColor = System.Drawing.Color.Lime;
             this.l7.Location = new System.Drawing.Point(554, 37);
             this.l7.Name = "l7";
-            this.l7.Size = new System.Drawing.Size(96, 16);
+            this.l7.Size = new System.Drawing.Size(81, 17);
             this.l7.TabIndex = 3;
             this.l7.Text = "169.254.1.7";
             // 
@@ -254,11 +265,11 @@
             // 
             this.l8.AutoSize = true;
             this.l8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l8.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l8.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l8.ForeColor = System.Drawing.Color.Lime;
             this.l8.Location = new System.Drawing.Point(596, 96);
             this.l8.Name = "l8";
-            this.l8.Size = new System.Drawing.Size(96, 16);
+            this.l8.Size = new System.Drawing.Size(81, 17);
             this.l8.TabIndex = 4;
             this.l8.Text = "169.254.1.8";
             // 
@@ -266,11 +277,11 @@
             // 
             this.l25.AutoSize = true;
             this.l25.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l25.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l25.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l25.ForeColor = System.Drawing.Color.Lime;
             this.l25.Location = new System.Drawing.Point(484, 93);
             this.l25.Name = "l25";
-            this.l25.Size = new System.Drawing.Size(104, 16);
+            this.l25.Size = new System.Drawing.Size(89, 17);
             this.l25.TabIndex = 5;
             this.l25.Text = "169.254.1.25";
             // 
@@ -278,11 +289,11 @@
             // 
             this.l11.AutoSize = true;
             this.l11.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l11.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l11.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l11.ForeColor = System.Drawing.Color.Lime;
             this.l11.Location = new System.Drawing.Point(374, 89);
             this.l11.Name = "l11";
-            this.l11.Size = new System.Drawing.Size(104, 16);
+            this.l11.Size = new System.Drawing.Size(89, 17);
             this.l11.TabIndex = 6;
             this.l11.Text = "169.254.1.11";
             // 
@@ -290,11 +301,11 @@
             // 
             this.l10.AutoSize = true;
             this.l10.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l10.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l10.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l10.ForeColor = System.Drawing.Color.Lime;
             this.l10.Location = new System.Drawing.Point(261, 89);
             this.l10.Name = "l10";
-            this.l10.Size = new System.Drawing.Size(104, 16);
+            this.l10.Size = new System.Drawing.Size(89, 17);
             this.l10.TabIndex = 7;
             this.l10.Text = "169.254.1.10";
             // 
@@ -302,11 +313,11 @@
             // 
             this.l87.AutoSize = true;
             this.l87.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l87.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l87.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l87.ForeColor = System.Drawing.Color.Lime;
             this.l87.Location = new System.Drawing.Point(218, 116);
             this.l87.Name = "l87";
-            this.l87.Size = new System.Drawing.Size(104, 16);
+            this.l87.Size = new System.Drawing.Size(89, 17);
             this.l87.TabIndex = 8;
             this.l87.Text = "169.254.1.87";
             // 
@@ -314,11 +325,11 @@
             // 
             this.l35.AutoSize = true;
             this.l35.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l35.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l35.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l35.ForeColor = System.Drawing.Color.Lime;
             this.l35.Location = new System.Drawing.Point(218, 50);
             this.l35.Name = "l35";
-            this.l35.Size = new System.Drawing.Size(104, 16);
+            this.l35.Size = new System.Drawing.Size(89, 17);
             this.l35.TabIndex = 9;
             this.l35.Text = "169.254.1.35";
             // 
@@ -326,11 +337,11 @@
             // 
             this.l36.AutoSize = true;
             this.l36.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l36.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l36.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l36.ForeColor = System.Drawing.Color.Lime;
             this.l36.Location = new System.Drawing.Point(73, 25);
             this.l36.Name = "l36";
-            this.l36.Size = new System.Drawing.Size(104, 16);
+            this.l36.Size = new System.Drawing.Size(89, 17);
             this.l36.TabIndex = 10;
             this.l36.Text = "169.254.1.36";
             // 
@@ -338,11 +349,11 @@
             // 
             this.l88.AutoSize = true;
             this.l88.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l88.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l88.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l88.ForeColor = System.Drawing.Color.Lime;
             this.l88.Location = new System.Drawing.Point(73, 105);
             this.l88.Name = "l88";
-            this.l88.Size = new System.Drawing.Size(104, 16);
+            this.l88.Size = new System.Drawing.Size(89, 17);
             this.l88.TabIndex = 11;
             this.l88.Text = "169.254.1.88";
             // 
@@ -350,11 +361,11 @@
             // 
             this.l86.AutoSize = true;
             this.l86.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l86.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l86.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l86.ForeColor = System.Drawing.Color.Lime;
             this.l86.Location = new System.Drawing.Point(83, 217);
             this.l86.Name = "l86";
-            this.l86.Size = new System.Drawing.Size(104, 16);
+            this.l86.Size = new System.Drawing.Size(89, 17);
             this.l86.TabIndex = 12;
             this.l86.Text = "169.254.1.86";
             // 
@@ -362,11 +373,11 @@
             // 
             this.l9.AutoSize = true;
             this.l9.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l9.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l9.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l9.ForeColor = System.Drawing.Color.Lime;
             this.l9.Location = new System.Drawing.Point(272, 192);
             this.l9.Name = "l9";
-            this.l9.Size = new System.Drawing.Size(96, 16);
+            this.l9.Size = new System.Drawing.Size(81, 17);
             this.l9.TabIndex = 13;
             this.l9.Text = "169.254.1.9";
             // 
@@ -374,11 +385,11 @@
             // 
             this.l12.AutoSize = true;
             this.l12.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l12.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l12.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l12.ForeColor = System.Drawing.Color.Lime;
             this.l12.Location = new System.Drawing.Point(410, 187);
             this.l12.Name = "l12";
-            this.l12.Size = new System.Drawing.Size(104, 16);
+            this.l12.Size = new System.Drawing.Size(89, 17);
             this.l12.TabIndex = 14;
             this.l12.Text = "169.254.1.12";
             // 
@@ -386,11 +397,11 @@
             // 
             this.l26.AutoSize = true;
             this.l26.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l26.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l26.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l26.ForeColor = System.Drawing.Color.Lime;
             this.l26.Location = new System.Drawing.Point(476, 158);
             this.l26.Name = "l26";
-            this.l26.Size = new System.Drawing.Size(104, 16);
+            this.l26.Size = new System.Drawing.Size(89, 17);
             this.l26.TabIndex = 15;
             this.l26.Text = "169.254.1.26";
             // 
@@ -398,11 +409,11 @@
             // 
             this.l13.AutoSize = true;
             this.l13.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l13.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l13.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l13.ForeColor = System.Drawing.Color.Lime;
             this.l13.Location = new System.Drawing.Point(418, 237);
             this.l13.Name = "l13";
-            this.l13.Size = new System.Drawing.Size(104, 16);
+            this.l13.Size = new System.Drawing.Size(89, 17);
             this.l13.TabIndex = 16;
             this.l13.Text = "169.254.1.13";
             // 
@@ -410,11 +421,11 @@
             // 
             this.l82.AutoSize = true;
             this.l82.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l82.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l82.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l82.ForeColor = System.Drawing.Color.Lime;
             this.l82.Location = new System.Drawing.Point(476, 270);
             this.l82.Name = "l82";
-            this.l82.Size = new System.Drawing.Size(104, 16);
+            this.l82.Size = new System.Drawing.Size(89, 17);
             this.l82.TabIndex = 17;
             this.l82.Text = "169.254.1.82";
             // 
@@ -422,11 +433,11 @@
             // 
             this.l32.AutoSize = true;
             this.l32.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l32.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l32.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l32.ForeColor = System.Drawing.Color.Lime;
             this.l32.Location = new System.Drawing.Point(719, 191);
             this.l32.Name = "l32";
-            this.l32.Size = new System.Drawing.Size(104, 16);
+            this.l32.Size = new System.Drawing.Size(89, 17);
             this.l32.TabIndex = 18;
             this.l32.Text = "169.254.1.32";
             // 
@@ -434,11 +445,11 @@
             // 
             this.l38.AutoSize = true;
             this.l38.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l38.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l38.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l38.ForeColor = System.Drawing.Color.Lime;
-            this.l38.Location = new System.Drawing.Point(833, 231);
+            this.l38.Location = new System.Drawing.Point(825, 235);
             this.l38.Name = "l38";
-            this.l38.Size = new System.Drawing.Size(104, 16);
+            this.l38.Size = new System.Drawing.Size(89, 17);
             this.l38.TabIndex = 19;
             this.l38.Text = "169.254.1.38";
             // 
@@ -446,11 +457,11 @@
             // 
             this.l33.AutoSize = true;
             this.l33.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l33.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l33.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l33.ForeColor = System.Drawing.Color.Lime;
             this.l33.Location = new System.Drawing.Point(904, 174);
             this.l33.Name = "l33";
-            this.l33.Size = new System.Drawing.Size(104, 16);
+            this.l33.Size = new System.Drawing.Size(89, 17);
             this.l33.TabIndex = 20;
             this.l33.Text = "169.254.1.33";
             // 
@@ -458,11 +469,11 @@
             // 
             this.l37.AutoSize = true;
             this.l37.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l37.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l37.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l37.ForeColor = System.Drawing.Color.Lime;
             this.l37.Location = new System.Drawing.Point(904, 258);
             this.l37.Name = "l37";
-            this.l37.Size = new System.Drawing.Size(104, 16);
+            this.l37.Size = new System.Drawing.Size(89, 17);
             this.l37.TabIndex = 21;
             this.l37.Text = "169.254.1.37";
             // 
@@ -470,11 +481,11 @@
             // 
             this.l45.AutoSize = true;
             this.l45.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l45.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l45.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l45.ForeColor = System.Drawing.Color.Lime;
             this.l45.Location = new System.Drawing.Point(723, 347);
             this.l45.Name = "l45";
-            this.l45.Size = new System.Drawing.Size(104, 16);
+            this.l45.Size = new System.Drawing.Size(89, 17);
             this.l45.TabIndex = 22;
             this.l45.Text = "169.254.1.45";
             // 
@@ -482,11 +493,11 @@
             // 
             this.l48.AutoSize = true;
             this.l48.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l48.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l48.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l48.ForeColor = System.Drawing.Color.Lime;
             this.l48.Location = new System.Drawing.Point(811, 392);
             this.l48.Name = "l48";
-            this.l48.Size = new System.Drawing.Size(104, 16);
+            this.l48.Size = new System.Drawing.Size(89, 17);
             this.l48.TabIndex = 23;
             this.l48.Text = "169.254.1.48";
             // 
@@ -494,11 +505,11 @@
             // 
             this.l52.AutoSize = true;
             this.l52.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l52.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l52.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l52.ForeColor = System.Drawing.Color.Lime;
             this.l52.Location = new System.Drawing.Point(692, 392);
             this.l52.Name = "l52";
-            this.l52.Size = new System.Drawing.Size(104, 16);
+            this.l52.Size = new System.Drawing.Size(89, 17);
             this.l52.TabIndex = 24;
             this.l52.Text = "169.254.1.52";
             // 
@@ -506,11 +517,11 @@
             // 
             this.l47.AutoSize = true;
             this.l47.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l47.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l47.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l47.ForeColor = System.Drawing.Color.Lime;
             this.l47.Location = new System.Drawing.Point(904, 347);
             this.l47.Name = "l47";
-            this.l47.Size = new System.Drawing.Size(104, 16);
+            this.l47.Size = new System.Drawing.Size(89, 17);
             this.l47.TabIndex = 25;
             this.l47.Text = "169.254.1.47";
             // 
@@ -518,11 +529,11 @@
             // 
             this.l51.AutoSize = true;
             this.l51.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l51.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l51.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l51.ForeColor = System.Drawing.Color.Lime;
             this.l51.Location = new System.Drawing.Point(788, 472);
             this.l51.Name = "l51";
-            this.l51.Size = new System.Drawing.Size(104, 16);
+            this.l51.Size = new System.Drawing.Size(89, 17);
             this.l51.TabIndex = 26;
             this.l51.Text = "169.254.1.51";
             // 
@@ -530,11 +541,11 @@
             // 
             this.l53.AutoSize = true;
             this.l53.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l53.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l53.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l53.ForeColor = System.Drawing.Color.Lime;
             this.l53.Location = new System.Drawing.Point(700, 533);
             this.l53.Name = "l53";
-            this.l53.Size = new System.Drawing.Size(104, 16);
+            this.l53.Size = new System.Drawing.Size(89, 17);
             this.l53.TabIndex = 27;
             this.l53.Text = "169.254.1.53";
             // 
@@ -542,11 +553,11 @@
             // 
             this.l68.AutoSize = true;
             this.l68.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l68.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l68.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l68.ForeColor = System.Drawing.Color.Lime;
             this.l68.Location = new System.Drawing.Point(554, 490);
             this.l68.Name = "l68";
-            this.l68.Size = new System.Drawing.Size(104, 16);
+            this.l68.Size = new System.Drawing.Size(89, 17);
             this.l68.TabIndex = 28;
             this.l68.Text = "169.254.1.68";
             // 
@@ -554,11 +565,11 @@
             // 
             this.l70.AutoSize = true;
             this.l70.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l70.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l70.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l70.ForeColor = System.Drawing.Color.Lime;
             this.l70.Location = new System.Drawing.Point(495, 537);
             this.l70.Name = "l70";
-            this.l70.Size = new System.Drawing.Size(104, 16);
+            this.l70.Size = new System.Drawing.Size(89, 17);
             this.l70.TabIndex = 29;
             this.l70.Text = "169.254.1.70";
             // 
@@ -566,11 +577,11 @@
             // 
             this.l16.AutoSize = true;
             this.l16.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l16.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l16.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l16.ForeColor = System.Drawing.Color.Lime;
             this.l16.Location = new System.Drawing.Point(409, 490);
             this.l16.Name = "l16";
-            this.l16.Size = new System.Drawing.Size(104, 16);
+            this.l16.Size = new System.Drawing.Size(89, 17);
             this.l16.TabIndex = 30;
             this.l16.Text = "169.254.1.16";
             // 
@@ -578,11 +589,11 @@
             // 
             this.l14.AutoSize = true;
             this.l14.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l14.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l14.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l14.ForeColor = System.Drawing.Color.Lime;
             this.l14.Location = new System.Drawing.Point(409, 347);
             this.l14.Name = "l14";
-            this.l14.Size = new System.Drawing.Size(104, 16);
+            this.l14.Size = new System.Drawing.Size(89, 17);
             this.l14.TabIndex = 31;
             this.l14.Text = "169.254.1.14";
             // 
@@ -590,11 +601,11 @@
             // 
             this.l81.AutoSize = true;
             this.l81.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l81.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l81.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l81.ForeColor = System.Drawing.Color.Lime;
-            this.l81.Location = new System.Drawing.Point(601, 328);
+            this.l81.Location = new System.Drawing.Point(609, 328);
             this.l81.Name = "l81";
-            this.l81.Size = new System.Drawing.Size(104, 16);
+            this.l81.Size = new System.Drawing.Size(89, 17);
             this.l81.TabIndex = 32;
             this.l81.Text = "169.254.1.81";
             // 
@@ -602,11 +613,11 @@
             // 
             this.l34.AutoSize = true;
             this.l34.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l34.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l34.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l34.ForeColor = System.Drawing.Color.Lime;
             this.l34.Location = new System.Drawing.Point(754, 172);
             this.l34.Name = "l34";
-            this.l34.Size = new System.Drawing.Size(104, 16);
+            this.l34.Size = new System.Drawing.Size(89, 17);
             this.l34.TabIndex = 33;
             this.l34.Text = "169.254.1.34";
             this.l34.Click += new System.EventHandler(this.label34_Click);
@@ -615,11 +626,11 @@
             // 
             this.l84.AutoSize = true;
             this.l84.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l84.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l84.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l84.ForeColor = System.Drawing.Color.Lime;
             this.l84.Location = new System.Drawing.Point(254, 347);
             this.l84.Name = "l84";
-            this.l84.Size = new System.Drawing.Size(104, 16);
+            this.l84.Size = new System.Drawing.Size(89, 17);
             this.l84.TabIndex = 34;
             this.l84.Text = "169.254.1.84";
             // 
@@ -627,11 +638,11 @@
             // 
             this.l90.AutoSize = true;
             this.l90.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l90.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l90.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l90.ForeColor = System.Drawing.Color.Lime;
             this.l90.Location = new System.Drawing.Point(120, 356);
             this.l90.Name = "l90";
-            this.l90.Size = new System.Drawing.Size(104, 16);
+            this.l90.Size = new System.Drawing.Size(89, 17);
             this.l90.TabIndex = 35;
             this.l90.Text = "169.254.1.90";
             // 
@@ -639,11 +650,11 @@
             // 
             this.l80.AutoSize = true;
             this.l80.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l80.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l80.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l80.ForeColor = System.Drawing.Color.Lime;
             this.l80.Location = new System.Drawing.Point(233, 642);
             this.l80.Name = "l80";
-            this.l80.Size = new System.Drawing.Size(104, 16);
+            this.l80.Size = new System.Drawing.Size(89, 17);
             this.l80.TabIndex = 36;
             this.l80.Text = "169.254.1.80";
             // 
@@ -651,11 +662,11 @@
             // 
             this.l79.AutoSize = true;
             this.l79.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l79.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l79.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l79.ForeColor = System.Drawing.Color.Lime;
             this.l79.Location = new System.Drawing.Point(378, 643);
             this.l79.Name = "l79";
-            this.l79.Size = new System.Drawing.Size(104, 16);
+            this.l79.Size = new System.Drawing.Size(89, 17);
             this.l79.TabIndex = 37;
             this.l79.Text = "169.254.1.79";
             // 
@@ -663,11 +674,11 @@
             // 
             this.l69.AutoSize = true;
             this.l69.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l69.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l69.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l69.ForeColor = System.Drawing.Color.Lime;
             this.l69.Location = new System.Drawing.Point(603, 621);
             this.l69.Name = "l69";
-            this.l69.Size = new System.Drawing.Size(104, 16);
+            this.l69.Size = new System.Drawing.Size(89, 17);
             this.l69.TabIndex = 38;
             this.l69.Text = "169.254.1.69";
             // 
@@ -675,11 +686,11 @@
             // 
             this.l75.AutoSize = true;
             this.l75.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l75.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l75.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l75.ForeColor = System.Drawing.Color.Lime;
             this.l75.Location = new System.Drawing.Point(539, 683);
             this.l75.Name = "l75";
-            this.l75.Size = new System.Drawing.Size(104, 16);
+            this.l75.Size = new System.Drawing.Size(89, 17);
             this.l75.TabIndex = 39;
             this.l75.Text = "169.254.1.75";
             // 
@@ -687,11 +698,11 @@
             // 
             this.l85.AutoSize = true;
             this.l85.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l85.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l85.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l85.ForeColor = System.Drawing.Color.Lime;
             this.l85.Location = new System.Drawing.Point(240, 232);
             this.l85.Name = "l85";
-            this.l85.Size = new System.Drawing.Size(104, 16);
+            this.l85.Size = new System.Drawing.Size(89, 17);
             this.l85.TabIndex = 40;
             this.l85.Text = "169.254.1.85";
             // 
@@ -699,11 +710,11 @@
             // 
             this.l29.AutoSize = true;
             this.l29.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l29.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l29.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l29.ForeColor = System.Drawing.Color.Lime;
             this.l29.Location = new System.Drawing.Point(609, 191);
             this.l29.Name = "l29";
-            this.l29.Size = new System.Drawing.Size(104, 16);
+            this.l29.Size = new System.Drawing.Size(89, 17);
             this.l29.TabIndex = 41;
             this.l29.Text = "169.254.1.29";
             // 
@@ -711,11 +722,11 @@
             // 
             this.l83.AutoSize = true;
             this.l83.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l83.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l83.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l83.ForeColor = System.Drawing.Color.Lime;
             this.l83.Location = new System.Drawing.Point(304, 258);
             this.l83.Name = "l83";
-            this.l83.Size = new System.Drawing.Size(104, 16);
+            this.l83.Size = new System.Drawing.Size(89, 17);
             this.l83.TabIndex = 42;
             this.l83.Text = "169.254.1.83";
             // 
@@ -723,11 +734,11 @@
             // 
             this.l76.AutoSize = true;
             this.l76.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l76.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l76.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l76.ForeColor = System.Drawing.Color.Lime;
             this.l76.Location = new System.Drawing.Point(410, 683);
             this.l76.Name = "l76";
-            this.l76.Size = new System.Drawing.Size(104, 16);
+            this.l76.Size = new System.Drawing.Size(89, 17);
             this.l76.TabIndex = 44;
             this.l76.Text = "169.254.1.76";
             // 
@@ -735,11 +746,11 @@
             // 
             this.l89.AutoSize = true;
             this.l89.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l89.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l89.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l89.ForeColor = System.Drawing.Color.Lime;
             this.l89.Location = new System.Drawing.Point(118, 277);
             this.l89.Name = "l89";
-            this.l89.Size = new System.Drawing.Size(104, 16);
+            this.l89.Size = new System.Drawing.Size(89, 17);
             this.l89.TabIndex = 45;
             this.l89.Text = "169.254.1.89";
             // 
@@ -747,11 +758,11 @@
             // 
             this.l15.AutoSize = true;
             this.l15.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l15.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l15.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l15.ForeColor = System.Drawing.Color.Lime;
             this.l15.Location = new System.Drawing.Point(409, 390);
             this.l15.Name = "l15";
-            this.l15.Size = new System.Drawing.Size(104, 16);
+            this.l15.Size = new System.Drawing.Size(89, 17);
             this.l15.TabIndex = 46;
             this.l15.Text = "169.254.1.15";
             // 
@@ -983,7 +994,7 @@
             // p81
             // 
             this.p81.Image = ((System.Drawing.Image)(resources.GetObject("p81.Image")));
-            this.p81.Location = new System.Drawing.Point(581, 323);
+            this.p81.Location = new System.Drawing.Point(590, 324);
             this.p81.Name = "p81";
             this.p81.Size = new System.Drawing.Size(22, 21);
             this.p81.TabIndex = 70;
@@ -1046,7 +1057,7 @@
             // p82
             // 
             this.p82.Image = ((System.Drawing.Image)(resources.GetObject("p82.Image")));
-            this.p82.Location = new System.Drawing.Point(581, 264);
+            this.p82.Location = new System.Drawing.Point(590, 262);
             this.p82.Name = "p82";
             this.p82.Size = new System.Drawing.Size(22, 21);
             this.p82.TabIndex = 77;
@@ -1163,7 +1174,7 @@
             // p38
             // 
             this.p38.Image = ((System.Drawing.Image)(resources.GetObject("p38.Image")));
-            this.p38.Location = new System.Drawing.Point(828, 210);
+            this.p38.Location = new System.Drawing.Point(828, 213);
             this.p38.Name = "p38";
             this.p38.Size = new System.Drawing.Size(22, 21);
             this.p38.TabIndex = 91;
@@ -1220,11 +1231,11 @@
             // 
             this.l5.AutoSize = true;
             this.l5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l5.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l5.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l5.ForeColor = System.Drawing.Color.Lime;
             this.l5.Location = new System.Drawing.Point(699, 34);
             this.l5.Name = "l5";
-            this.l5.Size = new System.Drawing.Size(96, 16);
+            this.l5.Size = new System.Drawing.Size(81, 17);
             this.l5.TabIndex = 97;
             this.l5.Text = "169.254.1.5";
             this.l5.Click += new System.EventHandler(this.label47_Click);
@@ -1243,11 +1254,11 @@
             // 
             this.l4.AutoSize = true;
             this.l4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l4.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l4.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l4.ForeColor = System.Drawing.Color.Lime;
             this.l4.Location = new System.Drawing.Point(802, 101);
             this.l4.Name = "l4";
-            this.l4.Size = new System.Drawing.Size(96, 16);
+            this.l4.Size = new System.Drawing.Size(81, 17);
             this.l4.TabIndex = 99;
             this.l4.Text = "169.254.1.4";
             this.l4.Click += new System.EventHandler(this.label48_Click);
@@ -1266,11 +1277,11 @@
             // 
             this.l2.AutoSize = true;
             this.l2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l2.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l2.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l2.ForeColor = System.Drawing.Color.Lime;
             this.l2.Location = new System.Drawing.Point(904, 101);
             this.l2.Name = "l2";
-            this.l2.Size = new System.Drawing.Size(96, 16);
+            this.l2.Size = new System.Drawing.Size(81, 17);
             this.l2.TabIndex = 101;
             this.l2.Text = "169.254.1.2";
             // 
@@ -1278,11 +1289,11 @@
             // 
             this.l27.AutoSize = true;
             this.l27.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l27.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l27.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l27.ForeColor = System.Drawing.Color.Lime;
             this.l27.Location = new System.Drawing.Point(573, 118);
             this.l27.Name = "l27";
-            this.l27.Size = new System.Drawing.Size(104, 16);
+            this.l27.Size = new System.Drawing.Size(89, 17);
             this.l27.TabIndex = 102;
             this.l27.Text = "169.254.1.27";
             // 
@@ -1299,11 +1310,11 @@
             // 
             this.l28.AutoSize = true;
             this.l28.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l28.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l28.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l28.ForeColor = System.Drawing.Color.Lime;
             this.l28.Location = new System.Drawing.Point(620, 158);
             this.l28.Name = "l28";
-            this.l28.Size = new System.Drawing.Size(104, 16);
+            this.l28.Size = new System.Drawing.Size(89, 17);
             this.l28.TabIndex = 104;
             this.l28.Text = "169.254.1.28";
             // 
@@ -1320,11 +1331,11 @@
             // 
             this.l31.AutoSize = true;
             this.l31.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l31.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l31.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l31.ForeColor = System.Drawing.Color.Lime;
-            this.l31.Location = new System.Drawing.Point(601, 253);
+            this.l31.Location = new System.Drawing.Point(609, 262);
             this.l31.Name = "l31";
-            this.l31.Size = new System.Drawing.Size(104, 16);
+            this.l31.Size = new System.Drawing.Size(89, 17);
             this.l31.TabIndex = 106;
             this.l31.Text = "169.254.1.31";
             // 
@@ -1342,11 +1353,11 @@
             // 
             this.l92.AutoSize = true;
             this.l92.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l92.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l92.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l92.ForeColor = System.Drawing.Color.Lime;
             this.l92.Location = new System.Drawing.Point(120, 472);
             this.l92.Name = "l92";
-            this.l92.Size = new System.Drawing.Size(104, 16);
+            this.l92.Size = new System.Drawing.Size(89, 17);
             this.l92.TabIndex = 108;
             this.l92.Text = "169.254.1.92";
             // 
@@ -1354,11 +1365,11 @@
             // 
             this.l46.AutoSize = true;
             this.l46.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l46.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l46.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l46.ForeColor = System.Drawing.Color.Lime;
             this.l46.Location = new System.Drawing.Point(783, 270);
             this.l46.Name = "l46";
-            this.l46.Size = new System.Drawing.Size(104, 16);
+            this.l46.Size = new System.Drawing.Size(89, 17);
             this.l46.TabIndex = 109;
             this.l46.Text = "169.254.1.46";
             // 
@@ -1375,11 +1386,11 @@
             // 
             this.l30.AutoSize = true;
             this.l30.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l30.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l30.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l30.ForeColor = System.Drawing.Color.Lime;
             this.l30.Location = new System.Drawing.Point(723, 231);
             this.l30.Name = "l30";
-            this.l30.Size = new System.Drawing.Size(104, 16);
+            this.l30.Size = new System.Drawing.Size(89, 17);
             this.l30.TabIndex = 111;
             this.l30.Text = "169.254.1.30";
             // 
@@ -1387,11 +1398,11 @@
             // 
             this.l91.AutoSize = true;
             this.l91.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.l91.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l91.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l91.ForeColor = System.Drawing.Color.Lime;
             this.l91.Location = new System.Drawing.Point(120, 416);
             this.l91.Name = "l91";
-            this.l91.Size = new System.Drawing.Size(104, 16);
+            this.l91.Size = new System.Drawing.Size(89, 17);
             this.l91.TabIndex = 112;
             this.l91.Text = "169.254.1.91";
             // 
@@ -1408,14 +1419,93 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox1.Location = new System.Drawing.Point(990, 719);
+            this.checkBox1.Location = new System.Drawing.Point(990, 619);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(66, 17);
             this.checkBox1.TabIndex = 114;
             this.checkBox1.Text = "Hide IPs";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(881, 643);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(175, 85);
+            this.panel1.TabIndex = 115;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 57);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(22, 21);
+            this.pictureBox1.TabIndex = 116;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(3, 30);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(22, 21);
+            this.pictureBox2.TabIndex = 117;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(22, 21);
+            this.pictureBox3.TabIndex = 118;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(31, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 17);
+            this.label1.TabIndex = 119;
+            this.label1.Text = "Online Antenna";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(31, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(128, 17);
+            this.label2.TabIndex = 120;
+            this.label2.Text = "Unreachable Antenna";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(31, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 17);
+            this.label3.TabIndex = 121;
+            this.label3.Text = "Timeout";
             // 
             // SchemeForm
             // 
@@ -1425,6 +1515,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1082, 748);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.p91);
             this.Controls.Add(this.l91);
@@ -1540,8 +1631,10 @@
             this.Controls.Add(this.l1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Lime;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SchemeForm";
             this.Text = "Alex Road Network Scheme";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.p1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p3)).EndInit();
@@ -1598,6 +1691,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.p92)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p91)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1718,5 +1816,12 @@
         private System.Windows.Forms.Label l91;
         private System.Windows.Forms.PictureBox p91;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

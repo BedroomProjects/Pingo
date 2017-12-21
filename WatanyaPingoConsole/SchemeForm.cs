@@ -17,7 +17,7 @@ namespace WatanyaPingoConsole
     {
 
         int secondsPerPing = 1;
-        bool showIPs = true;
+        bool showIPs = false;
 
         List<SchemeNode> schemeNodes = new List<SchemeNode>();
         public SchemeForm(List<NetworkNode> networkNodes)
