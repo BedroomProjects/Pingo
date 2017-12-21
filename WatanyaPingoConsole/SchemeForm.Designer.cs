@@ -759,7 +759,7 @@
             // 
             this.p1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.p1.Image = ((System.Drawing.Image)(resources.GetObject("p1.Image")));
-            this.p1.Location = new System.Drawing.Point(902, 56);
+            this.p1.Location = new System.Drawing.Point(907, 56);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(22, 21);
             this.p1.TabIndex = 47;
@@ -947,9 +947,9 @@
             // p12
             // 
             this.p12.Image = ((System.Drawing.Image)(resources.GetObject("p12.Image")));
-            this.p12.Location = new System.Drawing.Point(431, 167);
+            this.p12.Location = new System.Drawing.Point(433, 168);
             this.p12.Name = "p12";
-            this.p12.Size = new System.Drawing.Size(22, 21);
+            this.p12.Size = new System.Drawing.Size(23, 19);
             this.p12.TabIndex = 66;
             this.p12.TabStop = false;
             // 
@@ -1001,9 +1001,9 @@
             // p70
             // 
             this.p70.Image = ((System.Drawing.Image)(resources.GetObject("p70.Image")));
-            this.p70.Location = new System.Drawing.Point(581, 556);
+            this.p70.Location = new System.Drawing.Point(581, 553);
             this.p70.Name = "p70";
-            this.p70.Size = new System.Drawing.Size(22, 21);
+            this.p70.Size = new System.Drawing.Size(21, 21);
             this.p70.TabIndex = 72;
             this.p70.TabStop = false;
             // 
@@ -1046,7 +1046,7 @@
             // p82
             // 
             this.p82.Image = ((System.Drawing.Image)(resources.GetObject("p82.Image")));
-            this.p82.Location = new System.Drawing.Point(581, 265);
+            this.p82.Location = new System.Drawing.Point(581, 264);
             this.p82.Name = "p82";
             this.p82.Size = new System.Drawing.Size(22, 21);
             this.p82.TabIndex = 77;
@@ -1055,7 +1055,7 @@
             // p46
             // 
             this.p46.Image = ((System.Drawing.Image)(resources.GetObject("p46.Image")));
-            this.p46.Location = new System.Drawing.Point(766, 250);
+            this.p46.Location = new System.Drawing.Point(766, 253);
             this.p46.Name = "p46";
             this.p46.Size = new System.Drawing.Size(22, 21);
             this.p46.TabIndex = 78;
@@ -1082,7 +1082,7 @@
             // p37
             // 
             this.p37.Image = ((System.Drawing.Image)(resources.GetObject("p37.Image")));
-            this.p37.Location = new System.Drawing.Point(902, 277);
+            this.p37.Location = new System.Drawing.Point(907, 277);
             this.p37.Name = "p37";
             this.p37.Size = new System.Drawing.Size(22, 21);
             this.p37.TabIndex = 81;
@@ -1091,7 +1091,7 @@
             // p33
             // 
             this.p33.Image = ((System.Drawing.Image)(resources.GetObject("p33.Image")));
-            this.p33.Location = new System.Drawing.Point(902, 191);
+            this.p33.Location = new System.Drawing.Point(907, 191);
             this.p33.Name = "p33";
             this.p33.Size = new System.Drawing.Size(22, 21);
             this.p33.TabIndex = 82;
@@ -1100,7 +1100,7 @@
             // p47
             // 
             this.p47.Image = ((System.Drawing.Image)(resources.GetObject("p47.Image")));
-            this.p47.Location = new System.Drawing.Point(902, 366);
+            this.p47.Location = new System.Drawing.Point(907, 368);
             this.p47.Name = "p47";
             this.p47.Size = new System.Drawing.Size(22, 21);
             this.p47.TabIndex = 83;
@@ -1256,7 +1256,7 @@
             // 
             this.p2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.p2.Image = ((System.Drawing.Image)(resources.GetObject("p2.Image")));
-            this.p2.Location = new System.Drawing.Point(902, 77);
+            this.p2.Location = new System.Drawing.Point(907, 77);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(22, 21);
             this.p2.TabIndex = 100;

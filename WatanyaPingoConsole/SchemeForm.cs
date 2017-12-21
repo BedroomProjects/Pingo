@@ -17,6 +17,7 @@ namespace WatanyaPingoConsole
     {
 
         int secondsPerPing = 1;
+        bool showIPs = true;
 
         List<SchemeNode> schemeNodes = new List<SchemeNode>();
         public SchemeForm(List<NetworkNode> networkNodes)
@@ -93,6 +94,7 @@ namespace WatanyaPingoConsole
                     {
                         sn.setLabel(cLabel);
                         cLabel.Text = "" + sn.getIP();
+                        cLabel.Visible = showIPs;
                         sn.setPic(cPic);
                         cPic.MouseHover += new EventHandler(pictureBoxMouseHoverEventHandler);
                         cPic.MouseLeave += new EventHandler(pictureBoxMouseLeaveEventHandler);
@@ -126,14 +128,17 @@ namespace WatanyaPingoConsole
                 if (curNodeStatus == "Online")
                 {
                     setPicToGreen(schemeNodes[i].getPic());
+                    schemeNodes[i].getLabel().ForeColor = Color.LightGreen;
                 }
                 else if (curNodeStatus == "Offline")
                 {
                     setPicToRed(schemeNodes[i].getPic());
+                    schemeNodes[i].getLabel().ForeColor = Color.LightPink;
                 }
                 else if (curNodeStatus == "Timeout")
                 {
                     setPicToYellow(schemeNodes[i].getPic());
+                    schemeNodes[i].getLabel().ForeColor = Color.Yellow;
                 }
             }
         }
@@ -155,21 +160,26 @@ namespace WatanyaPingoConsole
 
         private void pictureBoxMouseHoverEventHandler(object sender, System.EventArgs e)
         {
-
-            PictureBox p = (PictureBox)sender;
-            string labelName = p.Name.Replace("p", "l");
-            var control = this.Controls.OfType<Label>().FirstOrDefault(c => c.Name == labelName);
-            //var control = (Label)this.GetControlByName(this, labelName);
-            control.Visible = true;
+            if (!showIPs)
+            {
+                PictureBox p = (PictureBox)sender;
+                string labelName = p.Name.Replace("p", "l");
+                var control = this.Controls.OfType<Label>().FirstOrDefault(c => c.Name == labelName);
+                //var control = (Label)this.GetControlByName(this, labelName);
+                control.Visible = true;
+            }
         }
 
         private void pictureBoxMouseLeaveEventHandler(object sender, System.EventArgs e)
         {
-            PictureBox p = (PictureBox)sender;
-            string labelName = p.Name.Replace("p", "l");
-            var control = this.Controls.OfType<Label>().FirstOrDefault(c => c.Name == labelName);
-            //var control = (Label)this.GetControlByName(this, labelName);
-            control.Visible = false;
+            if (!showIPs)
+            {
+                PictureBox p = (PictureBox)sender;
+                string labelName = p.Name.Replace("p", "l");
+                var control = this.Controls.OfType<Label>().FirstOrDefault(c => c.Name == labelName);
+                //var control = (Label)this.GetControlByName(this, labelName);
+                control.Visible = false;
+            }
         }
 
         /// /// /// ///
@@ -249,6 +259,7 @@ namespace WatanyaPingoConsole
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            showIPs = !checkBox1.Checked;
                 for (int i = 0; i < schemeNodes.Count; i++)
                 {
                     schemeNodes[i].getLabel().Visible = !checkBox1.Checked;
