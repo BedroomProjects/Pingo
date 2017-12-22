@@ -19,7 +19,7 @@ namespace WatanyaPingTester
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new IPsAsListForm());
-            //Application.Run(new CairoSokhnaOldSchemeForm());
+            //Application.Run(new Cairo_Sokhna());
             //Application.Run(new CairoSokhnaDiagramForm());
             Application.Run(new StartScreen());
         }

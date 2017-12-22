@@ -13,28 +13,26 @@ using System.Threading;
 
 namespace WatanyaPingTester
 {
-    public partial class CairoSokhnaDiagramForm : Form
+    public partial class CairoAlexDiagramForm : Form
     {
+
         List<NetworkNode> nodes;
         string path, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath;
         ExcelToNode etn = new ExcelToNode();
-        string fileName = "test.xlsx";
+        string fileName = "alex_scheme.xlsx";
         List<string> nodesStatusList;
         static Thread t;
         bool running = false;
         ToolTip ttip = new ToolTip();
-
-        public CairoSokhnaDiagramForm()
+        public CairoAlexDiagramForm()
         {
             InitializeComponent();
-
             // full screen above taskbar
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
 
             // Adding form closing event handler
-            this.FormClosing += new FormClosingEventHandler(CairoSokhnaDiagram_Closing);
-
+            this.FormClosing += new FormClosingEventHandler(CairoAlexDiagram_Closing);
             t = new Thread(updateStatus);
 
             nodes = etn.getNetworkNodes(fileName);
@@ -58,7 +56,7 @@ namespace WatanyaPingTester
 
                     string temp = ipString.Substring(lastDotIndex);
 
-                    if (ipString.Substring(0, firstDotIndex).Equals("10") || ipString.Equals("192.168.1.108") || ipString.Equals("192.168.1.109"))
+                    if (ipString.Substring(0, firstDotIndex).Equals("169"))
                     {
                         var control = (PictureBox)this.GetControlByName(this, "p" + temp);
                         var control1 = (Label)this.GetControlByName(this, "l" + temp);
@@ -79,6 +77,13 @@ namespace WatanyaPingTester
                 // Displays the MessageBox.
                 result = MessageBox.Show(e.Message, "Error", buttons);
             }
+        }
+
+
+
+        private void CairoAlexDiagram_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            
         }
 
         public Control GetControlByName(Control ParentCntl, string NameToSearch)
@@ -130,7 +135,7 @@ namespace WatanyaPingTester
                     {
                         if (nodes.ElementAt(i).isReachable())
                         {
-                            if (ipString.Substring(0, firstDotIndex).Equals("10") || ipString.Equals("192.168.1.108") || ipString.Equals("192.168.1.109"))
+                            if (ipString.Substring(0, firstDotIndex).Equals("169"))
                             {
                                 var control = (PictureBox)this.GetControlByName(this, "p" + temp);
                                 control.Image = Image.FromFile(greenLEDPath);
@@ -142,7 +147,7 @@ namespace WatanyaPingTester
                         else
                         {
 
-                            if (ipString.Substring(0, ipNetworkLength).Equals("10") || ipString.Equals("192.168.1.108") || ipString.Equals("192.168.1.109"))
+                            if (ipString.Substring(0, ipNetworkLength).Equals("169"))
                             {
                                 var control = (PictureBox)this.GetControlByName(this, "p" + temp);
                                 control.Image = Image.FromFile(redLEDPath);
@@ -181,11 +186,7 @@ namespace WatanyaPingTester
 
                             if (nodes.ElementAt(i).isReachable())
                             {
-                                if (ipString.Substring(0, ipNetworkLength).Equals("192") || ipString.Substring(0, ipNetworkLength).Equals("172"))
-                                {
-                                    continue;
-                                }
-                                else if (ipString.Substring(0, ipNetworkLength).Equals("10"))
+                                if (ipString.Substring(0, ipNetworkLength).Equals("169"))
                                 {
                                     var control = (PictureBox)this.GetControlByName(this, "p" + temp);
                                     control.Image = Image.FromFile(greenLEDPath);
@@ -196,11 +197,7 @@ namespace WatanyaPingTester
 
                             else
                             {
-                                if (ipString.Substring(0, ipNetworkLength).Equals("192") || ipString.Substring(0, ipNetworkLength).Equals("172"))
-                                {
-                                    continue;
-                                }
-                                else if (ipString.Substring(0, firstDotIndex).Equals("10"))
+                                if (ipString.Substring(0, firstDotIndex).Equals("169"))
                                 {
                                     var control = (PictureBox)this.GetControlByName(this, "p" + temp);
                                     control.Image = Image.FromFile(redLEDPath);
@@ -219,7 +216,7 @@ namespace WatanyaPingTester
 
         private void pictureBoxMouseHoverEventHandler(object sender, System.EventArgs e)
         {
-            
+
             PictureBox p = (PictureBox)sender;
             string labelName = p.Name.Replace("p", "l");
             //var control = this.Controls.OfType<Label>().FirstOrDefault(c => c.Name == labelName);
@@ -234,12 +231,6 @@ namespace WatanyaPingTester
             //var control = this.Controls.OfType<Label>().FirstOrDefault(c => c.Name == labelName);
             var control = (Label)this.GetControlByName(this, labelName);
             control.Visible = false;
-        }
-
-        private void CairoSokhnaDiagram_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            if (t.IsAlive)
-                t.Abort();
         }
     }
 }

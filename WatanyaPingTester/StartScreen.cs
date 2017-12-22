@@ -30,5 +30,19 @@ namespace WatanyaPingTester
             csd.Show();
             this.Hide();
         }
+
+        private void allRoadsBtn_Click(object sender, EventArgs e)
+        {
+            IPsAsListForm ipForm = new IPsAsListForm();
+            ipForm.Show();
+            this.Hide();
+        }
+
+        private void alexBtn_Click(object sender, EventArgs e)
+        {
+            CairoAlexDiagramForm cad = new CairoAlexDiagramForm();
+            cad.Show();
+            this.Hide();
+        }
     }
 }

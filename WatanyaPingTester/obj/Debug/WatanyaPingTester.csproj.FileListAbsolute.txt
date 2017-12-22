@@ -70,4 +70,5 @@ G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csprojResolveAss
 E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.StartScreen.resources
 E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.IPsAsListForm.resources
 E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoSokhnaDiagramForm.resources
-E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoSokhnaOldSchemeForm.resources
+E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoAlexDiagramForm.resources
+E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Cairo_Sokhna.resources
