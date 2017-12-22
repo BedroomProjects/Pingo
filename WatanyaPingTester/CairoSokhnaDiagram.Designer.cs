@@ -280,7 +280,7 @@
             // 
             this.l127.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l127.AutoSize = true;
-            this.l127.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l127.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l127.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l127.ForeColor = System.Drawing.Color.GreenYellow;
             this.l127.Location = new System.Drawing.Point(868, 619);
@@ -294,7 +294,7 @@
             // 
             this.l139.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l139.AutoSize = true;
-            this.l139.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l139.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l139.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l139.ForeColor = System.Drawing.Color.GreenYellow;
             this.l139.Location = new System.Drawing.Point(517, 623);
@@ -308,7 +308,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.GreenYellow;
             this.label1.Location = new System.Drawing.Point(143, 624);
@@ -322,7 +322,7 @@
             // 
             this.l138.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l138.AutoSize = true;
-            this.l138.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l138.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l138.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l138.ForeColor = System.Drawing.Color.GreenYellow;
             this.l138.Location = new System.Drawing.Point(391, 669);
@@ -336,7 +336,7 @@
             // 
             this.l136.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l136.AutoSize = true;
-            this.l136.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l136.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l136.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l136.ForeColor = System.Drawing.Color.GreenYellow;
             this.l136.Location = new System.Drawing.Point(283, 668);
@@ -350,7 +350,7 @@
             // 
             this.l135.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l135.AutoSize = true;
-            this.l135.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l135.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l135.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l135.ForeColor = System.Drawing.Color.GreenYellow;
             this.l135.Location = new System.Drawing.Point(382, 619);
@@ -364,7 +364,7 @@
             // 
             this.l51.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l51.AutoSize = true;
-            this.l51.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l51.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l51.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l51.ForeColor = System.Drawing.Color.GreenYellow;
             this.l51.Location = new System.Drawing.Point(283, 507);
@@ -378,7 +378,7 @@
             // 
             this.l134.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l134.AutoSize = true;
-            this.l134.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l134.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l134.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l134.ForeColor = System.Drawing.Color.GreenYellow;
             this.l134.Location = new System.Drawing.Point(385, 554);
@@ -392,7 +392,7 @@
             // 
             this.l133.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l133.AutoSize = true;
-            this.l133.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l133.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l133.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l133.ForeColor = System.Drawing.Color.GreenYellow;
             this.l133.Location = new System.Drawing.Point(385, 506);
@@ -406,7 +406,7 @@
             // 
             this.l132.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l132.AutoSize = true;
-            this.l132.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l132.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l132.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l132.ForeColor = System.Drawing.Color.GreenYellow;
             this.l132.Location = new System.Drawing.Point(517, 505);
@@ -420,7 +420,7 @@
             // 
             this.l131.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l131.AutoSize = true;
-            this.l131.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l131.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l131.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l131.ForeColor = System.Drawing.Color.GreenYellow;
             this.l131.Location = new System.Drawing.Point(533, 552);
@@ -434,7 +434,7 @@
             // 
             this.l130.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l130.AutoSize = true;
-            this.l130.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l130.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l130.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l130.ForeColor = System.Drawing.Color.GreenYellow;
             this.l130.Location = new System.Drawing.Point(657, 506);
@@ -448,7 +448,7 @@
             // 
             this.l129.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l129.AutoSize = true;
-            this.l129.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l129.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l129.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l129.ForeColor = System.Drawing.Color.GreenYellow;
             this.l129.Location = new System.Drawing.Point(677, 553);
@@ -462,7 +462,7 @@
             // 
             this.l128.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l128.AutoSize = true;
-            this.l128.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l128.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l128.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l128.ForeColor = System.Drawing.Color.GreenYellow;
             this.l128.Location = new System.Drawing.Point(751, 507);
@@ -476,7 +476,7 @@
             // 
             this.l126.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l126.AutoSize = true;
-            this.l126.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l126.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l126.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l126.ForeColor = System.Drawing.Color.GreenYellow;
             this.l126.Location = new System.Drawing.Point(868, 549);
@@ -490,7 +490,7 @@
             // 
             this.l123.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l123.AutoSize = true;
-            this.l123.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l123.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l123.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l123.ForeColor = System.Drawing.Color.GreenYellow;
             this.l123.Location = new System.Drawing.Point(868, 505);
@@ -504,7 +504,7 @@
             // 
             this.l22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l22.AutoSize = true;
-            this.l22.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l22.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l22.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l22.ForeColor = System.Drawing.Color.GreenYellow;
             this.l22.Location = new System.Drawing.Point(145, 505);
@@ -518,7 +518,7 @@
             // 
             this.l143.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l143.AutoSize = true;
-            this.l143.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l143.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l143.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l143.ForeColor = System.Drawing.Color.GreenYellow;
             this.l143.Location = new System.Drawing.Point(146, 411);
@@ -532,7 +532,7 @@
             // 
             this.l155.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l155.AutoSize = true;
-            this.l155.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l155.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l155.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l155.ForeColor = System.Drawing.Color.GreenYellow;
             this.l155.Location = new System.Drawing.Point(146, 310);
@@ -546,7 +546,7 @@
             // 
             this.l142.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l142.AutoSize = true;
-            this.l142.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l142.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l142.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l142.ForeColor = System.Drawing.Color.GreenYellow;
             this.l142.Location = new System.Drawing.Point(336, 426);
@@ -560,7 +560,7 @@
             // 
             this.l137.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l137.AutoSize = true;
-            this.l137.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l137.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l137.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l137.ForeColor = System.Drawing.Color.GreenYellow;
             this.l137.Location = new System.Drawing.Point(336, 349);
@@ -574,7 +574,7 @@
             // 
             this.l141.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l141.AutoSize = true;
-            this.l141.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l141.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l141.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l141.ForeColor = System.Drawing.Color.GreenYellow;
             this.l141.Location = new System.Drawing.Point(430, 372);
@@ -588,7 +588,7 @@
             // 
             this.l122.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l122.AutoSize = true;
-            this.l122.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l122.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l122.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l122.ForeColor = System.Drawing.Color.GreenYellow;
             this.l122.Location = new System.Drawing.Point(845, 422);
@@ -602,7 +602,7 @@
             // 
             this.l152.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l152.AutoSize = true;
-            this.l152.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l152.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l152.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l152.ForeColor = System.Drawing.Color.GreenYellow;
             this.l152.Location = new System.Drawing.Point(782, 371);
@@ -616,7 +616,7 @@
             // 
             this.l120.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l120.AutoSize = true;
-            this.l120.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l120.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l120.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l120.ForeColor = System.Drawing.Color.GreenYellow;
             this.l120.Location = new System.Drawing.Point(660, 420);
@@ -630,7 +630,7 @@
             // 
             this.l140.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l140.AutoSize = true;
-            this.l140.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l140.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l140.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l140.ForeColor = System.Drawing.Color.GreenYellow;
             this.l140.Location = new System.Drawing.Point(567, 372);
@@ -644,7 +644,7 @@
             // 
             this.l119.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l119.AutoSize = true;
-            this.l119.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l119.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l119.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l119.ForeColor = System.Drawing.Color.GreenYellow;
             this.l119.Location = new System.Drawing.Point(666, 353);
@@ -658,7 +658,7 @@
             // 
             this.l117.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l117.AutoSize = true;
-            this.l117.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l117.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l117.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l117.ForeColor = System.Drawing.Color.GreenYellow;
             this.l117.Location = new System.Drawing.Point(788, 209);
@@ -672,7 +672,7 @@
             // 
             this.l116.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l116.AutoSize = true;
-            this.l116.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l116.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l116.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l116.ForeColor = System.Drawing.Color.GreenYellow;
             this.l116.Location = new System.Drawing.Point(658, 209);
@@ -686,7 +686,7 @@
             // 
             this.l118.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l118.AutoSize = true;
-            this.l118.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l118.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l118.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l118.ForeColor = System.Drawing.Color.GreenYellow;
             this.l118.Location = new System.Drawing.Point(646, 259);
@@ -700,7 +700,7 @@
             // 
             this.l115.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l115.AutoSize = true;
-            this.l115.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l115.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l115.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l115.ForeColor = System.Drawing.Color.GreenYellow;
             this.l115.Location = new System.Drawing.Point(570, 209);
@@ -714,7 +714,7 @@
             // 
             this.l113.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l113.AutoSize = true;
-            this.l113.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l113.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l113.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l113.ForeColor = System.Drawing.Color.GreenYellow;
             this.l113.Location = new System.Drawing.Point(146, 210);
@@ -728,7 +728,7 @@
             // 
             this.l112.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l112.AutoSize = true;
-            this.l112.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l112.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l112.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l112.ForeColor = System.Drawing.Color.GreenYellow;
             this.l112.Location = new System.Drawing.Point(336, 209);
@@ -742,7 +742,7 @@
             // 
             this.l114.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l114.AutoSize = true;
-            this.l114.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l114.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l114.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l114.ForeColor = System.Drawing.Color.GreenYellow;
             this.l114.Location = new System.Drawing.Point(430, 256);
@@ -756,7 +756,7 @@
             // 
             this.l111.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l111.AutoSize = true;
-            this.l111.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l111.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l111.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l111.ForeColor = System.Drawing.Color.GreenYellow;
             this.l111.Location = new System.Drawing.Point(430, 191);
@@ -770,7 +770,7 @@
             // 
             this.l105.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l105.AutoSize = true;
-            this.l105.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l105.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l105.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l105.ForeColor = System.Drawing.Color.GreenYellow;
             this.l105.Location = new System.Drawing.Point(124, 142);
@@ -784,7 +784,7 @@
             // 
             this.l109.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l109.AutoSize = true;
-            this.l109.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l109.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l109.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l109.ForeColor = System.Drawing.Color.GreenYellow;
             this.l109.Location = new System.Drawing.Point(124, 92);
@@ -798,7 +798,7 @@
             // 
             this.l107.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l107.AutoSize = true;
-            this.l107.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l107.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l107.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l107.ForeColor = System.Drawing.Color.GreenYellow;
             this.l107.Location = new System.Drawing.Point(143, 10);
@@ -812,7 +812,7 @@
             // 
             this.l104.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l104.AutoSize = true;
-            this.l104.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l104.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l104.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l104.ForeColor = System.Drawing.Color.GreenYellow;
             this.l104.Location = new System.Drawing.Point(314, 116);
@@ -826,7 +826,7 @@
             // 
             this.l108.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l108.AutoSize = true;
-            this.l108.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l108.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l108.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l108.ForeColor = System.Drawing.Color.GreenYellow;
             this.l108.Location = new System.Drawing.Point(353, 57);
@@ -840,7 +840,7 @@
             // 
             this.l106.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l106.AutoSize = true;
-            this.l106.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l106.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l106.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l106.ForeColor = System.Drawing.Color.GreenYellow;
             this.l106.Location = new System.Drawing.Point(353, 26);
@@ -854,7 +854,7 @@
             // 
             this.l110.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l110.AutoSize = true;
-            this.l110.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l110.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l110.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l110.ForeColor = System.Drawing.Color.GreenYellow;
             this.l110.Location = new System.Drawing.Point(412, 88);
@@ -868,7 +868,7 @@
             // 
             this.l103.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l103.AutoSize = true;
-            this.l103.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l103.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l103.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l103.ForeColor = System.Drawing.Color.GreenYellow;
             this.l103.Location = new System.Drawing.Point(430, 40);
@@ -882,7 +882,7 @@
             // 
             this.l102.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l102.AutoSize = true;
-            this.l102.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l102.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l102.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l102.ForeColor = System.Drawing.Color.GreenYellow;
             this.l102.Location = new System.Drawing.Point(591, 88);
@@ -896,7 +896,7 @@
             // 
             this.l101.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l101.AutoSize = true;
-            this.l101.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l101.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l101.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l101.ForeColor = System.Drawing.Color.GreenYellow;
             this.l101.Location = new System.Drawing.Point(646, 38);
@@ -910,7 +910,7 @@
             // 
             this.l100.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l100.AutoSize = true;
-            this.l100.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.l100.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l100.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l100.ForeColor = System.Drawing.Color.GreenYellow;
             this.l100.Location = new System.Drawing.Point(788, 32);
