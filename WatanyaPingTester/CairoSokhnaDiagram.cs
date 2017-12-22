@@ -16,7 +16,7 @@ namespace WatanyaPingTester
     public partial class CairoSokhnaDiagram : Form
     {
         List<NetworkNode> nodes;
-        string path, greenLEDPath, redLEDPath, yellowLEDPath;
+        string path, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath;
         ExcelToNode etn = new ExcelToNode();
         string fileName = "test.xlsx";
         List<string> nodesStatusList;
@@ -42,6 +42,7 @@ namespace WatanyaPingTester
                 greenLEDPath = Path.Combine(path, @"green.png");
                 redLEDPath = Path.Combine(path, @"red.png");
                 yellowLEDPath = Path.Combine(path, @"yellow.png");
+                greyLEDPath = Path.Combine(path, @"grey.png");
 
                 for (int i = 0; i < nodes.Count(); i++)
                 {
@@ -59,7 +60,7 @@ namespace WatanyaPingTester
                         var control = (PictureBox)this.GetControlByName(this, "p" + temp);
                         var control1 = (Label)this.GetControlByName(this, "l" + temp);
                         control1.Text = ipString;
-                        control.Image = Image.FromFile(redLEDPath);
+                        control.Image = Image.FromFile(greyLEDPath);
                         control.SizeMode = PictureBoxSizeMode.Zoom;
                         control.MouseHover += new EventHandler(pictureBoxMouseHoverEventHandler);
                         control.MouseLeave += new EventHandler(pictureBoxMouseLeaveEventHandler);
