@@ -42,7 +42,7 @@ namespace WatanyaPingTester
                 greenLEDPath = Path.Combine(path, @"green.png");
                 redLEDPath = Path.Combine(path, @"red.png");
                 yellowLEDPath = Path.Combine(path, @"yellow.png");
-                greyLEDPath = Path.Combine(path, @"grey.png");
+                greyLEDPath = Path.Combine(path, @"grey1.png");
 
                 for (int i = 0; i < nodes.Count(); i++)
                 {
