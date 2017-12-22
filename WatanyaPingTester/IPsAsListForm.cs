@@ -14,7 +14,7 @@ using System.Threading;
 
 namespace WatanyaPingTester
 {
-    public partial class Form1 : Form
+    public partial class IPsAsListForm : Form
     {
         ImageList imageList = new ImageList();
         string[] status_imgs = { "red_x.png", "green_mark.png" };
@@ -28,7 +28,7 @@ namespace WatanyaPingTester
         string selectedItem;
         bool running = false;
 
-        public Form1()
+        public IPsAsListForm()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;

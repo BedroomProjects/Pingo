@@ -13,7 +13,7 @@ using System.Threading;
 
 namespace WatanyaPingTester
 {
-    public partial class CairoSokhnaDiagram : Form
+    public partial class CairoSokhnaDiagramForm : Form
     {
         List<NetworkNode> nodes;
         string path, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath;
@@ -24,13 +24,16 @@ namespace WatanyaPingTester
         bool running = false;
         ToolTip ttip = new ToolTip();
 
-        public CairoSokhnaDiagram()
+        public CairoSokhnaDiagramForm()
         {
             InitializeComponent();
 
             // full screen above taskbar
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
+
+            // Adding form closing event handler
+            this.FormClosing += new FormClosingEventHandler(CairoSokhnaDiagram_Closing);
 
             t = new Thread(updateStatus);
 
@@ -231,6 +234,12 @@ namespace WatanyaPingTester
             //var control = this.Controls.OfType<Label>().FirstOrDefault(c => c.Name == labelName);
             var control = (Label)this.GetControlByName(this, labelName);
             control.Visible = false;
+        }
+
+        private void CairoSokhnaDiagram_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (t.IsAlive)
+                t.Abort();
         }
 
     }

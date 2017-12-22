@@ -13,7 +13,7 @@ using System.Threading;
 
 namespace WatanyaPingTester
 {
-    public partial class Cairo_Sokhna : Form
+    public partial class CairoSokhnaOldSchemeForm : Form
     {
         List<NetworkNode> nodes;
         string path, markPath, xPath;
@@ -23,7 +23,7 @@ namespace WatanyaPingTester
         static Thread t;
         bool running = false;
 
-        public Cairo_Sokhna()
+        public CairoSokhnaOldSchemeForm()
         {
             InitializeComponent();
             // Makes form appear in normal size

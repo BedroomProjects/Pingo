@@ -1,6 +1,6 @@
 ﻿namespace WatanyaPingTester
 {
-    partial class CairoSokhnaDiagram
+    partial class CairoSokhnaDiagramForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CairoSokhnaDiagram));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CairoSokhnaDiagramForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.l127 = new System.Windows.Forms.Label();
             this.l139 = new System.Windows.Forms.Label();
@@ -1345,7 +1345,7 @@
             this.p100.TabIndex = 0;
             this.p100.TabStop = false;
             // 
-            // CairoSokhnaDiagram
+            // CairoSokhnaDiagramForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1353,7 +1353,7 @@
             this.ClientSize = new System.Drawing.Size(1045, 729);
             this.Controls.Add(this.panel1);
             this.Name = "CairoSokhnaDiagram";
-            this.Text = "CairoSokhnaDiagram";
+            this.Text = "Cairo Sokhna";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p136)).EndInit();

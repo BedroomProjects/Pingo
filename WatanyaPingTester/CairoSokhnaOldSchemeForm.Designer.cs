@@ -1,6 +1,6 @@
 ﻿namespace WatanyaPingTester
 {
-    partial class Cairo_Sokhna
+    partial class CairoSokhnaOldSchemeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -761,7 +761,7 @@
             this.a152.TabIndex = 66;
             this.a152.Text = "label56";
             // 
-            // Cairo_Sokhna
+            // CairoSokhnaOldSchemeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

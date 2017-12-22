@@ -1,6 +1,6 @@
 ﻿namespace WatanyaPingTester
 {
-    partial class Form1
+    partial class IPsAsListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -140,7 +140,7 @@
             this.pic.ReadOnly = true;
             this.pic.Width = 120;
             // 
-            // Form1
+            // IPsAsListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

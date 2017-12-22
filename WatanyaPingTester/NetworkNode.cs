@@ -59,6 +59,11 @@ namespace WatanyaPingTester
             return reachable;
         }
 
+        public void abortPingThread()
+        {
+            pingObj.abortThread();
+        }
+
         public string getStatus()
         {
             pingObj.setIP(ipAddress);
@@ -72,6 +77,7 @@ namespace WatanyaPingTester
             else
             {
                 reachable = false;
+                if (pingObj.isTimeOut()) return "Timeout";
                 return "Not Reachable";
             }
         }

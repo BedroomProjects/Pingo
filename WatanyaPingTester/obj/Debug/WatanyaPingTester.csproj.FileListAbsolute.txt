@@ -50,7 +50,6 @@ E:\Tareq\Projects\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe
 E:\Tareq\Projects\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.pdb
 E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csprojResolveAssemblyReference.cache
 E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.ResolveComReference.cache
-E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Form1.resources
 E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resources.resources
 E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache
 C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.ResolveComReference.cache
@@ -68,6 +67,7 @@ G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateR
 G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.exe
 G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.pdb
 G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csprojResolveAssemblyReference.cache
-E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoSokhnaDiagram.resources
-E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Cairo_Sokhna.resources
-E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Form2.resources
+E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.StartScreen.resources
+E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.IPsAsListForm.resources
+E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoSokhnaDiagramForm.resources
+E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoSokhnaOldSchemeForm.resources

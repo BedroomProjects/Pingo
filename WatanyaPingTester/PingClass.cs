@@ -9,10 +9,11 @@ namespace WatanyaPingTester
 {
     class PingClass
     {
+        private Thread t;
         private Ping pingObj;
         private PingReply pingReplyObj;
         private String ipAddress;
-        private bool reachable = false, pending = true, error = false;
+        private bool reachable = false, pending = true, error = false, timeOut = false;
 
         public PingClass()
         {
@@ -32,13 +33,20 @@ namespace WatanyaPingTester
                 {
                     this.reachable = true;
                     pending = false;
+                    timeOut = false;
                 }
                 else
                 {
                     if (pingReplyObj.Status == IPStatus.TimedOut)
+                    {
                         pending = true;
+                        timeOut = true;
+                    }
                     else
+                    {
                         pending = false;
+                        timeOut = false;
+                    }
 
                     this.reachable = false;
                 }
@@ -49,16 +57,25 @@ namespace WatanyaPingTester
                 reachable = false;
                 error = true;
             }
+            finally
+            {
+                t.Abort();
+            }
         }
-       
+
+        public void abortThread()
+        {
+            t.Abort();
+        }
 
         public void sendPing()
         {
-            Thread t = new Thread(ping);
+            t = new Thread(ping);
             t.Start();
         }
 
-        public bool isReachable(){
+        public bool isReachable()
+        {
             return reachable;
         }
 
@@ -67,5 +84,9 @@ namespace WatanyaPingTester
             return pending;
         }
 
+        public bool isTimeOut()
+        {
+            return timeOut;
+        }
     }
 }
