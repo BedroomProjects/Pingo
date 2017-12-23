@@ -130,7 +130,7 @@ namespace WatanyaPingTester
                     string temp = ipString.Substring(lastDotIndex);
                     try
                     {
-                        if (nodes.ElementAt(i).isReachable())
+                        if (nodes.ElementAt(i).getStatus().Equals("Online"))
                         {
                             if (ipString.Substring(0, firstDotIndex).Equals("10") || ipString.Equals("192.168.1.108") || ipString.Equals("192.168.1.109"))
                             {
@@ -140,7 +140,15 @@ namespace WatanyaPingTester
                             }
 
                         }
-
+                        else if (nodes.ElementAt(i).getStatus().Equals("Timeout"))
+                        {
+                            if (ipString.Substring(0, firstDotIndex).Equals("10") || ipString.Equals("192.168.1.108") || ipString.Equals("192.168.1.109"))
+                            {
+                                var control = (PictureBox)this.GetControlByName(this, "p" + temp);
+                                control.Image = Image.FromFile(yellowLEDPath);
+                                control.SizeMode = PictureBoxSizeMode.Zoom;
+                            }
+                        }
                         else
                         {
 
@@ -195,6 +203,15 @@ namespace WatanyaPingTester
                                     control.SizeMode = PictureBoxSizeMode.Zoom;
                                 }
 
+                            }
+                            else if (nodes.ElementAt(i).getStatus().Equals("Timeout"))
+                            {
+                                if (ipString.Substring(0, firstDotIndex).Equals("10") || ipString.Equals("192.168.1.108") || ipString.Equals("192.168.1.109"))
+                                {
+                                    var control = (PictureBox)this.GetControlByName(this, "p" + temp);
+                                    control.Image = Image.FromFile(yellowLEDPath);
+                                    control.SizeMode = PictureBoxSizeMode.Zoom;
+                                }
                             }
 
                             else
