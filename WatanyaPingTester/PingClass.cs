@@ -70,8 +70,13 @@ namespace WatanyaPingTester
 
         public void sendPing()
         {
-            t = new Thread(ping);
-            t.Start();
+            try
+            {
+                t = new Thread(ping);
+                t.Start();
+            }catch(Exception e){
+                Console.WriteLine(e.Message);
+            }
         }
 
         public bool isReachable()

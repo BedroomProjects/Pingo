@@ -15,27 +15,30 @@ namespace WatanyaPingTester
 {
     public partial class CairoAlexDiagramForm : Form
     {
+        List<SchemeNode> schemeNodes = new List<SchemeNode>();
+
+        int secondsPerPing = 1;
+        bool showIPs = false;
 
         List<NetworkNode> nodes;
         string path, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath;
         ExcelToNode etn = new ExcelToNode();
         string fileName = "alex_scheme.xlsx";
-        List<string> nodesStatusList;
-        static Thread t;
-        bool running = false;
-        ToolTip ttip = new ToolTip();
-        public CairoAlexDiagramForm()
+        //bool running = false;
+        Thread t;
+        StartScreen startScreen;
+        
+        public CairoAlexDiagramForm(StartScreen startScreen)
         {
             InitializeComponent();
+            this.startScreen = startScreen;
+
             // full screen above taskbar
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
 
             // Adding form closing event handler
             this.FormClosing += new FormClosingEventHandler(CairoAlexDiagram_Closing);
-            t = new Thread(updateStatus);
-
-            nodes = etn.getNetworkNodes(fileName);
 
             try
             {
@@ -44,29 +47,6 @@ namespace WatanyaPingTester
                 redLEDPath = Path.Combine(path, @"red.png");
                 yellowLEDPath = Path.Combine(path, @"yellow.png");
                 greyLEDPath = Path.Combine(path, @"grey1.png");
-
-                for (int i = 0; i < nodes.Count(); i++)
-                {
-                    string ipString = nodes.ElementAt(i).getIP();
-                    nodes.ElementAt(i).getStatus();
-                    int firstDotIndex = ipString.IndexOf(".");
-                    int lastDotIndex = ipString.LastIndexOf(".") + 1;
-                    int secondDotIndex = ipString.IndexOf(".", ipString.IndexOf(".") + 1);
-                    int ipNetworkLength = firstDotIndex;
-
-                    string temp = ipString.Substring(lastDotIndex);
-
-                    if (ipString.Substring(0, firstDotIndex).Equals("169"))
-                    {
-                        var control = (PictureBox)this.GetControlByName(this, "p" + temp);
-                        var control1 = (Label)this.GetControlByName(this, "l" + temp);
-                        control1.Text = ipString;
-                        control.Image = Image.FromFile(greyLEDPath);
-                        control.SizeMode = PictureBoxSizeMode.Zoom;
-                        control.MouseHover += new EventHandler(pictureBoxMouseHoverEventHandler);
-                        control.MouseLeave += new EventHandler(pictureBoxMouseLeaveEventHandler);
-                    }
-                }
             }
             catch (Exception e)
             {
@@ -77,13 +57,100 @@ namespace WatanyaPingTester
                 // Displays the MessageBox.
                 result = MessageBox.Show(e.Message, "Error", buttons);
             }
+            finally
+            {
+                nodes = etn.getNetworkNodes(fileName);
+                generateSchemeNodes(nodes);                
+            }
         }
 
+        void generateSchemeNodes(List<NetworkNode> networkNodes)
+        {
+            for (int i = 0; i < networkNodes.Count; i++)
+            {
+                SchemeNode sn = new SchemeNode(networkNodes[i]);
 
+                PictureBox cPic = (PictureBox)this.GetControlByName(this, "p" + sn.getID());
+                Label cLabel = (Label)this.GetControlByName(this, "l" + sn.getID());
+                try
+                {
+                    if (cLabel != null)
+                    {
+                        sn.setLabel(cLabel);
+                        cLabel.Text = "" + sn.getIP();
+                        //cLabel.Visible = showIPs;
+                        sn.setPic(cPic);
+                        cPic.MouseHover += new EventHandler(pictureBoxMouseHoverEventHandler);
+                        cPic.MouseLeave += new EventHandler(pictureBoxMouseLeaveEventHandler);
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.Write("Exception with " + cLabel.Text);
+                }
+                setPicToGrey(cPic);
+                schemeNodes.Add(sn);
+
+            }
+        }
+
+        void setPicToGreen(PictureBox p)
+        {
+            try
+            {
+                p.Image = Image.FromFile(greenLEDPath);
+                p.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            catch (Exception e)
+            {
+                Console.Write(e);
+            }
+        }
+
+        void setPicToRed(PictureBox p)
+        {
+            try
+            {
+                p.Image = Image.FromFile(redLEDPath);
+                p.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            catch (Exception e)
+            {
+                Console.Write(e);
+            }
+        }
+
+        void setPicToYellow(PictureBox p)
+        {
+            try
+            {
+                p.Image = Image.FromFile(yellowLEDPath);
+                p.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            catch (Exception e)
+            {
+                Console.Write(e);
+            }
+        }
+
+        void setPicToGrey(PictureBox p)
+        {
+            try
+            {
+                p.Image = Image.FromFile(greyLEDPath);
+                p.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            catch (Exception e)
+            {
+                Console.Write(e);
+            }
+        }
 
         private void CairoAlexDiagram_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            
+            if (t.IsAlive)
+                t.Abort();
+            startScreen.Show();
         }
 
         public Control GetControlByName(Control ParentCntl, string NameToSearch)
@@ -102,116 +169,53 @@ namespace WatanyaPingTester
 
         private void pingBtn_Click(object sender, EventArgs e)
         {
-            if (running)
-            {
-                try
-                {
-                    if (t.IsAlive)
-                        t.Abort();
-                }
-                catch (ThreadAbortException ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-                running = false;
-                pingBtn.Text = "Ping";
-            }
-            else
-            {
-                running = true;
-
-
-                for (int i = 0; i < nodes.Count(); i++)
-                {
-                    string ipString = nodes.ElementAt(i).getIP();
-                    nodes.ElementAt(i).getStatus();
-                    int firstDotIndex = ipString.IndexOf(".");
-                    int lastDotIndex = ipString.LastIndexOf(".") + 1;
-                    int secondDotIndex = ipString.IndexOf(".", ipString.IndexOf(".") + 1);
-                    int ipNetworkLength = firstDotIndex;
-
-                    string temp = ipString.Substring(lastDotIndex);
-                    try
-                    {
-                        if (nodes.ElementAt(i).isReachable())
-                        {
-                            if (ipString.Substring(0, firstDotIndex).Equals("169"))
-                            {
-                                var control = (PictureBox)this.GetControlByName(this, "p" + temp);
-                                control.Image = Image.FromFile(greenLEDPath);
-                                control.SizeMode = PictureBoxSizeMode.Zoom;
-                            }
-
-                        }
-
-                        else
-                        {
-
-                            if (ipString.Substring(0, ipNetworkLength).Equals("169"))
-                            {
-                                var control = (PictureBox)this.GetControlByName(this, "p" + temp);
-                                control.Image = Image.FromFile(redLEDPath);
-                                control.SizeMode = PictureBoxSizeMode.Zoom;
-                            }
-
-                        }
-                    }
-                    catch (Exception r) { }
-                }
-                t = new Thread(updateStatus);
-                t.Start();
-            }
-
-
+            startThread();
         }
 
-        private void updateStatus()
+        void updateNetwork()
         {
-            while (running)
+            for (int i = 0; i < schemeNodes.Count; i++)
             {
-                try
-                {
-                    nodesStatusList = new List<string>();
-                    for (int i = 0; i < nodes.Count(); i++)
-                    {
-                        try
-                        {
-                            nodesStatusList.Add(nodes.ElementAt(i).getStatus());
-                            string ipString = nodes.ElementAt(i).getIP();
-                            int firstDotIndex = ipString.IndexOf(".");
-                            int lastDotIndex = ipString.LastIndexOf(".") + 1;
-                            string temp = ipString.Substring(lastDotIndex);
-                            int secondDotIndex = ipString.IndexOf(".", ipString.IndexOf(".") + 1);
-                            int ipNetworkLength = firstDotIndex;
-
-                            if (nodes.ElementAt(i).isReachable())
-                            {
-                                if (ipString.Substring(0, ipNetworkLength).Equals("169"))
-                                {
-                                    var control = (PictureBox)this.GetControlByName(this, "p" + temp);
-                                    control.Image = Image.FromFile(greenLEDPath);
-                                    control.SizeMode = PictureBoxSizeMode.Zoom;
-                                }
-
-                            }
-
-                            else
-                            {
-                                if (ipString.Substring(0, firstDotIndex).Equals("169"))
-                                {
-                                    var control = (PictureBox)this.GetControlByName(this, "p" + temp);
-                                    control.Image = Image.FromFile(redLEDPath);
-                                    control.SizeMode = PictureBoxSizeMode.Zoom;
-                                }
-
-                            }
-                        }
-                        catch (Exception e) { }
-                    }
-                    Thread.Sleep(2000);
-                }
-                catch (Exception ex) { }
+                schemeNodes[i].getNode().sendPing();
             }
+        }
+
+        void updateDisplay()
+        {
+            for (int i = 0; i < schemeNodes.Count; i++)
+            {
+                string curNodeStatus = schemeNodes[i].getNode().getStatus();
+                if (curNodeStatus == "Online")
+                {
+                    setPicToGreen(schemeNodes[i].getPic());
+                    schemeNodes[i].getLabel().ForeColor = Color.LightGreen;
+                }
+                else if (curNodeStatus == "Not Reachable")
+                {
+                    setPicToRed(schemeNodes[i].getPic());
+                    schemeNodes[i].getLabel().ForeColor = Color.LightPink;
+                }
+                else if (curNodeStatus == "Timeout")
+                {
+                    setPicToYellow(schemeNodes[i].getPic());
+                    schemeNodes[i].getLabel().ForeColor = Color.Yellow;
+                }
+            }
+        }
+
+        void continousUpdate()
+        {
+            while (true)
+            {
+                updateNetwork();
+                updateDisplay();
+                Thread.Sleep(1000 * secondsPerPing);
+            }
+        }
+        void startThread()
+        {
+            t = new Thread(continousUpdate);
+            t.Start();
         }
 
         private void pictureBoxMouseHoverEventHandler(object sender, System.EventArgs e)
@@ -219,7 +223,6 @@ namespace WatanyaPingTester
 
             PictureBox p = (PictureBox)sender;
             string labelName = p.Name.Replace("p", "l");
-            //var control = this.Controls.OfType<Label>().FirstOrDefault(c => c.Name == labelName);
             var control = (Label)this.GetControlByName(this, labelName);
             control.Visible = true;
         }
@@ -228,7 +231,6 @@ namespace WatanyaPingTester
         {
             PictureBox p = (PictureBox)sender;
             string labelName = p.Name.Replace("p", "l");
-            //var control = this.Controls.OfType<Label>().FirstOrDefault(c => c.Name == labelName);
             var control = (Label)this.GetControlByName(this, labelName);
             control.Visible = false;
         }

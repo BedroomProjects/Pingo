@@ -26,21 +26,21 @@ namespace WatanyaPingTester
 
         private void sokhnaBtn_Click(object sender, EventArgs e)
         {
-            CairoSokhnaDiagramForm csd = new CairoSokhnaDiagramForm();
+            CairoSokhnaDiagramForm csd = new CairoSokhnaDiagramForm(this);
             csd.Show();
             this.Hide();
         }
 
         private void allRoadsBtn_Click(object sender, EventArgs e)
         {
-            IPsAsListForm ipForm = new IPsAsListForm();
+            IPsAsListForm ipForm = new IPsAsListForm(this);
             ipForm.Show();
             this.Hide();
         }
 
         private void alexBtn_Click(object sender, EventArgs e)
         {
-            CairoAlexDiagramForm cad = new CairoAlexDiagramForm();
+            CairoAlexDiagramForm cad = new CairoAlexDiagramForm(this);
             cad.Show();
             this.Hide();
         }

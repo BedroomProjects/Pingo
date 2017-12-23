@@ -58,10 +58,7 @@ G:\Fahim\C#\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe.config
 G:\Fahim\C#\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe
 G:\Fahim\C#\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.pdb
 G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.ResolveComReference.cache
-G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoSokhnaDiagram.resources
 G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Cairo_Sokhna.resources
-G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Form1.resources
-G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Form2.resources
 G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resources.resources
 G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache
 G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.exe
@@ -72,3 +69,7 @@ E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.IPsAsListF
 E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoSokhnaDiagramForm.resources
 E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoAlexDiagramForm.resources
 E:\Tareq\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Cairo_Sokhna.resources
+G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoAlexDiagramForm.resources
+G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoSokhnaDiagramForm.resources
+G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.IPsAsListForm.resources
+G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.StartScreen.resources

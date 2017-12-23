@@ -24,10 +24,12 @@ namespace WatanyaPingTester
         bool running = false;
         ToolTip ttip = new ToolTip();
 
-        public CairoSokhnaDiagramForm()
+        StartScreen s;
+
+        public CairoSokhnaDiagramForm(StartScreen s)
         {
             InitializeComponent();
-
+            this.s = s;
             // full screen above taskbar
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
@@ -50,7 +52,7 @@ namespace WatanyaPingTester
                 for (int i = 0; i < nodes.Count(); i++)
                 {
                     string ipString = nodes.ElementAt(i).getIP();
-                    nodes.ElementAt(i).getStatus();
+                    nodes.ElementAt(i).sendPing();
                     int firstDotIndex = ipString.IndexOf(".");
                     int lastDotIndex = ipString.LastIndexOf(".") + 1;
                     int secondDotIndex = ipString.IndexOf(".", ipString.IndexOf(".") + 1);
@@ -119,7 +121,7 @@ namespace WatanyaPingTester
                 for (int i = 0; i < nodes.Count(); i++)
                 {
                     string ipString = nodes.ElementAt(i).getIP();
-                    nodes.ElementAt(i).getStatus();
+                    nodes.ElementAt(i).sendPing();
                     int firstDotIndex = ipString.IndexOf(".");
                     int lastDotIndex = ipString.LastIndexOf(".") + 1;
                     int secondDotIndex = ipString.IndexOf(".", ipString.IndexOf(".") + 1);
@@ -171,6 +173,7 @@ namespace WatanyaPingTester
                     {
                         try
                         {
+                            nodes.ElementAt(i).sendPing();
                             nodesStatusList.Add(nodes.ElementAt(i).getStatus());
                             string ipString = nodes.ElementAt(i).getIP();
                             int firstDotIndex = ipString.IndexOf(".");
@@ -240,6 +243,7 @@ namespace WatanyaPingTester
         {
             if (t.IsAlive)
                 t.Abort();
+            s.Show();
         }
     }
 }

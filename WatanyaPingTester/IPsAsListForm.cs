@@ -27,12 +27,15 @@ namespace WatanyaPingTester
         static Thread t;
         string selectedItem;
         bool running = false;
-
-        public IPsAsListForm()
+        StartScreen startScreen;
+        public IPsAsListForm(StartScreen startScreen)
         {
             InitializeComponent();
+            this.startScreen = startScreen;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             ping2.Enabled = false;
+
+            this.FormClosing += new FormClosingEventHandler(Form_Closing_Handler);
             // Data
 
             t = new Thread(updateStatus);
@@ -75,6 +78,7 @@ namespace WatanyaPingTester
                     nodesStatusList = new List<string>();
                     for (int i = 0; i < nodes.Count(); i++)
                     {
+                        nodes.ElementAt(i).sendPing();
                         nodesStatusList.Add(nodes.ElementAt(i).getStatus());
 
                         Image img;
@@ -127,6 +131,7 @@ namespace WatanyaPingTester
 
                 for (int i = 0; i < nodes.Count(); i++)
                 {
+                    nodes.ElementAt(i).sendPing();
                     row[0] = j++.ToString();
                     row[1] = nodes.ElementAt(i).getName();
                     row[2] = nodes.ElementAt(i).getIP();
@@ -171,6 +176,11 @@ namespace WatanyaPingTester
             ping2.Enabled = true;
             selectedItem = comboBox1.SelectedItem.ToString();
             
+        }
+
+        private void Form_Closing_Handler(object sender, System.EventArgs e)
+        {
+            startScreen.Show();
         }
 
     }
