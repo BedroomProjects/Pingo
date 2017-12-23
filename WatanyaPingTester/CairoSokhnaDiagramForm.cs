@@ -258,8 +258,13 @@ namespace WatanyaPingTester
 
         private void CairoSokhnaDiagram_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            if (t.IsAlive)
-                t.Abort();
+            try
+            {
+                if (t.IsAlive)
+                    t.Abort();
+            }catch(Exception ee){
+
+            }
             s.Show();
         }
     }

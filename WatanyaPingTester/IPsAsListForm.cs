@@ -42,7 +42,7 @@ namespace WatanyaPingTester
             
             try {
                 path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                path += "\\..\\..\\res";
+                path += "\\res";
                 markPath = path + "\\green_mark.ico";
                 xPath = path + "\\red_x.ico";
                 string[] imageFiles = Directory.GetFiles(@path);

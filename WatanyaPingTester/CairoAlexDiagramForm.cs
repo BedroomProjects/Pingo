@@ -148,8 +148,13 @@ namespace WatanyaPingTester
 
         private void CairoAlexDiagram_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            if (t.IsAlive)
-                t.Abort();
+            try
+            {
+                if (t.IsAlive)
+                    t.Abort();
+            }catch(Exception ee){
+
+            }
             startScreen.Show();
         }
 

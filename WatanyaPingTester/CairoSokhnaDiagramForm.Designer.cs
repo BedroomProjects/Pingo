@@ -123,6 +123,15 @@
             this.p102 = new System.Windows.Forms.PictureBox();
             this.p101 = new System.Windows.Forms.PictureBox();
             this.p100 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p136)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -170,6 +179,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.p102)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p101)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p100)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -273,7 +287,7 @@
             this.panel1.Controls.Add(this.p100);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1021, 705);
+            this.panel1.Size = new System.Drawing.Size(1188, 705);
             this.panel1.TabIndex = 0;
             // 
             // l127
@@ -283,7 +297,7 @@
             this.l127.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l127.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l127.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l127.Location = new System.Drawing.Point(868, 619);
+            this.l127.Location = new System.Drawing.Point(952, 619);
             this.l127.Name = "l127";
             this.l127.Size = new System.Drawing.Size(80, 14);
             this.l127.TabIndex = 92;
@@ -297,7 +311,7 @@
             this.l139.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l139.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l139.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l139.Location = new System.Drawing.Point(517, 623);
+            this.l139.Location = new System.Drawing.Point(601, 623);
             this.l139.Name = "l139";
             this.l139.Size = new System.Drawing.Size(80, 14);
             this.l139.TabIndex = 91;
@@ -311,7 +325,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.GreenYellow;
-            this.label1.Location = new System.Drawing.Point(143, 624);
+            this.label1.Location = new System.Drawing.Point(227, 624);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 14);
             this.label1.TabIndex = 90;
@@ -325,7 +339,7 @@
             this.l138.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l138.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l138.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l138.Location = new System.Drawing.Point(391, 669);
+            this.l138.Location = new System.Drawing.Point(475, 669);
             this.l138.Name = "l138";
             this.l138.Size = new System.Drawing.Size(80, 14);
             this.l138.TabIndex = 89;
@@ -339,7 +353,7 @@
             this.l136.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l136.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l136.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l136.Location = new System.Drawing.Point(283, 668);
+            this.l136.Location = new System.Drawing.Point(367, 668);
             this.l136.Name = "l136";
             this.l136.Size = new System.Drawing.Size(80, 14);
             this.l136.TabIndex = 88;
@@ -353,7 +367,7 @@
             this.l135.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l135.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l135.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l135.Location = new System.Drawing.Point(382, 619);
+            this.l135.Location = new System.Drawing.Point(466, 619);
             this.l135.Name = "l135";
             this.l135.Size = new System.Drawing.Size(80, 14);
             this.l135.TabIndex = 87;
@@ -367,7 +381,7 @@
             this.l51.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l51.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l51.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l51.Location = new System.Drawing.Point(283, 507);
+            this.l51.Location = new System.Drawing.Point(367, 507);
             this.l51.Name = "l51";
             this.l51.Size = new System.Drawing.Size(80, 14);
             this.l51.TabIndex = 86;
@@ -381,7 +395,7 @@
             this.l134.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l134.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l134.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l134.Location = new System.Drawing.Point(385, 554);
+            this.l134.Location = new System.Drawing.Point(469, 554);
             this.l134.Name = "l134";
             this.l134.Size = new System.Drawing.Size(80, 14);
             this.l134.TabIndex = 85;
@@ -395,7 +409,7 @@
             this.l133.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l133.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l133.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l133.Location = new System.Drawing.Point(385, 506);
+            this.l133.Location = new System.Drawing.Point(469, 506);
             this.l133.Name = "l133";
             this.l133.Size = new System.Drawing.Size(80, 14);
             this.l133.TabIndex = 84;
@@ -409,7 +423,7 @@
             this.l132.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l132.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l132.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l132.Location = new System.Drawing.Point(517, 505);
+            this.l132.Location = new System.Drawing.Point(601, 505);
             this.l132.Name = "l132";
             this.l132.Size = new System.Drawing.Size(80, 14);
             this.l132.TabIndex = 83;
@@ -423,7 +437,7 @@
             this.l131.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l131.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l131.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l131.Location = new System.Drawing.Point(533, 552);
+            this.l131.Location = new System.Drawing.Point(617, 552);
             this.l131.Name = "l131";
             this.l131.Size = new System.Drawing.Size(80, 14);
             this.l131.TabIndex = 82;
@@ -437,7 +451,7 @@
             this.l130.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l130.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l130.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l130.Location = new System.Drawing.Point(657, 506);
+            this.l130.Location = new System.Drawing.Point(741, 506);
             this.l130.Name = "l130";
             this.l130.Size = new System.Drawing.Size(80, 14);
             this.l130.TabIndex = 81;
@@ -451,7 +465,7 @@
             this.l129.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l129.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l129.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l129.Location = new System.Drawing.Point(677, 553);
+            this.l129.Location = new System.Drawing.Point(761, 553);
             this.l129.Name = "l129";
             this.l129.Size = new System.Drawing.Size(80, 14);
             this.l129.TabIndex = 80;
@@ -465,7 +479,7 @@
             this.l128.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l128.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l128.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l128.Location = new System.Drawing.Point(751, 507);
+            this.l128.Location = new System.Drawing.Point(835, 507);
             this.l128.Name = "l128";
             this.l128.Size = new System.Drawing.Size(80, 14);
             this.l128.TabIndex = 79;
@@ -479,7 +493,7 @@
             this.l126.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l126.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l126.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l126.Location = new System.Drawing.Point(868, 549);
+            this.l126.Location = new System.Drawing.Point(952, 549);
             this.l126.Name = "l126";
             this.l126.Size = new System.Drawing.Size(80, 14);
             this.l126.TabIndex = 78;
@@ -493,7 +507,7 @@
             this.l123.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l123.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l123.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l123.Location = new System.Drawing.Point(868, 505);
+            this.l123.Location = new System.Drawing.Point(952, 505);
             this.l123.Name = "l123";
             this.l123.Size = new System.Drawing.Size(80, 14);
             this.l123.TabIndex = 77;
@@ -507,7 +521,7 @@
             this.l22.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l22.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l22.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l22.Location = new System.Drawing.Point(145, 505);
+            this.l22.Location = new System.Drawing.Point(229, 505);
             this.l22.Name = "l22";
             this.l22.Size = new System.Drawing.Size(80, 14);
             this.l22.TabIndex = 76;
@@ -521,7 +535,7 @@
             this.l143.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l143.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l143.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l143.Location = new System.Drawing.Point(146, 411);
+            this.l143.Location = new System.Drawing.Point(230, 411);
             this.l143.Name = "l143";
             this.l143.Size = new System.Drawing.Size(80, 14);
             this.l143.TabIndex = 75;
@@ -535,7 +549,7 @@
             this.l155.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l155.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l155.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l155.Location = new System.Drawing.Point(146, 310);
+            this.l155.Location = new System.Drawing.Point(230, 310);
             this.l155.Name = "l155";
             this.l155.Size = new System.Drawing.Size(80, 14);
             this.l155.TabIndex = 74;
@@ -549,7 +563,7 @@
             this.l142.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l142.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l142.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l142.Location = new System.Drawing.Point(336, 426);
+            this.l142.Location = new System.Drawing.Point(420, 426);
             this.l142.Name = "l142";
             this.l142.Size = new System.Drawing.Size(80, 14);
             this.l142.TabIndex = 73;
@@ -563,7 +577,7 @@
             this.l137.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l137.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l137.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l137.Location = new System.Drawing.Point(336, 349);
+            this.l137.Location = new System.Drawing.Point(420, 349);
             this.l137.Name = "l137";
             this.l137.Size = new System.Drawing.Size(80, 14);
             this.l137.TabIndex = 72;
@@ -577,7 +591,7 @@
             this.l141.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l141.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l141.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l141.Location = new System.Drawing.Point(430, 372);
+            this.l141.Location = new System.Drawing.Point(514, 372);
             this.l141.Name = "l141";
             this.l141.Size = new System.Drawing.Size(80, 14);
             this.l141.TabIndex = 71;
@@ -591,7 +605,7 @@
             this.l122.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l122.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l122.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l122.Location = new System.Drawing.Point(845, 422);
+            this.l122.Location = new System.Drawing.Point(929, 422);
             this.l122.Name = "l122";
             this.l122.Size = new System.Drawing.Size(80, 14);
             this.l122.TabIndex = 70;
@@ -605,7 +619,7 @@
             this.l152.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l152.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l152.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l152.Location = new System.Drawing.Point(782, 371);
+            this.l152.Location = new System.Drawing.Point(866, 371);
             this.l152.Name = "l152";
             this.l152.Size = new System.Drawing.Size(80, 14);
             this.l152.TabIndex = 69;
@@ -619,7 +633,7 @@
             this.l120.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l120.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l120.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l120.Location = new System.Drawing.Point(660, 420);
+            this.l120.Location = new System.Drawing.Point(744, 420);
             this.l120.Name = "l120";
             this.l120.Size = new System.Drawing.Size(80, 14);
             this.l120.TabIndex = 68;
@@ -633,7 +647,7 @@
             this.l140.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l140.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l140.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l140.Location = new System.Drawing.Point(567, 372);
+            this.l140.Location = new System.Drawing.Point(651, 372);
             this.l140.Name = "l140";
             this.l140.Size = new System.Drawing.Size(80, 14);
             this.l140.TabIndex = 67;
@@ -647,7 +661,7 @@
             this.l119.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l119.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l119.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l119.Location = new System.Drawing.Point(666, 353);
+            this.l119.Location = new System.Drawing.Point(750, 353);
             this.l119.Name = "l119";
             this.l119.Size = new System.Drawing.Size(80, 14);
             this.l119.TabIndex = 66;
@@ -661,7 +675,7 @@
             this.l117.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l117.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l117.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l117.Location = new System.Drawing.Point(788, 209);
+            this.l117.Location = new System.Drawing.Point(872, 209);
             this.l117.Name = "l117";
             this.l117.Size = new System.Drawing.Size(80, 14);
             this.l117.TabIndex = 65;
@@ -675,7 +689,7 @@
             this.l116.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l116.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l116.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l116.Location = new System.Drawing.Point(658, 209);
+            this.l116.Location = new System.Drawing.Point(742, 209);
             this.l116.Name = "l116";
             this.l116.Size = new System.Drawing.Size(80, 14);
             this.l116.TabIndex = 64;
@@ -689,7 +703,7 @@
             this.l118.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l118.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l118.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l118.Location = new System.Drawing.Point(646, 259);
+            this.l118.Location = new System.Drawing.Point(730, 259);
             this.l118.Name = "l118";
             this.l118.Size = new System.Drawing.Size(80, 14);
             this.l118.TabIndex = 63;
@@ -703,7 +717,7 @@
             this.l115.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l115.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l115.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l115.Location = new System.Drawing.Point(570, 209);
+            this.l115.Location = new System.Drawing.Point(654, 209);
             this.l115.Name = "l115";
             this.l115.Size = new System.Drawing.Size(80, 14);
             this.l115.TabIndex = 62;
@@ -717,7 +731,7 @@
             this.l113.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l113.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l113.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l113.Location = new System.Drawing.Point(146, 210);
+            this.l113.Location = new System.Drawing.Point(230, 210);
             this.l113.Name = "l113";
             this.l113.Size = new System.Drawing.Size(80, 14);
             this.l113.TabIndex = 61;
@@ -731,7 +745,7 @@
             this.l112.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l112.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l112.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l112.Location = new System.Drawing.Point(336, 209);
+            this.l112.Location = new System.Drawing.Point(420, 209);
             this.l112.Name = "l112";
             this.l112.Size = new System.Drawing.Size(80, 14);
             this.l112.TabIndex = 60;
@@ -745,7 +759,7 @@
             this.l114.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l114.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l114.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l114.Location = new System.Drawing.Point(430, 256);
+            this.l114.Location = new System.Drawing.Point(514, 256);
             this.l114.Name = "l114";
             this.l114.Size = new System.Drawing.Size(80, 14);
             this.l114.TabIndex = 59;
@@ -759,7 +773,7 @@
             this.l111.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l111.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l111.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l111.Location = new System.Drawing.Point(430, 191);
+            this.l111.Location = new System.Drawing.Point(514, 191);
             this.l111.Name = "l111";
             this.l111.Size = new System.Drawing.Size(80, 14);
             this.l111.TabIndex = 58;
@@ -773,7 +787,7 @@
             this.l105.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l105.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l105.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l105.Location = new System.Drawing.Point(124, 142);
+            this.l105.Location = new System.Drawing.Point(208, 142);
             this.l105.Name = "l105";
             this.l105.Size = new System.Drawing.Size(80, 14);
             this.l105.TabIndex = 57;
@@ -787,7 +801,7 @@
             this.l109.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l109.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l109.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l109.Location = new System.Drawing.Point(124, 92);
+            this.l109.Location = new System.Drawing.Point(208, 92);
             this.l109.Name = "l109";
             this.l109.Size = new System.Drawing.Size(80, 14);
             this.l109.TabIndex = 56;
@@ -801,7 +815,7 @@
             this.l107.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l107.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l107.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l107.Location = new System.Drawing.Point(143, 10);
+            this.l107.Location = new System.Drawing.Point(227, 10);
             this.l107.Name = "l107";
             this.l107.Size = new System.Drawing.Size(80, 14);
             this.l107.TabIndex = 55;
@@ -815,7 +829,7 @@
             this.l104.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l104.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l104.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l104.Location = new System.Drawing.Point(314, 116);
+            this.l104.Location = new System.Drawing.Point(398, 116);
             this.l104.Name = "l104";
             this.l104.Size = new System.Drawing.Size(80, 14);
             this.l104.TabIndex = 54;
@@ -829,7 +843,7 @@
             this.l108.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l108.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l108.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l108.Location = new System.Drawing.Point(353, 57);
+            this.l108.Location = new System.Drawing.Point(437, 57);
             this.l108.Name = "l108";
             this.l108.Size = new System.Drawing.Size(80, 14);
             this.l108.TabIndex = 53;
@@ -843,7 +857,7 @@
             this.l106.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l106.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l106.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l106.Location = new System.Drawing.Point(353, 26);
+            this.l106.Location = new System.Drawing.Point(437, 26);
             this.l106.Name = "l106";
             this.l106.Size = new System.Drawing.Size(80, 14);
             this.l106.TabIndex = 52;
@@ -857,7 +871,7 @@
             this.l110.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l110.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l110.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l110.Location = new System.Drawing.Point(412, 88);
+            this.l110.Location = new System.Drawing.Point(496, 88);
             this.l110.Name = "l110";
             this.l110.Size = new System.Drawing.Size(80, 14);
             this.l110.TabIndex = 51;
@@ -871,7 +885,7 @@
             this.l103.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l103.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l103.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l103.Location = new System.Drawing.Point(430, 40);
+            this.l103.Location = new System.Drawing.Point(514, 40);
             this.l103.Name = "l103";
             this.l103.Size = new System.Drawing.Size(80, 14);
             this.l103.TabIndex = 50;
@@ -885,7 +899,7 @@
             this.l102.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l102.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l102.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l102.Location = new System.Drawing.Point(591, 88);
+            this.l102.Location = new System.Drawing.Point(675, 88);
             this.l102.Name = "l102";
             this.l102.Size = new System.Drawing.Size(80, 14);
             this.l102.TabIndex = 49;
@@ -899,7 +913,7 @@
             this.l101.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l101.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l101.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l101.Location = new System.Drawing.Point(646, 38);
+            this.l101.Location = new System.Drawing.Point(730, 38);
             this.l101.Name = "l101";
             this.l101.Size = new System.Drawing.Size(80, 14);
             this.l101.TabIndex = 48;
@@ -913,7 +927,7 @@
             this.l100.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.l100.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.l100.ForeColor = System.Drawing.Color.GreenYellow;
-            this.l100.Location = new System.Drawing.Point(788, 32);
+            this.l100.Location = new System.Drawing.Point(872, 32);
             this.l100.Name = "l100";
             this.l100.Size = new System.Drawing.Size(80, 14);
             this.l100.TabIndex = 47;
@@ -923,7 +937,7 @@
             // pingBtn
             // 
             this.pingBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pingBtn.Location = new System.Drawing.Point(946, 627);
+            this.pingBtn.Location = new System.Drawing.Point(1113, 627);
             this.pingBtn.Name = "pingBtn";
             this.pingBtn.Size = new System.Drawing.Size(75, 38);
             this.pingBtn.TabIndex = 46;
@@ -934,7 +948,7 @@
             // p136
             // 
             this.p136.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p136.Location = new System.Drawing.Point(271, 640);
+            this.p136.Location = new System.Drawing.Point(355, 640);
             this.p136.Name = "p136";
             this.p136.Size = new System.Drawing.Size(25, 25);
             this.p136.TabIndex = 45;
@@ -943,7 +957,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Location = new System.Drawing.Point(197, 640);
+            this.pictureBox2.Location = new System.Drawing.Point(281, 640);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 25);
             this.pictureBox2.TabIndex = 44;
@@ -952,7 +966,7 @@
             // p139
             // 
             this.p139.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p139.Location = new System.Drawing.Point(510, 640);
+            this.p139.Location = new System.Drawing.Point(594, 640);
             this.p139.Name = "p139";
             this.p139.Size = new System.Drawing.Size(25, 25);
             this.p139.TabIndex = 43;
@@ -961,7 +975,7 @@
             // p138
             // 
             this.p138.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p138.Location = new System.Drawing.Point(440, 640);
+            this.p138.Location = new System.Drawing.Point(524, 640);
             this.p138.Name = "p138";
             this.p138.Size = new System.Drawing.Size(25, 25);
             this.p138.TabIndex = 42;
@@ -970,7 +984,7 @@
             // p135
             // 
             this.p135.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p135.Location = new System.Drawing.Point(357, 614);
+            this.p135.Location = new System.Drawing.Point(441, 614);
             this.p135.Name = "p135";
             this.p135.Size = new System.Drawing.Size(21, 21);
             this.p135.TabIndex = 41;
@@ -979,7 +993,7 @@
             // p134
             // 
             this.p134.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p134.Location = new System.Drawing.Point(356, 549);
+            this.p134.Location = new System.Drawing.Point(440, 549);
             this.p134.Name = "p134";
             this.p134.Size = new System.Drawing.Size(25, 25);
             this.p134.TabIndex = 40;
@@ -988,7 +1002,7 @@
             // p22
             // 
             this.p22.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p22.Location = new System.Drawing.Point(197, 523);
+            this.p22.Location = new System.Drawing.Point(281, 523);
             this.p22.Name = "p22";
             this.p22.Size = new System.Drawing.Size(25, 25);
             this.p22.TabIndex = 39;
@@ -997,7 +1011,7 @@
             // p51
             // 
             this.p51.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p51.Location = new System.Drawing.Point(271, 523);
+            this.p51.Location = new System.Drawing.Point(355, 523);
             this.p51.Name = "p51";
             this.p51.Size = new System.Drawing.Size(25, 25);
             this.p51.TabIndex = 38;
@@ -1006,7 +1020,7 @@
             // p133
             // 
             this.p133.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p133.Location = new System.Drawing.Point(440, 524);
+            this.p133.Location = new System.Drawing.Point(524, 524);
             this.p133.Name = "p133";
             this.p133.Size = new System.Drawing.Size(25, 25);
             this.p133.TabIndex = 37;
@@ -1015,7 +1029,7 @@
             // p132
             // 
             this.p132.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p132.Location = new System.Drawing.Point(510, 523);
+            this.p132.Location = new System.Drawing.Point(594, 523);
             this.p132.Name = "p132";
             this.p132.Size = new System.Drawing.Size(25, 25);
             this.p132.TabIndex = 36;
@@ -1024,7 +1038,7 @@
             // p131
             // 
             this.p131.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p131.Location = new System.Drawing.Point(580, 523);
+            this.p131.Location = new System.Drawing.Point(664, 523);
             this.p131.Name = "p131";
             this.p131.Size = new System.Drawing.Size(25, 25);
             this.p131.TabIndex = 35;
@@ -1033,7 +1047,7 @@
             // p130
             // 
             this.p130.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p130.Location = new System.Drawing.Point(649, 523);
+            this.p130.Location = new System.Drawing.Point(733, 523);
             this.p130.Name = "p130";
             this.p130.Size = new System.Drawing.Size(25, 25);
             this.p130.TabIndex = 34;
@@ -1042,7 +1056,7 @@
             // p129
             // 
             this.p129.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p129.Location = new System.Drawing.Point(719, 523);
+            this.p129.Location = new System.Drawing.Point(803, 523);
             this.p129.Name = "p129";
             this.p129.Size = new System.Drawing.Size(25, 25);
             this.p129.TabIndex = 33;
@@ -1051,7 +1065,7 @@
             // p127
             // 
             this.p127.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p127.Location = new System.Drawing.Point(838, 614);
+            this.p127.Location = new System.Drawing.Point(922, 614);
             this.p127.Name = "p127";
             this.p127.Size = new System.Drawing.Size(25, 25);
             this.p127.TabIndex = 32;
@@ -1060,7 +1074,7 @@
             // p128
             // 
             this.p128.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p128.Location = new System.Drawing.Point(784, 523);
+            this.p128.Location = new System.Drawing.Point(868, 523);
             this.p128.Name = "p128";
             this.p128.Size = new System.Drawing.Size(25, 25);
             this.p128.TabIndex = 31;
@@ -1069,7 +1083,7 @@
             // p126
             // 
             this.p126.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p126.Location = new System.Drawing.Point(837, 549);
+            this.p126.Location = new System.Drawing.Point(921, 549);
             this.p126.Name = "p126";
             this.p126.Size = new System.Drawing.Size(25, 25);
             this.p126.TabIndex = 30;
@@ -1078,7 +1092,7 @@
             // p123
             // 
             this.p123.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p123.Location = new System.Drawing.Point(837, 497);
+            this.p123.Location = new System.Drawing.Point(921, 497);
             this.p123.Name = "p123";
             this.p123.Size = new System.Drawing.Size(25, 25);
             this.p123.TabIndex = 29;
@@ -1087,7 +1101,7 @@
             // p122
             // 
             this.p122.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p122.Location = new System.Drawing.Point(837, 439);
+            this.p122.Location = new System.Drawing.Point(921, 439);
             this.p122.Name = "p122";
             this.p122.Size = new System.Drawing.Size(25, 25);
             this.p122.TabIndex = 28;
@@ -1096,7 +1110,7 @@
             // p141
             // 
             this.p141.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p141.Location = new System.Drawing.Point(476, 390);
+            this.p141.Location = new System.Drawing.Point(560, 390);
             this.p141.Name = "p141";
             this.p141.Size = new System.Drawing.Size(25, 25);
             this.p141.TabIndex = 27;
@@ -1105,7 +1119,7 @@
             // p143
             // 
             this.p143.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p143.Location = new System.Drawing.Point(197, 427);
+            this.p143.Location = new System.Drawing.Point(281, 427);
             this.p143.Name = "p143";
             this.p143.Size = new System.Drawing.Size(25, 25);
             this.p143.TabIndex = 26;
@@ -1114,7 +1128,7 @@
             // p155
             // 
             this.p155.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p155.Location = new System.Drawing.Point(197, 326);
+            this.p155.Location = new System.Drawing.Point(281, 326);
             this.p155.Name = "p155";
             this.p155.Size = new System.Drawing.Size(25, 25);
             this.p155.TabIndex = 25;
@@ -1123,7 +1137,7 @@
             // p142
             // 
             this.p142.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p142.Location = new System.Drawing.Point(325, 396);
+            this.p142.Location = new System.Drawing.Point(409, 396);
             this.p142.Name = "p142";
             this.p142.Size = new System.Drawing.Size(25, 25);
             this.p142.TabIndex = 24;
@@ -1132,7 +1146,7 @@
             // p137
             // 
             this.p137.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p137.Location = new System.Drawing.Point(325, 365);
+            this.p137.Location = new System.Drawing.Point(409, 365);
             this.p137.Name = "p137";
             this.p137.Size = new System.Drawing.Size(25, 25);
             this.p137.TabIndex = 23;
@@ -1141,7 +1155,7 @@
             // p152
             // 
             this.p152.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p152.Location = new System.Drawing.Point(775, 390);
+            this.p152.Location = new System.Drawing.Point(859, 390);
             this.p152.Name = "p152";
             this.p152.Size = new System.Drawing.Size(25, 25);
             this.p152.TabIndex = 22;
@@ -1150,7 +1164,7 @@
             // p120
             // 
             this.p120.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p120.Location = new System.Drawing.Point(710, 390);
+            this.p120.Location = new System.Drawing.Point(794, 390);
             this.p120.Name = "p120";
             this.p120.Size = new System.Drawing.Size(25, 25);
             this.p120.TabIndex = 21;
@@ -1159,7 +1173,7 @@
             // p140
             // 
             this.p140.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p140.Location = new System.Drawing.Point(559, 390);
+            this.p140.Location = new System.Drawing.Point(643, 390);
             this.p140.Name = "p140";
             this.p140.Size = new System.Drawing.Size(25, 25);
             this.p140.TabIndex = 20;
@@ -1168,7 +1182,7 @@
             // p119
             // 
             this.p119.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p119.Location = new System.Drawing.Point(635, 341);
+            this.p119.Location = new System.Drawing.Point(719, 341);
             this.p119.Name = "p119";
             this.p119.Size = new System.Drawing.Size(25, 25);
             this.p119.TabIndex = 19;
@@ -1177,7 +1191,7 @@
             // p117
             // 
             this.p117.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p117.Location = new System.Drawing.Point(775, 226);
+            this.p117.Location = new System.Drawing.Point(859, 226);
             this.p117.Name = "p117";
             this.p117.Size = new System.Drawing.Size(25, 25);
             this.p117.TabIndex = 18;
@@ -1186,7 +1200,7 @@
             // p118
             // 
             this.p118.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p118.Location = new System.Drawing.Point(635, 276);
+            this.p118.Location = new System.Drawing.Point(719, 276);
             this.p118.Name = "p118";
             this.p118.Size = new System.Drawing.Size(25, 25);
             this.p118.TabIndex = 17;
@@ -1195,7 +1209,7 @@
             // p116
             // 
             this.p116.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p116.Location = new System.Drawing.Point(710, 226);
+            this.p116.Location = new System.Drawing.Point(794, 226);
             this.p116.Name = "p116";
             this.p116.Size = new System.Drawing.Size(25, 25);
             this.p116.TabIndex = 16;
@@ -1204,7 +1218,7 @@
             // p115
             // 
             this.p115.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p115.Location = new System.Drawing.Point(559, 226);
+            this.p115.Location = new System.Drawing.Point(643, 226);
             this.p115.Name = "p115";
             this.p115.Size = new System.Drawing.Size(25, 25);
             this.p115.TabIndex = 15;
@@ -1213,7 +1227,7 @@
             // p114
             // 
             this.p114.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p114.Location = new System.Drawing.Point(476, 226);
+            this.p114.Location = new System.Drawing.Point(560, 226);
             this.p114.Name = "p114";
             this.p114.Size = new System.Drawing.Size(25, 25);
             this.p114.TabIndex = 14;
@@ -1222,7 +1236,7 @@
             // p113
             // 
             this.p113.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p113.Location = new System.Drawing.Point(197, 226);
+            this.p113.Location = new System.Drawing.Point(281, 226);
             this.p113.Name = "p113";
             this.p113.Size = new System.Drawing.Size(25, 25);
             this.p113.TabIndex = 13;
@@ -1231,7 +1245,7 @@
             // p112
             // 
             this.p112.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p112.Location = new System.Drawing.Point(325, 226);
+            this.p112.Location = new System.Drawing.Point(409, 226);
             this.p112.Name = "p112";
             this.p112.Size = new System.Drawing.Size(25, 25);
             this.p112.TabIndex = 12;
@@ -1240,7 +1254,7 @@
             // p111
             // 
             this.p111.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p111.Location = new System.Drawing.Point(402, 179);
+            this.p111.Location = new System.Drawing.Point(486, 179);
             this.p111.Name = "p111";
             this.p111.Size = new System.Drawing.Size(25, 25);
             this.p111.TabIndex = 11;
@@ -1249,7 +1263,7 @@
             // p110
             // 
             this.p110.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p110.Location = new System.Drawing.Point(401, 105);
+            this.p110.Location = new System.Drawing.Point(485, 105);
             this.p110.Name = "p110";
             this.p110.Size = new System.Drawing.Size(25, 25);
             this.p110.TabIndex = 10;
@@ -1258,7 +1272,7 @@
             // p105
             // 
             this.p105.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p105.Location = new System.Drawing.Point(197, 130);
+            this.p105.Location = new System.Drawing.Point(281, 130);
             this.p105.Name = "p105";
             this.p105.Size = new System.Drawing.Size(25, 25);
             this.p105.TabIndex = 9;
@@ -1267,7 +1281,7 @@
             // p109
             // 
             this.p109.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p109.Location = new System.Drawing.Point(197, 96);
+            this.p109.Location = new System.Drawing.Point(281, 96);
             this.p109.Name = "p109";
             this.p109.Size = new System.Drawing.Size(25, 25);
             this.p109.TabIndex = 8;
@@ -1276,7 +1290,7 @@
             // p107
             // 
             this.p107.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p107.Location = new System.Drawing.Point(197, 26);
+            this.p107.Location = new System.Drawing.Point(281, 26);
             this.p107.Name = "p107";
             this.p107.Size = new System.Drawing.Size(25, 25);
             this.p107.TabIndex = 7;
@@ -1285,7 +1299,7 @@
             // p104
             // 
             this.p104.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p104.Location = new System.Drawing.Point(325, 88);
+            this.p104.Location = new System.Drawing.Point(409, 88);
             this.p104.Name = "p104";
             this.p104.Size = new System.Drawing.Size(25, 25);
             this.p104.TabIndex = 6;
@@ -1294,7 +1308,7 @@
             // p108
             // 
             this.p108.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p108.Location = new System.Drawing.Point(325, 57);
+            this.p108.Location = new System.Drawing.Point(409, 57);
             this.p108.Name = "p108";
             this.p108.Size = new System.Drawing.Size(25, 25);
             this.p108.TabIndex = 5;
@@ -1303,7 +1317,7 @@
             // p106
             // 
             this.p106.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p106.Location = new System.Drawing.Point(325, 26);
+            this.p106.Location = new System.Drawing.Point(409, 26);
             this.p106.Name = "p106";
             this.p106.Size = new System.Drawing.Size(25, 25);
             this.p106.TabIndex = 4;
@@ -1312,7 +1326,7 @@
             // p103
             // 
             this.p103.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p103.Location = new System.Drawing.Point(477, 58);
+            this.p103.Location = new System.Drawing.Point(561, 58);
             this.p103.Name = "p103";
             this.p103.Size = new System.Drawing.Size(25, 25);
             this.p103.TabIndex = 3;
@@ -1321,7 +1335,7 @@
             // p102
             // 
             this.p102.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p102.Location = new System.Drawing.Point(586, 58);
+            this.p102.Location = new System.Drawing.Point(670, 58);
             this.p102.Name = "p102";
             this.p102.Size = new System.Drawing.Size(25, 25);
             this.p102.TabIndex = 2;
@@ -1330,7 +1344,7 @@
             // p101
             // 
             this.p101.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p101.Location = new System.Drawing.Point(692, 58);
+            this.p101.Location = new System.Drawing.Point(776, 58);
             this.p101.Name = "p101";
             this.p101.Size = new System.Drawing.Size(25, 25);
             this.p101.TabIndex = 1;
@@ -1339,20 +1353,125 @@
             // p100
             // 
             this.p100.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p100.Location = new System.Drawing.Point(784, 58);
+            this.p100.Location = new System.Drawing.Point(868, 58);
             this.p100.Name = "p100";
             this.p100.Size = new System.Drawing.Size(25, 25);
             this.p100.TabIndex = 0;
             this.p100.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.pictureBox5);
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Location = new System.Drawing.Point(12, 555);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(125, 161);
+            this.panel2.TabIndex = 93;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(99, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(100, 32);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(99, 63);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(99, 94);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(4, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Online";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(4, 37);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Not Reachable";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(3, 66);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "TimeOut";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(3, 99);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(77, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Switched Off";
             // 
             // CairoSokhnaDiagramForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1045, 729);
+            this.ClientSize = new System.Drawing.Size(1212, 729);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "CairoSokhnaDiagram";
+            this.Name = "CairoSokhnaDiagramForm";
             this.Text = "Cairo Sokhna";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1402,6 +1521,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.p102)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p101)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p100)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1502,5 +1627,14 @@
         private System.Windows.Forms.Label l101;
         private System.Windows.Forms.Label l100;
         private System.Windows.Forms.Label l127;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

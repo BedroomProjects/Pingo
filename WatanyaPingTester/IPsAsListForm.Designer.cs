@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridView1 = new System.Windows.Forms.DataGridView();
-            this.ping2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.index = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ip = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pic = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ping2 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,6 +63,42 @@
             this.gridView1.RowHeadersVisible = false;
             this.gridView1.Size = new System.Drawing.Size(485, 478);
             this.gridView1.TabIndex = 10;
+            // 
+            // index
+            // 
+            this.index.HeaderText = "Index";
+            this.index.Name = "index";
+            this.index.ReadOnly = true;
+            this.index.Width = 50;
+            // 
+            // name
+            // 
+            this.name.HeaderText = "Name";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            // 
+            // ip
+            // 
+            this.ip.HeaderText = "IP";
+            this.ip.Name = "ip";
+            this.ip.ReadOnly = true;
+            // 
+            // status
+            // 
+            this.status.HeaderText = "Status";
+            this.status.Name = "status";
+            this.status.ReadOnly = true;
+            this.status.Width = 110;
+            // 
+            // pic
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.NullValue = "System.Drawing.Image";
+            this.pic.DefaultCellStyle = dataGridViewCellStyle1;
+            this.pic.HeaderText = "Status Pic";
+            this.pic.Name = "pic";
+            this.pic.ReadOnly = true;
+            this.pic.Width = 120;
             // 
             // ping2
             // 
@@ -104,42 +140,6 @@
             this.comboBox2.Visible = false;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // index
-            // 
-            this.index.HeaderText = "Index";
-            this.index.Name = "index";
-            this.index.ReadOnly = true;
-            this.index.Width = 50;
-            // 
-            // name
-            // 
-            this.name.HeaderText = "Name";
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            // 
-            // ip
-            // 
-            this.ip.HeaderText = "IP";
-            this.ip.Name = "ip";
-            this.ip.ReadOnly = true;
-            // 
-            // status
-            // 
-            this.status.HeaderText = "Status";
-            this.status.Name = "status";
-            this.status.ReadOnly = true;
-            this.status.Width = 110;
-            // 
-            // pic
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.NullValue = "System.Drawing.Image";
-            this.pic.DefaultCellStyle = dataGridViewCellStyle4;
-            this.pic.HeaderText = "Status Pic";
-            this.pic.Name = "pic";
-            this.pic.ReadOnly = true;
-            this.pic.Width = 120;
-            // 
             // IPsAsListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,8 +151,8 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.ping2);
             this.Controls.Add(this.gridView1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "IPsAsListForm";
+            this.Text = "Watanya Pingo";
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
