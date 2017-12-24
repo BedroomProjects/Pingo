@@ -18,13 +18,13 @@ namespace WatanyaPingTester
         List<NetworkNode> nodes;
         string path, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath;
         ExcelToNode etn = new ExcelToNode();
-        string fileName = "test.xlsx";
+        string fileName = "sokhna_scheme.xlsx";
         List<string> nodesStatusList;
         static Thread t;
         bool running = false;
-        ToolTip ttip = new ToolTip();
 
         StartScreen s;
+
 
         public CairoSokhnaDiagramForm(StartScreen s)
         {
@@ -48,9 +48,14 @@ namespace WatanyaPingTester
                 redLEDPath = Path.Combine(path, @"red.png");
                 yellowLEDPath = Path.Combine(path, @"yellow.png");
                 greyLEDPath = Path.Combine(path, @"grey1.png");
-
+                string previousNodesName = "";
                 for (int i = 0; i < nodes.Count(); i++)
                 {
+                    
+                    // fill ComboBox
+                    if(!nodes.ElementAt(i).getName().Equals(previousNodesName))
+                        comboBox1.Items.Add(new ComboboxItem(nodes.ElementAt(i).getName(), i));
+
                     string ipString = nodes.ElementAt(i).getIP();
                     nodes.ElementAt(i).sendPing();
                     int firstDotIndex = ipString.IndexOf(".");
@@ -70,6 +75,8 @@ namespace WatanyaPingTester
                         control.MouseHover += new EventHandler(pictureBoxMouseHoverEventHandler);
                         control.MouseLeave += new EventHandler(pictureBoxMouseLeaveEventHandler);
                     }
+
+                    previousNodesName = nodes.ElementAt(i).getName();
                 }
             }
             catch (Exception e)
@@ -266,6 +273,62 @@ namespace WatanyaPingTester
 
             }
             s.Show();
+        }
+
+        // ComboBox item
+        public class ComboboxItem
+        {
+            public string name;
+            public int nodeIndex;
+
+            public ComboboxItem(string name, int index)
+            {
+                this.name = name;
+                this.nodeIndex = index;
+            }
+
+            public override string ToString()
+            {
+                return name;
+            }
+        }
+
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboboxItem item = (ComboboxItem)comboBox1.SelectedItem;
+            List<string> ips = new List<string>();
+            ips.Add(nodes.ElementAt(item.nodeIndex).getIP());
+            string preIP = nodes.ElementAt(item.nodeIndex).getPreviousNode();
+            string ss = "";
+            for (int i = 0; i < nodes.Count(); i++ )
+            {
+                if (nodes.ElementAt(i).getIP().Equals(preIP))
+                {
+                    ss += preIP + "\n";
+                    if (preIP.Equals("none"))
+                        break;
+                    ips.Add(preIP);
+                    string[] arr = preIP.Split('.');
+                    try
+                    {
+                        var control = (PictureBox)this.GetControlByName(this, "a" + arr[3]);
+                        control.Visible = true;
+                    }catch(Exception eee){
+
+                    }
+                    preIP = nodes.ElementAt(i).getPreviousNode();
+                    i = -1;
+                }else if(preIP.Equals("none")){
+                    break;
+                }
+            }
+
+            MessageBoxButtons buttons = MessageBoxButtons.OK;
+            DialogResult result;
+
+            // Displays the MessageBox.
+            result = MessageBox.Show(ss, "Error", buttons);
         }
     }
 }

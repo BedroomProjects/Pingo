@@ -41,11 +41,11 @@ namespace WatanyaPingTester
                 for (int i = 2; i <= rowCount; i++)
                 {
                     List<string> nodeDataList = new List<string>();
-                    for (int j = 1; j <= 6; j++)
+                    for (int j = 1; j <= 7; j++)
                     {
                         nodeDataList.Add(xlRange.Cells[i, j].Value2.ToString());
                     }
-                    nodes.Add(new NetworkNode(nodeDataList.ElementAt(0), nodeDataList.ElementAt(1), nodeDataList.ElementAt(2), nodeDataList.ElementAt(3), nodeDataList.ElementAt(4), nodeDataList.ElementAt(5)));
+                    nodes.Add(new NetworkNode(nodeDataList.ElementAt(0), nodeDataList.ElementAt(1), nodeDataList.ElementAt(2), nodeDataList.ElementAt(3), nodeDataList.ElementAt(4), nodeDataList.ElementAt(5), nodeDataList.ElementAt(6)));
                     result.Add(nodeDataList);
                 }
 
