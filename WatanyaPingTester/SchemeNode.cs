@@ -13,6 +13,7 @@ namespace WatanyaPingTester
         int id;
         PictureBox pic;
         Label label;
+        bool visible = true;
 
         public SchemeNode(NetworkNode n)
         {
@@ -54,6 +55,21 @@ namespace WatanyaPingTester
         public Label getLabel()
         {
             return label;
+        }
+
+        public bool isVisible()
+        {
+            return visible;
+        }
+
+        public void setVisiblility(bool visible)
+        {
+            this.visible = visible;
+        }
+
+        public string getPreviousNode()
+        {
+            return node.getPreviousNode();
         }
 
         public NetworkNode getNode()

@@ -123,6 +123,9 @@
             this.p102 = new System.Windows.Forms.PictureBox();
             this.p101 = new System.Windows.Forms.PictureBox();
             this.p100 = new System.Windows.Forms.PictureBox();
+            this.leftPanel = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).BeginInit();
             this.schemePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p123)).BeginInit();
@@ -171,6 +174,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.p102)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p101)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p100)).BeginInit();
+            this.leftPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guidePictureBox
@@ -178,9 +182,9 @@
             this.guidePictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guidePictureBox.BackColor = System.Drawing.Color.Transparent;
             this.guidePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("guidePictureBox.Image")));
-            this.guidePictureBox.Location = new System.Drawing.Point(12, 403);
+            this.guidePictureBox.Location = new System.Drawing.Point(24, 388);
             this.guidePictureBox.Name = "guidePictureBox";
-            this.guidePictureBox.Size = new System.Drawing.Size(177, 220);
+            this.guidePictureBox.Size = new System.Drawing.Size(137, 220);
             this.guidePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guidePictureBox.TabIndex = 1;
             this.guidePictureBox.TabStop = false;
@@ -1001,7 +1005,7 @@
             // 
             this.p135.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p135.Image = ((System.Drawing.Image)(resources.GetObject("p135.Image")));
-            this.p135.Location = new System.Drawing.Point(223, 529);
+            this.p135.Location = new System.Drawing.Point(224, 529);
             this.p135.Name = "p135";
             this.p135.Size = new System.Drawing.Size(25, 25);
             this.p135.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1012,7 +1016,7 @@
             // 
             this.p127.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p127.Image = ((System.Drawing.Image)(resources.GetObject("p127.Image")));
-            this.p127.Location = new System.Drawing.Point(726, 537);
+            this.p127.Location = new System.Drawing.Point(728, 537);
             this.p127.Name = "p127";
             this.p127.Size = new System.Drawing.Size(25, 25);
             this.p127.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1023,7 +1027,7 @@
             // 
             this.p134.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p134.Image = ((System.Drawing.Image)(resources.GetObject("p134.Image")));
-            this.p134.Location = new System.Drawing.Point(226, 467);
+            this.p134.Location = new System.Drawing.Point(224, 467);
             this.p134.Name = "p134";
             this.p134.Size = new System.Drawing.Size(25, 25);
             this.p134.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1437,6 +1441,50 @@
             this.p100.TabIndex = 0;
             this.p100.TabStop = false;
             // 
+            // leftPanel
+            // 
+            this.leftPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.leftPanel.BackColor = System.Drawing.Color.Transparent;
+            this.leftPanel.Controls.Add(this.label2);
+            this.leftPanel.Controls.Add(this.comboBox1);
+            this.leftPanel.Controls.Add(this.guidePictureBox);
+            this.leftPanel.Location = new System.Drawing.Point(12, 12);
+            this.leftPanel.Name = "leftPanel";
+            this.leftPanel.Size = new System.Drawing.Size(177, 611);
+            this.leftPanel.TabIndex = 3;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(130)))));
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Arial Black", 9F);
+            this.comboBox1.ForeColor = System.Drawing.Color.White;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(24, 105);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(137, 269);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.Text = "Select a Point";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label2.Font = new System.Drawing.Font("Am-Hal", 20F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(5, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(171, 88);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "شبكة\r\nالقاهرة - السخنة";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // SokhnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1444,8 +1492,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1048, 635);
+            this.Controls.Add(this.leftPanel);
             this.Controls.Add(this.schemePanel);
-            this.Controls.Add(this.guidePictureBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "SokhnaForm";
             this.Text = "SokhnaForm";
@@ -1498,6 +1546,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.p102)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p101)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p100)).EndInit();
+            this.leftPanel.ResumeLayout(false);
+            this.leftPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1598,5 +1648,8 @@
         private System.Windows.Forms.Label l128;
         private System.Windows.Forms.Label l126;
         private System.Windows.Forms.Label l123;
+        private System.Windows.Forms.Panel leftPanel;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

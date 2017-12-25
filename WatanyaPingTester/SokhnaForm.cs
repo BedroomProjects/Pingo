@@ -16,7 +16,7 @@ namespace WatanyaPingTester
     {
         List<SchemeNode> schemeNodes = new List<SchemeNode>();
 
-        int secondsPerPing = 1;
+        int secondsPerPing = 2;
         bool showIPs = false;
 
         List<NetworkNode> nodes;
@@ -79,21 +79,50 @@ namespace WatanyaPingTester
         {
             for (int i = 0; i < schemeNodes.Count; i++)
             {
-                string curNodeStatus = schemeNodes[i].getNode().getStatus();
-                if (curNodeStatus == "Online")
+                try
                 {
-                    setPicToGreen(schemeNodes[i].getPic());
-                    //schemeNodes[i].getLabel().ForeColor = Color.LightGreen;
-                }
-                else if (curNodeStatus == "Not Reachable")
-                {
-                    setPicToRed(schemeNodes[i].getPic());
-                    //schemeNodes[i].getLabel().ForeColor = Color.LightPink;
-                }
-                else if (curNodeStatus == "Timeout")
-                {
-                    setPicToYellow(schemeNodes[i].getPic());
-                    //schemeNodes[i].getLabel().ForeColor = Color.Yellow;
+                    if (schemeNodes.ElementAt(i).isVisible())
+                    {
+                        PictureBox pp = schemeNodes.ElementAt(i).getPic();
+                        pp.Invoke((MethodInvoker)delegate
+                        {
+                            pp.Visible = true;
+                        });
+
+                        string curNodeStatus = schemeNodes[i].getNode().getStatus();
+                        if (curNodeStatus == "Online")
+                        {
+                            setPicToGreen(schemeNodes[i].getPic());
+                            //schemeNodes[i].getLabel().ForeColor = Color.LightGreen;
+                        }
+                        else if (curNodeStatus == "Not Reachable")
+                        {
+                            setPicToRed(schemeNodes[i].getPic());
+                            //schemeNodes[i].getLabel().ForeColor = Color.LightPink;
+                        }
+                        else if (curNodeStatus == "Timeout")
+                        {
+                            setPicToYellow(schemeNodes[i].getPic());
+                            //schemeNodes[i].getLabel().ForeColor = Color.Yellow;
+                        }
+                    }
+                    else
+                    {
+                        try
+                        {
+                            PictureBox pp = schemeNodes.ElementAt(i).getPic();
+                            pp.Invoke((MethodInvoker)delegate
+                            {
+                                pp.Visible = false;
+                            });
+                        }
+                        catch (Exception ee)
+                        {
+
+                        }
+                    }
+                }catch(Exception eeee){
+
                 }
             }
         }
@@ -116,12 +145,18 @@ namespace WatanyaPingTester
 
         void generateSchemeNodes(List<NetworkNode> networkNodes)
         {
+            string previousNodesName = "";
+            comboBox1.Items.Add(new ComboboxItem("All", -1));
             for (int i = 0; i < networkNodes.Count; i++)
             {
                 SchemeNode sn = new SchemeNode(networkNodes[i]);
 
                 PictureBox cPic = (PictureBox)this.GetControlByName(this, "p" + sn.getID());
                 Label cLabel = (Label)this.GetControlByName(this, "l" + sn.getID());
+
+                // fill ComboBox
+                if (!nodes.ElementAt(i).getName().Equals(previousNodesName))
+                    comboBox1.Items.Add(new ComboboxItem(nodes.ElementAt(i).getName(), i));
                 try
                 {
                     if (cLabel != null)
@@ -140,6 +175,7 @@ namespace WatanyaPingTester
                 }
                 setPicToGrey(cPic);
                 schemeNodes.Add(sn);
+                previousNodesName = nodes.ElementAt(i).getName();
 
             }
         }
@@ -239,6 +275,68 @@ namespace WatanyaPingTester
 
             }
             startScreen.Show();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboboxItem item = (ComboboxItem)comboBox1.SelectedItem;
+            if (item.nodeIndex != -1)
+            {
+                List<string> ips = new List<string>();
+                ips.Add(schemeNodes.ElementAt(item.nodeIndex).getIP());
+                string preIP = schemeNodes.ElementAt(item.nodeIndex).getPreviousNode();
+                string ss = "";
+                for (int i = 0; i < schemeNodes.Count(); i++)
+                {
+                    if (schemeNodes.ElementAt(i).getIP().Equals(preIP))
+                    {
+                        ss += preIP + " " + schemeNodes.ElementAt(i).isVisible().ToString();
+                        ips.Add(preIP);
+                        schemeNodes.ElementAt(i).setVisiblility(true);
+                        ss += schemeNodes.ElementAt(i).isVisible().ToString() + " \n";
+                        preIP = schemeNodes.ElementAt(i).getPreviousNode();
+                        i = -1;
+                    }
+                    else if (preIP.Equals("none"))
+                    {
+                        break;
+                    }
+                }
+
+                for (int i = 0; i < schemeNodes.Count(); i++)
+                {
+                    string iptemp = schemeNodes.ElementAt(i).getIP();
+                    if (!ips.Contains(schemeNodes.ElementAt(i).getIP()))
+                    {
+                        schemeNodes.ElementAt(i).setVisiblility(false);
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < schemeNodes.Count(); i++)
+                {
+                    schemeNodes.ElementAt(i).setVisiblility(true);
+                }
+            }
+        }
+
+        // ComboBox item
+        public class ComboboxItem
+        {
+            public string name;
+            public int nodeIndex;
+
+            public ComboboxItem(string name, int index)
+            {
+                this.name = name;
+                this.nodeIndex = index;
+            }
+
+            public override string ToString()
+            {
+                return name;
+            }
         }
 
     }
