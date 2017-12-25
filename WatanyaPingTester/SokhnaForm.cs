@@ -279,6 +279,11 @@ namespace WatanyaPingTester
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            for (int i = 0; i < schemeNodes.Count(); i++)
+            {
+                schemeNodes.ElementAt(i).setVisiblility(true);
+            }
+
             ComboboxItem item = (ComboboxItem)comboBox1.SelectedItem;
             if (item.nodeIndex != -1)
             {
@@ -312,13 +317,13 @@ namespace WatanyaPingTester
                     }
                 }
             }
-            else
-            {
-                for (int i = 0; i < schemeNodes.Count(); i++)
-                {
-                    schemeNodes.ElementAt(i).setVisiblility(true);
-                }
-            }
+            //else
+            //{
+            //    for (int i = 0; i < schemeNodes.Count(); i++)
+            //    {
+            //        schemeNodes.ElementAt(i).setVisiblility(true);
+            //    }
+            //}
         }
 
         // ComboBox item

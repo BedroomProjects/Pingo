@@ -124,8 +124,8 @@
             this.p101 = new System.Windows.Forms.PictureBox();
             this.p100 = new System.Windows.Forms.PictureBox();
             this.leftPanel = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).BeginInit();
             this.schemePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p123)).BeginInit();
@@ -1453,6 +1453,22 @@
             this.leftPanel.Size = new System.Drawing.Size(177, 611);
             this.leftPanel.TabIndex = 3;
             // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(5, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(174, 64);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "شبكة\r\nالقاهرة - السخنة";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // comboBox1
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1469,28 +1485,11 @@
             this.comboBox1.Text = "Select a Point";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label2.Font = new System.Drawing.Font("Am-Hal", 20F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(5, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 88);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "شبكة\r\nالقاهرة - السخنة";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // SokhnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1048, 635);
             this.Controls.Add(this.leftPanel);
             this.Controls.Add(this.schemePanel);
