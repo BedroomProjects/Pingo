@@ -36,7 +36,7 @@ namespace WatanyaPingTester
 
             // Adding form closing event handler
             this.FormClosing += new FormClosingEventHandler(CairoSokhnaDiagram_Closing);
-
+            
             t = new Thread(updateStatus);
 
             nodes = etn.getNetworkNodes(fileName);

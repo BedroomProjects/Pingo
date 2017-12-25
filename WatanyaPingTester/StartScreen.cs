@@ -26,7 +26,8 @@ namespace WatanyaPingTester
 
         private void sokhnaBtn_Click(object sender, EventArgs e)
         {
-            CairoSokhnaDiagramForm csd = new CairoSokhnaDiagramForm(this);
+            //CairoSokhnaDiagramForm csd = new CairoSokhnaDiagramForm(this);
+            SokhnaForm csd = new SokhnaForm(this);
             csd.Show();
             this.Hide();
         }
