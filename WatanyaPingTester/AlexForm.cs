@@ -34,8 +34,8 @@ namespace WatanyaPingTester
             this.startScreen = startScreen;
 
             // full screen above taskbar
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            this.WindowState = FormWindowState.Maximized;
+            //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            //this.WindowState = FormWindowState.Maximized;
 
             // Adding form closing event handler
             this.FormClosing += new FormClosingEventHandler(CairoAlexDiagram_Closing);
@@ -95,7 +95,6 @@ namespace WatanyaPingTester
                 {
                     Console.Write("Exception with " + cLabel.Text);
                 }
-                setPicToGrey(cPic);
                 schemeNodes.Add(sn);
                 previousNodesName = nodes.ElementAt(i).getName();
 

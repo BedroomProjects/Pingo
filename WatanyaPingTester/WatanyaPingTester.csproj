@@ -75,6 +75,12 @@
     <Compile Include="IPsAsListForm.Designer.cs">
       <DependentUpon>IPsAsListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PleaseWaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PleaseWaitForm.Designer.cs">
+      <DependentUpon>PleaseWaitForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SchemeNode.cs" />
     <Compile Include="SokhnaForm.cs">
       <SubType>Form</SubType>
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IPsAsListForm.resx">
       <DependentUpon>IPsAsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PleaseWaitForm.resx">
+      <DependentUpon>PleaseWaitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SokhnaForm.resx">
       <DependentUpon>SokhnaForm.cs</DependentUpon>

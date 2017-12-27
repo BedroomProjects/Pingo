@@ -35,8 +35,8 @@ namespace WatanyaPingTester
             resPath = resPath = Path.Combine(Environment.CurrentDirectory, @"res");
 
             // full screen above taskbar
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            this.WindowState = FormWindowState.Maximized;
+            //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            //this.WindowState = FormWindowState.Maximized;
 
             // Adding form closing event handler
             this.FormClosing += new FormClosingEventHandler(CairoAlexDiagram_Closing);
