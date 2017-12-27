@@ -124,6 +124,7 @@
             this.p101 = new System.Windows.Forms.PictureBox();
             this.p100 = new System.Windows.Forms.PictureBox();
             this.leftPanel = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).BeginInit();
@@ -287,7 +288,7 @@
             this.schemePanel.Controls.Add(this.p102);
             this.schemePanel.Controls.Add(this.p101);
             this.schemePanel.Controls.Add(this.p100);
-            this.schemePanel.Location = new System.Drawing.Point(195, 12);
+            this.schemePanel.Location = new System.Drawing.Point(12, 12);
             this.schemePanel.Name = "schemePanel";
             this.schemePanel.Size = new System.Drawing.Size(841, 611);
             this.schemePanel.TabIndex = 2;
@@ -1445,13 +1446,26 @@
             // 
             this.leftPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.leftPanel.BackColor = System.Drawing.Color.Transparent;
+            this.leftPanel.Controls.Add(this.checkBox1);
             this.leftPanel.Controls.Add(this.label2);
             this.leftPanel.Controls.Add(this.comboBox1);
             this.leftPanel.Controls.Add(this.guidePictureBox);
-            this.leftPanel.Location = new System.Drawing.Point(12, 12);
+            this.leftPanel.Location = new System.Drawing.Point(859, 12);
             this.leftPanel.Name = "leftPanel";
             this.leftPanel.Size = new System.Drawing.Size(177, 611);
             this.leftPanel.TabIndex = 3;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(24, 77);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(83, 17);
+            this.checkBox1.TabIndex = 4;
+            this.checkBox1.Text = "Show all IPs";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label2
             // 
@@ -1650,5 +1664,6 @@
         private System.Windows.Forms.Panel leftPanel;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

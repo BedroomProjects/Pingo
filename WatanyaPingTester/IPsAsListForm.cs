@@ -21,8 +21,8 @@ namespace WatanyaPingTester
         List<NetworkNode> nodes;
         string path, markPath, xPath;
         ExcelToNode etn = new ExcelToNode();
-        string fileName = "test.xlsx";
-        string[] excelSheetsNames = { "test.xlsx", "alex_scheme.xlsx" };
+        string fileName = "sokhna_scheme.xlsx";
+        string[] excelSheetsNames = { "sokhna_scheme.xlsx", "alex_scheme.xlsx" };
         List<string> nodesStatusList;
         static Thread t;
         string selectedItem;

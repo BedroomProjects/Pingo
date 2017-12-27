@@ -103,3 +103,8 @@ E:\Pingo 2.0\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.SokhnaForm.reso
 E:\Pingo 2.0\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.StartScreen.resources
 E:\Pingo 2.0\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resources.resources
 E:\Pingo 2.0\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache
+G:\Fahim\C#\PingTest\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.AlexForm.resources
+G:\Fahim\C#\PingTest - Copy\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe.config
+G:\Fahim\C#\PingTest - Copy\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.ResolveComReference.cache
+G:\Fahim\C#\PingTest - Copy\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.exe
+G:\Fahim\C#\PingTest - Copy\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.pdb

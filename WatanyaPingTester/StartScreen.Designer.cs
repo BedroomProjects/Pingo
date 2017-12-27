@@ -93,6 +93,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.alexBtn);
             this.Controls.Add(this.sokhnaBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "StartScreen";
             this.Text = "Watanya Pingo";
             this.Load += new System.EventHandler(this.Form2_Load);

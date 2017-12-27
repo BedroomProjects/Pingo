@@ -339,6 +339,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1240, 757);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -611,6 +612,7 @@
             this.l47.TabIndex = 139;
             this.l47.Text = "169.254.1.47";
             this.l47.Visible = false;
+            this.l47.Click += new System.EventHandler(this.l47_Click);
             // 
             // l52
             // 
@@ -663,6 +665,7 @@
             this.l37.TabIndex = 135;
             this.l37.Text = "169.254.1.37";
             this.l37.Visible = false;
+            this.l37.Click += new System.EventHandler(this.l37_Click);
             // 
             // l33
             // 
@@ -676,13 +679,14 @@
             this.l33.TabIndex = 134;
             this.l33.Text = "169.254.1.33";
             this.l33.Visible = false;
+            this.l33.Click += new System.EventHandler(this.l33_Click);
             // 
             // p69
             // 
             this.p69.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p69.Location = new System.Drawing.Point(662, 622);
             this.p69.Name = "p69";
-            this.p69.Size = new System.Drawing.Size(25, 25);
+            this.p69.Size = new System.Drawing.Size(20, 20);
             this.p69.TabIndex = 133;
             this.p69.TabStop = false;
             // 
@@ -1127,6 +1131,7 @@
             this.l2.TabIndex = 106;
             this.l2.Text = "169.254.1.2";
             this.l2.Visible = false;
+            this.l2.Click += new System.EventHandler(this.l2_Click);
             // 
             // l4
             // 
@@ -1192,13 +1197,14 @@
             this.l1.TabIndex = 1;
             this.l1.Text = "169.254.1.1";
             this.l1.Visible = false;
+            this.l1.Click += new System.EventHandler(this.l1_Click);
             // 
             // p68
             // 
             this.p68.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p68.Location = new System.Drawing.Point(708, 512);
             this.p68.Name = "p68";
-            this.p68.Size = new System.Drawing.Size(25, 25);
+            this.p68.Size = new System.Drawing.Size(20, 20);
             this.p68.TabIndex = 54;
             this.p68.TabStop = false;
             // 
@@ -1207,7 +1213,7 @@
             this.p30.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p30.Location = new System.Drawing.Point(786, 228);
             this.p30.Name = "p30";
-            this.p30.Size = new System.Drawing.Size(25, 25);
+            this.p30.Size = new System.Drawing.Size(20, 20);
             this.p30.TabIndex = 53;
             this.p30.TabStop = false;
             // 
@@ -1216,7 +1222,7 @@
             this.p31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p31.Location = new System.Drawing.Point(728, 228);
             this.p31.Name = "p31";
-            this.p31.Size = new System.Drawing.Size(25, 25);
+            this.p31.Size = new System.Drawing.Size(20, 20);
             this.p31.TabIndex = 52;
             this.p31.TabStop = false;
             // 
@@ -1225,7 +1231,7 @@
             this.p8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p8.Location = new System.Drawing.Point(708, 82);
             this.p8.Name = "p8";
-            this.p8.Size = new System.Drawing.Size(25, 25);
+            this.p8.Size = new System.Drawing.Size(20, 20);
             this.p8.TabIndex = 51;
             this.p8.TabStop = false;
             // 
@@ -1234,7 +1240,7 @@
             this.p6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p6.Location = new System.Drawing.Point(786, 82);
             this.p6.Name = "p6";
-            this.p6.Size = new System.Drawing.Size(25, 25);
+            this.p6.Size = new System.Drawing.Size(20, 20);
             this.p6.TabIndex = 50;
             this.p6.TabStop = false;
             // 
@@ -1243,7 +1249,7 @@
             this.p4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p4.Location = new System.Drawing.Point(908, 82);
             this.p4.Name = "p4";
-            this.p4.Size = new System.Drawing.Size(25, 25);
+            this.p4.Size = new System.Drawing.Size(20, 20);
             this.p4.TabIndex = 49;
             this.p4.TabStop = false;
             // 
@@ -1252,7 +1258,7 @@
             this.p2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p2.Location = new System.Drawing.Point(986, 82);
             this.p2.Name = "p2";
-            this.p2.Size = new System.Drawing.Size(25, 25);
+            this.p2.Size = new System.Drawing.Size(20, 20);
             this.p2.TabIndex = 48;
             this.p2.TabStop = false;
             // 
@@ -1261,7 +1267,7 @@
             this.p51.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p51.Location = new System.Drawing.Point(849, 472);
             this.p51.Name = "p51";
-            this.p51.Size = new System.Drawing.Size(25, 25);
+            this.p51.Size = new System.Drawing.Size(20, 20);
             this.p51.TabIndex = 47;
             this.p51.TabStop = false;
             // 
@@ -1270,7 +1276,7 @@
             this.p53.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p53.Location = new System.Drawing.Point(786, 512);
             this.p53.Name = "p53";
-            this.p53.Size = new System.Drawing.Size(25, 25);
+            this.p53.Size = new System.Drawing.Size(20, 20);
             this.p53.TabIndex = 46;
             this.p53.TabStop = false;
             // 
@@ -1279,7 +1285,7 @@
             this.p75.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p75.Location = new System.Drawing.Point(616, 664);
             this.p75.Name = "p75";
-            this.p75.Size = new System.Drawing.Size(25, 25);
+            this.p75.Size = new System.Drawing.Size(20, 20);
             this.p75.TabIndex = 45;
             this.p75.TabStop = false;
             // 
@@ -1288,7 +1294,7 @@
             this.p70.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p70.Location = new System.Drawing.Point(662, 554);
             this.p70.Name = "p70";
-            this.p70.Size = new System.Drawing.Size(25, 25);
+            this.p70.Size = new System.Drawing.Size(20, 20);
             this.p70.TabIndex = 44;
             this.p70.TabStop = false;
             // 
@@ -1297,7 +1303,7 @@
             this.p76.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p76.Location = new System.Drawing.Point(558, 664);
             this.p76.Name = "p76";
-            this.p76.Size = new System.Drawing.Size(25, 25);
+            this.p76.Size = new System.Drawing.Size(20, 20);
             this.p76.TabIndex = 43;
             this.p76.TabStop = false;
             // 
@@ -1306,7 +1312,7 @@
             this.p79.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p79.Location = new System.Drawing.Point(466, 664);
             this.p79.Name = "p79";
-            this.p79.Size = new System.Drawing.Size(25, 25);
+            this.p79.Size = new System.Drawing.Size(20, 20);
             this.p79.TabIndex = 42;
             this.p79.TabStop = false;
             // 
@@ -1315,7 +1321,7 @@
             this.p16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p16.Location = new System.Drawing.Point(512, 472);
             this.p16.Name = "p16";
-            this.p16.Size = new System.Drawing.Size(25, 25);
+            this.p16.Size = new System.Drawing.Size(20, 20);
             this.p16.TabIndex = 41;
             this.p16.TabStop = false;
             // 
@@ -1324,7 +1330,7 @@
             this.p80.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p80.Location = new System.Drawing.Point(388, 664);
             this.p80.Name = "p80";
-            this.p80.Size = new System.Drawing.Size(25, 25);
+            this.p80.Size = new System.Drawing.Size(20, 20);
             this.p80.TabIndex = 40;
             this.p80.TabStop = false;
             // 
@@ -1333,7 +1339,7 @@
             this.p92.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p92.Location = new System.Drawing.Point(177, 472);
             this.p92.Name = "p92";
-            this.p92.Size = new System.Drawing.Size(25, 25);
+            this.p92.Size = new System.Drawing.Size(20, 20);
             this.p92.TabIndex = 39;
             this.p92.TabStop = false;
             // 
@@ -1342,7 +1348,7 @@
             this.p91.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p91.Location = new System.Drawing.Point(177, 414);
             this.p91.Name = "p91";
-            this.p91.Size = new System.Drawing.Size(25, 25);
+            this.p91.Size = new System.Drawing.Size(20, 20);
             this.p91.TabIndex = 38;
             this.p91.TabStop = false;
             // 
@@ -1351,7 +1357,7 @@
             this.p90.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p90.Location = new System.Drawing.Point(178, 358);
             this.p90.Name = "p90";
-            this.p90.Size = new System.Drawing.Size(25, 25);
+            this.p90.Size = new System.Drawing.Size(20, 20);
             this.p90.TabIndex = 37;
             this.p90.TabStop = false;
             // 
@@ -1360,7 +1366,7 @@
             this.p89.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p89.Location = new System.Drawing.Point(178, 274);
             this.p89.Name = "p89";
-            this.p89.Size = new System.Drawing.Size(25, 25);
+            this.p89.Size = new System.Drawing.Size(20, 20);
             this.p89.TabIndex = 36;
             this.p89.TabStop = false;
             // 
@@ -1369,7 +1375,7 @@
             this.p84.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p84.Location = new System.Drawing.Point(362, 325);
             this.p84.Name = "p84";
-            this.p84.Size = new System.Drawing.Size(25, 25);
+            this.p84.Size = new System.Drawing.Size(20, 20);
             this.p84.TabIndex = 35;
             this.p84.TabStop = false;
             // 
@@ -1378,7 +1384,7 @@
             this.p14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p14.Location = new System.Drawing.Point(512, 326);
             this.p14.Name = "p14";
-            this.p14.Size = new System.Drawing.Size(25, 25);
+            this.p14.Size = new System.Drawing.Size(20, 20);
             this.p14.TabIndex = 34;
             this.p14.TabStop = false;
             // 
@@ -1387,7 +1393,7 @@
             this.p15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p15.Location = new System.Drawing.Point(512, 408);
             this.p15.Name = "p15";
-            this.p15.Size = new System.Drawing.Size(25, 25);
+            this.p15.Size = new System.Drawing.Size(20, 20);
             this.p15.TabIndex = 33;
             this.p15.TabStop = false;
             // 
@@ -1396,7 +1402,7 @@
             this.p48.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p48.Location = new System.Drawing.Point(908, 368);
             this.p48.Name = "p48";
-            this.p48.Size = new System.Drawing.Size(25, 25);
+            this.p48.Size = new System.Drawing.Size(20, 20);
             this.p48.TabIndex = 32;
             this.p48.TabStop = false;
             // 
@@ -1405,7 +1411,7 @@
             this.p52.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p52.Location = new System.Drawing.Point(849, 410);
             this.p52.Name = "p52";
-            this.p52.Size = new System.Drawing.Size(25, 25);
+            this.p52.Size = new System.Drawing.Size(20, 20);
             this.p52.TabIndex = 31;
             this.p52.TabStop = false;
             // 
@@ -1414,7 +1420,7 @@
             this.p47.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p47.Location = new System.Drawing.Point(986, 368);
             this.p47.Name = "p47";
-            this.p47.Size = new System.Drawing.Size(25, 25);
+            this.p47.Size = new System.Drawing.Size(20, 20);
             this.p47.TabIndex = 30;
             this.p47.TabStop = false;
             // 
@@ -1423,7 +1429,7 @@
             this.p45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p45.Location = new System.Drawing.Point(846, 328);
             this.p45.Name = "p45";
-            this.p45.Size = new System.Drawing.Size(25, 25);
+            this.p45.Size = new System.Drawing.Size(20, 20);
             this.p45.TabIndex = 29;
             this.p45.TabStop = false;
             // 
@@ -1432,7 +1438,7 @@
             this.p81.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p81.Location = new System.Drawing.Point(664, 326);
             this.p81.Name = "p81";
-            this.p81.Size = new System.Drawing.Size(25, 25);
+            this.p81.Size = new System.Drawing.Size(20, 20);
             this.p81.TabIndex = 28;
             this.p81.TabStop = false;
             // 
@@ -1441,7 +1447,7 @@
             this.p46.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p46.Location = new System.Drawing.Point(847, 254);
             this.p46.Name = "p46";
-            this.p46.Size = new System.Drawing.Size(25, 25);
+            this.p46.Size = new System.Drawing.Size(20, 20);
             this.p46.TabIndex = 27;
             this.p46.TabStop = false;
             // 
@@ -1450,7 +1456,7 @@
             this.p37.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p37.Location = new System.Drawing.Point(986, 277);
             this.p37.Name = "p37";
-            this.p37.Size = new System.Drawing.Size(25, 25);
+            this.p37.Size = new System.Drawing.Size(20, 20);
             this.p37.TabIndex = 26;
             this.p37.TabStop = false;
             // 
@@ -1459,7 +1465,7 @@
             this.p33.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p33.Location = new System.Drawing.Point(986, 186);
             this.p33.Name = "p33";
-            this.p33.Size = new System.Drawing.Size(25, 25);
+            this.p33.Size = new System.Drawing.Size(20, 20);
             this.p33.TabIndex = 25;
             this.p33.TabStop = false;
             // 
@@ -1468,7 +1474,7 @@
             this.p38.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p38.Location = new System.Drawing.Point(908, 221);
             this.p38.Name = "p38";
-            this.p38.Size = new System.Drawing.Size(25, 25);
+            this.p38.Size = new System.Drawing.Size(20, 20);
             this.p38.TabIndex = 24;
             this.p38.TabStop = false;
             // 
@@ -1477,7 +1483,7 @@
             this.p34.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p34.Location = new System.Drawing.Point(908, 186);
             this.p34.Name = "p34";
-            this.p34.Size = new System.Drawing.Size(25, 25);
+            this.p34.Size = new System.Drawing.Size(20, 20);
             this.p34.TabIndex = 23;
             this.p34.TabStop = false;
             // 
@@ -1486,7 +1492,7 @@
             this.p32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p32.Location = new System.Drawing.Point(786, 201);
             this.p32.Name = "p32";
-            this.p32.Size = new System.Drawing.Size(25, 25);
+            this.p32.Size = new System.Drawing.Size(20, 20);
             this.p32.TabIndex = 22;
             this.p32.TabStop = false;
             // 
@@ -1495,7 +1501,7 @@
             this.p29.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p29.Location = new System.Drawing.Point(728, 201);
             this.p29.Name = "p29";
-            this.p29.Size = new System.Drawing.Size(25, 25);
+            this.p29.Size = new System.Drawing.Size(20, 20);
             this.p29.TabIndex = 21;
             this.p29.TabStop = false;
             // 
@@ -1504,7 +1510,7 @@
             this.p82.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p82.Location = new System.Drawing.Point(664, 264);
             this.p82.Name = "p82";
-            this.p82.Size = new System.Drawing.Size(25, 25);
+            this.p82.Size = new System.Drawing.Size(20, 20);
             this.p82.TabIndex = 20;
             this.p82.TabStop = false;
             // 
@@ -1513,7 +1519,7 @@
             this.p13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p13.Location = new System.Drawing.Point(512, 254);
             this.p13.Name = "p13";
-            this.p13.Size = new System.Drawing.Size(25, 25);
+            this.p13.Size = new System.Drawing.Size(20, 20);
             this.p13.TabIndex = 19;
             this.p13.TabStop = false;
             // 
@@ -1522,7 +1528,7 @@
             this.p86.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p86.Location = new System.Drawing.Point(238, 241);
             this.p86.Name = "p86";
-            this.p86.Size = new System.Drawing.Size(25, 25);
+            this.p86.Size = new System.Drawing.Size(20, 20);
             this.p86.TabIndex = 18;
             this.p86.TabStop = false;
             // 
@@ -1531,7 +1537,7 @@
             this.p85.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p85.Location = new System.Drawing.Point(316, 212);
             this.p85.Name = "p85";
-            this.p85.Size = new System.Drawing.Size(25, 25);
+            this.p85.Size = new System.Drawing.Size(20, 20);
             this.p85.TabIndex = 17;
             this.p85.TabStop = false;
             // 
@@ -1540,7 +1546,7 @@
             this.p83.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p83.Location = new System.Drawing.Point(362, 254);
             this.p83.Name = "p83";
-            this.p83.Size = new System.Drawing.Size(25, 25);
+            this.p83.Size = new System.Drawing.Size(20, 20);
             this.p83.TabIndex = 16;
             this.p83.TabStop = false;
             // 
@@ -1549,7 +1555,7 @@
             this.p12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p12.Location = new System.Drawing.Point(512, 172);
             this.p12.Name = "p12";
-            this.p12.Size = new System.Drawing.Size(25, 25);
+            this.p12.Size = new System.Drawing.Size(20, 20);
             this.p12.TabIndex = 15;
             this.p12.TabStop = false;
             // 
@@ -1558,7 +1564,7 @@
             this.p9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p9.Location = new System.Drawing.Point(362, 172);
             this.p9.Name = "p9";
-            this.p9.Size = new System.Drawing.Size(25, 25);
+            this.p9.Size = new System.Drawing.Size(20, 20);
             this.p9.TabIndex = 14;
             this.p9.TabStop = false;
             // 
@@ -1567,7 +1573,7 @@
             this.p88.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p88.Location = new System.Drawing.Point(228, 125);
             this.p88.Name = "p88";
-            this.p88.Size = new System.Drawing.Size(25, 25);
+            this.p88.Size = new System.Drawing.Size(20, 20);
             this.p88.TabIndex = 13;
             this.p88.TabStop = false;
             // 
@@ -1576,7 +1582,7 @@
             this.p36.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p36.Location = new System.Drawing.Point(228, 45);
             this.p36.Name = "p36";
-            this.p36.Size = new System.Drawing.Size(25, 25);
+            this.p36.Size = new System.Drawing.Size(20, 20);
             this.p36.TabIndex = 12;
             this.p36.TabStop = false;
             // 
@@ -1585,7 +1591,7 @@
             this.p35.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p35.Location = new System.Drawing.Point(316, 65);
             this.p35.Name = "p35";
-            this.p35.Size = new System.Drawing.Size(25, 25);
+            this.p35.Size = new System.Drawing.Size(20, 20);
             this.p35.TabIndex = 11;
             this.p35.TabStop = false;
             // 
@@ -1594,7 +1600,7 @@
             this.p87.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p87.Location = new System.Drawing.Point(316, 96);
             this.p87.Name = "p87";
-            this.p87.Size = new System.Drawing.Size(25, 25);
+            this.p87.Size = new System.Drawing.Size(20, 20);
             this.p87.TabIndex = 10;
             this.p87.TabStop = false;
             // 
@@ -1603,7 +1609,7 @@
             this.p10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p10.Location = new System.Drawing.Point(407, 109);
             this.p10.Name = "p10";
-            this.p10.Size = new System.Drawing.Size(25, 25);
+            this.p10.Size = new System.Drawing.Size(20, 20);
             this.p10.TabIndex = 9;
             this.p10.TabStop = false;
             // 
@@ -1612,7 +1618,7 @@
             this.p11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p11.Location = new System.Drawing.Point(512, 109);
             this.p11.Name = "p11";
-            this.p11.Size = new System.Drawing.Size(25, 25);
+            this.p11.Size = new System.Drawing.Size(20, 20);
             this.p11.TabIndex = 8;
             this.p11.TabStop = false;
             // 
@@ -1621,7 +1627,7 @@
             this.p26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p26.Location = new System.Drawing.Point(655, 162);
             this.p26.Name = "p26";
-            this.p26.Size = new System.Drawing.Size(25, 25);
+            this.p26.Size = new System.Drawing.Size(20, 20);
             this.p26.TabIndex = 7;
             this.p26.TabStop = false;
             // 
@@ -1630,7 +1636,7 @@
             this.p28.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p28.Location = new System.Drawing.Point(686, 162);
             this.p28.Name = "p28";
-            this.p28.Size = new System.Drawing.Size(25, 25);
+            this.p28.Size = new System.Drawing.Size(20, 20);
             this.p28.TabIndex = 6;
             this.p28.TabStop = false;
             // 
@@ -1639,7 +1645,7 @@
             this.p25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p25.Location = new System.Drawing.Point(600, 109);
             this.p25.Name = "p25";
-            this.p25.Size = new System.Drawing.Size(25, 25);
+            this.p25.Size = new System.Drawing.Size(20, 20);
             this.p25.TabIndex = 5;
             this.p25.TabStop = false;
             // 
@@ -1648,7 +1654,7 @@
             this.p27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p27.Location = new System.Drawing.Point(631, 109);
             this.p27.Name = "p27";
-            this.p27.Size = new System.Drawing.Size(25, 25);
+            this.p27.Size = new System.Drawing.Size(20, 20);
             this.p27.TabIndex = 4;
             this.p27.TabStop = false;
             // 
@@ -1657,7 +1663,7 @@
             this.p7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p7.Location = new System.Drawing.Point(708, 56);
             this.p7.Name = "p7";
-            this.p7.Size = new System.Drawing.Size(25, 25);
+            this.p7.Size = new System.Drawing.Size(20, 20);
             this.p7.TabIndex = 3;
             this.p7.TabStop = false;
             // 
@@ -1666,7 +1672,7 @@
             this.p5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p5.Location = new System.Drawing.Point(786, 56);
             this.p5.Name = "p5";
-            this.p5.Size = new System.Drawing.Size(25, 25);
+            this.p5.Size = new System.Drawing.Size(20, 20);
             this.p5.TabIndex = 2;
             this.p5.TabStop = false;
             // 
@@ -1675,7 +1681,7 @@
             this.p3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p3.Location = new System.Drawing.Point(908, 56);
             this.p3.Name = "p3";
-            this.p3.Size = new System.Drawing.Size(25, 25);
+            this.p3.Size = new System.Drawing.Size(20, 20);
             this.p3.TabIndex = 1;
             this.p3.TabStop = false;
             // 
@@ -1684,7 +1690,7 @@
             this.p1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.p1.Location = new System.Drawing.Point(986, 56);
             this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(25, 25);
+            this.p1.Size = new System.Drawing.Size(20, 20);
             this.p1.TabIndex = 0;
             this.p1.TabStop = false;
             // 

@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlexForm.Designer.cs">
+      <DependentUpon>AlexForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CairoAlexDiagramForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="PingClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AlexForm.resx">
+      <DependentUpon>AlexForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CairoAlexDiagramForm.resx">
       <DependentUpon>CairoAlexDiagramForm.cs</DependentUpon>
     </EmbeddedResource>

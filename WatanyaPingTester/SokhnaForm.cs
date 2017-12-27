@@ -93,17 +93,14 @@ namespace WatanyaPingTester
                         if (curNodeStatus == "Online")
                         {
                             setPicToGreen(schemeNodes[i].getPic());
-                            //schemeNodes[i].getLabel().ForeColor = Color.LightGreen;
                         }
                         else if (curNodeStatus == "Not Reachable")
                         {
-                            setPicToRed(schemeNodes[i].getPic());
-                            //schemeNodes[i].getLabel().ForeColor = Color.LightPink;
+                            setPicToYellow(schemeNodes[i].getPic());
                         }
                         else if (curNodeStatus == "Timeout")
                         {
-                            setPicToYellow(schemeNodes[i].getPic());
-                            //schemeNodes[i].getLabel().ForeColor = Color.Yellow;
+                            setPicToRed(schemeNodes[i].getPic());
                         }
                     }
                     else
@@ -316,14 +313,7 @@ namespace WatanyaPingTester
                         schemeNodes.ElementAt(i).setVisiblility(false);
                     }
                 }
-            }
-            //else
-            //{
-            //    for (int i = 0; i < schemeNodes.Count(); i++)
-            //    {
-            //        schemeNodes.ElementAt(i).setVisiblility(true);
-            //    }
-            //}
+            } 
         }
 
         // ComboBox item
@@ -341,6 +331,20 @@ namespace WatanyaPingTester
             public override string ToString()
             {
                 return name;
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            showIPs = !showIPs;
+            foreach (SchemeNode s in schemeNodes)
+            {
+                try
+                {
+                    s.getLabel().Visible = showIPs;
+                }catch(Exception aa){
+
+                }
             }
         }
 

@@ -41,7 +41,8 @@ namespace WatanyaPingTester
 
         private void alexBtn_Click(object sender, EventArgs e)
         {
-            CairoAlexDiagramForm cad = new CairoAlexDiagramForm(this);
+            //CairoAlexDiagramForm cad = new CairoAlexDiagramForm(this);
+            AlexForm cad = new AlexForm(this);
             cad.Show();
             this.Hide();
         }
