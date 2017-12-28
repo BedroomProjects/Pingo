@@ -19,8 +19,10 @@ namespace WatanyaPingTester
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimizeBox = false;
             this.MaximizeBox = false;
+            this.CenterToParent();
             InitializeComponent();
-            
+            this.BackColor = Color.Magenta;
+            this.TransparencyKey = Color.Magenta;
             string path = Path.Combine(Environment.CurrentDirectory, @"res");
             string fileName = "loading.gif";
             string picPath = Path.Combine(path, fileName);

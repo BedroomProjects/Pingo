@@ -30,9 +30,8 @@ namespace WatanyaPingTester
         public SokhnaForm( StartScreen startScreen)
         {
             InitializeComponent();
-            
+            this.CenterToScreen();
             this.startScreen = startScreen;
-            resPath = resPath = Path.Combine(Environment.CurrentDirectory, @"res");
 
             // full screen above taskbar
             //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
@@ -170,7 +169,6 @@ namespace WatanyaPingTester
                 {
                     Console.Write("Exception with " + cLabel.Text);
                 }
-                setPicToGrey(cPic);
                 schemeNodes.Add(sn);
                 previousNodesName = nodes.ElementAt(i).getName();
 
@@ -313,7 +311,8 @@ namespace WatanyaPingTester
                         schemeNodes.ElementAt(i).setVisiblility(false);
                     }
                 }
-            } 
+            }
+            updateDisplay();
         }
 
         // ComboBox item

@@ -73,8 +73,8 @@
             this.l75 = new System.Windows.Forms.Label();
             this.l69 = new System.Windows.Forms.Label();
             this.l70 = new System.Windows.Forms.Label();
-            this.l68 = new System.Windows.Forms.Label();
-            this.l53 = new System.Windows.Forms.Label();
+            this.l60 = new System.Windows.Forms.Label();
+            this.l59 = new System.Windows.Forms.Label();
             this.l51 = new System.Windows.Forms.Label();
             this.l15 = new System.Windows.Forms.Label();
             this.l76 = new System.Windows.Forms.Label();
@@ -87,7 +87,7 @@
             this.l80 = new System.Windows.Forms.Label();
             this.l90 = new System.Windows.Forms.Label();
             this.p69 = new System.Windows.Forms.PictureBox();
-            this.p68 = new System.Windows.Forms.PictureBox();
+            this.p60 = new System.Windows.Forms.PictureBox();
             this.p30 = new System.Windows.Forms.PictureBox();
             this.p31 = new System.Windows.Forms.PictureBox();
             this.p8 = new System.Windows.Forms.PictureBox();
@@ -95,7 +95,7 @@
             this.p4 = new System.Windows.Forms.PictureBox();
             this.p2 = new System.Windows.Forms.PictureBox();
             this.p51 = new System.Windows.Forms.PictureBox();
-            this.p53 = new System.Windows.Forms.PictureBox();
+            this.p59 = new System.Windows.Forms.PictureBox();
             this.p75 = new System.Windows.Forms.PictureBox();
             this.p70 = new System.Windows.Forms.PictureBox();
             this.p76 = new System.Windows.Forms.PictureBox();
@@ -149,7 +149,7 @@
             this.guidePictureBox = new System.Windows.Forms.PictureBox();
             this.schemePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p69)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p68)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p60)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p8)).BeginInit();
@@ -157,7 +157,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.p4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p59)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p75)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p70)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p76)).BeginInit();
@@ -211,6 +211,7 @@
             // schemePanel
             // 
             this.schemePanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.schemePanel.BackColor = System.Drawing.Color.Transparent;
             this.schemePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("schemePanel.BackgroundImage")));
             this.schemePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.schemePanel.Controls.Add(this.l2);
@@ -256,8 +257,8 @@
             this.schemePanel.Controls.Add(this.l75);
             this.schemePanel.Controls.Add(this.l69);
             this.schemePanel.Controls.Add(this.l70);
-            this.schemePanel.Controls.Add(this.l68);
-            this.schemePanel.Controls.Add(this.l53);
+            this.schemePanel.Controls.Add(this.l60);
+            this.schemePanel.Controls.Add(this.l59);
             this.schemePanel.Controls.Add(this.l51);
             this.schemePanel.Controls.Add(this.l15);
             this.schemePanel.Controls.Add(this.l76);
@@ -270,7 +271,7 @@
             this.schemePanel.Controls.Add(this.l80);
             this.schemePanel.Controls.Add(this.l90);
             this.schemePanel.Controls.Add(this.p69);
-            this.schemePanel.Controls.Add(this.p68);
+            this.schemePanel.Controls.Add(this.p60);
             this.schemePanel.Controls.Add(this.p30);
             this.schemePanel.Controls.Add(this.p31);
             this.schemePanel.Controls.Add(this.p8);
@@ -278,7 +279,7 @@
             this.schemePanel.Controls.Add(this.p4);
             this.schemePanel.Controls.Add(this.p2);
             this.schemePanel.Controls.Add(this.p51);
-            this.schemePanel.Controls.Add(this.p53);
+            this.schemePanel.Controls.Add(this.p59);
             this.schemePanel.Controls.Add(this.p75);
             this.schemePanel.Controls.Add(this.p70);
             this.schemePanel.Controls.Add(this.p76);
@@ -334,7 +335,7 @@
             // 
             this.l2.AutoSize = true;
             this.l2.BackColor = System.Drawing.Color.Navy;
-            this.l2.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.3F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l2.ForeColor = System.Drawing.Color.Honeydew;
             this.l2.Location = new System.Drawing.Point(798, 48);
             this.l2.Name = "l2";
@@ -360,7 +361,7 @@
             // 
             this.l3.AutoSize = true;
             this.l3.BackColor = System.Drawing.Color.Navy;
-            this.l3.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.3F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l3.ForeColor = System.Drawing.Color.Honeydew;
             this.l3.Location = new System.Drawing.Point(694, 6);
             this.l3.Name = "l3";
@@ -373,7 +374,7 @@
             // 
             this.l1.AutoSize = true;
             this.l1.BackColor = System.Drawing.Color.Navy;
-            this.l1.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.3F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l1.ForeColor = System.Drawing.Color.Honeydew;
             this.l1.Location = new System.Drawing.Point(797, 27);
             this.l1.Name = "l1";
@@ -386,7 +387,7 @@
             // 
             this.l5.AutoSize = true;
             this.l5.BackColor = System.Drawing.Color.Navy;
-            this.l5.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l5.ForeColor = System.Drawing.Color.Honeydew;
             this.l5.Location = new System.Drawing.Point(617, 6);
             this.l5.Name = "l5";
@@ -412,7 +413,7 @@
             // 
             this.l27.AutoSize = true;
             this.l27.BackColor = System.Drawing.Color.Navy;
-            this.l27.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l27.ForeColor = System.Drawing.Color.Honeydew;
             this.l27.Location = new System.Drawing.Point(557, 89);
             this.l27.Name = "l27";
@@ -425,7 +426,7 @@
             // 
             this.l7.AutoSize = true;
             this.l7.BackColor = System.Drawing.Color.Navy;
-            this.l7.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l7.ForeColor = System.Drawing.Color.Honeydew;
             this.l7.Location = new System.Drawing.Point(516, 6);
             this.l7.Name = "l7";
@@ -438,7 +439,7 @@
             // 
             this.l11.AutoSize = true;
             this.l11.BackColor = System.Drawing.Color.Navy;
-            this.l11.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l11.ForeColor = System.Drawing.Color.Honeydew;
             this.l11.Location = new System.Drawing.Point(411, 47);
             this.l11.Name = "l11";
@@ -451,7 +452,7 @@
             // 
             this.l25.AutoSize = true;
             this.l25.BackColor = System.Drawing.Color.Navy;
-            this.l25.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l25.ForeColor = System.Drawing.Color.Honeydew;
             this.l25.Location = new System.Drawing.Point(456, 68);
             this.l25.Name = "l25";
@@ -464,7 +465,7 @@
             // 
             this.l8.AutoSize = true;
             this.l8.BackColor = System.Drawing.Color.Navy;
-            this.l8.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l8.ForeColor = System.Drawing.Color.Honeydew;
             this.l8.Location = new System.Drawing.Point(502, 42);
             this.l8.Name = "l8";
@@ -477,7 +478,7 @@
             // 
             this.l35.AutoSize = true;
             this.l35.BackColor = System.Drawing.Color.Navy;
-            this.l35.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l35.ForeColor = System.Drawing.Color.Honeydew;
             this.l35.Location = new System.Drawing.Point(286, 11);
             this.l35.Name = "l35";
@@ -490,7 +491,7 @@
             // 
             this.l87.AutoSize = true;
             this.l87.BackColor = System.Drawing.Color.Navy;
-            this.l87.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l87.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l87.ForeColor = System.Drawing.Color.Honeydew;
             this.l87.Location = new System.Drawing.Point(326, 82);
             this.l87.Name = "l87";
@@ -503,7 +504,7 @@
             // 
             this.l10.AutoSize = true;
             this.l10.BackColor = System.Drawing.Color.Navy;
-            this.l10.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l10.ForeColor = System.Drawing.Color.Honeydew;
             this.l10.Location = new System.Drawing.Point(305, 48);
             this.l10.Name = "l10";
@@ -516,9 +517,9 @@
             // 
             this.l88.AutoSize = true;
             this.l88.BackColor = System.Drawing.Color.Navy;
-            this.l88.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l88.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l88.ForeColor = System.Drawing.Color.Honeydew;
-            this.l88.Location = new System.Drawing.Point(109, 56);
+            this.l88.Location = new System.Drawing.Point(130, 52);
             this.l88.Name = "l88";
             this.l88.Size = new System.Drawing.Size(80, 16);
             this.l88.TabIndex = 231;
@@ -529,9 +530,9 @@
             // 
             this.l36.AutoSize = true;
             this.l36.BackColor = System.Drawing.Color.Navy;
-            this.l36.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l36.ForeColor = System.Drawing.Color.Honeydew;
-            this.l36.Location = new System.Drawing.Point(108, 3);
+            this.l36.Location = new System.Drawing.Point(130, 0);
             this.l36.Name = "l36";
             this.l36.Size = new System.Drawing.Size(80, 16);
             this.l36.TabIndex = 230;
@@ -542,9 +543,9 @@
             // 
             this.l89.AutoSize = true;
             this.l89.BackColor = System.Drawing.Color.Navy;
-            this.l89.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l89.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l89.ForeColor = System.Drawing.Color.Honeydew;
-            this.l89.Location = new System.Drawing.Point(65, 187);
+            this.l89.Location = new System.Drawing.Point(65, 191);
             this.l89.Name = "l89";
             this.l89.Size = new System.Drawing.Size(80, 16);
             this.l89.TabIndex = 229;
@@ -557,7 +558,7 @@
             this.l86.BackColor = System.Drawing.Color.Navy;
             this.l86.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l86.ForeColor = System.Drawing.Color.Honeydew;
-            this.l86.Location = new System.Drawing.Point(130, 135);
+            this.l86.Location = new System.Drawing.Point(133, 142);
             this.l86.Name = "l86";
             this.l86.Size = new System.Drawing.Size(80, 16);
             this.l86.TabIndex = 228;
@@ -568,7 +569,7 @@
             // 
             this.l83.AutoSize = true;
             this.l83.BackColor = System.Drawing.Color.Navy;
-            this.l83.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l83.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l83.ForeColor = System.Drawing.Color.Honeydew;
             this.l83.Location = new System.Drawing.Point(240, 198);
             this.l83.Name = "l83";
@@ -581,7 +582,7 @@
             // 
             this.l85.AutoSize = true;
             this.l85.BackColor = System.Drawing.Color.Navy;
-            this.l85.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l85.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l85.ForeColor = System.Drawing.Color.Honeydew;
             this.l85.Location = new System.Drawing.Point(217, 170);
             this.l85.Name = "l85";
@@ -594,7 +595,7 @@
             // 
             this.l9.AutoSize = true;
             this.l9.BackColor = System.Drawing.Color.Navy;
-            this.l9.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l9.ForeColor = System.Drawing.Color.Honeydew;
             this.l9.Location = new System.Drawing.Point(231, 118);
             this.l9.Name = "l9";
@@ -607,7 +608,7 @@
             // 
             this.l13.AutoSize = true;
             this.l13.BackColor = System.Drawing.Color.Navy;
-            this.l13.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l13.ForeColor = System.Drawing.Color.Honeydew;
             this.l13.Location = new System.Drawing.Point(346, 175);
             this.l13.Name = "l13";
@@ -620,7 +621,7 @@
             // 
             this.l12.AutoSize = true;
             this.l12.BackColor = System.Drawing.Color.Navy;
-            this.l12.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l12.ForeColor = System.Drawing.Color.Honeydew;
             this.l12.Location = new System.Drawing.Point(345, 120);
             this.l12.Name = "l12";
@@ -633,9 +634,9 @@
             // 
             this.l31.AutoSize = true;
             this.l31.BackColor = System.Drawing.Color.Navy;
-            this.l31.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l31.ForeColor = System.Drawing.Color.Honeydew;
-            this.l31.Location = new System.Drawing.Point(509, 158);
+            this.l31.Location = new System.Drawing.Point(511, 164);
             this.l31.Name = "l31";
             this.l31.Size = new System.Drawing.Size(80, 16);
             this.l31.TabIndex = 222;
@@ -659,9 +660,9 @@
             // 
             this.l29.AutoSize = true;
             this.l29.BackColor = System.Drawing.Color.Navy;
-            this.l29.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l29.ForeColor = System.Drawing.Color.Honeydew;
-            this.l29.Location = new System.Drawing.Point(509, 139);
+            this.l29.Location = new System.Drawing.Point(512, 135);
             this.l29.Name = "l29";
             this.l29.Size = new System.Drawing.Size(80, 16);
             this.l29.TabIndex = 220;
@@ -672,7 +673,7 @@
             // 
             this.l82.AutoSize = true;
             this.l82.BackColor = System.Drawing.Color.Navy;
-            this.l82.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l82.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l82.ForeColor = System.Drawing.Color.Honeydew;
             this.l82.Location = new System.Drawing.Point(492, 199);
             this.l82.Name = "l82";
@@ -685,7 +686,7 @@
             // 
             this.l26.AutoSize = true;
             this.l26.BackColor = System.Drawing.Color.Navy;
-            this.l26.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l26.ForeColor = System.Drawing.Color.Honeydew;
             this.l26.Location = new System.Drawing.Point(460, 105);
             this.l26.Name = "l26";
@@ -698,7 +699,7 @@
             // 
             this.l30.AutoSize = true;
             this.l30.BackColor = System.Drawing.Color.Navy;
-            this.l30.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l30.ForeColor = System.Drawing.Color.Honeydew;
             this.l30.Location = new System.Drawing.Point(602, 188);
             this.l30.Name = "l30";
@@ -711,7 +712,7 @@
             // 
             this.l46.AutoSize = true;
             this.l46.BackColor = System.Drawing.Color.Navy;
-            this.l46.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l46.ForeColor = System.Drawing.Color.Honeydew;
             this.l46.Location = new System.Drawing.Point(688, 198);
             this.l46.Name = "l46";
@@ -724,7 +725,7 @@
             // 
             this.l34.AutoSize = true;
             this.l34.BackColor = System.Drawing.Color.Navy;
-            this.l34.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l34.ForeColor = System.Drawing.Color.Honeydew;
             this.l34.Location = new System.Drawing.Point(683, 112);
             this.l34.Name = "l34";
@@ -737,7 +738,7 @@
             // 
             this.l38.AutoSize = true;
             this.l38.BackColor = System.Drawing.Color.Navy;
-            this.l38.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l38.ForeColor = System.Drawing.Color.Honeydew;
             this.l38.Location = new System.Drawing.Point(749, 163);
             this.l38.Name = "l38";
@@ -750,7 +751,7 @@
             // 
             this.l32.AutoSize = true;
             this.l32.BackColor = System.Drawing.Color.Navy;
-            this.l32.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l32.ForeColor = System.Drawing.Color.Honeydew;
             this.l32.Location = new System.Drawing.Point(673, 142);
             this.l32.Name = "l32";
@@ -763,7 +764,7 @@
             // 
             this.l33.AutoSize = true;
             this.l33.BackColor = System.Drawing.Color.Navy;
-            this.l33.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l33.ForeColor = System.Drawing.Color.Honeydew;
             this.l33.Location = new System.Drawing.Point(782, 112);
             this.l33.Name = "l33";
@@ -776,9 +777,9 @@
             // 
             this.l81.AutoSize = true;
             this.l81.BackColor = System.Drawing.Color.Navy;
-            this.l81.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l81.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l81.ForeColor = System.Drawing.Color.GhostWhite;
-            this.l81.Location = new System.Drawing.Point(462, 251);
+            this.l81.Location = new System.Drawing.Point(471, 252);
             this.l81.Name = "l81";
             this.l81.Size = new System.Drawing.Size(80, 16);
             this.l81.TabIndex = 211;
@@ -789,7 +790,7 @@
             // 
             this.l47.AutoSize = true;
             this.l47.BackColor = System.Drawing.Color.Navy;
-            this.l47.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l47.ForeColor = System.Drawing.Color.GhostWhite;
             this.l47.Location = new System.Drawing.Point(789, 304);
             this.l47.Name = "l47";
@@ -802,9 +803,9 @@
             // 
             this.l52.AutoSize = true;
             this.l52.BackColor = System.Drawing.Color.Navy;
-            this.l52.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l52.ForeColor = System.Drawing.Color.GhostWhite;
-            this.l52.Location = new System.Drawing.Point(591, 307);
+            this.l52.Location = new System.Drawing.Point(602, 311);
             this.l52.Name = "l52";
             this.l52.Size = new System.Drawing.Size(80, 16);
             this.l52.TabIndex = 209;
@@ -815,7 +816,7 @@
             // 
             this.l48.AutoSize = true;
             this.l48.BackColor = System.Drawing.Color.Navy;
-            this.l48.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l48.ForeColor = System.Drawing.Color.GhostWhite;
             this.l48.Location = new System.Drawing.Point(721, 261);
             this.l48.Name = "l48";
@@ -828,9 +829,9 @@
             // 
             this.l45.AutoSize = true;
             this.l45.BackColor = System.Drawing.Color.Navy;
-            this.l45.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l45.ForeColor = System.Drawing.Color.GhostWhite;
-            this.l45.Location = new System.Drawing.Point(591, 252);
+            this.l45.Location = new System.Drawing.Point(602, 252);
             this.l45.Name = "l45";
             this.l45.Size = new System.Drawing.Size(80, 16);
             this.l45.TabIndex = 207;
@@ -841,7 +842,7 @@
             // 
             this.l37.AutoSize = true;
             this.l37.BackColor = System.Drawing.Color.Navy;
-            this.l37.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l37.ForeColor = System.Drawing.Color.GhostWhite;
             this.l37.Location = new System.Drawing.Point(782, 210);
             this.l37.Name = "l37";
@@ -854,11 +855,11 @@
             // 
             this.l75.AutoSize = true;
             this.l75.BackColor = System.Drawing.Color.Navy;
-            this.l75.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l75.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l75.ForeColor = System.Drawing.Color.GhostWhite;
             this.l75.Location = new System.Drawing.Point(510, 570);
             this.l75.Name = "l75";
-            this.l75.Size = new System.Drawing.Size(89, 17);
+            this.l75.Size = new System.Drawing.Size(80, 16);
             this.l75.TabIndex = 205;
             this.l75.Text = "169.254.1.75";
             this.l75.Visible = false;
@@ -867,11 +868,11 @@
             // 
             this.l69.AutoSize = true;
             this.l69.BackColor = System.Drawing.Color.Navy;
-            this.l69.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l69.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l69.ForeColor = System.Drawing.Color.GhostWhite;
             this.l69.Location = new System.Drawing.Point(579, 517);
             this.l69.Name = "l69";
-            this.l69.Size = new System.Drawing.Size(89, 17);
+            this.l69.Size = new System.Drawing.Size(80, 16);
             this.l69.TabIndex = 204;
             this.l69.Text = "169.254.1.69";
             this.l69.Visible = false;
@@ -880,46 +881,46 @@
             // 
             this.l70.AutoSize = true;
             this.l70.BackColor = System.Drawing.Color.Navy;
-            this.l70.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l70.ForeColor = System.Drawing.Color.GhostWhite;
-            this.l70.Location = new System.Drawing.Point(457, 439);
+            this.l70.Location = new System.Drawing.Point(467, 439);
             this.l70.Name = "l70";
             this.l70.Size = new System.Drawing.Size(80, 16);
             this.l70.TabIndex = 203;
             this.l70.Text = "169.254.1.70";
             this.l70.Visible = false;
             // 
-            // l68
+            // l60
             // 
-            this.l68.AutoSize = true;
-            this.l68.BackColor = System.Drawing.Color.Navy;
-            this.l68.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l68.ForeColor = System.Drawing.Color.GhostWhite;
-            this.l68.Location = new System.Drawing.Point(524, 392);
-            this.l68.Name = "l68";
-            this.l68.Size = new System.Drawing.Size(80, 16);
-            this.l68.TabIndex = 202;
-            this.l68.Text = "169.254.1.68";
-            this.l68.Visible = false;
+            this.l60.AutoSize = true;
+            this.l60.BackColor = System.Drawing.Color.Navy;
+            this.l60.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l60.ForeColor = System.Drawing.Color.GhostWhite;
+            this.l60.Location = new System.Drawing.Point(524, 392);
+            this.l60.Name = "l60";
+            this.l60.Size = new System.Drawing.Size(80, 16);
+            this.l60.TabIndex = 202;
+            this.l60.Text = "169.254.1.60";
+            this.l60.Visible = false;
             // 
-            // l53
+            // l59
             // 
-            this.l53.AutoSize = true;
-            this.l53.BackColor = System.Drawing.Color.Navy;
-            this.l53.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l53.ForeColor = System.Drawing.Color.GhostWhite;
-            this.l53.Location = new System.Drawing.Point(673, 415);
-            this.l53.Name = "l53";
-            this.l53.Size = new System.Drawing.Size(80, 16);
-            this.l53.TabIndex = 201;
-            this.l53.Text = "169.254.1.53";
-            this.l53.Visible = false;
+            this.l59.AutoSize = true;
+            this.l59.BackColor = System.Drawing.Color.Navy;
+            this.l59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l59.ForeColor = System.Drawing.Color.GhostWhite;
+            this.l59.Location = new System.Drawing.Point(653, 435);
+            this.l59.Name = "l59";
+            this.l59.Size = new System.Drawing.Size(80, 16);
+            this.l59.TabIndex = 201;
+            this.l59.Text = "169.254.1.59";
+            this.l59.Visible = false;
             // 
             // l51
             // 
             this.l51.AutoSize = true;
             this.l51.BackColor = System.Drawing.Color.Navy;
-            this.l51.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l51.ForeColor = System.Drawing.Color.GhostWhite;
             this.l51.Location = new System.Drawing.Point(712, 386);
             this.l51.Name = "l51";
@@ -932,9 +933,9 @@
             // 
             this.l15.AutoSize = true;
             this.l15.BackColor = System.Drawing.Color.Navy;
-            this.l15.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l15.ForeColor = System.Drawing.Color.GhostWhite;
-            this.l15.Location = new System.Drawing.Point(335, 308);
+            this.l15.Location = new System.Drawing.Point(345, 308);
             this.l15.Name = "l15";
             this.l15.Size = new System.Drawing.Size(80, 16);
             this.l15.TabIndex = 194;
@@ -971,9 +972,9 @@
             // 
             this.l84.AutoSize = true;
             this.l84.BackColor = System.Drawing.Color.Navy;
-            this.l84.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l84.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l84.ForeColor = System.Drawing.Color.GhostWhite;
-            this.l84.Location = new System.Drawing.Point(205, 252);
+            this.l84.Location = new System.Drawing.Point(217, 252);
             this.l84.Name = "l84";
             this.l84.Size = new System.Drawing.Size(80, 16);
             this.l84.TabIndex = 199;
@@ -984,9 +985,9 @@
             // 
             this.l14.AutoSize = true;
             this.l14.BackColor = System.Drawing.Color.Navy;
-            this.l14.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l14.ForeColor = System.Drawing.Color.GhostWhite;
-            this.l14.Location = new System.Drawing.Point(336, 252);
+            this.l14.Location = new System.Drawing.Point(345, 251);
             this.l14.Name = "l14";
             this.l14.Size = new System.Drawing.Size(80, 16);
             this.l14.TabIndex = 191;
@@ -997,9 +998,9 @@
             // 
             this.l16.AutoSize = true;
             this.l16.BackColor = System.Drawing.Color.Navy;
-            this.l16.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l16.ForeColor = System.Drawing.Color.GhostWhite;
-            this.l16.Location = new System.Drawing.Point(335, 383);
+            this.l16.Location = new System.Drawing.Point(345, 383);
             this.l16.Name = "l16";
             this.l16.Size = new System.Drawing.Size(80, 16);
             this.l16.TabIndex = 190;
@@ -1010,7 +1011,7 @@
             // 
             this.l91.AutoSize = true;
             this.l91.BackColor = System.Drawing.Color.Navy;
-            this.l91.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l91.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l91.ForeColor = System.Drawing.Color.GhostWhite;
             this.l91.Location = new System.Drawing.Point(53, 311);
             this.l91.Name = "l91";
@@ -1023,7 +1024,7 @@
             // 
             this.l92.AutoSize = true;
             this.l92.BackColor = System.Drawing.Color.Navy;
-            this.l92.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l92.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l92.ForeColor = System.Drawing.Color.GhostWhite;
             this.l92.Location = new System.Drawing.Point(53, 383);
             this.l92.Name = "l92";
@@ -1049,7 +1050,7 @@
             // 
             this.l90.AutoSize = true;
             this.l90.BackColor = System.Drawing.Color.Navy;
-            this.l90.Font = new System.Drawing.Font("Franklin Gothic Demi", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l90.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l90.ForeColor = System.Drawing.Color.GhostWhite;
             this.l90.Location = new System.Drawing.Point(56, 251);
             this.l90.Name = "l90";
@@ -1070,17 +1071,17 @@
             this.p69.TabIndex = 189;
             this.p69.TabStop = false;
             // 
-            // p68
+            // p60
             // 
-            this.p68.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p68.BackColor = System.Drawing.Color.Transparent;
-            this.p68.Image = ((System.Drawing.Image)(resources.GetObject("p68.Image")));
-            this.p68.Location = new System.Drawing.Point(593, 412);
-            this.p68.Name = "p68";
-            this.p68.Size = new System.Drawing.Size(20, 20);
-            this.p68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p68.TabIndex = 188;
-            this.p68.TabStop = false;
+            this.p60.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p60.BackColor = System.Drawing.Color.Transparent;
+            this.p60.Image = ((System.Drawing.Image)(resources.GetObject("p60.Image")));
+            this.p60.Location = new System.Drawing.Point(593, 412);
+            this.p60.Name = "p60";
+            this.p60.Size = new System.Drawing.Size(20, 20);
+            this.p60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.p60.TabIndex = 188;
+            this.p60.TabStop = false;
             // 
             // p30
             // 
@@ -1166,17 +1167,17 @@
             this.p51.TabIndex = 181;
             this.p51.TabStop = false;
             // 
-            // p53
+            // p59
             // 
-            this.p53.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p53.BackColor = System.Drawing.Color.Transparent;
-            this.p53.Image = ((System.Drawing.Image)(resources.GetObject("p53.Image")));
-            this.p53.Location = new System.Drawing.Point(647, 412);
-            this.p53.Name = "p53";
-            this.p53.Size = new System.Drawing.Size(20, 20);
-            this.p53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p53.TabIndex = 180;
-            this.p53.TabStop = false;
+            this.p59.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p59.BackColor = System.Drawing.Color.Transparent;
+            this.p59.Image = ((System.Drawing.Image)(resources.GetObject("p59.Image")));
+            this.p59.Location = new System.Drawing.Point(647, 412);
+            this.p59.Name = "p59";
+            this.p59.Size = new System.Drawing.Size(20, 20);
+            this.p59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.p59.TabIndex = 180;
+            this.p59.TabStop = false;
             // 
             // p75
             // 
@@ -1738,6 +1739,7 @@
             this.rightPanel.Controls.Add(this.label2);
             this.rightPanel.Controls.Add(this.comboBox1);
             this.rightPanel.Controls.Add(this.guidePictureBox);
+            this.rightPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rightPanel.Location = new System.Drawing.Point(942, 12);
             this.rightPanel.Name = "rightPanel";
             this.rightPanel.Size = new System.Drawing.Size(193, 595);
@@ -1749,7 +1751,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(32, 69);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(83, 17);
+            this.checkBox1.Size = new System.Drawing.Size(99, 20);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.Text = "Show all IPs";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -1806,12 +1808,13 @@
             this.ClientSize = new System.Drawing.Size(1147, 619);
             this.Controls.Add(this.rightPanel);
             this.Controls.Add(this.schemePanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AlexForm";
             this.Text = "AlexForm";
             this.schemePanel.ResumeLayout(false);
             this.schemePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p69)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p68)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p60)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p8)).EndInit();
@@ -1819,7 +1822,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.p4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p59)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p75)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p70)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p76)).EndInit();
@@ -1882,7 +1885,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox guidePictureBox;
         private System.Windows.Forms.PictureBox p69;
-        private System.Windows.Forms.PictureBox p68;
+        private System.Windows.Forms.PictureBox p60;
         private System.Windows.Forms.PictureBox p30;
         private System.Windows.Forms.PictureBox p31;
         private System.Windows.Forms.PictureBox p8;
@@ -1890,7 +1893,7 @@
         private System.Windows.Forms.PictureBox p4;
         private System.Windows.Forms.PictureBox p2;
         private System.Windows.Forms.PictureBox p51;
-        private System.Windows.Forms.PictureBox p53;
+        private System.Windows.Forms.PictureBox p59;
         private System.Windows.Forms.PictureBox p75;
         private System.Windows.Forms.PictureBox p70;
         private System.Windows.Forms.PictureBox p76;
@@ -1946,8 +1949,8 @@
         private System.Windows.Forms.Label l75;
         private System.Windows.Forms.Label l69;
         private System.Windows.Forms.Label l70;
-        private System.Windows.Forms.Label l68;
-        private System.Windows.Forms.Label l53;
+        private System.Windows.Forms.Label l60;
+        private System.Windows.Forms.Label l59;
         private System.Windows.Forms.Label l51;
         private System.Windows.Forms.Label l15;
         private System.Windows.Forms.Label l76;

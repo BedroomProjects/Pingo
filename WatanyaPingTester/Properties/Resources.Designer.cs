@@ -63,9 +63,29 @@ namespace WatanyaPingTester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap background {
+            get {
+                object obj = ResourceManager.GetObject("background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cairo_Sokhna_Blank_Scheme {
             get {
                 object obj = ResourceManager.GetObject("Cairo_Sokhna_Blank_Scheme", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yellow {
+            get {
+                object obj = ResourceManager.GetObject("yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

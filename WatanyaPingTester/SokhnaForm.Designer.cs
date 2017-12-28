@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SokhnaForm));
+            this.leftPanel = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.guidePictureBox = new System.Windows.Forms.PictureBox();
             this.schemePanel = new System.Windows.Forms.Panel();
             this.l127 = new System.Windows.Forms.Label();
@@ -123,10 +127,7 @@
             this.p102 = new System.Windows.Forms.PictureBox();
             this.p101 = new System.Windows.Forms.PictureBox();
             this.p100 = new System.Windows.Forms.PictureBox();
-            this.leftPanel = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.leftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).BeginInit();
             this.schemePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p123)).BeginInit();
@@ -175,8 +176,64 @@
             ((System.ComponentModel.ISupportInitialize)(this.p102)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p101)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p100)).BeginInit();
-            this.leftPanel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // leftPanel
+            // 
+            this.leftPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.leftPanel.BackColor = System.Drawing.Color.Transparent;
+            this.leftPanel.Controls.Add(this.checkBox1);
+            this.leftPanel.Controls.Add(this.label2);
+            this.leftPanel.Controls.Add(this.comboBox1);
+            this.leftPanel.Controls.Add(this.guidePictureBox);
+            this.leftPanel.Location = new System.Drawing.Point(859, 12);
+            this.leftPanel.Name = "leftPanel";
+            this.leftPanel.Size = new System.Drawing.Size(177, 611);
+            this.leftPanel.TabIndex = 3;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(24, 77);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(84, 17);
+            this.checkBox1.TabIndex = 4;
+            this.checkBox1.Text = "Show all IPs";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(5, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(174, 64);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "شبكة\r\nالقاهرة - السخنة";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(130)))));
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Arial Black", 9F);
+            this.comboBox1.ForeColor = System.Drawing.Color.White;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(24, 105);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(137, 269);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.Text = "Select a Point";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // guidePictureBox
             // 
@@ -291,7 +348,7 @@
             this.schemePanel.Location = new System.Drawing.Point(12, 12);
             this.schemePanel.Name = "schemePanel";
             this.schemePanel.Size = new System.Drawing.Size(841, 611);
-            this.schemePanel.TabIndex = 2;
+            this.schemePanel.TabIndex = 0;
             // 
             // l127
             // 
@@ -940,6 +997,7 @@
             // p123
             // 
             this.p123.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p123.BackColor = System.Drawing.Color.Transparent;
             this.p123.Image = ((System.Drawing.Image)(resources.GetObject("p123.Image")));
             this.p123.Location = new System.Drawing.Point(729, 402);
             this.p123.Name = "p123";
@@ -951,6 +1009,7 @@
             // p126
             // 
             this.p126.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p126.BackColor = System.Drawing.Color.Transparent;
             this.p126.Image = ((System.Drawing.Image)(resources.GetObject("p126.Image")));
             this.p126.Location = new System.Drawing.Point(728, 473);
             this.p126.Name = "p126";
@@ -962,6 +1021,7 @@
             // p136
             // 
             this.p136.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p136.BackColor = System.Drawing.Color.Transparent;
             this.p136.Image = ((System.Drawing.Image)(resources.GetObject("p136.Image")));
             this.p136.Location = new System.Drawing.Point(178, 558);
             this.p136.Name = "p136";
@@ -973,6 +1033,7 @@
             // p139
             // 
             this.p139.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p139.BackColor = System.Drawing.Color.Transparent;
             this.p139.Image = ((System.Drawing.Image)(resources.GetObject("p139.Image")));
             this.p139.Location = new System.Drawing.Point(347, 557);
             this.p139.Name = "p139";
@@ -984,6 +1045,7 @@
             // pictureBox42
             // 
             this.pictureBox42.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox42.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox42.Location = new System.Drawing.Point(109, 557);
             this.pictureBox42.Name = "pictureBox42";
             this.pictureBox42.Size = new System.Drawing.Size(25, 25);
@@ -994,6 +1056,7 @@
             // p138
             // 
             this.p138.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p138.BackColor = System.Drawing.Color.Transparent;
             this.p138.Image = ((System.Drawing.Image)(resources.GetObject("p138.Image")));
             this.p138.Location = new System.Drawing.Point(275, 559);
             this.p138.Name = "p138";
@@ -1005,6 +1068,7 @@
             // p135
             // 
             this.p135.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p135.BackColor = System.Drawing.Color.Transparent;
             this.p135.Image = ((System.Drawing.Image)(resources.GetObject("p135.Image")));
             this.p135.Location = new System.Drawing.Point(224, 529);
             this.p135.Name = "p135";
@@ -1016,6 +1080,7 @@
             // p127
             // 
             this.p127.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p127.BackColor = System.Drawing.Color.Transparent;
             this.p127.Image = ((System.Drawing.Image)(resources.GetObject("p127.Image")));
             this.p127.Location = new System.Drawing.Point(728, 537);
             this.p127.Name = "p127";
@@ -1027,6 +1092,7 @@
             // p134
             // 
             this.p134.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p134.BackColor = System.Drawing.Color.Transparent;
             this.p134.Image = ((System.Drawing.Image)(resources.GetObject("p134.Image")));
             this.p134.Location = new System.Drawing.Point(224, 467);
             this.p134.Name = "p134";
@@ -1038,6 +1104,7 @@
             // p128
             // 
             this.p128.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p128.BackColor = System.Drawing.Color.Transparent;
             this.p128.Image = ((System.Drawing.Image)(resources.GetObject("p128.Image")));
             this.p128.Location = new System.Drawing.Point(667, 439);
             this.p128.Name = "p128";
@@ -1049,6 +1116,7 @@
             // p122
             // 
             this.p122.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p122.BackColor = System.Drawing.Color.Transparent;
             this.p122.Image = ((System.Drawing.Image)(resources.GetObject("p122.Image")));
             this.p122.Location = new System.Drawing.Point(728, 342);
             this.p122.Name = "p122";
@@ -1060,6 +1128,7 @@
             // p129
             // 
             this.p129.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p129.BackColor = System.Drawing.Color.Transparent;
             this.p129.Image = ((System.Drawing.Image)(resources.GetObject("p129.Image")));
             this.p129.Location = new System.Drawing.Point(599, 439);
             this.p129.Name = "p129";
@@ -1071,6 +1140,7 @@
             // p130
             // 
             this.p130.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p130.BackColor = System.Drawing.Color.Transparent;
             this.p130.Image = ((System.Drawing.Image)(resources.GetObject("p130.Image")));
             this.p130.Location = new System.Drawing.Point(504, 441);
             this.p130.Name = "p130";
@@ -1082,6 +1152,7 @@
             // p131
             // 
             this.p131.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p131.BackColor = System.Drawing.Color.Transparent;
             this.p131.Image = ((System.Drawing.Image)(resources.GetObject("p131.Image")));
             this.p131.Location = new System.Drawing.Point(438, 441);
             this.p131.Name = "p131";
@@ -1093,6 +1164,7 @@
             // p132
             // 
             this.p132.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p132.BackColor = System.Drawing.Color.Transparent;
             this.p132.Image = ((System.Drawing.Image)(resources.GetObject("p132.Image")));
             this.p132.Location = new System.Drawing.Point(345, 441);
             this.p132.Name = "p132";
@@ -1104,6 +1176,7 @@
             // p133
             // 
             this.p133.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p133.BackColor = System.Drawing.Color.Transparent;
             this.p133.Image = ((System.Drawing.Image)(resources.GetObject("p133.Image")));
             this.p133.Location = new System.Drawing.Point(274, 441);
             this.p133.Name = "p133";
@@ -1115,6 +1188,7 @@
             // p51
             // 
             this.p51.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p51.BackColor = System.Drawing.Color.Transparent;
             this.p51.Image = ((System.Drawing.Image)(resources.GetObject("p51.Image")));
             this.p51.Location = new System.Drawing.Point(180, 441);
             this.p51.Name = "p51";
@@ -1126,6 +1200,7 @@
             // p22
             // 
             this.p22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p22.BackColor = System.Drawing.Color.Transparent;
             this.p22.Image = ((System.Drawing.Image)(resources.GetObject("p22.Image")));
             this.p22.Location = new System.Drawing.Point(110, 441);
             this.p22.Name = "p22";
@@ -1137,6 +1212,7 @@
             // p143
             // 
             this.p143.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p143.BackColor = System.Drawing.Color.Transparent;
             this.p143.Image = ((System.Drawing.Image)(resources.GetObject("p143.Image")));
             this.p143.Location = new System.Drawing.Point(165, 344);
             this.p143.Name = "p143";
@@ -1148,6 +1224,7 @@
             // p155
             // 
             this.p155.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p155.BackColor = System.Drawing.Color.Transparent;
             this.p155.Image = ((System.Drawing.Image)(resources.GetObject("p155.Image")));
             this.p155.Location = new System.Drawing.Point(165, 270);
             this.p155.Name = "p155";
@@ -1159,6 +1236,7 @@
             // p142
             // 
             this.p142.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p142.BackColor = System.Drawing.Color.Transparent;
             this.p142.Image = ((System.Drawing.Image)(resources.GetObject("p142.Image")));
             this.p142.Location = new System.Drawing.Point(270, 330);
             this.p142.Name = "p142";
@@ -1170,6 +1248,7 @@
             // p137
             // 
             this.p137.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p137.BackColor = System.Drawing.Color.Transparent;
             this.p137.Image = ((System.Drawing.Image)(resources.GetObject("p137.Image")));
             this.p137.Location = new System.Drawing.Point(270, 284);
             this.p137.Name = "p137";
@@ -1181,6 +1260,7 @@
             // p141
             // 
             this.p141.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p141.BackColor = System.Drawing.Color.Transparent;
             this.p141.Image = ((System.Drawing.Image)(resources.GetObject("p141.Image")));
             this.p141.Location = new System.Drawing.Point(392, 308);
             this.p141.Name = "p141";
@@ -1192,6 +1272,7 @@
             // p140
             // 
             this.p140.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p140.BackColor = System.Drawing.Color.Transparent;
             this.p140.Image = ((System.Drawing.Image)(resources.GetObject("p140.Image")));
             this.p140.Location = new System.Drawing.Point(476, 308);
             this.p140.Name = "p140";
@@ -1203,6 +1284,7 @@
             // p152
             // 
             this.p152.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p152.BackColor = System.Drawing.Color.Transparent;
             this.p152.Image = ((System.Drawing.Image)(resources.GetObject("p152.Image")));
             this.p152.Location = new System.Drawing.Point(669, 308);
             this.p152.Name = "p152";
@@ -1214,6 +1296,7 @@
             // p120
             // 
             this.p120.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p120.BackColor = System.Drawing.Color.Transparent;
             this.p120.Image = ((System.Drawing.Image)(resources.GetObject("p120.Image")));
             this.p120.Location = new System.Drawing.Point(598, 308);
             this.p120.Name = "p120";
@@ -1225,6 +1308,7 @@
             // p119
             // 
             this.p119.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p119.BackColor = System.Drawing.Color.Transparent;
             this.p119.Image = ((System.Drawing.Image)(resources.GetObject("p119.Image")));
             this.p119.Location = new System.Drawing.Point(535, 271);
             this.p119.Name = "p119";
@@ -1236,6 +1320,7 @@
             // p118
             // 
             this.p118.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p118.BackColor = System.Drawing.Color.Transparent;
             this.p118.Image = ((System.Drawing.Image)(resources.GetObject("p118.Image")));
             this.p118.Location = new System.Drawing.Point(536, 216);
             this.p118.Name = "p118";
@@ -1247,6 +1332,7 @@
             // p117
             // 
             this.p117.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p117.BackColor = System.Drawing.Color.Transparent;
             this.p117.Image = ((System.Drawing.Image)(resources.GetObject("p117.Image")));
             this.p117.Location = new System.Drawing.Point(664, 179);
             this.p117.Name = "p117";
@@ -1258,6 +1344,7 @@
             // p116
             // 
             this.p116.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p116.BackColor = System.Drawing.Color.Transparent;
             this.p116.Image = ((System.Drawing.Image)(resources.GetObject("p116.Image")));
             this.p116.Location = new System.Drawing.Point(597, 180);
             this.p116.Name = "p116";
@@ -1269,6 +1356,7 @@
             // p115
             // 
             this.p115.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p115.BackColor = System.Drawing.Color.Transparent;
             this.p115.Image = ((System.Drawing.Image)(resources.GetObject("p115.Image")));
             this.p115.Location = new System.Drawing.Point(476, 180);
             this.p115.Name = "p115";
@@ -1280,6 +1368,7 @@
             // p114
             // 
             this.p114.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p114.BackColor = System.Drawing.Color.Transparent;
             this.p114.Image = ((System.Drawing.Image)(resources.GetObject("p114.Image")));
             this.p114.Location = new System.Drawing.Point(393, 181);
             this.p114.Name = "p114";
@@ -1291,6 +1380,7 @@
             // p112
             // 
             this.p112.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p112.BackColor = System.Drawing.Color.Transparent;
             this.p112.Image = ((System.Drawing.Image)(resources.GetObject("p112.Image")));
             this.p112.Location = new System.Drawing.Point(270, 181);
             this.p112.Name = "p112";
@@ -1302,6 +1392,7 @@
             // p111
             // 
             this.p111.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p111.BackColor = System.Drawing.Color.Transparent;
             this.p111.Image = ((System.Drawing.Image)(resources.GetObject("p111.Image")));
             this.p111.Location = new System.Drawing.Point(330, 144);
             this.p111.Name = "p111";
@@ -1313,6 +1404,7 @@
             // p110
             // 
             this.p110.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p110.BackColor = System.Drawing.Color.Transparent;
             this.p110.Image = ((System.Drawing.Image)(resources.GetObject("p110.Image")));
             this.p110.Location = new System.Drawing.Point(330, 80);
             this.p110.Name = "p110";
@@ -1324,6 +1416,7 @@
             // p113
             // 
             this.p113.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p113.BackColor = System.Drawing.Color.Transparent;
             this.p113.Image = ((System.Drawing.Image)(resources.GetObject("p113.Image")));
             this.p113.Location = new System.Drawing.Point(166, 181);
             this.p113.Name = "p113";
@@ -1335,6 +1428,7 @@
             // p105
             // 
             this.p105.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p105.BackColor = System.Drawing.Color.Transparent;
             this.p105.Image = ((System.Drawing.Image)(resources.GetObject("p105.Image")));
             this.p105.Location = new System.Drawing.Point(166, 117);
             this.p105.Name = "p105";
@@ -1346,6 +1440,7 @@
             // p109
             // 
             this.p109.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p109.BackColor = System.Drawing.Color.Transparent;
             this.p109.Image = ((System.Drawing.Image)(resources.GetObject("p109.Image")));
             this.p109.Location = new System.Drawing.Point(166, 82);
             this.p109.Name = "p109";
@@ -1357,6 +1452,7 @@
             // p107
             // 
             this.p107.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p107.BackColor = System.Drawing.Color.Transparent;
             this.p107.Image = ((System.Drawing.Image)(resources.GetObject("p107.Image")));
             this.p107.Location = new System.Drawing.Point(166, 12);
             this.p107.Name = "p107";
@@ -1368,6 +1464,7 @@
             // p104
             // 
             this.p104.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p104.BackColor = System.Drawing.Color.Transparent;
             this.p104.Image = ((System.Drawing.Image)(resources.GetObject("p104.Image")));
             this.p104.Location = new System.Drawing.Point(270, 75);
             this.p104.Name = "p104";
@@ -1379,6 +1476,7 @@
             // p108
             // 
             this.p108.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p108.BackColor = System.Drawing.Color.Transparent;
             this.p108.Image = ((System.Drawing.Image)(resources.GetObject("p108.Image")));
             this.p108.Location = new System.Drawing.Point(271, 43);
             this.p108.Name = "p108";
@@ -1390,6 +1488,7 @@
             // p106
             // 
             this.p106.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p106.BackColor = System.Drawing.Color.Transparent;
             this.p106.Image = ((System.Drawing.Image)(resources.GetObject("p106.Image")));
             this.p106.Location = new System.Drawing.Point(271, 12);
             this.p106.Name = "p106";
@@ -1401,6 +1500,7 @@
             // p103
             // 
             this.p103.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p103.BackColor = System.Drawing.Color.Transparent;
             this.p103.Image = ((System.Drawing.Image)(resources.GetObject("p103.Image")));
             this.p103.Location = new System.Drawing.Point(392, 44);
             this.p103.Name = "p103";
@@ -1412,6 +1512,7 @@
             // p102
             // 
             this.p102.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p102.BackColor = System.Drawing.Color.Transparent;
             this.p102.Image = ((System.Drawing.Image)(resources.GetObject("p102.Image")));
             this.p102.Location = new System.Drawing.Point(487, 44);
             this.p102.Name = "p102";
@@ -1423,6 +1524,7 @@
             // p101
             // 
             this.p101.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.p101.BackColor = System.Drawing.Color.Transparent;
             this.p101.Image = ((System.Drawing.Image)(resources.GetObject("p101.Image")));
             this.p101.Location = new System.Drawing.Point(585, 42);
             this.p101.Name = "p101";
@@ -1434,7 +1536,8 @@
             // p100
             // 
             this.p100.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.p100.Image = ((System.Drawing.Image)(resources.GetObject("p100.Image")));
+            this.p100.BackColor = System.Drawing.Color.Transparent;
+            this.p100.Image = global::WatanyaPingTester.Properties.Resources.yellow;
             this.p100.Location = new System.Drawing.Point(660, 41);
             this.p100.Name = "p100";
             this.p100.Size = new System.Drawing.Size(25, 25);
@@ -1442,74 +1545,18 @@
             this.p100.TabIndex = 0;
             this.p100.TabStop = false;
             // 
-            // leftPanel
-            // 
-            this.leftPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.leftPanel.BackColor = System.Drawing.Color.Transparent;
-            this.leftPanel.Controls.Add(this.checkBox1);
-            this.leftPanel.Controls.Add(this.label2);
-            this.leftPanel.Controls.Add(this.comboBox1);
-            this.leftPanel.Controls.Add(this.guidePictureBox);
-            this.leftPanel.Location = new System.Drawing.Point(859, 12);
-            this.leftPanel.Name = "leftPanel";
-            this.leftPanel.Size = new System.Drawing.Size(177, 611);
-            this.leftPanel.TabIndex = 3;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(24, 77);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(83, 17);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Show all IPs";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(5, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(174, 64);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "شبكة\r\nالقاهرة - السخنة";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(130)))));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Arial Black", 9F);
-            this.comboBox1.ForeColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(24, 105);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 269);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "Select a Point";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
             // SokhnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1048, 635);
             this.Controls.Add(this.leftPanel);
             this.Controls.Add(this.schemePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "SokhnaForm";
             this.Text = "SokhnaForm";
+            this.leftPanel.ResumeLayout(false);
+            this.leftPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).EndInit();
             this.schemePanel.ResumeLayout(false);
             this.schemePanel.PerformLayout();
@@ -1559,8 +1606,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.p102)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p101)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p100)).EndInit();
-            this.leftPanel.ResumeLayout(false);
-            this.leftPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }

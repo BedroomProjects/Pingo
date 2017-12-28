@@ -19,7 +19,7 @@ namespace WatanyaPingTester
 
         int secondsPerPing = 2;
         bool showIPs = false;
-
+        PleaseWaitForm pleaseWait = new PleaseWaitForm();
         List<NetworkNode> nodes;
         string path, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath;
         ExcelToNode etn = new ExcelToNode();
@@ -32,7 +32,7 @@ namespace WatanyaPingTester
         {
             InitializeComponent();
             this.startScreen = startScreen;
-
+            this.CenterToScreen();
             // full screen above taskbar
             //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             //this.WindowState = FormWindowState.Maximized;
@@ -346,7 +346,14 @@ namespace WatanyaPingTester
                     }
                 }
             }
+            updateDisplay();
         }
 
+        void showLoading()
+        {
+            Thread t = new Thread(pleaseWait.Show);
+        }
+
+        
     }
 }

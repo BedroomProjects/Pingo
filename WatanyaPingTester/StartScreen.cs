@@ -13,12 +13,13 @@ namespace WatanyaPingTester
     public partial class StartScreen : Form
     {
         PleaseWaitForm pleaseWait = new PleaseWaitForm(); // Display form modelesslys
+        
         public StartScreen()
         {
             InitializeComponent();
-           
+            this.MaximizeBox = false;
+            this.CenterToScreen();
         }
-
         
 
         private void Form2_Load(object sender, EventArgs e)
@@ -28,31 +29,27 @@ namespace WatanyaPingTester
 
         private void sokhnaBtn_Click(object sender, EventArgs e)
         {
-            pleaseWait.Show(); //  ALlow main UI thread to properly display please wait form.
+            //pleaseWait.Show(); //  ALlow main UI thread to properly display please wait form.
             Application.DoEvents(); //CairoSokhnaDiagramForm csd = new CairoSokhnaDiagramForm(this);
             SokhnaForm csd = new SokhnaForm(this);
             csd.Show();
             this.Hide();
-            pleaseWait.Hide();
+            //pleaseWait.Hide();
         }
 
         private void allRoadsBtn_Click(object sender, EventArgs e)
         {
-            PleaseWaitForm pleaseWait = new PleaseWaitForm(); // Display form modelessly
-            pleaseWait.Show(); //  ALlow main UI thread to properly display please wait form.
+            //pleaseWait.Show(); //  ALlow main UI thread to properly display please wait form.
             Application.DoEvents();
             IPsAsListForm ipForm = new IPsAsListForm(this);
             ipForm.Show();
             this.Hide();
-            pleaseWait.Hide();
+            //pleaseWait.Hide();
         }
 
         private void alexBtn_Click(object sender, EventArgs e)
         {
-            PleaseWaitForm pleaseWait = new PleaseWaitForm();
-
-            // Display form modelessly
-            pleaseWait.Show();
+            //pleaseWait.Show();
 
             //  ALlow main UI thread to properly display please wait form.
             Application.DoEvents();
@@ -60,7 +57,7 @@ namespace WatanyaPingTester
             AlexForm cad = new AlexForm(this);
             cad.Show();
             this.Hide();
-            pleaseWait.Hide();
+            //pleaseWait.Hide();
         }
     }
 }
