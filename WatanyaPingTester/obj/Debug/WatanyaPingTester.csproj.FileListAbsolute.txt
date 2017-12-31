@@ -125,3 +125,6 @@ E:\PingoFahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.StartScreen.re
 E:\PingoFahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resources.resources
 E:\PingoFahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache
 E:\PingoFahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.PleaseWaitForm.resources
+G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.AlexForm.resources
+G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.PleaseWaitForm.resources
+G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.SokhnaForm.resources

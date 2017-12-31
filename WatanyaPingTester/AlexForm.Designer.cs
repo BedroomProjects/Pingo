@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlexForm));
+            this.rightPanel = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guidePictureBox = new System.Windows.Forms.PictureBox();
             this.schemePanel = new System.Windows.Forms.Panel();
             this.l2 = new System.Windows.Forms.Label();
             this.l4 = new System.Windows.Forms.Label();
@@ -142,11 +147,9 @@
             this.p5 = new System.Windows.Forms.PictureBox();
             this.p3 = new System.Windows.Forms.PictureBox();
             this.p1 = new System.Windows.Forms.PictureBox();
-            this.rightPanel = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.guidePictureBox = new System.Windows.Forms.PictureBox();
+            this.rightPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).BeginInit();
             this.schemePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p69)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p60)).BeginInit();
@@ -204,9 +207,71 @@
             ((System.ComponentModel.ISupportInitialize)(this.p5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1)).BeginInit();
-            this.rightPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).BeginInit();
             this.SuspendLayout();
+            // 
+            // rightPanel
+            // 
+            this.rightPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rightPanel.BackColor = System.Drawing.Color.Transparent;
+            this.rightPanel.Controls.Add(this.pictureBox1);
+            this.rightPanel.Controls.Add(this.checkBox1);
+            this.rightPanel.Controls.Add(this.comboBox1);
+            this.rightPanel.Controls.Add(this.guidePictureBox);
+            this.rightPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rightPanel.Location = new System.Drawing.Point(942, 12);
+            this.rightPanel.Name = "rightPanel";
+            this.rightPanel.Size = new System.Drawing.Size(193, 595);
+            this.rightPanel.TabIndex = 4;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(32, 108);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(99, 20);
+            this.checkBox1.TabIndex = 4;
+            this.checkBox1.Text = "Show all IPs";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(130)))));
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Arial Black", 9F);
+            this.comboBox1.ForeColor = System.Drawing.Color.White;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(32, 131);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(137, 235);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.Text = "Select a Point";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::WatanyaPingTester.Properties.Resources.alextittle;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(32, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(137, 89);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // guidePictureBox
+            // 
+            this.guidePictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guidePictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.guidePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("guidePictureBox.Image")));
+            this.guidePictureBox.Location = new System.Drawing.Point(32, 380);
+            this.guidePictureBox.Name = "guidePictureBox";
+            this.guidePictureBox.Size = new System.Drawing.Size(137, 212);
+            this.guidePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guidePictureBox.TabIndex = 1;
+            this.guidePictureBox.TabStop = false;
             // 
             // schemePanel
             // 
@@ -1731,76 +1796,6 @@
             this.p1.TabIndex = 134;
             this.p1.TabStop = false;
             // 
-            // rightPanel
-            // 
-            this.rightPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rightPanel.BackColor = System.Drawing.Color.Transparent;
-            this.rightPanel.Controls.Add(this.checkBox1);
-            this.rightPanel.Controls.Add(this.label2);
-            this.rightPanel.Controls.Add(this.comboBox1);
-            this.rightPanel.Controls.Add(this.guidePictureBox);
-            this.rightPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rightPanel.Location = new System.Drawing.Point(942, 12);
-            this.rightPanel.Name = "rightPanel";
-            this.rightPanel.Size = new System.Drawing.Size(193, 595);
-            this.rightPanel.TabIndex = 4;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(32, 69);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(99, 20);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Show all IPs";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, -5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 60);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "شبكة\r\nالقاهرة - الاسكندرية";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(130)))));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Arial Black", 9F);
-            this.comboBox1.ForeColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(32, 97);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 269);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "Select a Point";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // guidePictureBox
-            // 
-            this.guidePictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guidePictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.guidePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("guidePictureBox.Image")));
-            this.guidePictureBox.Location = new System.Drawing.Point(32, 380);
-            this.guidePictureBox.Name = "guidePictureBox";
-            this.guidePictureBox.Size = new System.Drawing.Size(137, 212);
-            this.guidePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guidePictureBox.TabIndex = 1;
-            this.guidePictureBox.TabStop = false;
-            // 
             // AlexForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1809,8 +1804,13 @@
             this.Controls.Add(this.rightPanel);
             this.Controls.Add(this.schemePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AlexForm";
             this.Text = "AlexForm";
+            this.rightPanel.ResumeLayout(false);
+            this.rightPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).EndInit();
             this.schemePanel.ResumeLayout(false);
             this.schemePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p69)).EndInit();
@@ -1869,9 +1869,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.p5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1)).EndInit();
-            this.rightPanel.ResumeLayout(false);
-            this.rightPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1881,7 +1878,6 @@
         private System.Windows.Forms.Panel schemePanel;
         private System.Windows.Forms.Panel rightPanel;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox guidePictureBox;
         private System.Windows.Forms.PictureBox p69;
@@ -1996,5 +1992,6 @@
         private System.Windows.Forms.Label l4;
         private System.Windows.Forms.Label l3;
         private System.Windows.Forms.Label l1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

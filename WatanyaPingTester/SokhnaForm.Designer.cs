@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SokhnaForm));
             this.leftPanel = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guidePictureBox = new System.Windows.Forms.PictureBox();
             this.schemePanel = new System.Windows.Forms.Panel();
             this.l127 = new System.Windows.Forms.Label();
@@ -128,6 +128,7 @@
             this.p101 = new System.Windows.Forms.PictureBox();
             this.p100 = new System.Windows.Forms.PictureBox();
             this.leftPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).BeginInit();
             this.schemePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p123)).BeginInit();
@@ -182,8 +183,8 @@
             // 
             this.leftPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.leftPanel.BackColor = System.Drawing.Color.Transparent;
+            this.leftPanel.Controls.Add(this.pictureBox1);
             this.leftPanel.Controls.Add(this.checkBox1);
-            this.leftPanel.Controls.Add(this.label2);
             this.leftPanel.Controls.Add(this.comboBox1);
             this.leftPanel.Controls.Add(this.guidePictureBox);
             this.leftPanel.Location = new System.Drawing.Point(859, 12);
@@ -195,29 +196,13 @@
             // 
             this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(24, 77);
+            this.checkBox1.Location = new System.Drawing.Point(27, 116);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(84, 17);
+            this.checkBox1.Size = new System.Drawing.Size(83, 17);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.Text = "Show all IPs";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(5, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(174, 64);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "شبكة\r\nالقاهرة - السخنة";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // comboBox1
             // 
@@ -228,12 +213,22 @@
             this.comboBox1.Font = new System.Drawing.Font("Arial Black", 9F);
             this.comboBox1.ForeColor = System.Drawing.Color.White;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(24, 105);
+            this.comboBox1.Location = new System.Drawing.Point(24, 139);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 269);
+            this.comboBox1.Size = new System.Drawing.Size(137, 235);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Text = "Select a Point";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::WatanyaPingTester.Properties.Resources.sokhnatittle;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(134, 91);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // guidePictureBox
             // 
@@ -1557,6 +1552,7 @@
             this.Text = "SokhnaForm";
             this.leftPanel.ResumeLayout(false);
             this.leftPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).EndInit();
             this.schemePanel.ResumeLayout(false);
             this.schemePanel.PerformLayout();
@@ -1708,7 +1704,7 @@
         private System.Windows.Forms.Label l123;
         private System.Windows.Forms.Panel leftPanel;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
