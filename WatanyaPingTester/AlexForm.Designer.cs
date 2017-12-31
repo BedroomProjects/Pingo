@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlexForm));
             this.rightPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guidePictureBox = new System.Windows.Forms.PictureBox();
             this.schemePanel = new System.Windows.Forms.Panel();
             this.l2 = new System.Windows.Forms.Label();
@@ -147,6 +147,8 @@
             this.p5 = new System.Windows.Forms.PictureBox();
             this.p3 = new System.Windows.Forms.PictureBox();
             this.p1 = new System.Windows.Forms.PictureBox();
+            this.reportBtn = new System.Windows.Forms.Button();
+            this.reportLED = new System.Windows.Forms.PictureBox();
             this.rightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).BeginInit();
@@ -207,12 +209,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.p5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reportLED)).BeginInit();
             this.SuspendLayout();
             // 
             // rightPanel
             // 
             this.rightPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rightPanel.BackColor = System.Drawing.Color.Transparent;
+            this.rightPanel.Controls.Add(this.reportBtn);
+            this.rightPanel.Controls.Add(this.reportLED);
             this.rightPanel.Controls.Add(this.pictureBox1);
             this.rightPanel.Controls.Add(this.checkBox1);
             this.rightPanel.Controls.Add(this.comboBox1);
@@ -223,13 +228,24 @@
             this.rightPanel.Size = new System.Drawing.Size(193, 595);
             this.rightPanel.TabIndex = 4;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::WatanyaPingTester.Properties.Resources.alextittle;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(32, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(137, 89);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // checkBox1
             // 
             this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(32, 108);
+            this.checkBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(32, 95);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(99, 20);
+            this.checkBox1.Size = new System.Drawing.Size(106, 20);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.Text = "Show all IPs";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -244,22 +260,12 @@
             this.comboBox1.Font = new System.Drawing.Font("Arial Black", 9F);
             this.comboBox1.ForeColor = System.Drawing.Color.White;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(32, 131);
+            this.comboBox1.Location = new System.Drawing.Point(32, 139);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(137, 235);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Text = "Select a Point";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::WatanyaPingTester.Properties.Resources.alextittle;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 89);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
             // 
             // guidePictureBox
             // 
@@ -1796,6 +1802,30 @@
             this.p1.TabIndex = 134;
             this.p1.TabStop = false;
             // 
+            // reportBtn
+            // 
+            this.reportBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
+            this.reportBtn.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
+            this.reportBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.reportBtn.Location = new System.Drawing.Point(51, 115);
+            this.reportBtn.Name = "reportBtn";
+            this.reportBtn.Size = new System.Drawing.Size(75, 23);
+            this.reportBtn.TabIndex = 9;
+            this.reportBtn.Text = "Report";
+            this.reportBtn.UseVisualStyleBackColor = false;
+            this.reportBtn.Click += new System.EventHandler(this.reportBtn_Click);
+            // 
+            // reportLED
+            // 
+            this.reportLED.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.reportLED.Image = global::WatanyaPingTester.Properties.Resources.grey1;
+            this.reportLED.Location = new System.Drawing.Point(31, 115);
+            this.reportLED.Name = "reportLED";
+            this.reportLED.Size = new System.Drawing.Size(18, 23);
+            this.reportLED.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.reportLED.TabIndex = 8;
+            this.reportLED.TabStop = false;
+            // 
             // AlexForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1869,6 +1899,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.p5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reportLED)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1993,5 +2024,7 @@
         private System.Windows.Forms.Label l3;
         private System.Windows.Forms.Label l1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button reportBtn;
+        private System.Windows.Forms.PictureBox reportLED;
     }
 }

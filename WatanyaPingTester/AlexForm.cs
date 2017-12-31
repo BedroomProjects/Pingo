@@ -17,16 +17,18 @@ namespace WatanyaPingTester
     {
         List<SchemeNode> schemeNodes = new List<SchemeNode>();
 
-        int secondsPerPing = 2;
-        bool showIPs = false;
-        PleaseWaitForm pleaseWait = new PleaseWaitForm();
+        int secondsPerPing = 1;
+        bool showIPs = false, report = false;
         List<NetworkNode> nodes;
-        string path, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath;
+        List<List<string>> reportList = new List<List<string>>();
+        string path, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath, greennLEDPath;
         ExcelToNode etn = new ExcelToNode();
         string fileName = "alex_scheme_updated.xlsx";
         //bool running = false;
         Thread t;
         StartScreen startScreen;
+
+        PleaseWaitForm pleaseWait = new PleaseWaitForm();
 
         public AlexForm(StartScreen startScreen)
         {
@@ -47,6 +49,7 @@ namespace WatanyaPingTester
                 redLEDPath = Path.Combine(path, @"red.png");
                 yellowLEDPath = Path.Combine(path, @"yellow.png");
                 greyLEDPath = Path.Combine(path, @"grey1.png");
+                greennLEDPath = Path.Combine(path, @"greenn.png");
             }
             catch (Exception e)
             {
@@ -207,14 +210,17 @@ namespace WatanyaPingTester
                         if (curNodeStatus == "Online")
                         {
                             setPicToGreen(schemeNodes[i].getPic());
+                            updateReport(schemeNodes[i]);
                         }
                         else if (curNodeStatus == "Not Reachable")
                         {
                             setPicToYellow(schemeNodes[i].getPic());
+                            updateReport(schemeNodes[i]);
                         }
                         else if (curNodeStatus == "Timeout")
                         {
                             setPicToRed(schemeNodes[i].getPic());
+                            updateReport(schemeNodes[i]);
                         }
                     }
                     else
@@ -354,6 +360,141 @@ namespace WatanyaPingTester
             Thread t = new Thread(pleaseWait.Show);
         }
 
-        
+        private void reportBtn_Click(object sender, EventArgs e)
+        {
+            if (report)
+            {
+                report = false;
+                string temp = getReport();
+
+                //MessageBoxButtons buttons = MessageBoxButtons.OK;
+                //DialogResult result;
+
+                //// Displays the MessageBox.
+                //result = MessageBox.Show(temp, "Report", buttons);
+
+                reportLED.Image = Image.FromFile(greyLEDPath);
+                reportLED.SizeMode = PictureBoxSizeMode.Zoom;
+                createExcel();
+            }
+            else
+            {
+                report = true;
+                reportLED.Image = Image.FromFile(greennLEDPath);
+                reportLED.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+        }
+
+        private string getReport()
+        {
+            string result = "";
+            double onlinePerc, offlinePerc, timeoutPerc, overallPing;
+            List<string> temp;
+            for (int i = 0; i < schemeNodes.Count(); i++)
+            {
+                temp = new List<string>();
+                overallPing = schemeNodes[i].getOnlineCount() + schemeNodes[i].getOfflineCount() + schemeNodes[i].getTimeoutCount();
+                onlinePerc = (schemeNodes[i].getOnlineCount() / overallPing) * 100;
+                offlinePerc = (schemeNodes[i].getOfflineCount() / overallPing) * 100;
+                timeoutPerc = (schemeNodes[i].getTimeoutCount() / overallPing) * 100;
+
+                if (overallPing == 0) continue;
+
+                temp.Add(schemeNodes[i].getName());
+                temp.Add(schemeNodes[i].getIP());
+                temp.Add(Math.Round(onlinePerc, 2).ToString());
+                temp.Add(Math.Round(offlinePerc, 2).ToString());
+                temp.Add(Math.Round(timeoutPerc, 2).ToString());
+
+                reportList.Add(temp);
+                result += "C: " + overallPing.ToString() + " || ";
+                result += schemeNodes[i].getName();
+                result += " ----- ";
+                result = result
+                    + "Online: " + Math.Round(onlinePerc, 2).ToString()
+                    + ", Offline: " + Math.Round(offlinePerc, 2).ToString()
+                    + ", Timeout: " + Math.Round(timeoutPerc, 2).ToString()
+                    + "\n";
+            }
+            return result;
+        }
+
+        private void updateReport(SchemeNode schNode)
+        {
+            if (report)
+            {
+                string curNodeStatus = schNode.getNode().getStatus();
+                if (curNodeStatus == "Online")
+                {
+                    schNode.incrementOnline();
+                }
+                else if (curNodeStatus == "Not Reachable")
+                {
+                    schNode.incrementOffline();
+                }
+                else if (curNodeStatus == "Timeout")
+                {
+                    schNode.incrementTimeout();
+                }
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void createExcel()
+        {
+            Microsoft.Office.Interop.Excel.Application oXL;
+            Microsoft.Office.Interop.Excel._Workbook oWB;
+            Microsoft.Office.Interop.Excel._Worksheet oSheet;
+            Microsoft.Office.Interop.Excel.Range oRng;
+            object misvalue = System.Reflection.Missing.Value;
+            try
+            {
+                //Start Excel and get Application object.
+                oXL = new Microsoft.Office.Interop.Excel.Application();
+                oXL.Visible = true;
+
+                //Get a new workbook.
+                oWB = (Microsoft.Office.Interop.Excel._Workbook)(oXL.Workbooks.Add(""));
+                oSheet = (Microsoft.Office.Interop.Excel._Worksheet)oWB.ActiveSheet;
+
+                //Add table headers going cell by cell.
+                oSheet.Cells[1, 1] = "Name";
+                oSheet.Cells[1, 2] = "IP";
+                oSheet.Cells[1, 3] = "Online";
+                oSheet.Cells[1, 4] = "Not Reachable";
+                oSheet.Cells[1, 5] = "Timeout";
+
+                //Format A1:E1 as bold, vertical alignment = center.
+                oSheet.get_Range("A1", "E1").Font.Bold = true;
+                oSheet.get_Range("A1", "E1").VerticalAlignment =
+                Microsoft.Office.Interop.Excel.XlVAlign.xlVAlignCenter;
+
+                for (int i = 0; i < reportList.Count(); i++)
+                {
+                    for (int j = 0; j < reportList[0].Count(); j++)
+                    {
+                        oSheet.Cells[i + 2, j + 1].Value2 = reportList[i].ElementAt(j);
+                    }
+                }
+                oRng = oSheet.get_Range("A1", "E1");
+                oRng.EntireColumn.AutoFit();
+
+                oXL.Visible = false;
+                oXL.UserControl = false;
+                oWB.SaveAs(path + "\\alexReport.xlsx", Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing,
+                    false, false, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlNoChange,
+                    Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+
+                oWB.Close();
+
+            }
+            catch (Exception e)
+            {
+
+            }
+        }
     }
 }

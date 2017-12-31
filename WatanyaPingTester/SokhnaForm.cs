@@ -10,6 +10,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using Excel = Microsoft.Office.Interop.Excel;  
 namespace WatanyaPingTester
 {
     public partial class SokhnaForm : Form
@@ -20,6 +21,7 @@ namespace WatanyaPingTester
         bool showIPs = false, report = false;
 
         List<NetworkNode> nodes;
+        List<List<string>> reportList = new List<List<string>>(); 
         string resPath, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath, greennLEDPath;
         ExcelToNode etn = new ExcelToNode();
         string fileName = "sokhna_scheme.xlsx";
@@ -357,13 +359,16 @@ namespace WatanyaPingTester
             {
                 report = false;
                 string temp = getReport();
-                MessageBoxButtons buttons = MessageBoxButtons.OK;
-                DialogResult result;
+                
+                //MessageBoxButtons buttons = MessageBoxButtons.OK;
+                //DialogResult result;
 
-                // Displays the MessageBox.
-                result = MessageBox.Show(temp, "Report", buttons);
+                //// Displays the MessageBox.
+                //result = MessageBox.Show(temp, "Report", buttons);
+                
                 reportLED.Image = Image.FromFile(greyLEDPath);
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
+                createExcel();
             }
             else
             {
@@ -377,13 +382,24 @@ namespace WatanyaPingTester
         {
             string result = "";
             double onlinePerc, offlinePerc, timeoutPerc, overallPing;
+            List<string> temp;
             for (int i = 0; i < schemeNodes.Count(); i++ )
             {
+                temp = new List<string>();
                 overallPing = schemeNodes[i].getOnlineCount() + schemeNodes[i].getOfflineCount() + schemeNodes[i].getTimeoutCount();
                 onlinePerc = (schemeNodes[i].getOnlineCount() / overallPing) * 100;
                 offlinePerc = (schemeNodes[i].getOfflineCount() / overallPing) * 100;
                 timeoutPerc = (schemeNodes[i].getTimeoutCount() / overallPing) * 100;
+
                 if (overallPing == 0) continue;
+                
+                temp.Add(schemeNodes[i].getName());
+                temp.Add(schemeNodes[i].getIP());
+                temp.Add(Math.Round(onlinePerc, 2).ToString());
+                temp.Add(Math.Round(offlinePerc, 2).ToString());
+                temp.Add(Math.Round(timeoutPerc, 2).ToString());
+
+                reportList.Add(temp);
                 result += "C: " + overallPing.ToString() + " || ";
                 result += schemeNodes[i].getName();
                 result += " ----- ";
@@ -417,6 +433,58 @@ namespace WatanyaPingTester
             else
             {
                 return;
+            }
+        }
+
+        private void createExcel()
+        {
+            Microsoft.Office.Interop.Excel.Application oXL;
+            Microsoft.Office.Interop.Excel._Workbook oWB;
+            Microsoft.Office.Interop.Excel._Worksheet oSheet;
+            Microsoft.Office.Interop.Excel.Range oRng;
+            object misvalue = System.Reflection.Missing.Value;
+            try
+            {
+                //Start Excel and get Application object.
+                oXL = new Microsoft.Office.Interop.Excel.Application();
+                oXL.Visible = true;
+
+                //Get a new workbook.
+                oWB = (Microsoft.Office.Interop.Excel._Workbook)(oXL.Workbooks.Add(""));
+                oSheet = (Microsoft.Office.Interop.Excel._Worksheet)oWB.ActiveSheet;
+
+                //Add table headers going cell by cell.
+                oSheet.Cells[1, 1] = "Name";
+                oSheet.Cells[1, 2] = "IP";
+                oSheet.Cells[1, 3] = "Online";
+                oSheet.Cells[1, 4] = "Not Reachable";
+                oSheet.Cells[1, 5] = "Timeout";
+
+                //Format A1:E1 as bold, vertical alignment = center.
+                oSheet.get_Range("A1", "E1").Font.Bold = true;
+                oSheet.get_Range("A1", "E1").VerticalAlignment =
+                Microsoft.Office.Interop.Excel.XlVAlign.xlVAlignCenter;
+
+                for (int i = 0; i < reportList.Count(); i++ )
+                {
+                    for (int j = 0; j < reportList[0].Count(); j++ )
+                    {
+                        oSheet.Cells[i + 2, j + 1].Value2 = reportList[i].ElementAt(j);
+                    }
+                }
+                oRng = oSheet.get_Range("A1", "E1");
+                oRng.EntireColumn.AutoFit();
+
+                oXL.Visible = false;
+                oXL.UserControl = false;
+                oWB.SaveAs(resPath + "\\sokhnaReport.xlsx", Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing,
+                    false, false, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlNoChange,
+                    Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+
+                oWB.Close();
+
+            }catch(Exception e){
+
             }
         }
     }

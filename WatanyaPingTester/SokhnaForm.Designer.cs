@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SokhnaForm));
             this.leftPanel = new System.Windows.Forms.Panel();
             this.reportBtn = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.reportLED = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.guidePictureBox = new System.Windows.Forms.PictureBox();
             this.schemePanel = new System.Windows.Forms.Panel();
             this.l127 = new System.Windows.Forms.Label();
@@ -210,6 +210,27 @@
             this.reportBtn.UseVisualStyleBackColor = false;
             this.reportBtn.Click += new System.EventHandler(this.reportBtn_Click);
             // 
+            // reportLED
+            // 
+            this.reportLED.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.reportLED.Image = global::WatanyaPingTester.Properties.Resources.grey1;
+            this.reportLED.Location = new System.Drawing.Point(22, 125);
+            this.reportLED.Name = "reportLED";
+            this.reportLED.Size = new System.Drawing.Size(18, 23);
+            this.reportLED.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.reportLED.TabIndex = 6;
+            this.reportLED.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::WatanyaPingTester.Properties.Resources.sokhnatittle;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(137, 91);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // checkBox1
             // 
             this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -238,27 +259,6 @@
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Text = "Select a Point";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // reportLED
-            // 
-            this.reportLED.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.reportLED.Image = global::WatanyaPingTester.Properties.Resources.grey1;
-            this.reportLED.Location = new System.Drawing.Point(22, 125);
-            this.reportLED.Name = "reportLED";
-            this.reportLED.Size = new System.Drawing.Size(18, 23);
-            this.reportLED.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.reportLED.TabIndex = 6;
-            this.reportLED.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::WatanyaPingTester.Properties.Resources.sokhnatittle;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 91);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
             // 
             // guidePictureBox
             // 
@@ -1578,6 +1578,7 @@
             this.Controls.Add(this.leftPanel);
             this.Controls.Add(this.schemePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SokhnaForm";
             this.Text = "SokhnaForm";
             this.leftPanel.ResumeLayout(false);
