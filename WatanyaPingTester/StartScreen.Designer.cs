@@ -40,7 +40,7 @@
             this.sokhnaBtn.BackgroundImage = global::WatanyaPingTester.Properties.Resources.btn1;
             this.sokhnaBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.sokhnaBtn.Font = new System.Drawing.Font("Arial", 15F);
-            this.sokhnaBtn.Location = new System.Drawing.Point(48, 150);
+            this.sokhnaBtn.Location = new System.Drawing.Point(48, 149);
             this.sokhnaBtn.Name = "sokhnaBtn";
             this.sokhnaBtn.Size = new System.Drawing.Size(196, 52);
             this.sokhnaBtn.TabIndex = 0;
@@ -54,7 +54,7 @@
             this.alexBtn.BackgroundImage = global::WatanyaPingTester.Properties.Resources.btn2;
             this.alexBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.alexBtn.Font = new System.Drawing.Font("Arial", 15F);
-            this.alexBtn.Location = new System.Drawing.Point(48, 208);
+            this.alexBtn.Location = new System.Drawing.Point(48, 207);
             this.alexBtn.Name = "alexBtn";
             this.alexBtn.Size = new System.Drawing.Size(196, 52);
             this.alexBtn.TabIndex = 1;
@@ -68,7 +68,7 @@
             this.allRoadsBtn.BackgroundImage = global::WatanyaPingTester.Properties.Resources.btn3;
             this.allRoadsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.allRoadsBtn.Font = new System.Drawing.Font("Arial", 15F);
-            this.allRoadsBtn.Location = new System.Drawing.Point(48, 266);
+            this.allRoadsBtn.Location = new System.Drawing.Point(48, 265);
             this.allRoadsBtn.Name = "allRoadsBtn";
             this.allRoadsBtn.Size = new System.Drawing.Size(196, 52);
             this.allRoadsBtn.TabIndex = 3;
@@ -82,7 +82,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackgroundImage = global::WatanyaPingTester.Properties.Resources.introback;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(290, 380);
+            this.ClientSize = new System.Drawing.Size(291, 379);
             this.Controls.Add(this.allRoadsBtn);
             this.Controls.Add(this.alexBtn);
             this.Controls.Add(this.sokhnaBtn);
