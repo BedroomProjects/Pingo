@@ -17,10 +17,10 @@ namespace WatanyaPingTester
         List<SchemeNode> schemeNodes = new List<SchemeNode>();
 
         int secondsPerPing = 2;
-        bool showIPs = false;
+        bool showIPs = false, report = false;
 
         List<NetworkNode> nodes;
-        string resPath, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath;
+        string resPath, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath, greennLEDPath;
         ExcelToNode etn = new ExcelToNode();
         string fileName = "sokhna_scheme.xlsx";
         //bool running = false;
@@ -47,6 +47,7 @@ namespace WatanyaPingTester
                 redLEDPath = Path.Combine(resPath, @"red.png");
                 yellowLEDPath = Path.Combine(resPath, @"yellow.png");
                 greyLEDPath = Path.Combine(resPath, @"grey1.png");
+                greennLEDPath = Path.Combine(resPath, @"greenn.png");
             }
             catch (Exception e)
             {
@@ -92,14 +93,17 @@ namespace WatanyaPingTester
                         if (curNodeStatus == "Online")
                         {
                             setPicToGreen(schemeNodes[i].getPic());
+                            updateReport(schemeNodes[i]);
                         }
                         else if (curNodeStatus == "Not Reachable")
                         {
                             setPicToYellow(schemeNodes[i].getPic());
+                            updateReport(schemeNodes[i]);
                         }
                         else if (curNodeStatus == "Timeout")
                         {
                             setPicToRed(schemeNodes[i].getPic());
+                            updateReport(schemeNodes[i]);
                         }
                     }
                     else
@@ -347,5 +351,73 @@ namespace WatanyaPingTester
             }
         }
 
+        private void reportBtn_Click(object sender, EventArgs e)
+        {
+            if (report)
+            {
+                report = false;
+                string temp = getReport();
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result;
+
+                // Displays the MessageBox.
+                result = MessageBox.Show(temp, "Report", buttons);
+                reportLED.Image = Image.FromFile(greyLEDPath);
+                reportLED.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            else
+            {
+                report = true;
+                reportLED.Image = Image.FromFile(greennLEDPath);
+                reportLED.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+        }
+
+        private string getReport()
+        {
+            string result = "";
+            double onlinePerc, offlinePerc, timeoutPerc, overallPing;
+            for (int i = 0; i < schemeNodes.Count(); i++ )
+            {
+                overallPing = schemeNodes[i].getOnlineCount() + schemeNodes[i].getOfflineCount() + schemeNodes[i].getTimeoutCount();
+                onlinePerc = (schemeNodes[i].getOnlineCount() / overallPing) * 100;
+                offlinePerc = (schemeNodes[i].getOfflineCount() / overallPing) * 100;
+                timeoutPerc = (schemeNodes[i].getTimeoutCount() / overallPing) * 100;
+                if (overallPing == 0) continue;
+                result += "C: " + overallPing.ToString() + " || ";
+                result += schemeNodes[i].getName();
+                result += " ----- ";
+                result = result 
+                    + "Online: " + Math.Round(onlinePerc, 2).ToString()
+                    + ", Offline: " + Math.Round(offlinePerc, 2).ToString()
+                    + ", Timeout: " + Math.Round(timeoutPerc, 2).ToString()
+                    + "\n";
+            }
+            return result;
+        }
+
+        private void updateReport(SchemeNode schNode)
+        {
+            if (report)
+            {
+                string curNodeStatus = schNode.getNode().getStatus();
+                if (curNodeStatus == "Online")
+                {
+                    schNode.incrementOnline();
+                }
+                else if (curNodeStatus == "Not Reachable")
+                {
+                    schNode.incrementOffline();
+                }
+                else if (curNodeStatus == "Timeout")
+                {
+                    schNode.incrementTimeout();
+                }
+            }
+            else
+            {
+                return;
+            }
+        }
     }
 }

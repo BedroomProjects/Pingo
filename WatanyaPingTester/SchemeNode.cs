@@ -14,6 +14,7 @@ namespace WatanyaPingTester
         PictureBox pic;
         Label label;
         bool visible = true;
+        double onlineCount = 0, offlineCount = 0, timeoutCount = 0;
 
         public SchemeNode(NetworkNode n)
         {
@@ -76,5 +77,36 @@ namespace WatanyaPingTester
         {
             return node;
         }
+
+        public void incrementOnline()
+        {
+            onlineCount++;
+        }
+
+        public void incrementOffline()
+        {
+            offlineCount++;
+        }
+
+        public void incrementTimeout()
+        {
+            timeoutCount++;
+        }
+
+        public double getOnlineCount()
+        {
+            return onlineCount;
+        }
+
+        public double getOfflineCount()
+        {
+            return offlineCount;
+        }
+
+        public double getTimeoutCount()
+        {
+            return timeoutCount;
+        }
+
     }
 }

@@ -30,8 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SokhnaForm));
             this.leftPanel = new System.Windows.Forms.Panel();
+            this.reportBtn = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.reportLED = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guidePictureBox = new System.Windows.Forms.PictureBox();
             this.schemePanel = new System.Windows.Forms.Panel();
@@ -128,6 +130,7 @@
             this.p101 = new System.Windows.Forms.PictureBox();
             this.p100 = new System.Windows.Forms.PictureBox();
             this.leftPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reportLED)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).BeginInit();
             this.schemePanel.SuspendLayout();
@@ -183,6 +186,8 @@
             // 
             this.leftPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.leftPanel.BackColor = System.Drawing.Color.Transparent;
+            this.leftPanel.Controls.Add(this.reportBtn);
+            this.leftPanel.Controls.Add(this.reportLED);
             this.leftPanel.Controls.Add(this.pictureBox1);
             this.leftPanel.Controls.Add(this.checkBox1);
             this.leftPanel.Controls.Add(this.comboBox1);
@@ -192,13 +197,27 @@
             this.leftPanel.Size = new System.Drawing.Size(177, 611);
             this.leftPanel.TabIndex = 3;
             // 
+            // reportBtn
+            // 
+            this.reportBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
+            this.reportBtn.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
+            this.reportBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.reportBtn.Location = new System.Drawing.Point(42, 125);
+            this.reportBtn.Name = "reportBtn";
+            this.reportBtn.Size = new System.Drawing.Size(75, 23);
+            this.reportBtn.TabIndex = 7;
+            this.reportBtn.Text = "Report";
+            this.reportBtn.UseVisualStyleBackColor = false;
+            this.reportBtn.Click += new System.EventHandler(this.reportBtn_Click);
+            // 
             // checkBox1
             // 
             this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(27, 116);
+            this.checkBox1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
+            this.checkBox1.Location = new System.Drawing.Point(24, 101);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(83, 17);
+            this.checkBox1.Size = new System.Drawing.Size(92, 18);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.Text = "Show all IPs";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -213,20 +232,31 @@
             this.comboBox1.Font = new System.Drawing.Font("Arial Black", 9F);
             this.comboBox1.ForeColor = System.Drawing.Color.White;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(24, 139);
+            this.comboBox1.Location = new System.Drawing.Point(24, 156);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 235);
+            this.comboBox1.Size = new System.Drawing.Size(137, 218);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Text = "Select a Point";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // reportLED
+            // 
+            this.reportLED.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.reportLED.Image = global::WatanyaPingTester.Properties.Resources.grey1;
+            this.reportLED.Location = new System.Drawing.Point(22, 125);
+            this.reportLED.Name = "reportLED";
+            this.reportLED.Size = new System.Drawing.Size(18, 23);
+            this.reportLED.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.reportLED.TabIndex = 6;
+            this.reportLED.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::WatanyaPingTester.Properties.Resources.sokhnatittle;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 91);
+            this.pictureBox1.Size = new System.Drawing.Size(137, 91);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -1552,6 +1582,7 @@
             this.Text = "SokhnaForm";
             this.leftPanel.ResumeLayout(false);
             this.leftPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reportLED)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).EndInit();
             this.schemePanel.ResumeLayout(false);
@@ -1706,5 +1737,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox reportLED;
+        private System.Windows.Forms.Button reportBtn;
     }
 }
