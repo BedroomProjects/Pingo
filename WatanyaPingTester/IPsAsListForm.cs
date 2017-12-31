@@ -172,6 +172,8 @@ namespace WatanyaPingTester
                 // Displays the MessageBox.
                 result = MessageBox.Show(ex.Message, "Error", buttons);
             }
+            running = false;
+            ping2.Text = "Ping";
             //gridView1.Rows.Clear();
             ping2.Enabled = true;
             selectedItem = comboBox1.SelectedItem.ToString();
