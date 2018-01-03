@@ -68,6 +68,7 @@
     <Compile Include="CairoSokhnaOldSchemeForm.Designer.cs">
       <DependentUpon>CairoSokhnaOldSchemeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateReports.cs" />
     <Compile Include="ExcelToNode.cs" />
     <Compile Include="IPsAsListForm.cs">
       <SubType>Form</SubType>
