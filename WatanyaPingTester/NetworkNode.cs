@@ -9,7 +9,7 @@ namespace WatanyaPingTester
 {
     class NetworkNode
     {
-        private string ipAddress, name, nodeType, road, nextNode, placeType, previousNode;
+        private string ipAddress, name, nodeType, road, previousNodeIndex, placeType, previousNode;
         private PingClass pingObj;
         private bool reachable = false, pending, timeout = false;
 
@@ -20,7 +20,7 @@ namespace WatanyaPingTester
             this.road = road;
             this.ipAddress = ipAddress;
             this.placeType = placeType;
-            this.nextNode = nextNode;
+            this.previousNodeIndex = nextNode;
             this.previousNode = previousNode;
             pingObj = new PingClass();
         }
@@ -45,9 +45,9 @@ namespace WatanyaPingTester
             return ipAddress;
         }
 
-        public string getNextNode()
+        public int getPreviousNodeIndex()
         {
-            return nextNode;
+            return Int32.Parse(previousNodeIndex);
         }
 
         public string getPlaceType()

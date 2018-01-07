@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PingoIcon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -68,7 +71,7 @@
     <Compile Include="CairoSokhnaOldSchemeForm.Designer.cs">
       <DependentUpon>CairoSokhnaOldSchemeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreateReports.cs" />
+    <Compile Include="Reports.cs" />
     <Compile Include="ExcelToNode.cs" />
     <Compile Include="IPsAsListForm.cs">
       <SubType>Form</SubType>
@@ -76,6 +79,7 @@
     <Compile Include="IPsAsListForm.Designer.cs">
       <DependentUpon>IPsAsListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NodePathFromCompany.cs" />
     <Compile Include="PleaseWaitForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +211,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\res\New folder\grey1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PingoIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -20,8 +20,8 @@ namespace WatanyaPingTester
         int secondsPerPing = 2;
         bool showIPs = false, report = false;
         // ports list
-        private string[] collectingPortArr = {"Degla", "Cairo Lab", "Cairo", "Tohamy", "Gendaly 1", "Kilo 61", "Kilo 59", "Al Mosheer", "Sokhna", "Al Galalh", "Hgoul 3", "Al Seneya"}; 
-        private List<string> collectingPortsList = new List<string>();
+        private string[] collectingPortArr = {"12 Degla", "9 Cairo Lab", "10 Cairo", "18 Tohamy", "24 Gendaly 1", "34 Kilo 61", "35 Kilo 59", "43 Al Mosheer", "51 Sokhna", "55 Al Galalh", "61 Hgoul 3", "63 Al Seneya"}; 
+        private List<List<string>> collectingPortsList = new List<List<string>>();
         
         List<NetworkNode> nodes;
         List<List<string>> reportList = new List<List<string>>(); 
@@ -44,7 +44,7 @@ namespace WatanyaPingTester
 
             // Adding form closing event handler
             this.FormClosing += new FormClosingEventHandler(CairoAlexDiagram_Closing);
-            collectingPortsList = collectingPortArr.ToList();
+            fillCollectingPortsList();
             try
             {
                 resPath = Path.Combine(Environment.CurrentDirectory, @"res");
@@ -129,6 +129,25 @@ namespace WatanyaPingTester
                 }catch(Exception eeee){
 
                 }
+            }
+        }
+
+        public void fillCollectingPortsList(){
+            List<string> portData;
+            for (int i = 0; i < collectingPortArr.Length; i++)
+            {
+                portData = new List<string>();
+                string[] tempArr = collectingPortArr[i].Split(' ');
+                // Add index of port
+                portData.Add(tempArr[0]);
+                string restOfString = "";
+                for (int j = 1; j < tempArr.Length; j++)
+                {
+                    restOfString += tempArr[j] + " ";
+                }
+                // Add port name
+                portData.Add(restOfString);
+                collectingPortsList.Add(portData);
             }
         }
 
@@ -371,7 +390,8 @@ namespace WatanyaPingTester
                 
                 reportLED.Image = Image.FromFile(greyLEDPath);
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
-                createExcel();
+                //createExcel();
+                Reports r = new Reports(resPath, collectingPortsList, schemeNodes);
             }
             else
             {
@@ -436,60 +456,6 @@ namespace WatanyaPingTester
             else
             {
                 return;
-            }
-        }
-
-        private void createExcelColorFormating()
-        {
-            Microsoft.Office.Interop.Excel.Application oXL;
-            Microsoft.Office.Interop.Excel._Workbook oWB;
-            Microsoft.Office.Interop.Excel._Worksheet oSheet;
-            Microsoft.Office.Interop.Excel.Range oRng;
-            object misvalue = System.Reflection.Missing.Value;
-            try
-            {
-                //Start Excel and get Application object.
-                oXL = new Microsoft.Office.Interop.Excel.Application();
-                oXL.Visible = true;
-
-                //Get a new workbook.
-                oWB = (Microsoft.Office.Interop.Excel._Workbook)(oXL.Workbooks.Add(""));
-                oSheet = (Microsoft.Office.Interop.Excel._Worksheet)oWB.ActiveSheet;
-
-                //Add table headers going cell by cell.
-                oSheet.Cells[1, 1] = "Name";
-                oSheet.Cells[1, 2] = "IP";
-                oSheet.Cells[1, 3] = "Online";
-                oSheet.Cells[1, 4] = "Not Reachable";
-                oSheet.Cells[1, 5] = "Timeout";
-
-                //Format A1:E1 as bold, vertical alignment = center.
-                oSheet.get_Range("A1", "E1").Font.Bold = true;
-                oSheet.get_Range("A1", "E1").VerticalAlignment =
-                Microsoft.Office.Interop.Excel.XlVAlign.xlVAlignCenter;
-
-                for (int i = 0; i < reportList.Count(); i++)
-                {
-                    for (int j = 0; j < reportList[0].Count(); j++)
-                    {
-                        oSheet.Cells[i + 2, j + 1].Value2 = reportList[i].ElementAt(j);
-                    }
-                }
-                oRng = oSheet.get_Range("A1", "E1");
-                oRng.EntireColumn.AutoFit();
-
-                oXL.Visible = false;
-                oXL.UserControl = false;
-                oWB.SaveAs(resPath + "\\TestReport.xlsx", Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing,
-                    false, false, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlNoChange,
-                    Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
-
-                oWB.Close();
-
-            }
-            catch (Exception e)
-            {
-
             }
         }
 

@@ -73,6 +73,11 @@ namespace WatanyaPingTester
             return node.getPreviousNode();
         }
 
+        public int getPreviousNodeIndex()
+        {
+            return node.getPreviousNodeIndex();
+        }
+
         public NetworkNode getNode()
         {
             return node;
