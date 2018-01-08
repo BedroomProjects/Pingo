@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace WatanyaPingTester
-{   
+{
     class Reports
     {
         Microsoft.Office.Interop.Excel.Application oXL;
@@ -13,7 +14,7 @@ namespace WatanyaPingTester
         Microsoft.Office.Interop.Excel._Worksheet oSheet;
         Microsoft.Office.Interop.Excel.Range oRng;
         object misvalue = System.Reflection.Missing.Value;
-        
+
         // nodeDataInfo.nodePathData 
         /*        0                        1            2                 3
          * 0     Index In Scheme        NodeName       IP        OnlinePercentage 
@@ -34,8 +35,9 @@ namespace WatanyaPingTester
             createColorScaleExcel();
         }
 
-        public void fillNodePathInfoList(){
-            for (int i = 0; i < collectingPorts.Count(); i++ )
+        public void fillNodePathInfoList()
+        {
+            for (int i = 0; i < collectingPorts.Count(); i++)
             {
                 nodePathFromCompany = new NodePathFromCompany(this.collectingPorts[i], this.schemeNodes);
                 nodePathFromCompany.createNodePath();
@@ -68,28 +70,56 @@ namespace WatanyaPingTester
                 oWB = (Microsoft.Office.Interop.Excel._Workbook)(oXL.Workbooks.Add(""));
                 oSheet = (Microsoft.Office.Interop.Excel._Worksheet)oWB.ActiveSheet;
 
-                
+                oSheet.Columns["A:F"].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+                oSheet.PageSetup.Orientation = Excel.XlPageOrientation.xlLandscape;
+
                 //Format A1:E1 as bold, vertical alignment = center.
                 //oSheet.get_Range("A1", "E1").Font.Bold = true;
                 //oSheet.get_Range("A1", "E1").VerticalAlignment =
                 //Microsoft.Office.Interop.Excel.XlVAlign.xlVAlignCenter;
-                int n = 1, m = 1;
+                int m = 1;
                 for (int i = 0; i < nodePathInfoList.Count(); i++)
                 {
-                    m = i + m;
-                    oSheet.Cells[m, 1].Value2 = nodePathInfoList[i].portName;
+                    oSheet.Cells[m, 1].Value2 = nodePathInfoList[i].portName + ":";
+                    oSheet.Cells[m, 1].Font.Bold = true;
+                    oSheet.Cells[m, 1].Font.Size = 20;
+                    oSheet.Cells[m, 1].HorizontalAlignment = Excel.XlHAlign.xlHAlignLeft;
+                    oSheet.get_Range("A" + m.ToString(), "B" + m.ToString()).Merge();
+                    // Down to top counter
+                    int z = nodePathInfoList[i].nodePathData.Count() - 1;
+
                     for (int j = 0; j < nodePathInfoList[i].nodePathData.Count(); j++)
                     {
-                        oSheet.Cells[m + 1, j + 1].Value2 = nodePathInfoList[i].nodePathData[j].ElementAt(1);
-                        oSheet.Cells[m + 2, j + 1].Value2 = nodePathInfoList[i].nodePathData[j].ElementAt(2);
-                        oSheet.Cells[m + 3, j + 1].Value2 = nodePathInfoList[i].nodePathData[j].ElementAt(3);
+                        if (j != 0 && j % 6 == 0)
+                        {
+                            m += 4;
+                        }
+                        oSheet.Cells[m + 1, (j % 6) + 1].Value2 = nodePathInfoList[i].nodePathData[z].ElementAt(1);
+                        oSheet.Cells[m + 2, (j % 6) + 1].Value2 = nodePathInfoList[i].nodePathData[z].ElementAt(2);
+                        oSheet.Cells[m + 3, (j % 6) + 1].Value2 = nodePathInfoList[i].nodePathData[z].ElementAt(3);
+                        z--;
+
+                        // Set all borders for table
+                        oSheet.Cells[m + 1, (j % 6) + 1].Borders.Color = System.Drawing.Color.Black.ToArgb();
+                        oSheet.Cells[m + 2, (j % 6) + 1].Borders.Color = System.Drawing.Color.Black.ToArgb();
+                        oSheet.Cells[m + 3, (j % 6) + 1].Borders.Color = System.Drawing.Color.Black.ToArgb();
+                        
+                        // Set table font size and bold
+                        oSheet.get_Range("A" + (m + 1).ToString(), "F" + (m + 1).ToString()).Font.Size = 11;
+                        oSheet.get_Range("A" + (m + 2).ToString(), "F" + (m + 2).ToString()).Font.Size = 11;
+                        oSheet.get_Range("A" + (m + 3).ToString(), "F" + (m + 3).ToString()).Font.Size = 11;
+
+                        oSheet.get_Range("A" + (m + 1).ToString(), "F" + (m + 1).ToString()).Font.Bold = true;
+                        oSheet.get_Range("A" + (m + 2).ToString(), "F" + (m + 2).ToString()).Font.Bold = true;
+                        oSheet.get_Range("A" + (m + 3).ToString(), "F" + (m + 3).ToString()).Font.Bold = true;
                     }
-                    n++;
-                    m += 4;
+                    m += 6;
                 }
 
                 oRng = oSheet.get_Range("A1", "E1");
                 oRng.EntireColumn.AutoFit();
+
+                oSheet.Columns["A:F"].ColumnWidth = 18;
 
                 oXL.Visible = false;
                 oXL.UserControl = false;
