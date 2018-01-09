@@ -123,7 +123,7 @@ namespace WatanyaPingTester
 
                 oXL.Visible = false;
                 oXL.UserControl = false;
-                oWB.SaveAs(resPath + "\\sokhnaColorReport.xlsx", Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing,
+                oWB.SaveAs(resPath + "\\alexColorReport.xlsx", Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing,
                     false, false, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlNoChange,
                     Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
 
