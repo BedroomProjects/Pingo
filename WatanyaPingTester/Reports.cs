@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
+using Microsoft.Office.Interop.Excel;
 
 namespace WatanyaPingTester
 {
@@ -14,6 +17,7 @@ namespace WatanyaPingTester
         Microsoft.Office.Interop.Excel._Worksheet oSheet;
         Microsoft.Office.Interop.Excel.Range oRng;
         object misvalue = System.Reflection.Missing.Value;
+        ColorScale cfColorScale = null;
 
         // nodeDataInfo.nodePathData 
         /*        0                        1            2                 3
@@ -73,11 +77,16 @@ namespace WatanyaPingTester
                 oSheet.Columns["A:F"].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
                 oSheet.PageSetup.Orientation = Excel.XlPageOrientation.xlLandscape;
 
+
                 //Format A1:E1 as bold, vertical alignment = center.
                 //oSheet.get_Range("A1", "E1").Font.Bold = true;
                 //oSheet.get_Range("A1", "E1").VerticalAlignment =
                 //Microsoft.Office.Interop.Excel.XlVAlign.xlVAlignCenter;
                 int m = 1;
+
+                // Begin and End index of color scale 
+                int b = 0, e = 0;
+
                 for (int i = 0; i < nodePathInfoList.Count(); i++)
                 {
                     oSheet.Cells[m, 1].Value2 = nodePathInfoList[i].portName + ":";
@@ -87,6 +96,7 @@ namespace WatanyaPingTester
                     oSheet.get_Range("A" + m.ToString(), "B" + m.ToString()).Merge();
                     // Down to top counter
                     int z = nodePathInfoList[i].nodePathData.Count() - 1;
+                    bool first = true;
 
                     for (int j = 0; j < nodePathInfoList[i].nodePathData.Count(); j++)
                     {
@@ -103,7 +113,14 @@ namespace WatanyaPingTester
                         oSheet.Cells[m + 1, (j % 6) + 1].Borders.Color = System.Drawing.Color.Black.ToArgb();
                         oSheet.Cells[m + 2, (j % 6) + 1].Borders.Color = System.Drawing.Color.Black.ToArgb();
                         oSheet.Cells[m + 3, (j % 6) + 1].Borders.Color = System.Drawing.Color.Black.ToArgb();
+
+                        // Create a color scale for third row
+                        cfColorScale = (ColorScale)(oSheet.get_Range("A" + (m + 3).ToString(), "F" + (m + 3).ToString()).FormatConditions.AddColorScale(2));
+                        // Min and Max color 
+                        cfColorScale.ColorScaleCriteria[1].FormatColor.Color = 0x000000FF;   // Red
+                        cfColorScale.ColorScaleCriteria[2].FormatColor.Color = 0x0000FF00;   // Green
                         
+
                         // Set table font size and bold
                         oSheet.get_Range("A" + (m + 1).ToString(), "F" + (m + 1).ToString()).Font.Size = 11;
                         oSheet.get_Range("A" + (m + 2).ToString(), "F" + (m + 2).ToString()).Font.Size = 11;
@@ -132,7 +149,11 @@ namespace WatanyaPingTester
             }
             catch (Exception e)
             {
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result;
 
+                // Displays the MessageBox.
+                result = MessageBox.Show(e.Message, "Reports", buttons);
             }
         }
 
