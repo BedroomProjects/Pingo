@@ -77,15 +77,7 @@ namespace WatanyaPingTester
                 oSheet.Columns["A:F"].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
                 oSheet.PageSetup.Orientation = Excel.XlPageOrientation.xlLandscape;
 
-
-                //Format A1:E1 as bold, vertical alignment = center.
-                //oSheet.get_Range("A1", "E1").Font.Bold = true;
-                //oSheet.get_Range("A1", "E1").VerticalAlignment =
-                //Microsoft.Office.Interop.Excel.XlVAlign.xlVAlignCenter;
                 int m = 1;
-
-                // Begin and End index of color scale 
-                int b = 0, e = 0;
 
                 for (int i = 0; i < nodePathInfoList.Count(); i++)
                 {
@@ -96,8 +88,7 @@ namespace WatanyaPingTester
                     oSheet.get_Range("A" + m.ToString(), "B" + m.ToString()).Merge();
                     // Down to top counter
                     int z = nodePathInfoList[i].nodePathData.Count() - 1;
-                    bool first = true;
-
+                    
                     for (int j = 0; j < nodePathInfoList[i].nodePathData.Count(); j++)
                     {
                         if (j != 0 && j % 6 == 0)
