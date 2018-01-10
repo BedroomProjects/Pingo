@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
 using Microsoft.Office.Interop.Excel;
@@ -36,7 +37,8 @@ namespace WatanyaPingTester
             this.schemeNodes = schemeNodes;
             this.resPath = resPath;
             fillNodePathInfoList();
-            createColorScaleExcel();
+            Thread t = new Thread(createColorScaleExcel);
+            t.Start();
         }
 
         public void fillNodePathInfoList()
@@ -111,7 +113,6 @@ namespace WatanyaPingTester
                         cfColorScale.ColorScaleCriteria[1].FormatColor.Color = 0x000000FF;   // Red
                         cfColorScale.ColorScaleCriteria[2].FormatColor.Color = 0x0000FF00;   // Green
                         
-
                         // Set table font size and bold
                         oSheet.get_Range("A" + (m + 1).ToString(), "F" + (m + 1).ToString()).Font.Size = 11;
                         oSheet.get_Range("A" + (m + 2).ToString(), "F" + (m + 2).ToString()).Font.Size = 11;
