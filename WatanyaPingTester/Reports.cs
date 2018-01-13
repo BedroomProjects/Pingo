@@ -9,10 +9,8 @@ using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
 using Microsoft.Office.Interop.Excel;
 
-namespace WatanyaPingTester
-{
-    class Reports
-    {
+namespace WatanyaPingTester {
+    class Reports {
         Microsoft.Office.Interop.Excel.Application oXL;
         Microsoft.Office.Interop.Excel._Workbook oWB;
         Microsoft.Office.Interop.Excel._Worksheet oSheet;
@@ -25,52 +23,61 @@ namespace WatanyaPingTester
          * 0     Index In Scheme        NodeName       IP        OnlinePercentage 
          * 1     Index In Scheme        NodeName       IP        OnlinePercentage
          */
+
         List<SchemeNode> schemeNodes;
+        Thread t;
         string resPath;
+        string[] reportPeriod = new string[2];
         List<List<string>> collectingPorts;
         NodePathFromCompany nodePathFromCompany;
         List<NodePathInfo> nodePathInfoList = new List<NodePathInfo>();
 
-        public Reports(string resPath, List<List<string>> collectingPorts, List<SchemeNode> schemeNodes)
-        {
+        public Reports(string resPath, List<List<string>> collectingPorts, List<SchemeNode> schemeNodes) {
             this.collectingPorts = collectingPorts;
             this.schemeNodes = schemeNodes;
             this.resPath = resPath;
+            reportPeriod[0] = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+        }
+
+        public void typeReport() {
+            try {
+                if (t.IsAlive) {
+                    t.Abort();
+                }
+            } catch (Exception e) {
+
+            }
             fillNodePathInfoList();
-            Thread t = new Thread(createColorScaleExcel);
+            reportPeriod[1] = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+            t = new Thread(createColorScaleExcel);
             t.Start();
         }
 
-        public void fillNodePathInfoList()
-        {
-            for (int i = 0; i < collectingPorts.Count(); i++)
-            {
+        public void fillNodePathInfoList() {
+            for (int i = 0; i < collectingPorts.Count(); i++) {
                 nodePathFromCompany = new NodePathFromCompany(this.collectingPorts[i], this.schemeNodes);
                 nodePathFromCompany.createNodePath();
                 nodePathInfoList.Add(nodePathFromCompany.getNodePathInfo());
-                for (int j = 0; j < nodePathInfoList[i].nodePathData.Count(); j++)
-                {
+                for (int j = 0; j < nodePathInfoList[i].nodePathData.Count(); j++) {
                     int nodeIndex = Int32.Parse(nodePathInfoList[i].nodePathData[j].ElementAt(0));
                     nodePathInfoList[i].nodePathData[j].Add(getNodeStatus(nodeIndex).ToString());
                 }
             }
         }
 
-        private double getNodeStatus(int nodeIndex)
-        {
+        private double getNodeStatus(int nodeIndex) {
             double onlinePerc = 0.00, overallPing;
             overallPing = schemeNodes[nodeIndex].getOnlineCount() + schemeNodes[nodeIndex].getOfflineCount() + schemeNodes[nodeIndex].getTimeoutCount();
             onlinePerc = (schemeNodes[nodeIndex].getOnlineCount() / overallPing) * 100;
             return Math.Round(onlinePerc, 2);
         }
 
-        public void createColorScaleExcel()
-        {
-            try
-            {
+        public void createColorScaleExcel() {
+            PleaseWaitForm pleaseWaitForm = new PleaseWaitForm(); 
+            try {
                 //Start Excel and get Application object.
                 oXL = new Microsoft.Office.Interop.Excel.Application();
-                oXL.Visible = true;
+                //oXL.Visible = true;
 
                 //Get a new workbook.
                 oWB = (Microsoft.Office.Interop.Excel._Workbook)(oXL.Workbooks.Add(""));
@@ -79,10 +86,11 @@ namespace WatanyaPingTester
                 oSheet.Columns["A:F"].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
                 oSheet.PageSetup.Orientation = Excel.XlPageOrientation.xlLandscape;
 
-                int m = 1;
+                oSheet.get_Range("A1", "B1").Merge();
+                oSheet.Cells[1, 1].Value2 = "From: " + reportPeriod[0] + " To: " + reportPeriod[1];
+                int m = 2;
 
-                for (int i = 0; i < nodePathInfoList.Count(); i++)
-                {
+                for (int i = 0; i < nodePathInfoList.Count(); i++) {
                     oSheet.Cells[m, 1].Value2 = nodePathInfoList[i].portName + ":";
                     oSheet.Cells[m, 1].Font.Bold = true;
                     oSheet.Cells[m, 1].Font.Size = 20;
@@ -90,11 +98,9 @@ namespace WatanyaPingTester
                     oSheet.get_Range("A" + m.ToString(), "B" + m.ToString()).Merge();
                     // Down to top counter
                     int z = nodePathInfoList[i].nodePathData.Count() - 1;
-                    
-                    for (int j = 0; j < nodePathInfoList[i].nodePathData.Count(); j++)
-                    {
-                        if (j != 0 && j % 6 == 0)
-                        {
+
+                    for (int j = 0; j < nodePathInfoList[i].nodePathData.Count(); j++) {
+                        if (j != 0 && j % 6 == 0) {
                             m += 4;
                         }
                         oSheet.Cells[m + 1, (j % 6) + 1].Value2 = nodePathInfoList[i].nodePathData[z].ElementAt(1);
@@ -112,7 +118,8 @@ namespace WatanyaPingTester
                         // Min and Max color 
                         cfColorScale.ColorScaleCriteria[1].FormatColor.Color = 0x000000FF;   // Red
                         cfColorScale.ColorScaleCriteria[2].FormatColor.Color = 0x0000FF00;   // Green
-                        
+
+
                         // Set table font size and bold
                         oSheet.get_Range("A" + (m + 1).ToString(), "F" + (m + 1).ToString()).Font.Size = 11;
                         oSheet.get_Range("A" + (m + 2).ToString(), "F" + (m + 2).ToString()).Font.Size = 11;
@@ -130,77 +137,31 @@ namespace WatanyaPingTester
 
                 oSheet.Columns["A:F"].ColumnWidth = 18;
 
-                oXL.Visible = false;
+                // oXL.Visible = false;
                 oXL.UserControl = false;
-                oWB.SaveAs(resPath + "\\alexColorReport.xlsx", Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing,
+                oWB.SaveAs(resPath, Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing,
                     false, false, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlNoChange,
                     Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
 
                 oWB.Close();
 
-            }
-            catch (Exception e)
-            {
+            } catch (Exception e) {
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 DialogResult result;
 
                 // Displays the MessageBox.
                 result = MessageBox.Show(e.Message, "Reports", buttons);
+            } finally {
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result;
+
+                // Displays the MessageBox.
+                result = MessageBox.Show("تم الانتهاء من التقرير", "Reports", buttons);
             }
         }
-
-        //public void createChartTable()
-        //{
-        //    try
-        //    {
-        //        //Start Excel and get Application object.
-        //        oXL = new Microsoft.Office.Interop.Excel.Application();
-        //        oXL.Visible = true;
-
-        //        //Get a new workbook.
-        //        oWB = (Microsoft.Office.Interop.Excel._Workbook)(oXL.Workbooks.Add(""));
-        //        oSheet = (Microsoft.Office.Interop.Excel._Worksheet)oWB.ActiveSheet;
-
-        //        //Add table headers going cell by cell.
-        //        oSheet.Cells[1, 1] = "Name";
-        //        oSheet.Cells[1, 2] = "IP";
-        //        oSheet.Cells[1, 3] = "Online";
-        //        oSheet.Cells[1, 4] = "Not Reachable";
-        //        oSheet.Cells[1, 5] = "Timeout";
-
-        //        //Format A1:E1 as bold, vertical alignment = center.
-        //        oSheet.get_Range("A1", "E1").Font.Bold = true;
-        //        oSheet.get_Range("A1", "E1").VerticalAlignment =
-        //        Microsoft.Office.Interop.Excel.XlVAlign.xlVAlignCenter;
-
-        //        for (int i = 0; i < nodePathData.Count(); i++)
-        //        {
-        //            for (int j = 0; j < nodePathData[0].Count(); j++)
-        //            {
-        //                oSheet.Cells[i + 2, j + 1].Value2 = nodePathData[i].ElementAt(j);
-        //            }
-        //        }
-        //        oRng = oSheet.get_Range("A1", "E1");
-        //        oRng.EntireColumn.AutoFit();
-
-        //        oXL.Visible = false;
-        //        oXL.UserControl = false;
-        //        oWB.SaveAs(resPath + "\\sokhnaReport.xlsx", Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing,
-        //            false, false, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlNoChange,
-        //            Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
-
-        //        oWB.Close();
-
-        //    }
-        //    catch (Exception e)
-        //    {
-
-        //    }
-        //}
     }
 
-    public class NodePathInfo
-    {
+    public class NodePathInfo {
         public List<List<string>> nodePathData = new List<List<string>>();
         public string portName;
     }

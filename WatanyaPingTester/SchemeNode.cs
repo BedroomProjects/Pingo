@@ -5,10 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WatanyaPingTester
-{
-    class SchemeNode
-    {
+namespace WatanyaPingTester {
+    class SchemeNode {
         NetworkNode node;
         int id;
         PictureBox pic;
@@ -16,100 +14,81 @@ namespace WatanyaPingTester
         bool visible = true;
         double onlineCount = 0, offlineCount = 0, timeoutCount = 0;
 
-        public SchemeNode(NetworkNode n)
-        {
+        public SchemeNode(NetworkNode n) {
             node = n;
             string[] arr = n.getIP().Split('.');
             id = Int32.Parse(arr[3]);
         }
 
-        public int getID()
-        {
+        public int getID() {
             return id;
         }
 
-        public void setLabel(Label l)
-        {
+        public void setLabel(Label l) {
             label = l;
         }
 
-        public void setPic(PictureBox pb)
-        {
+        public void setPic(PictureBox pb) {
             pic = pb;
         }
 
-        public string getIP()
-        {
+        public string getIP() {
             return node.getIP();
         }
 
-        public string getName()
-        {
+        public string getName() {
             return node.getName();
         }
 
-        public PictureBox getPic()
-        {
+        public PictureBox getPic() {
             return pic;
         }
 
-        public Label getLabel()
-        {
+        public Label getLabel() {
             return label;
         }
 
-        public bool isVisible()
-        {
+        public bool isVisible() {
             return visible;
         }
 
-        public void setVisiblility(bool visible)
-        {
+        public void setVisiblility(bool visible) {
             this.visible = visible;
         }
 
-        public string getPreviousNode()
-        {
+        public string getPreviousNode() {
             return node.getPreviousNode();
         }
 
-        public int getPreviousNodeIndex()
-        {
+        public int getPreviousNodeIndex() {
             return node.getPreviousNodeIndex();
         }
 
-        public NetworkNode getNode()
-        {
+        public NetworkNode getNode() {
             return node;
         }
 
-        public void incrementOnline()
-        {
+        public void incrementOnline() {
             onlineCount++;
         }
 
-        public void incrementOffline()
-        {
+        public void incrementOffline() {
             offlineCount++;
         }
 
-        public void incrementTimeout()
-        {
+        public void incrementTimeout() {
             timeoutCount++;
         }
 
-        public double getOnlineCount()
-        {
+        public double getOnlineCount() {
             return onlineCount;
         }
 
-        public double getOfflineCount()
-        {
+        public double getOfflineCount() {
             return offlineCount;
         }
 
-        public double getTimeoutCount()
-        {
+        public double getTimeoutCount() {
             return timeoutCount;
         }
 

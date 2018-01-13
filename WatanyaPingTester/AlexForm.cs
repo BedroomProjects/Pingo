@@ -389,17 +389,10 @@ namespace WatanyaPingTester
             if (report)
             {
                 report = false;
-                string temp = getReport();
-
-                //MessageBoxButtons buttons = MessageBoxButtons.OK;
-                //DialogResult result;
-
-                //// Displays the MessageBox.
-                //result = MessageBox.Show(temp, "Report", buttons);
 
                 reportLED.Image = Image.FromFile(greyLEDPath);
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
-                Reports r = new Reports(path, collectingPortsList, schemeNodes);
+                Reports r = new Reports(path + "\\alexColorReport.xlsx", collectingPortsList, schemeNodes);
             }
             else
             {
@@ -409,39 +402,39 @@ namespace WatanyaPingTester
             }
         }
 
-        private string getReport()
-        {
-            string result = "";
-            double onlinePerc, offlinePerc, timeoutPerc, overallPing;
-            List<string> temp;
-            for (int i = 0; i < schemeNodes.Count(); i++)
-            {
-                temp = new List<string>();
-                overallPing = schemeNodes[i].getOnlineCount() + schemeNodes[i].getOfflineCount() + schemeNodes[i].getTimeoutCount();
-                onlinePerc = (schemeNodes[i].getOnlineCount() / overallPing) * 100;
-                offlinePerc = (schemeNodes[i].getOfflineCount() / overallPing) * 100;
-                timeoutPerc = (schemeNodes[i].getTimeoutCount() / overallPing) * 100;
+        //private string getReport()
+        //{
+        //    string result = "";
+        //    double onlinePerc, offlinePerc, timeoutPerc, overallPing;
+        //    List<string> temp;
+        //    for (int i = 0; i < schemeNodes.Count(); i++)
+        //    {
+        //        temp = new List<string>();
+        //        overallPing = schemeNodes[i].getOnlineCount() + schemeNodes[i].getOfflineCount() + schemeNodes[i].getTimeoutCount();
+        //        onlinePerc = (schemeNodes[i].getOnlineCount() / overallPing) * 100;
+        //        offlinePerc = (schemeNodes[i].getOfflineCount() / overallPing) * 100;
+        //        timeoutPerc = (schemeNodes[i].getTimeoutCount() / overallPing) * 100;
 
-                if (overallPing == 0) continue;
+        //        if (overallPing == 0) continue;
 
-                temp.Add(schemeNodes[i].getName());
-                temp.Add(schemeNodes[i].getIP());
-                temp.Add(Math.Round(onlinePerc, 2).ToString());
-                temp.Add(Math.Round(offlinePerc, 2).ToString());
-                temp.Add(Math.Round(timeoutPerc, 2).ToString());
+        //        temp.Add(schemeNodes[i].getName());
+        //        temp.Add(schemeNodes[i].getIP());
+        //        temp.Add(Math.Round(onlinePerc, 2).ToString());
+        //        temp.Add(Math.Round(offlinePerc, 2).ToString());
+        //        temp.Add(Math.Round(timeoutPerc, 2).ToString());
 
-                reportList.Add(temp);
-                result += "C: " + overallPing.ToString() + " || ";
-                result += schemeNodes[i].getName();
-                result += " ----- ";
-                result = result
-                    + "Online: " + Math.Round(onlinePerc, 2).ToString()
-                    + ", Offline: " + Math.Round(offlinePerc, 2).ToString()
-                    + ", Timeout: " + Math.Round(timeoutPerc, 2).ToString()
-                    + "\n";
-            }
-            return result;
-        }
+        //        reportList.Add(temp);
+        //        result += "C: " + overallPing.ToString() + " || ";
+        //        result += schemeNodes[i].getName();
+        //        result += " ----- ";
+        //        result = result
+        //            + "Online: " + Math.Round(onlinePerc, 2).ToString()
+        //            + ", Offline: " + Math.Round(offlinePerc, 2).ToString()
+        //            + ", Timeout: " + Math.Round(timeoutPerc, 2).ToString()
+        //            + "\n";
+        //    }
+        //    return result;
+        //}
 
         private void updateReport(SchemeNode schNode)
         {

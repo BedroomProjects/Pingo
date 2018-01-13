@@ -71,6 +71,7 @@
     <Compile Include="CairoSokhnaOldSchemeForm.Designer.cs">
       <DependentUpon>CairoSokhnaOldSchemeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Node.cs" />
     <Compile Include="Reports.cs" />
     <Compile Include="ExcelToNode.cs" />
     <Compile Include="IPsAsListForm.cs">
@@ -87,6 +88,7 @@
       <DependentUpon>PleaseWaitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SchemeNode.cs" />
+    <Compile Include="SchemeNodesGraph.cs" />
     <Compile Include="SokhnaForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -7,21 +7,17 @@ using System.Text;
 using System.Threading.Tasks;
 using Excel = Microsoft.Office.Interop.Excel;       //microsoft Excel 14 object in references-> COM tab
 
-namespace WatanyaPingTester
-{
-    class ExcelToNode
-    {
+namespace WatanyaPingTester {
+    class ExcelToNode {
 
         public List<NetworkNode> nodes;
         public List<List<string>> result = new List<List<string>>();
-        
-        public void getDataFromExcel(string fileName)
-        {
+
+        public void getDataFromExcel(string fileName) {
             // Excel File Path
             string filePath = Path.Combine(Environment.CurrentDirectory, @"data", fileName);
             nodes = new List<NetworkNode>();
-            try
-            {
+            try {
                 // Create COM Objects. Create a COM object for everything that is referenced
                 Excel.Application xlApp;
                 Excel.Workbook xlWorkBook;
@@ -38,11 +34,9 @@ namespace WatanyaPingTester
 
                 // Get the strings from each cell in the excel sheet
                 // Row 1 is ignored because it contains the columns titles
-                for (int i = 2; i <= rowCount; i++)
-                {
+                for (int i = 2; i <= rowCount; i++) {
                     List<string> nodeDataList = new List<string>();
-                    for (int j = 1; j <= 7; j++)
-                    {
+                    for (int j = 1; j <= 7; j++) {
                         nodeDataList.Add(xlRange.Cells[i, j].Value2.ToString());
                     }
                     nodes.Add(new NetworkNode(nodeDataList.ElementAt(0), nodeDataList.ElementAt(1), nodeDataList.ElementAt(2), nodeDataList.ElementAt(3), nodeDataList.ElementAt(4), nodeDataList.ElementAt(5), nodeDataList.ElementAt(6)));
@@ -72,22 +66,18 @@ namespace WatanyaPingTester
 
                 //Console.WriteLine(rowCount);
                 //Console.ReadKey();
-            }
-            catch (FileNotFoundException e)
-            {
+            } catch (FileNotFoundException e) {
                 Console.SetCursorPosition(0, 4);
                 Console.WriteLine("Error: Can not read excel file '" + filePath + "'\nCheck if file exists.");
             }
         }
 
-        public List<List<string>> getResult(string fileName)
-        {
+        public List<List<string>> getResult(string fileName) {
             getDataFromExcel(fileName);
             return result;
         }
 
-        public List<NetworkNode> getNetworkNodes(string fileName)
-        {
+        public List<NetworkNode> getNetworkNodes(string fileName) {
             getDataFromExcel(fileName);
             return nodes;
         }
