@@ -86,25 +86,20 @@ namespace WatanyaPingTester {
         private void sokhnaTimer_Tick(object sender, EventArgs e) {
             pingTimerCounter--;
             
-            if (pingTimerCounter == 0) {
-                if (t != null) {
-                    t.Abort();
-                }
-                startThread();
-                pingTimerCounter = 2;
-            }
+            //if (pingTimerCounter == 0) {
+            //    //if (t != null) {
+            //    //    t.Abort();
+            //    //}
+            //    //startThread();
+            //    //continousUpdate();
+            //    pingTimerCounter = 2;
+            //}
 
             if(report){
                 reportTimerCounter--;
                 if (reportTimerCounter == 0) {
                     reportTimerCounter = 180;
-                    reportStatusLabel.Invoke((MethodInvoker)delegate {
-                        reportStatusLabel.Text = "Collecting Report Data ....";
-                    });
                     reportObject.typeReport();
-                    reportStatusLabel.Invoke((MethodInvoker)delegate {
-                        reportStatusLabel.Text = "Report is saved Successfully";
-                    });
                 }
             }
         }
@@ -174,11 +169,11 @@ namespace WatanyaPingTester {
         }
 
         void continousUpdate() {
-            //while (true) {
+            while (true) {
             updateNetwork();
             updateDisplay();
-            //Thread.Sleep(1000 * secondsPerPing);
-            //}
+            Thread.Sleep(1000 * secondsPerPing);
+            }
         }
 
         void generateSchemeNodes(List<NetworkNode> networkNodes) {
@@ -356,7 +351,7 @@ namespace WatanyaPingTester {
                 report = true;
                 reportLED.Image = Image.FromFile(greennLEDPath);
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
-                reportObject = new Reports(resPath + "\\sokhnaColorReport.xlsx", collectingPortsList, schemeNodes);
+                reportObject = new Reports(resPath + "\\sokhnaColorReport.xlsx", collectingPortsList, schemeNodes, reportStatusLabel);
             }
         }
 

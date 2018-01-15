@@ -31,17 +31,22 @@ namespace WatanyaPingTester {
         List<List<string>> collectingPorts;
         NodePathFromCompany nodePathFromCompany;
         List<NodePathInfo> nodePathInfoList = new List<NodePathInfo>();
+        System.Windows.Forms.Label reportLabel;
 
-        public Reports(string resPath, List<List<string>> collectingPorts, List<SchemeNode> schemeNodes) {
+        public Reports(string resPath, List<List<string>> collectingPorts, List<SchemeNode> schemeNodes, System.Windows.Forms.Label reportLabel) {
             this.collectingPorts = collectingPorts;
             this.schemeNodes = schemeNodes;
             this.resPath = resPath;
+            this.reportLabel = reportLabel;
             fillNodePathInfoList();
             reportPeriod[0] = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
         }
 
         public void typeReport() {
             try {
+                reportLabel.Invoke((MethodInvoker)delegate {
+                    reportLabel.Text = "Collecting Report Data ....";
+                });
                 if (tt.IsAlive) {
                     tt.Abort();
                 }
@@ -150,7 +155,9 @@ namespace WatanyaPingTester {
                     Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
 
                 oWB.Close();
-
+                reportLabel.Invoke((MethodInvoker)delegate {
+                    reportLabel.Text = "Report is saved successfully";
+                });
             } catch (Exception e) {
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 DialogResult result;
@@ -158,11 +165,12 @@ namespace WatanyaPingTester {
                 // Displays the MessageBox.
                 result = MessageBox.Show(e.Message, "Reports", buttons);
             } finally {
-                MessageBoxButtons buttons = MessageBoxButtons.OK;
-                DialogResult result;
+                //MessageBoxButtons buttons = MessageBoxButtons.OK;
+                //DialogResult result;
 
-                // Displays the MessageBox.
-                result = MessageBox.Show("تم الانتهاء من التقرير", "Reports", buttons);
+                //// Displays the MessageBox.
+                //result = MessageBox.Show("تم الانتهاء من التقرير", "Reports", buttons);
+                
             }
         }
     }

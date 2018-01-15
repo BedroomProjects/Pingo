@@ -392,7 +392,7 @@ namespace WatanyaPingTester
 
                 reportLED.Image = Image.FromFile(greyLEDPath);
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
-                Reports r = new Reports(path + "\\alexColorReport.xlsx", collectingPortsList, schemeNodes);
+                Reports r = new Reports(path + "\\alexColorReport.xlsx", collectingPortsList, schemeNodes, new Label());
             }
             else
             {
