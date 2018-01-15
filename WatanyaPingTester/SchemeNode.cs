@@ -12,7 +12,7 @@ namespace WatanyaPingTester {
         PictureBox pic;
         Label label;
         bool visible = true;
-        double onlineCount = 0, offlineCount = 0, timeoutCount = 0;
+        double onlineCount = 0, offlineCount = 1, timeoutCount = 0;
 
         public SchemeNode(NetworkNode n) {
             node = n;

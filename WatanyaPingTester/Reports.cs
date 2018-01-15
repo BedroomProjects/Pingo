@@ -25,7 +25,7 @@ namespace WatanyaPingTester {
          */
 
         List<SchemeNode> schemeNodes;
-        Thread t;
+        Thread tt;
         string resPath;
         string[] reportPeriod = new string[2];
         List<List<string>> collectingPorts;
@@ -36,21 +36,27 @@ namespace WatanyaPingTester {
             this.collectingPorts = collectingPorts;
             this.schemeNodes = schemeNodes;
             this.resPath = resPath;
+            fillNodePathInfoList();
             reportPeriod[0] = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
         }
 
         public void typeReport() {
             try {
-                if (t.IsAlive) {
-                    t.Abort();
+                if (tt.IsAlive) {
+                    tt.Abort();
                 }
             } catch (Exception e) {
 
             }
-            fillNodePathInfoList();
+            for (int i = 0; i < collectingPorts.Count(); i++) {
+                for (int j = 0; j < nodePathInfoList[i].nodePathData.Count(); j++) {
+                    int nodeIndex = Int32.Parse(nodePathInfoList[i].nodePathData[j].ElementAt(0));
+                    nodePathInfoList[i].nodePathData[j].Add(getNodeStatus(nodeIndex).ToString());
+                }
+            }
             reportPeriod[1] = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
-            t = new Thread(createColorScaleExcel);
-            t.Start();
+            tt = new Thread(createColorScaleExcel);
+            tt.Start();
         }
 
         public void fillNodePathInfoList() {
@@ -73,7 +79,6 @@ namespace WatanyaPingTester {
         }
 
         public void createColorScaleExcel() {
-            PleaseWaitForm pleaseWaitForm = new PleaseWaitForm(); 
             try {
                 //Start Excel and get Application object.
                 oXL = new Microsoft.Office.Interop.Excel.Application();
@@ -139,6 +144,7 @@ namespace WatanyaPingTester {
 
                 // oXL.Visible = false;
                 oXL.UserControl = false;
+                oXL.DisplayAlerts = false;
                 oWB.SaveAs(resPath, Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing,
                     false, false, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlNoChange,
                     Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);

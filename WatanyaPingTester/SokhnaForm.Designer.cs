@@ -37,6 +37,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.guidePictureBox = new System.Windows.Forms.PictureBox();
             this.schemePanel = new System.Windows.Forms.Panel();
+            this.reportStatusLabel = new System.Windows.Forms.Label();
             this.l127 = new System.Windows.Forms.Label();
             this.l132 = new System.Windows.Forms.Label();
             this.l131 = new System.Windows.Forms.Label();
@@ -278,6 +279,7 @@
             this.schemePanel.BackColor = System.Drawing.Color.Transparent;
             this.schemePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("schemePanel.BackgroundImage")));
             this.schemePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.schemePanel.Controls.Add(this.reportStatusLabel);
             this.schemePanel.Controls.Add(this.l127);
             this.schemePanel.Controls.Add(this.l132);
             this.schemePanel.Controls.Add(this.l131);
@@ -374,6 +376,16 @@
             this.schemePanel.Name = "schemePanel";
             this.schemePanel.Size = new System.Drawing.Size(841, 611);
             this.schemePanel.TabIndex = 0;
+            // 
+            // reportStatusLabel
+            // 
+            this.reportStatusLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.reportStatusLabel.AutoSize = true;
+            this.reportStatusLabel.Location = new System.Drawing.Point(3, 595);
+            this.reportStatusLabel.Name = "reportStatusLabel";
+            this.reportStatusLabel.Size = new System.Drawing.Size(35, 13);
+            this.reportStatusLabel.TabIndex = 113;
+            this.reportStatusLabel.Text = "label2";
             // 
             // l127
             // 
@@ -1740,5 +1752,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox reportLED;
         private System.Windows.Forms.Button reportBtn;
+        private System.Windows.Forms.Label reportStatusLabel;
     }
 }
