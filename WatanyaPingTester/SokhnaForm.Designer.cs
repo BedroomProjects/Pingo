@@ -396,7 +396,7 @@
             this.l127.ForeColor = System.Drawing.Color.White;
             this.l127.Location = new System.Drawing.Point(641, 534);
             this.l127.Name = "l127";
-            this.l127.Size = new System.Drawing.Size(80, 14);
+            this.l127.Size = new System.Drawing.Size(75, 14);
             this.l127.TabIndex = 112;
             this.l127.Text = "10.10.0.xxx";
             this.l127.Visible = false;
@@ -410,7 +410,7 @@
             this.l132.ForeColor = System.Drawing.Color.White;
             this.l132.Location = new System.Drawing.Point(346, 421);
             this.l132.Name = "l132";
-            this.l132.Size = new System.Drawing.Size(80, 14);
+            this.l132.Size = new System.Drawing.Size(75, 14);
             this.l132.TabIndex = 111;
             this.l132.Text = "10.10.0.xxx";
             this.l132.Visible = false;
@@ -424,7 +424,7 @@
             this.l131.ForeColor = System.Drawing.Color.White;
             this.l131.Location = new System.Drawing.Point(383, 469);
             this.l131.Name = "l131";
-            this.l131.Size = new System.Drawing.Size(80, 14);
+            this.l131.Size = new System.Drawing.Size(75, 14);
             this.l131.TabIndex = 110;
             this.l131.Text = "10.10.0.xxx";
             this.l131.Visible = false;
@@ -438,7 +438,7 @@
             this.l130.ForeColor = System.Drawing.Color.White;
             this.l130.Location = new System.Drawing.Point(501, 424);
             this.l130.Name = "l130";
-            this.l130.Size = new System.Drawing.Size(80, 14);
+            this.l130.Size = new System.Drawing.Size(75, 14);
             this.l130.TabIndex = 109;
             this.l130.Text = "10.10.0.xxx";
             this.l130.Visible = false;
@@ -452,7 +452,7 @@
             this.l129.ForeColor = System.Drawing.Color.White;
             this.l129.Location = new System.Drawing.Point(543, 467);
             this.l129.Name = "l129";
-            this.l129.Size = new System.Drawing.Size(80, 14);
+            this.l129.Size = new System.Drawing.Size(75, 14);
             this.l129.TabIndex = 108;
             this.l129.Text = "10.10.0.xxx";
             this.l129.Visible = false;
@@ -466,7 +466,7 @@
             this.l128.ForeColor = System.Drawing.Color.White;
             this.l128.Location = new System.Drawing.Point(641, 421);
             this.l128.Name = "l128";
-            this.l128.Size = new System.Drawing.Size(80, 14);
+            this.l128.Size = new System.Drawing.Size(75, 14);
             this.l128.TabIndex = 107;
             this.l128.Text = "10.10.0.xxx";
             this.l128.Visible = false;
@@ -480,7 +480,7 @@
             this.l126.ForeColor = System.Drawing.Color.White;
             this.l126.Location = new System.Drawing.Point(758, 484);
             this.l126.Name = "l126";
-            this.l126.Size = new System.Drawing.Size(80, 14);
+            this.l126.Size = new System.Drawing.Size(75, 14);
             this.l126.TabIndex = 106;
             this.l126.Text = "10.10.0.xxx";
             this.l126.Visible = false;
@@ -494,7 +494,7 @@
             this.l123.ForeColor = System.Drawing.Color.White;
             this.l123.Location = new System.Drawing.Point(758, 400);
             this.l123.Name = "l123";
-            this.l123.Size = new System.Drawing.Size(80, 14);
+            this.l123.Size = new System.Drawing.Size(75, 14);
             this.l123.TabIndex = 105;
             this.l123.Text = "10.10.0.xxx";
             this.l123.Visible = false;
@@ -508,7 +508,7 @@
             this.l139.ForeColor = System.Drawing.Color.White;
             this.l139.Location = new System.Drawing.Point(346, 540);
             this.l139.Name = "l139";
-            this.l139.Size = new System.Drawing.Size(80, 14);
+            this.l139.Size = new System.Drawing.Size(75, 14);
             this.l139.TabIndex = 104;
             this.l139.Text = "10.10.0.xxx";
             this.l139.Visible = false;
@@ -522,7 +522,7 @@
             this.l138.ForeColor = System.Drawing.Color.White;
             this.l138.Location = new System.Drawing.Point(241, 583);
             this.l138.Name = "l138";
-            this.l138.Size = new System.Drawing.Size(80, 14);
+            this.l138.Size = new System.Drawing.Size(75, 14);
             this.l138.TabIndex = 103;
             this.l138.Text = "10.10.0.xxx";
             this.l138.Visible = false;
@@ -536,7 +536,7 @@
             this.l136.ForeColor = System.Drawing.Color.White;
             this.l136.Location = new System.Drawing.Point(142, 583);
             this.l136.Name = "l136";
-            this.l136.Size = new System.Drawing.Size(80, 14);
+            this.l136.Size = new System.Drawing.Size(75, 14);
             this.l136.TabIndex = 102;
             this.l136.Text = "10.10.0.xxx";
             this.l136.Visible = false;
@@ -550,7 +550,7 @@
             this.l135.ForeColor = System.Drawing.Color.White;
             this.l135.Location = new System.Drawing.Point(257, 529);
             this.l135.Name = "l135";
-            this.l135.Size = new System.Drawing.Size(80, 14);
+            this.l135.Size = new System.Drawing.Size(75, 14);
             this.l135.TabIndex = 101;
             this.l135.Text = "10.10.0.xxx";
             this.l135.Visible = false;
@@ -564,7 +564,7 @@
             this.l51.ForeColor = System.Drawing.Color.White;
             this.l51.Location = new System.Drawing.Point(125, 473);
             this.l51.Name = "l51";
-            this.l51.Size = new System.Drawing.Size(80, 14);
+            this.l51.Size = new System.Drawing.Size(75, 14);
             this.l51.TabIndex = 100;
             this.l51.Text = "10.10.0.xxx";
             this.l51.Visible = false;
@@ -578,7 +578,7 @@
             this.l134.ForeColor = System.Drawing.Color.White;
             this.l134.Location = new System.Drawing.Point(257, 478);
             this.l134.Name = "l134";
-            this.l134.Size = new System.Drawing.Size(80, 14);
+            this.l134.Size = new System.Drawing.Size(75, 14);
             this.l134.TabIndex = 99;
             this.l134.Text = "10.10.0.xxx";
             this.l134.Visible = false;
@@ -592,7 +592,7 @@
             this.l133.ForeColor = System.Drawing.Color.White;
             this.l133.Location = new System.Drawing.Point(216, 424);
             this.l133.Name = "l133";
-            this.l133.Size = new System.Drawing.Size(80, 14);
+            this.l133.Size = new System.Drawing.Size(75, 14);
             this.l133.TabIndex = 98;
             this.l133.Text = "10.10.0.xxx";
             this.l133.Visible = false;
@@ -606,7 +606,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(56, 538);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 14);
+            this.label1.Size = new System.Drawing.Size(75, 14);
             this.label1.TabIndex = 97;
             this.label1.Text = "10.10.0.xxx";
             this.label1.Visible = false;
@@ -620,7 +620,7 @@
             this.l22.ForeColor = System.Drawing.Color.White;
             this.l22.Location = new System.Drawing.Point(56, 424);
             this.l22.Name = "l22";
-            this.l22.Size = new System.Drawing.Size(80, 14);
+            this.l22.Size = new System.Drawing.Size(75, 14);
             this.l22.TabIndex = 96;
             this.l22.Text = "10.10.0.xxx";
             this.l22.Visible = false;
@@ -634,7 +634,7 @@
             this.l143.ForeColor = System.Drawing.Color.White;
             this.l143.Location = new System.Drawing.Point(99, 327);
             this.l143.Name = "l143";
-            this.l143.Size = new System.Drawing.Size(80, 14);
+            this.l143.Size = new System.Drawing.Size(75, 14);
             this.l143.TabIndex = 95;
             this.l143.Text = "10.10.0.xxx";
             this.l143.Visible = false;
@@ -648,7 +648,7 @@
             this.l142.ForeColor = System.Drawing.Color.White;
             this.l142.Location = new System.Drawing.Point(302, 330);
             this.l142.Name = "l142";
-            this.l142.Size = new System.Drawing.Size(80, 14);
+            this.l142.Size = new System.Drawing.Size(75, 14);
             this.l142.TabIndex = 94;
             this.l142.Text = "10.10.0.xxx";
             this.l142.Visible = false;
@@ -662,7 +662,7 @@
             this.l137.ForeColor = System.Drawing.Color.White;
             this.l137.Location = new System.Drawing.Point(271, 266);
             this.l137.Name = "l137";
-            this.l137.Size = new System.Drawing.Size(80, 14);
+            this.l137.Size = new System.Drawing.Size(75, 14);
             this.l137.TabIndex = 93;
             this.l137.Text = "10.10.0.xxx";
             this.l137.Visible = false;
@@ -676,7 +676,7 @@
             this.l141.ForeColor = System.Drawing.Color.White;
             this.l141.Location = new System.Drawing.Point(328, 291);
             this.l141.Name = "l141";
-            this.l141.Size = new System.Drawing.Size(80, 14);
+            this.l141.Size = new System.Drawing.Size(75, 14);
             this.l141.TabIndex = 92;
             this.l141.Text = "10.10.0.xxx";
             this.l141.Visible = false;
@@ -690,7 +690,7 @@
             this.l122.ForeColor = System.Drawing.Color.White;
             this.l122.Location = new System.Drawing.Point(758, 344);
             this.l122.Name = "l122";
-            this.l122.Size = new System.Drawing.Size(80, 14);
+            this.l122.Size = new System.Drawing.Size(75, 14);
             this.l122.TabIndex = 91;
             this.l122.Text = "10.10.0.xxx";
             this.l122.Visible = false;
@@ -704,7 +704,7 @@
             this.l152.ForeColor = System.Drawing.Color.White;
             this.l152.Location = new System.Drawing.Point(672, 291);
             this.l152.Name = "l152";
-            this.l152.Size = new System.Drawing.Size(80, 14);
+            this.l152.Size = new System.Drawing.Size(75, 14);
             this.l152.TabIndex = 90;
             this.l152.Text = "10.10.0.xxx";
             this.l152.Visible = false;
@@ -718,7 +718,7 @@
             this.l120.ForeColor = System.Drawing.Color.White;
             this.l120.Location = new System.Drawing.Point(567, 336);
             this.l120.Name = "l120";
-            this.l120.Size = new System.Drawing.Size(80, 14);
+            this.l120.Size = new System.Drawing.Size(75, 14);
             this.l120.TabIndex = 89;
             this.l120.Text = "10.10.0.xxx";
             this.l120.Visible = false;
@@ -732,7 +732,7 @@
             this.l140.ForeColor = System.Drawing.Color.White;
             this.l140.Location = new System.Drawing.Point(450, 291);
             this.l140.Name = "l140";
-            this.l140.Size = new System.Drawing.Size(80, 14);
+            this.l140.Size = new System.Drawing.Size(75, 14);
             this.l140.TabIndex = 88;
             this.l140.Text = "10.10.0.xxx";
             this.l140.Visible = false;
@@ -746,7 +746,7 @@
             this.l119.ForeColor = System.Drawing.Color.White;
             this.l119.Location = new System.Drawing.Point(567, 272);
             this.l119.Name = "l119";
-            this.l119.Size = new System.Drawing.Size(80, 14);
+            this.l119.Size = new System.Drawing.Size(75, 14);
             this.l119.TabIndex = 87;
             this.l119.Text = "10.10.0.xxx";
             this.l119.Visible = false;
@@ -760,7 +760,7 @@
             this.l117.ForeColor = System.Drawing.Color.White;
             this.l117.Location = new System.Drawing.Point(665, 163);
             this.l117.Name = "l117";
-            this.l117.Size = new System.Drawing.Size(80, 14);
+            this.l117.Size = new System.Drawing.Size(75, 14);
             this.l117.TabIndex = 86;
             this.l117.Text = "10.10.0.xxx";
             this.l117.Visible = false;
@@ -774,7 +774,7 @@
             this.l116.ForeColor = System.Drawing.Color.White;
             this.l116.Location = new System.Drawing.Point(543, 163);
             this.l116.Name = "l116";
-            this.l116.Size = new System.Drawing.Size(80, 14);
+            this.l116.Size = new System.Drawing.Size(75, 14);
             this.l116.TabIndex = 85;
             this.l116.Text = "10.10.0.xxx";
             this.l116.Visible = false;
@@ -788,7 +788,7 @@
             this.l118.ForeColor = System.Drawing.Color.White;
             this.l118.Location = new System.Drawing.Point(567, 216);
             this.l118.Name = "l118";
-            this.l118.Size = new System.Drawing.Size(80, 14);
+            this.l118.Size = new System.Drawing.Size(75, 14);
             this.l118.TabIndex = 84;
             this.l118.Text = "10.10.0.xxx";
             this.l118.Visible = false;
@@ -802,7 +802,7 @@
             this.l115.ForeColor = System.Drawing.Color.White;
             this.l115.Location = new System.Drawing.Point(449, 163);
             this.l115.Name = "l115";
-            this.l115.Size = new System.Drawing.Size(80, 14);
+            this.l115.Size = new System.Drawing.Size(75, 14);
             this.l115.TabIndex = 83;
             this.l115.Text = "10.10.0.xxx";
             this.l115.Visible = false;
@@ -816,7 +816,7 @@
             this.l155.ForeColor = System.Drawing.Color.White;
             this.l155.Location = new System.Drawing.Point(99, 254);
             this.l155.Name = "l155";
-            this.l155.Size = new System.Drawing.Size(80, 14);
+            this.l155.Size = new System.Drawing.Size(75, 14);
             this.l155.TabIndex = 82;
             this.l155.Text = "10.10.0.xxx";
             this.l155.Visible = false;
@@ -830,7 +830,7 @@
             this.l113.ForeColor = System.Drawing.Color.White;
             this.l113.Location = new System.Drawing.Point(102, 163);
             this.l113.Name = "l113";
-            this.l113.Size = new System.Drawing.Size(80, 14);
+            this.l113.Size = new System.Drawing.Size(75, 14);
             this.l113.TabIndex = 81;
             this.l113.Text = "10.10.0.xxx";
             this.l113.Visible = false;
@@ -844,7 +844,7 @@
             this.l112.ForeColor = System.Drawing.Color.White;
             this.l112.Location = new System.Drawing.Point(223, 163);
             this.l112.Name = "l112";
-            this.l112.Size = new System.Drawing.Size(80, 14);
+            this.l112.Size = new System.Drawing.Size(75, 14);
             this.l112.TabIndex = 80;
             this.l112.Text = "10.10.0.xxx";
             this.l112.Visible = false;
@@ -858,7 +858,7 @@
             this.l114.ForeColor = System.Drawing.Color.White;
             this.l114.Location = new System.Drawing.Point(379, 209);
             this.l114.Name = "l114";
-            this.l114.Size = new System.Drawing.Size(80, 14);
+            this.l114.Size = new System.Drawing.Size(75, 14);
             this.l114.TabIndex = 79;
             this.l114.Text = "10.10.0.xxx";
             this.l114.Visible = false;
@@ -872,7 +872,7 @@
             this.l111.ForeColor = System.Drawing.Color.White;
             this.l111.Location = new System.Drawing.Point(362, 144);
             this.l111.Name = "l111";
-            this.l111.Size = new System.Drawing.Size(80, 14);
+            this.l111.Size = new System.Drawing.Size(75, 14);
             this.l111.TabIndex = 78;
             this.l111.Text = "10.10.0.xxx";
             this.l111.Visible = false;
@@ -886,7 +886,7 @@
             this.l105.ForeColor = System.Drawing.Color.White;
             this.l105.Location = new System.Drawing.Point(81, 128);
             this.l105.Name = "l105";
-            this.l105.Size = new System.Drawing.Size(80, 14);
+            this.l105.Size = new System.Drawing.Size(75, 14);
             this.l105.TabIndex = 77;
             this.l105.Text = "10.10.0.xxx";
             this.l105.Visible = false;
@@ -900,7 +900,7 @@
             this.l109.ForeColor = System.Drawing.Color.White;
             this.l109.Location = new System.Drawing.Point(81, 72);
             this.l109.Name = "l109";
-            this.l109.Size = new System.Drawing.Size(80, 14);
+            this.l109.Size = new System.Drawing.Size(75, 14);
             this.l109.TabIndex = 76;
             this.l109.Text = "10.10.0.xxx";
             this.l109.Visible = false;
@@ -914,7 +914,7 @@
             this.l107.ForeColor = System.Drawing.Color.White;
             this.l107.Location = new System.Drawing.Point(99, 0);
             this.l107.Name = "l107";
-            this.l107.Size = new System.Drawing.Size(80, 14);
+            this.l107.Size = new System.Drawing.Size(75, 14);
             this.l107.TabIndex = 75;
             this.l107.Text = "10.10.0.xxx";
             this.l107.Visible = false;
@@ -928,7 +928,7 @@
             this.l104.ForeColor = System.Drawing.Color.White;
             this.l104.Location = new System.Drawing.Point(241, 103);
             this.l104.Name = "l104";
-            this.l104.Size = new System.Drawing.Size(80, 14);
+            this.l104.Size = new System.Drawing.Size(75, 14);
             this.l104.TabIndex = 59;
             this.l104.Text = "10.10.0.xxx";
             this.l104.Visible = false;
@@ -942,7 +942,7 @@
             this.l108.ForeColor = System.Drawing.Color.White;
             this.l108.Location = new System.Drawing.Point(302, 44);
             this.l108.Name = "l108";
-            this.l108.Size = new System.Drawing.Size(80, 14);
+            this.l108.Size = new System.Drawing.Size(75, 14);
             this.l108.TabIndex = 58;
             this.l108.Text = "10.10.0.xxx";
             this.l108.Visible = false;
@@ -956,7 +956,7 @@
             this.l106.ForeColor = System.Drawing.Color.White;
             this.l106.Location = new System.Drawing.Point(294, 0);
             this.l106.Name = "l106";
-            this.l106.Size = new System.Drawing.Size(80, 14);
+            this.l106.Size = new System.Drawing.Size(75, 14);
             this.l106.TabIndex = 57;
             this.l106.Text = "10.10.0.xxx";
             this.l106.Visible = false;
@@ -970,7 +970,7 @@
             this.l110.ForeColor = System.Drawing.Color.White;
             this.l110.Location = new System.Drawing.Point(362, 81);
             this.l110.Name = "l110";
-            this.l110.Size = new System.Drawing.Size(80, 14);
+            this.l110.Size = new System.Drawing.Size(75, 14);
             this.l110.TabIndex = 56;
             this.l110.Text = "10.10.0.xxx";
             this.l110.Visible = false;
@@ -984,7 +984,7 @@
             this.l103.ForeColor = System.Drawing.Color.White;
             this.l103.Location = new System.Drawing.Point(379, 27);
             this.l103.Name = "l103";
-            this.l103.Size = new System.Drawing.Size(80, 14);
+            this.l103.Size = new System.Drawing.Size(75, 14);
             this.l103.TabIndex = 55;
             this.l103.Text = "10.10.0.xxx";
             this.l103.Visible = false;
@@ -998,7 +998,7 @@
             this.l102.ForeColor = System.Drawing.Color.White;
             this.l102.Location = new System.Drawing.Point(484, 72);
             this.l102.Name = "l102";
-            this.l102.Size = new System.Drawing.Size(80, 14);
+            this.l102.Size = new System.Drawing.Size(75, 14);
             this.l102.TabIndex = 51;
             this.l102.Text = "10.10.0.xxx";
             this.l102.Visible = false;
@@ -1012,7 +1012,7 @@
             this.l101.ForeColor = System.Drawing.Color.White;
             this.l101.Location = new System.Drawing.Point(533, 27);
             this.l101.Name = "l101";
-            this.l101.Size = new System.Drawing.Size(80, 14);
+            this.l101.Size = new System.Drawing.Size(75, 14);
             this.l101.TabIndex = 50;
             this.l101.Text = "10.10.0.xxx";
             this.l101.Visible = false;
@@ -1026,7 +1026,7 @@
             this.l100.ForeColor = System.Drawing.Color.White;
             this.l100.Location = new System.Drawing.Point(661, 69);
             this.l100.Name = "l100";
-            this.l100.Size = new System.Drawing.Size(80, 14);
+            this.l100.Size = new System.Drawing.Size(75, 14);
             this.l100.TabIndex = 48;
             this.l100.Text = "10.10.0.xxx";
             this.l100.Visible = false;
@@ -1592,7 +1592,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SokhnaForm";
-            this.Text = "SokhnaForm";
+            this.Text = "Cairo-Sokhna Network";
             this.leftPanel.ResumeLayout(false);
             this.leftPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reportLED)).EndInit();

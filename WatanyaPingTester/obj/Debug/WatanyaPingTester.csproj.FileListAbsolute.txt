@@ -153,3 +153,7 @@ G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Prope
 G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache
 G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.exe
 G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.pdb
+E:\New folder\New folder\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe.config
+E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.ResolveComReference.cache
+E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.exe
+E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.pdb

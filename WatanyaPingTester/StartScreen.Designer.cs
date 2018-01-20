@@ -89,7 +89,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StartScreen";
-            this.Text = "Watanya Pingo";
+            this.Text = "Watanya Pinger";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
 

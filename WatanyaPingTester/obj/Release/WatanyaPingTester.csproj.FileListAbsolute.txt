@@ -1,0 +1,2 @@
+E:\New folder\New folder\Pingo\WatanyaPingTester\bin\Release\WatanyaPingTester.exe.config
+E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.csproj.ResolveComReference.cache

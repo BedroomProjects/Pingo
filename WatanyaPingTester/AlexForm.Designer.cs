@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlexForm));
             this.rightPanel = new System.Windows.Forms.Panel();
+            this.reportBtn = new System.Windows.Forms.Button();
+            this.reportLED = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -147,9 +149,8 @@
             this.p5 = new System.Windows.Forms.PictureBox();
             this.p3 = new System.Windows.Forms.PictureBox();
             this.p1 = new System.Windows.Forms.PictureBox();
-            this.reportBtn = new System.Windows.Forms.Button();
-            this.reportLED = new System.Windows.Forms.PictureBox();
             this.rightPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reportLED)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).BeginInit();
             this.schemePanel.SuspendLayout();
@@ -209,7 +210,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.p5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reportLED)).BeginInit();
             this.SuspendLayout();
             // 
             // rightPanel
@@ -227,6 +227,30 @@
             this.rightPanel.Name = "rightPanel";
             this.rightPanel.Size = new System.Drawing.Size(193, 595);
             this.rightPanel.TabIndex = 4;
+            // 
+            // reportBtn
+            // 
+            this.reportBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
+            this.reportBtn.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
+            this.reportBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.reportBtn.Location = new System.Drawing.Point(51, 115);
+            this.reportBtn.Name = "reportBtn";
+            this.reportBtn.Size = new System.Drawing.Size(75, 23);
+            this.reportBtn.TabIndex = 9;
+            this.reportBtn.Text = "Report";
+            this.reportBtn.UseVisualStyleBackColor = false;
+            this.reportBtn.Click += new System.EventHandler(this.reportBtn_Click);
+            // 
+            // reportLED
+            // 
+            this.reportLED.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.reportLED.Image = global::WatanyaPingTester.Properties.Resources.grey1;
+            this.reportLED.Location = new System.Drawing.Point(31, 115);
+            this.reportLED.Name = "reportLED";
+            this.reportLED.Size = new System.Drawing.Size(18, 23);
+            this.reportLED.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.reportLED.TabIndex = 8;
+            this.reportLED.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -1021,7 +1045,7 @@
             this.l76.ForeColor = System.Drawing.Color.GhostWhite;
             this.l76.Location = new System.Drawing.Point(381, 570);
             this.l76.Name = "l76";
-            this.l76.Size = new System.Drawing.Size(89, 17);
+            this.l76.Size = new System.Drawing.Size(80, 17);
             this.l76.TabIndex = 193;
             this.l76.Text = "169.254.1.76";
             this.l76.Visible = false;
@@ -1034,7 +1058,7 @@
             this.l79.ForeColor = System.Drawing.Color.GhostWhite;
             this.l79.Location = new System.Drawing.Point(367, 527);
             this.l79.Name = "l79";
-            this.l79.Size = new System.Drawing.Size(89, 17);
+            this.l79.Size = new System.Drawing.Size(80, 17);
             this.l79.TabIndex = 192;
             this.l79.Text = "169.254.1.79";
             this.l79.Visible = false;
@@ -1112,7 +1136,7 @@
             this.l80.ForeColor = System.Drawing.Color.GhostWhite;
             this.l80.Location = new System.Drawing.Point(254, 527);
             this.l80.Name = "l80";
-            this.l80.Size = new System.Drawing.Size(89, 17);
+            this.l80.Size = new System.Drawing.Size(80, 17);
             this.l80.TabIndex = 196;
             this.l80.Text = "169.254.1.80";
             this.l80.Visible = false;
@@ -1802,30 +1826,6 @@
             this.p1.TabIndex = 134;
             this.p1.TabStop = false;
             // 
-            // reportBtn
-            // 
-            this.reportBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(77)))), ((int)(((byte)(140)))));
-            this.reportBtn.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.reportBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.reportBtn.Location = new System.Drawing.Point(51, 115);
-            this.reportBtn.Name = "reportBtn";
-            this.reportBtn.Size = new System.Drawing.Size(75, 23);
-            this.reportBtn.TabIndex = 9;
-            this.reportBtn.Text = "Report";
-            this.reportBtn.UseVisualStyleBackColor = false;
-            this.reportBtn.Click += new System.EventHandler(this.reportBtn_Click);
-            // 
-            // reportLED
-            // 
-            this.reportLED.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.reportLED.Image = global::WatanyaPingTester.Properties.Resources.grey1;
-            this.reportLED.Location = new System.Drawing.Point(31, 115);
-            this.reportLED.Name = "reportLED";
-            this.reportLED.Size = new System.Drawing.Size(18, 23);
-            this.reportLED.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.reportLED.TabIndex = 8;
-            this.reportLED.TabStop = false;
-            // 
             // AlexForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1836,9 +1836,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AlexForm";
-            this.Text = "AlexForm";
+            this.Text = "Cairo-Alexandria Network";
             this.rightPanel.ResumeLayout(false);
             this.rightPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reportLED)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guidePictureBox)).EndInit();
             this.schemePanel.ResumeLayout(false);
@@ -1899,7 +1900,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.p5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reportLED)).EndInit();
             this.ResumeLayout(false);
 
         }
