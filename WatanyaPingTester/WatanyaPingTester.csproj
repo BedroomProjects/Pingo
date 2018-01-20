@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>PingoIcon.ico</ApplicationIcon>
+    <ApplicationIcon>ant-icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -215,6 +215,7 @@
     <None Include="bin\Debug\res\New folder\grey1.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ant-icon.ico" />
     <Content Include="PingoIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
