@@ -56,7 +56,15 @@ namespace WatanyaPingTester {
             for (int i = 0; i < collectingPorts.Count(); i++) {
                 for (int j = 0; j < nodePathInfoList[i].nodePathData.Count(); j++) {
                     int nodeIndex = Int32.Parse(nodePathInfoList[i].nodePathData[j].ElementAt(0));
-                    nodePathInfoList[i].nodePathData[j].Add(getNodeStatus(nodeIndex).ToString());
+                    //nodePathInfoList[i].nodePathData[j].Add(getNodeStatus(nodeIndex).ToString());
+                    if (nodePathInfoList[i].nodePathData[j].Count() < 4)
+                    {
+                        nodePathInfoList[i].nodePathData[j].Add(getNodeStatus(nodeIndex).ToString());
+                    }
+                    else
+                    {
+                        nodePathInfoList[i].nodePathData[j][3] = getNodeStatus(nodeIndex).ToString();
+                    }
                 }
             }
             reportPeriod[1] = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
@@ -71,6 +79,7 @@ namespace WatanyaPingTester {
                 nodePathInfoList.Add(nodePathFromCompany.getNodePathInfo());
                 for (int j = 0; j < nodePathInfoList[i].nodePathData.Count(); j++) {
                     int nodeIndex = Int32.Parse(nodePathInfoList[i].nodePathData[j].ElementAt(0));
+                    int cccc = nodePathInfoList[i].nodePathData[j].Count();
                     nodePathInfoList[i].nodePathData[j].Add(getNodeStatus(nodeIndex).ToString());
                 }
             }
@@ -128,7 +137,6 @@ namespace WatanyaPingTester {
                         // Min and Max color 
                         cfColorScale.ColorScaleCriteria[1].FormatColor.Color = 0x000000FF;   // Red
                         cfColorScale.ColorScaleCriteria[2].FormatColor.Color = 0x0000FF00;   // Green
-
 
                         // Set table font size and bold
                         oSheet.get_Range("A" + (m + 1).ToString(), "F" + (m + 1).ToString()).Font.Size = 11;

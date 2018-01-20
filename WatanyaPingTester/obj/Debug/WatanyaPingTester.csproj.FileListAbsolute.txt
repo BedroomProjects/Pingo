@@ -16,14 +16,6 @@ C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingTester\ob
 C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Form1.resources
 C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resources.resources
 C:\Users\HQ-PC3\Documents\Visual Studio 2013\Projects\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache
-D:\Fahim\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe.config
-D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.exe
-D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.pdb
-D:\Fahim\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe
-D:\Fahim\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.pdb
-D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csprojResolveAssemblyReference.cache
-D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resources.resources
-D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache
 G:\Fahim\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe.config
 G:\Fahim\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe
 G:\Fahim\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.pdb
@@ -127,15 +119,6 @@ G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resou
 G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.exe
 G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.pdb
 G:\Fahim\C#\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csprojResolveAssemblyReference.cache
-D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.ResolveComReference.cache
-D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.AlexForm.resources
-D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoAlexDiagramForm.resources
-D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoSokhnaDiagramForm.resources
-D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Cairo_Sokhna.resources
-D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.IPsAsListForm.resources
-D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.PleaseWaitForm.resources
-D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.SokhnaForm.resources
-D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.StartScreen.resources
 G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe.config
 G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.exe
 G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\bin\Debug\WatanyaPingTester.pdb
@@ -170,3 +153,19 @@ E:\New folder\New folder\Pingo\WatanyaPingTester\bin\Debug\Watanya Pinger.exe
 E:\New folder\New folder\Pingo\WatanyaPingTester\bin\Debug\Watanya Pinger.pdb
 E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Debug\Watanya Pinger.exe
 E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Debug\Watanya Pinger.pdb
+D:\Fahim\Pingo\WatanyaPingTester\bin\Debug\Watanya Pinger.exe.config
+D:\Fahim\Pingo\WatanyaPingTester\bin\Debug\Watanya Pinger.exe
+D:\Fahim\Pingo\WatanyaPingTester\bin\Debug\Watanya Pinger.pdb
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.ResolveComReference.cache
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.AlexForm.resources
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoAlexDiagramForm.resources
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.CairoSokhnaDiagramForm.resources
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Cairo_Sokhna.resources
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.IPsAsListForm.resources
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.PleaseWaitForm.resources
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.SokhnaForm.resources
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.StartScreen.resources
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resources.resources
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\Watanya Pinger.exe
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\Watanya Pinger.pdb
