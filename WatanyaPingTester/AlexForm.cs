@@ -287,19 +287,24 @@ namespace WatanyaPingTester
 
         private void pictureBoxMouseHoverEventHandler(object sender, System.EventArgs e)
         {
-
-            PictureBox p = (PictureBox)sender;
-            string labelName = p.Name.Replace("p", "l");
-            var control = (Label)this.GetControlByName(this, labelName);
-            control.Visible = true;
+            if (!showIPs)
+            {
+                PictureBox p = (PictureBox)sender;
+                string labelName = p.Name.Replace("p", "l");
+                var control = (Label)this.GetControlByName(this, labelName);
+                control.Visible = true;
+            }
         }
 
         private void pictureBoxMouseLeaveEventHandler(object sender, System.EventArgs e)
         {
-            PictureBox p = (PictureBox)sender;
-            string labelName = p.Name.Replace("p", "l");
-            var control = (Label)this.GetControlByName(this, labelName);
-            control.Visible = false;
+            if (!showIPs)
+            {
+                PictureBox p = (PictureBox)sender;
+                string labelName = p.Name.Replace("p", "l");
+                var control = (Label)this.GetControlByName(this, labelName);
+                control.Visible = false;
+            }
         }
 
         

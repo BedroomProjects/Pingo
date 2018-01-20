@@ -1,8 +1,4 @@
-E:\New folder\New folder\Pingo\WatanyaPingTester\bin\Release\WatanyaPingTester.exe.config
 E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.csproj.ResolveComReference.cache
-E:\New folder\New folder\Pingo\WatanyaPingTester\bin\Release\WatanyaPingTester.exe
-E:\New folder\New folder\Pingo\WatanyaPingTester\bin\Release\WatanyaPingTester.pdb
-E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.csprojResolveAssemblyReference.cache
 E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.AlexForm.resources
 E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.CairoAlexDiagramForm.resources
 E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.CairoSokhnaDiagramForm.resources
@@ -13,5 +9,9 @@ E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.S
 E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.StartScreen.resources
 E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.Properties.Resources.resources
 E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.csproj.GenerateResource.Cache
-E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.exe
-E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.pdb
+E:\New folder\New folder\Pingo\WatanyaPingTester\bin\Release\Watanya Pinger.exe.config
+E:\New folder\New folder\Pingo\WatanyaPingTester\bin\Release\Watanya Pinger.exe
+E:\New folder\New folder\Pingo\WatanyaPingTester\bin\Release\Watanya Pinger.pdb
+E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\Watanya Pinger.exe
+E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\Watanya Pinger.pdb
+E:\New folder\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.csprojResolveAssemblyReference.cache
