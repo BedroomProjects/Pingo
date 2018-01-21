@@ -190,4 +190,14 @@ namespace WatanyaPingTester {
         public List<List<string>> nodePathData = new List<List<string>>();
         public string portName;
     }
+
+    public class NodeStatusHistory
+    {
+        public string nodeName, nodeIp;
+        public List<StatusHistory> NodeHistoryList = new List<StatusHistory>();
+    }
+    public class StatusHistory{
+        public string status = "";
+        public List<string> statusTime = new List<string>();
+    }
 }
