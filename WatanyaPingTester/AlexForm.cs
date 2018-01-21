@@ -17,13 +17,19 @@ namespace WatanyaPingTester
     {
         List<SchemeNode> schemeNodes = new List<SchemeNode>();
 
+        // Timers
+        private System.Windows.Forms.Timer alexTimer;
+        private int pingTimerCounter = 1, reportTimerCounter = 25;    // seconds
+
+        Reports reportObject;
+
         int secondsPerPing = 1;
         bool showIPs = false, report = false;
         List<NetworkNode> nodes;
-        
-        private string[] collectingPortArr = { "19 El Sheikh Zaid Gate", "20 Road El Farag Gate", "21 Cairo Gate", "29 Abo Rawash Gate", "24 Chillout", "18 6 October Gate", "41 Sadat 1 Gate", "42 Sadat 2 Gate", "48 Al Alamin Gate", "35 Eqlimy Gate", "55 Alexandria Gate"};
+
+        private string[] collectingPortArr = { "19 El Sheikh Zaid Gate", "20 Road El Farag Gate", "21 Cairo Gate", "29 Abo Rawash Gate", "24 Chillout", "18 6 October Gate", "41 Sadat 1 Gate", "42 Sadat 2 Gate", "48 Al Alamin Gate", "35 Eqlimy Gate", "55 Alexandria Gate" };
         private List<List<string>> collectingPortsList = new List<List<string>>();
-        
+
         List<List<string>> reportList = new List<List<string>>();
         string path, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath, greennLEDPath;
         ExcelToNode etn = new ExcelToNode();
@@ -42,6 +48,8 @@ namespace WatanyaPingTester
             // full screen above taskbar
             //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             //this.WindowState = FormWindowState.Maximized;
+
+            intializeTimers();
 
             // Adding form closing event handler
             this.FormClosing += new FormClosingEventHandler(CairoAlexDiagram_Closing);
@@ -71,6 +79,31 @@ namespace WatanyaPingTester
                 startThread();
             }
         }
+
+        void intializeTimers()
+        {
+            // sokhnaTimer intialization
+            alexTimer = new System.Windows.Forms.Timer();
+            alexTimer.Tick += new EventHandler(sokhnaTimer_Tick);
+            alexTimer.Interval = 1000; // 1 second
+            alexTimer.Start();
+        }
+
+        private void sokhnaTimer_Tick(object sender, EventArgs e)
+        {
+            pingTimerCounter--;
+
+            if (report)
+            {
+                reportTimerCounter--;
+                if (reportTimerCounter == 0)
+                {
+                    reportTimerCounter = 180;
+                    reportObject.typeReport();
+                }
+            }
+        }
+
 
         void generateSchemeNodes(List<NetworkNode> networkNodes)
         {
@@ -307,7 +340,7 @@ namespace WatanyaPingTester
             }
         }
 
-        
+
 
         // ComboBox item
         public class ComboboxItem
@@ -335,7 +368,9 @@ namespace WatanyaPingTester
                 try
                 {
                     s.getLabel().Visible = showIPs;
-                }catch(Exception aa){
+                }
+                catch (Exception aa)
+                {
 
                 }
             }
@@ -397,50 +432,16 @@ namespace WatanyaPingTester
 
                 reportLED.Image = Image.FromFile(greyLEDPath);
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
-                Reports r = new Reports(path + "\\alexColorReport.xlsx", collectingPortsList, schemeNodes, new Label());
+                reportObject.typeReport();
             }
             else
             {
                 report = true;
                 reportLED.Image = Image.FromFile(greennLEDPath);
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
+                reportObject = new Reports(path + "\\alexColorReport.xlsx", collectingPortsList, schemeNodes, reportStatusLabel);
             }
         }
-
-        //private string getReport()
-        //{
-        //    string result = "";
-        //    double onlinePerc, offlinePerc, timeoutPerc, overallPing;
-        //    List<string> temp;
-        //    for (int i = 0; i < schemeNodes.Count(); i++)
-        //    {
-        //        temp = new List<string>();
-        //        overallPing = schemeNodes[i].getOnlineCount() + schemeNodes[i].getOfflineCount() + schemeNodes[i].getTimeoutCount();
-        //        onlinePerc = (schemeNodes[i].getOnlineCount() / overallPing) * 100;
-        //        offlinePerc = (schemeNodes[i].getOfflineCount() / overallPing) * 100;
-        //        timeoutPerc = (schemeNodes[i].getTimeoutCount() / overallPing) * 100;
-
-        //        if (overallPing == 0) continue;
-
-        //        temp.Add(schemeNodes[i].getName());
-        //        temp.Add(schemeNodes[i].getIP());
-        //        temp.Add(Math.Round(onlinePerc, 2).ToString());
-        //        temp.Add(Math.Round(offlinePerc, 2).ToString());
-        //        temp.Add(Math.Round(timeoutPerc, 2).ToString());
-
-        //        reportList.Add(temp);
-        //        result += "C: " + overallPing.ToString() + " || ";
-        //        result += schemeNodes[i].getName();
-        //        result += " ----- ";
-        //        result = result
-        //            + "Online: " + Math.Round(onlinePerc, 2).ToString()
-        //            + ", Offline: " + Math.Round(offlinePerc, 2).ToString()
-        //            + ", Timeout: " + Math.Round(timeoutPerc, 2).ToString()
-        //            + "\n";
-        //    }
-        //    return result;
-        //}
-
         private void updateReport(SchemeNode schNode)
         {
             if (report)

@@ -27,7 +27,8 @@ namespace WatanyaPingTester {
         List<SchemeNode> schemeNodes;
         Thread tt;
         string resPath;
-        string[] reportPeriod = new string[2];
+        string[] reportTimePeriod = new string[2];
+        string[] reportDate = new string[2];
         List<List<string>> collectingPorts;
         NodePathFromCompany nodePathFromCompany;
         List<NodePathInfo> nodePathInfoList = new List<NodePathInfo>();
@@ -39,7 +40,8 @@ namespace WatanyaPingTester {
             this.resPath = resPath;
             this.reportLabel = reportLabel;
             fillNodePathInfoList();
-            reportPeriod[0] = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+            reportTimePeriod[0] = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+            reportDate[0] = DateTime.UtcNow.Date.ToString("dd/MM/yyyy");
         }
 
         public void typeReport() {
@@ -67,7 +69,8 @@ namespace WatanyaPingTester {
                     }
                 }
             }
-            reportPeriod[1] = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+            reportTimePeriod[1] = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+            reportDate[1] = DateTime.UtcNow.Date.ToString("dd/MM/yyyy");
             tt = new Thread(createColorScaleExcel);
             tt.Start();
         }
@@ -105,9 +108,9 @@ namespace WatanyaPingTester {
                 oSheet.Columns["A:F"].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
                 oSheet.PageSetup.Orientation = Excel.XlPageOrientation.xlLandscape;
 
-                oSheet.get_Range("A1", "B1").Merge();
-                oSheet.Cells[1, 1].Value2 = "From: " + reportPeriod[0] + " To: " + reportPeriod[1];
-                int m = 2;
+                oSheet.get_Range("A1:A2", "B1:B2").Merge();
+                oSheet.Cells[1, 1].Value2 = "From: " + reportDate[0] + " at " + reportTimePeriod[0] + "\nTo: " + reportDate[1] + " at " + reportTimePeriod[1];
+                int m = 3;
 
                 for (int i = 0; i < nodePathInfoList.Count(); i++) {
                     oSheet.Cells[m, 1].Value2 = nodePathInfoList[i].portName + ":";

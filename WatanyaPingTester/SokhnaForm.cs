@@ -86,15 +86,6 @@ namespace WatanyaPingTester {
         private void sokhnaTimer_Tick(object sender, EventArgs e) {
             pingTimerCounter--;
             
-            //if (pingTimerCounter == 0) {
-            //    //if (t != null) {
-            //    //    t.Abort();
-            //    //}
-            //    //startThread();
-            //    //continousUpdate();
-            //    pingTimerCounter = 2;
-            //}
-
             if(report){
                 reportTimerCounter--;
                 if (reportTimerCounter == 0) {

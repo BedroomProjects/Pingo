@@ -149,6 +149,7 @@
             this.p5 = new System.Windows.Forms.PictureBox();
             this.p3 = new System.Windows.Forms.PictureBox();
             this.p1 = new System.Windows.Forms.PictureBox();
+            this.reportStatusLabel = new System.Windows.Forms.Label();
             this.rightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reportLED)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -309,6 +310,7 @@
             this.schemePanel.BackColor = System.Drawing.Color.Transparent;
             this.schemePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("schemePanel.BackgroundImage")));
             this.schemePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.schemePanel.Controls.Add(this.reportStatusLabel);
             this.schemePanel.Controls.Add(this.l2);
             this.schemePanel.Controls.Add(this.l4);
             this.schemePanel.Controls.Add(this.l3);
@@ -1045,7 +1047,7 @@
             this.l76.ForeColor = System.Drawing.Color.GhostWhite;
             this.l76.Location = new System.Drawing.Point(381, 570);
             this.l76.Name = "l76";
-            this.l76.Size = new System.Drawing.Size(80, 17);
+            this.l76.Size = new System.Drawing.Size(89, 17);
             this.l76.TabIndex = 193;
             this.l76.Text = "169.254.1.76";
             this.l76.Visible = false;
@@ -1058,7 +1060,7 @@
             this.l79.ForeColor = System.Drawing.Color.GhostWhite;
             this.l79.Location = new System.Drawing.Point(367, 527);
             this.l79.Name = "l79";
-            this.l79.Size = new System.Drawing.Size(80, 17);
+            this.l79.Size = new System.Drawing.Size(89, 17);
             this.l79.TabIndex = 192;
             this.l79.Text = "169.254.1.79";
             this.l79.Visible = false;
@@ -1136,7 +1138,7 @@
             this.l80.ForeColor = System.Drawing.Color.GhostWhite;
             this.l80.Location = new System.Drawing.Point(254, 527);
             this.l80.Name = "l80";
-            this.l80.Size = new System.Drawing.Size(80, 17);
+            this.l80.Size = new System.Drawing.Size(89, 17);
             this.l80.TabIndex = 196;
             this.l80.Text = "169.254.1.80";
             this.l80.Visible = false;
@@ -1826,6 +1828,16 @@
             this.p1.TabIndex = 134;
             this.p1.TabStop = false;
             // 
+            // reportStatusLabel
+            // 
+            this.reportStatusLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.reportStatusLabel.AutoSize = true;
+            this.reportStatusLabel.Location = new System.Drawing.Point(4, 579);
+            this.reportStatusLabel.Name = "reportStatusLabel";
+            this.reportStatusLabel.Size = new System.Drawing.Size(10, 13);
+            this.reportStatusLabel.TabIndex = 246;
+            this.reportStatusLabel.Text = " ";
+            // 
             // AlexForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2026,5 +2038,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button reportBtn;
         private System.Windows.Forms.PictureBox reportLED;
+        private System.Windows.Forms.Label reportStatusLabel;
     }
 }

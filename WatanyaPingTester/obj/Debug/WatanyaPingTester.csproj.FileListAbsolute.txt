@@ -169,3 +169,4 @@ D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.Properties.Resource
 D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csproj.GenerateResource.Cache
 D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\Watanya Pinger.exe
 D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\Watanya Pinger.pdb
+D:\Fahim\Pingo\WatanyaPingTester\obj\Debug\WatanyaPingTester.csprojResolveAssemblyReference.cache
