@@ -85,11 +85,11 @@ namespace WatanyaPingTester {
 
         private void sokhnaTimer_Tick(object sender, EventArgs e) {
             pingTimerCounter--;
-            
-            if(report){
+
+            if (report) {
                 reportTimerCounter--;
                 if (reportTimerCounter == 0) {
-                    reportTimerCounter = 180;
+                    reportTimerCounter = 300;
                     reportObject.typeReport();
                 }
             }
@@ -98,6 +98,11 @@ namespace WatanyaPingTester {
         void updateNetwork() {
             for (int i = 0; i < schemeNodes.Count; i++) {
                 schemeNodes[i].getNode().sendPing();
+                if (schemeNodes[i].getNode().getStatus().Equals("Online")) {
+                    schemeNodes[i].updateNodeStatusHistory(true, true);
+                }else{
+                    schemeNodes[i].updateNodeStatusHistory(false, true);
+                }
             }
         }
 
@@ -161,9 +166,9 @@ namespace WatanyaPingTester {
 
         void continousUpdate() {
             while (true) {
-            updateNetwork();
-            updateDisplay();
-            Thread.Sleep(1000 * secondsPerPing);
+                updateNetwork();
+                updateDisplay();
+                Thread.Sleep(1000 * secondsPerPing);
             }
         }
 
@@ -246,8 +251,7 @@ namespace WatanyaPingTester {
         }
 
         private void pictureBoxMouseHoverEventHandler(object sender, System.EventArgs e) {
-            if (!showIPs)
-            {
+            if (!showIPs) {
                 PictureBox p = (PictureBox)sender;
                 string labelName = p.Name.Replace("p", "l");
                 var control = (Label)this.GetControlByName(this, labelName);
@@ -256,8 +260,7 @@ namespace WatanyaPingTester {
         }
 
         private void pictureBoxMouseLeaveEventHandler(object sender, System.EventArgs e) {
-            if (!showIPs)
-            {
+            if (!showIPs) {
                 PictureBox p = (PictureBox)sender;
                 string labelName = p.Name.Replace("p", "l");
                 var control = (Label)this.GetControlByName(this, labelName);
@@ -341,13 +344,19 @@ namespace WatanyaPingTester {
 
                 reportLED.Image = Image.FromFile(greyLEDPath);
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
-
+                for (int i = 0; i < schemeNodes.Count; i++) {
+                    if (schemeNodes[i].getNode().getStatus().Equals("Online")) {
+                        schemeNodes[i].updateNodeStatusHistory(true, false);
+                    } else {
+                        schemeNodes[i].updateNodeStatusHistory(false, false);
+                    }
+                }
                 reportObject.typeReport();
             } else {
                 report = true;
                 reportLED.Image = Image.FromFile(greennLEDPath);
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
-                reportObject = new Reports(resPath + "\\sokhnaColorReport.xlsx", collectingPortsList, schemeNodes, reportStatusLabel);
+                reportObject = new Reports(resPath + "\\sokhnaColorReport", collectingPortsList, schemeNodes, reportStatusLabel);
             }
         }
 

@@ -18,6 +18,11 @@ namespace WatanyaPingTester {
         object misvalue = System.Reflection.Missing.Value;
         ColorScale cfColorScale = null;
 
+        Microsoft.Office.Interop.Excel.Application oXL1;
+        Microsoft.Office.Interop.Excel._Workbook oWB1;
+        Microsoft.Office.Interop.Excel._Worksheet oSheet1;
+        Microsoft.Office.Interop.Excel.Range oRng1;
+
         // nodeDataInfo.nodePathData 
         /*        0                        1            2                 3
          * 0     Index In Scheme        NodeName       IP        OnlinePercentage 
@@ -58,13 +63,9 @@ namespace WatanyaPingTester {
             for (int i = 0; i < collectingPorts.Count(); i++) {
                 for (int j = 0; j < nodePathInfoList[i].nodePathData.Count(); j++) {
                     int nodeIndex = Int32.Parse(nodePathInfoList[i].nodePathData[j].ElementAt(0));
-                    //nodePathInfoList[i].nodePathData[j].Add(getNodeStatus(nodeIndex).ToString());
-                    if (nodePathInfoList[i].nodePathData[j].Count() < 4)
-                    {
+                    if (nodePathInfoList[i].nodePathData[j].Count() < 4) {
                         nodePathInfoList[i].nodePathData[j].Add(getNodeStatus(nodeIndex).ToString());
-                    }
-                    else
-                    {
+                    } else {
                         nodePathInfoList[i].nodePathData[j][3] = getNodeStatus(nodeIndex).ToString();
                     }
                 }
@@ -73,6 +74,7 @@ namespace WatanyaPingTester {
             reportDate[1] = DateTime.UtcNow.Date.ToString("dd/MM/yyyy");
             tt = new Thread(createColorScaleExcel);
             tt.Start();
+            new Thread(createDetailsReport).Start();
         }
 
         public void fillNodePathInfoList() {
@@ -86,6 +88,10 @@ namespace WatanyaPingTester {
                     nodePathInfoList[i].nodePathData[j].Add(getNodeStatus(nodeIndex).ToString());
                 }
             }
+        }
+
+        public void fillNodesStatusList() {
+            
         }
 
         private double getNodeStatus(int nodeIndex) {
@@ -161,7 +167,7 @@ namespace WatanyaPingTester {
                 // oXL.Visible = false;
                 oXL.UserControl = false;
                 oXL.DisplayAlerts = false;
-                oWB.SaveAs(resPath, Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing,
+                oWB.SaveAs(resPath + ".xlsx", Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing,
                     false, false, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlNoChange,
                     Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
 
@@ -181,7 +187,61 @@ namespace WatanyaPingTester {
 
                 //// Displays the MessageBox.
                 //result = MessageBox.Show("تم الانتهاء من التقرير", "Reports", buttons);
-                
+            }
+        }
+
+        public void createDetailsReport() {
+            try {
+                //Start Excel and get Application object.
+                oXL1 = new Microsoft.Office.Interop.Excel.Application();
+                //oXL1.Visible = true;
+
+                //Get a new workbook.
+                oWB1 = (Microsoft.Office.Interop.Excel._Workbook)(oXL1.Workbooks.Add(""));
+                oSheet1 = (Microsoft.Office.Interop.Excel._Worksheet)oWB1.ActiveSheet;
+
+                oSheet1.PageSetup.Orientation = Excel.XlPageOrientation.xlPortrait;
+                int rows = 1;
+                for (int i = 0; i < schemeNodes.Count(); i++) {
+                    oSheet1.get_Range("A" + rows, "B" + rows).Merge();
+                    oSheet1.Cells[rows, 1].Value2 = schemeNodes[i].getNodeStatusHistory().nodeName + ":     " + schemeNodes[i].getNodeStatusHistory().nodeIP;
+                    oSheet1.Cells[rows, 1].Font.Bold = true;
+                    oSheet1.Cells[rows++, 1].Font.Size = 15;
+                    for (int j = 0; j < schemeNodes[i].getNodeStatusHistory().NodeHistoryList.Count(); j++) {
+                        oSheet1.Cells[rows, 1].Value2 = schemeNodes[i].getNodeStatusHistory().NodeHistoryList[j].status;
+                        if (schemeNodes[i].getNodeStatusHistory().NodeHistoryList[j].status.Equals("Online")) {
+                            oSheet1.Cells[rows, 1].Font.Color = 0x22EE22;
+                        } else {
+                            oSheet1.Cells[rows, 1].Font.Color = 0x000000FF;
+                        }
+                        oSheet1.Cells[rows, 1].Font.Bold = true;
+                        oSheet1.Cells[rows, 2].Font.Bold = true;
+                        oSheet1.Cells[rows++, 2].Value2 = schemeNodes[i].getNodeStatusHistory().NodeHistoryList[j].statusTimeDate;
+                    }
+                }
+
+                oRng1 = oSheet.get_Range("A1", "E1");
+                oRng1.EntireColumn.AutoFit();
+
+                //oSheet.Columns["A:F"].ColumnWidth = 18;
+
+                // oXL.Visible = false;
+                oXL1.UserControl = false;
+                oXL1.DisplayAlerts = false;
+                oWB1.SaveAs(resPath + "Details" + ".xlsx", Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing,
+                    false, false, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlNoChange,
+                    Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+
+                oWB1.Close();
+                reportLabel.Invoke((MethodInvoker)delegate {
+                    reportLabel.Text = "Details Report is saved successfully";
+                });
+            } catch (Exception e) {
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result;
+
+                // Displays the MessageBox.
+                result = MessageBox.Show(e.Message, "Details", buttons);
             }
         }
     }
@@ -191,13 +251,12 @@ namespace WatanyaPingTester {
         public string portName;
     }
 
-    public class NodeStatusHistory
-    {
-        public string nodeName, nodeIp;
-        public List<StatusHistory> NodeHistoryList = new List<StatusHistory>();
+    public class NodeStatusHistory {
+        public string nodeName, nodeIP;
+        public List<StatusHistoryListItem> NodeHistoryList = new List<StatusHistoryListItem>();
     }
-    public class StatusHistory{
-        public string status = "";
-        public List<string> statusTime = new List<string>();
+
+    public class StatusHistoryListItem {
+        public string status = "", statusTimeDate = "";
     }
 }

@@ -13,11 +13,19 @@ namespace WatanyaPingTester {
         Label label;
         bool visible = true;
         double onlineCount = 0, offlineCount = 1, timeoutCount = 0;
+        NodeStatusHistory nodeStatusHistory = new NodeStatusHistory();
+        StatusHistoryListItem statusHistoryListItem;
+        bool nodeStatus = true;
+        string startTime, endTime, startDate, endDate;
 
         public SchemeNode(NetworkNode n) {
             node = n;
             string[] arr = n.getIP().Split('.');
             id = Int32.Parse(arr[3]);
+            statusHistoryListItem = new StatusHistoryListItem();
+            nodeStatusHistory.nodeName = node.getName();
+            nodeStatusHistory.nodeIP = node.getIP();
+            intializeHistoryData();
         }
 
         public int getID() {
@@ -90,6 +98,40 @@ namespace WatanyaPingTester {
 
         public double getTimeoutCount() {
             return timeoutCount;
+        }
+
+        public void intializeHistoryData() {
+            startTime = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+            startDate = DateTime.UtcNow.Date.ToString("dd/MM/yyyy");
+            statusHistoryListItem.status = "Online";
+            //statusHistoryListItem.statusTimeDate += "From: " + startDate + " At  " + startTime + "  To: ";
+        }
+
+        public void updateNodeStatusHistory(bool currentStatus, bool stillPing) {
+            if ((currentStatus != nodeStatus) || !stillPing) {
+
+                endTime = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+                endDate = DateTime.UtcNow.Date.ToString("dd/MM/yyyy");
+                if (startTime.Equals(endTime) && stillPing) {
+                    return;
+                }
+                statusHistoryListItem.statusTimeDate += "From: " + startDate + " At  " + startTime + "  To: ";
+                nodeStatus = currentStatus;
+                if (currentStatus) {
+                    statusHistoryListItem.status = "Online";
+                } else {
+                    statusHistoryListItem.status = "Offline";
+                }
+                statusHistoryListItem.statusTimeDate += endDate + " At  " + endTime;
+                nodeStatusHistory.NodeHistoryList.Add(statusHistoryListItem);
+                statusHistoryListItem = new StatusHistoryListItem();
+                startTime = endTime;
+                startDate = endDate;
+            }
+        }
+
+        public NodeStatusHistory getNodeStatusHistory() {
+            return nodeStatusHistory;
         }
 
     }

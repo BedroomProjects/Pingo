@@ -5,16 +5,13 @@ using System.Text;
 using System.Threading;
 using System.Net.NetworkInformation;
 
-namespace WatanyaPingTester
-{
-    class NetworkNode
-    {
+namespace WatanyaPingTester {
+    class NetworkNode {
         private string ipAddress, name, nodeType, road, previousNodeIndex, placeType, previousNode;
         private PingClass pingObj;
-        private bool reachable = false, pending, timeout = false;
+        private bool reachable = false, timeout = false;
 
-        public NetworkNode(string name, string placeType, string ipAddress, string type, string road, string nextNode, string previousNode)
-        {
+        public NetworkNode(string name, string placeType, string ipAddress, string type, string road, string nextNode, string previousNode) {
             this.name = name;
             this.nodeType = type;
             this.road = road;
@@ -25,86 +22,64 @@ namespace WatanyaPingTester
             pingObj = new PingClass();
         }
 
-        public string getName()
-        {
+        public string getName() {
             return name;
         }
 
-        public string getNodeType()
-        {
+        public string getNodeType() {
             return nodeType;
         }
 
-        public string getRoad()
-        {
+        public string getRoad() {
             return road;
         }
 
-        public string getIP()
-        {
+        public string getIP() {
             return ipAddress;
         }
 
-        public int getPreviousNodeIndex()
-        {
+        public int getPreviousNodeIndex() {
             return Int32.Parse(previousNodeIndex);
         }
 
-        public string getPlaceType()
-        {
+        public string getPlaceType() {
             return placeType;
         }
 
-        public string getPreviousNode()
-        {
+        public string getPreviousNode() {
             return previousNode;
         }
 
-        public bool isReachable()
-        {
+        public bool isReachable() {
             return reachable;
         }
 
-        public void abortPingThread()
-        {
+        public void abortPingThread() {
             pingObj.abortThread();
         }
 
-        public string getStatus()
-        {
-            if (reachable)
-            {
+        public string getStatus() {
+            if (reachable) {
                 return "Online";
-            }
-            else if (timeout)
-            {
+            } else if (timeout) {
                 return "Timeout";
-            }
-            else 
-            {
+            } else {
                 return "Not Reachable";
             }
         }
 
-        public void sendPing()
-        {
+        public void sendPing() {
             pingObj.setIP(ipAddress);
             pingObj.sendPing();
 
-            if (pingObj.isReachable())
-            {
+            if (pingObj.isReachable()) {
                 reachable = true;
                 timeout = false;
-            }
-            else
-            {
+            } else {
                 reachable = false;
-                if (pingObj.isTimeOut()) 
-                { 
+                if (pingObj.isTimeOut()) {
                     timeout = true;
-                }
-                else
-                {
+                } else {
                     timeout = false;
                 }
             }

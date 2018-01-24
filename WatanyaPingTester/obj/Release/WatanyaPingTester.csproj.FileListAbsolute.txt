@@ -19,3 +19,7 @@ D:\Fahim\Pingo\WatanyaPingTester\bin\Release\Watanya Pinger.exe.config
 D:\Fahim\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.csproj.ResolveComReference.cache
 D:\Fahim\Pingo\WatanyaPingTester\obj\Release\Watanya Pinger.exe
 D:\Fahim\Pingo\WatanyaPingTester\obj\Release\Watanya Pinger.pdb
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\bin\Release\Watanya Pinger.exe.config
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.csproj.ResolveComReference.cache
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\Watanya Pinger.exe
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\Watanya Pinger.pdb
