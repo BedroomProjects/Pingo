@@ -22,7 +22,7 @@ namespace WatanyaPingTester {
         Microsoft.Office.Interop.Excel._Workbook oWB1;
         Microsoft.Office.Interop.Excel._Worksheet oSheet1;
         Microsoft.Office.Interop.Excel.Range oRng1;
-
+        
         // nodeDataInfo.nodePathData 
         /*        0                        1            2                 3
          * 0     Index In Scheme        NodeName       IP        OnlinePercentage 
@@ -241,7 +241,7 @@ namespace WatanyaPingTester {
                 DialogResult result;
 
                 // Displays the MessageBox.
-                result = MessageBox.Show(e.Message, "Details", buttons);
+                result = MessageBox.Show(e.Message, "Details Report", buttons);
             }
         }
     }

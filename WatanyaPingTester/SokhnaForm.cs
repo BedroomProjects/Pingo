@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using Excel = Microsoft.Office.Interop.Excel;
+using System.Xml;
 namespace WatanyaPingTester {
     public partial class SokhnaForm : Form {
         List<SchemeNode> schemeNodes = new List<SchemeNode>();
@@ -352,6 +353,30 @@ namespace WatanyaPingTester {
                     }
                 }
                 reportObject.typeReport();
+
+                string nnodeName;
+                NodeRecord tempNode;
+                List<StatusRecord> tempList;
+                StatusRecord tempStatusRecords;
+                var result = "";
+                for (int i = 0; i < schemeNodes.Count(); i++) {
+                    tempNode = new NodeRecord();
+                    nnodeName = schemeNodes[i].getNodeStatusHistory().nodeName + ":     " + schemeNodes[i].getNodeStatusHistory().nodeIP;
+                    tempList = new List<StatusRecord>();
+                    for (int j = 0; j < schemeNodes[i].getNodeStatusHistory().NodeHistoryList.Count(); j++) {
+                        tempStatusRecords = new StatusRecord();
+                        tempStatusRecords.state = schemeNodes[i].getNodeStatusHistory().NodeHistoryList[j].status;
+                        tempStatusRecords.timeDate = schemeNodes[i].getNodeStatusHistory().NodeHistoryList[j].statusTimeDate;
+                        tempList.Add(tempStatusRecords);
+                    }
+                    tempNode.nodeName = nnodeName;
+                    tempNode.statusRecords = tempList;
+                    result += XmlHelper.ToXml(tempNode);
+                    XmlDocument doc = new XmlDocument();
+                    doc.Load(@"D:\test.xml");
+                    doc.
+                }
+                XmlHelper.ToXmlFile(result, resPath + "\\zz.xml");
             } else {
                 report = true;
                 reportLED.Image = Image.FromFile(greennLEDPath);
