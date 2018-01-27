@@ -31,8 +31,19 @@ namespace WatanyaPingTester {
             return sb.ToString();
         }
 
-        public void appendOnXml() {
-            
+        public static void appendOnXml(string filePath) {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(filePath);
+
+            XmlNode root = doc.DocumentElement;
+
+            //Create a new node.
+            XmlElement elem = doc.CreateElement("price");
+            elem.InnerText = "19.95";
+            root.AppendChild(elem);
+
+            Console.WriteLine("Display the modified XML...");
+            doc.Save(Console.Out);
         }
 
         /// <summary>

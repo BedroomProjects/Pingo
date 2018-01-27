@@ -371,12 +371,11 @@ namespace WatanyaPingTester {
                     }
                     tempNode.nodeName = nnodeName;
                     tempNode.statusRecords = tempList;
-                    result += XmlHelper.ToXml(tempNode);
-                    XmlDocument doc = new XmlDocument();
-                    doc.Load(@"D:\test.xml");
-                    doc.
+                    //result += XmlHelper.ToXml(tempNode);
+                    XmlHelper.ToXmlFile(tempNode, resPath + "\\zz.xml");
                 }
-                XmlHelper.ToXmlFile(result, resPath + "\\zz.xml");
+                //XmlHelper.ToXmlFile(result, resPath + "\\zz.xml");
+                XmlHelper.appendOnXml(resPath + "\\zz.xml");
             } else {
                 report = true;
                 reportLED.Image = Image.FromFile(greennLEDPath);
