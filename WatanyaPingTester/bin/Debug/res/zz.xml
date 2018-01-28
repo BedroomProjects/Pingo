@@ -1,9 +1,10 @@
-﻿<NodeRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<NodeRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <nodeName>Al Seneya:     192.168.1.187</nodeName>
   <statusRecords>
     <StatusRecord>
-      <state>Offline</state>
-      <timeDate>From: 27-01-2018 At  2131  To: 27-01-2018 At  2131</timeDate>
+      <state>Online</state>
+      <timeDate>From: 28-01-2018 At  0632  To: 28-01-2018 At  0632</timeDate>
     </StatusRecord>
   </statusRecords>
+  <price>19.95</price>
 </NodeRecord>
