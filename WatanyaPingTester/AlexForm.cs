@@ -90,6 +90,11 @@ namespace WatanyaPingTester {
                     reportObject.typeReport();
                 }
             }
+
+            if (pingTimerCounter == 0) {
+                pingTimerCounter = 60;
+                createXml();
+            }
         }
 
 
@@ -386,6 +391,9 @@ namespace WatanyaPingTester {
             }
             allNodesRecords.nodeRecord = nodeRecordsList;
             XmlHelper.ToXmlFile2(allNodesRecords, path + "\\alexXml.xml");
+            reportStatusLabel.Invoke((MethodInvoker)delegate {
+                reportStatusLabel.Text = "Xml Report is saved successfully";
+            });
         }
 
         private void updateReport(SchemeNode schNode) {
