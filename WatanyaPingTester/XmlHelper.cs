@@ -93,6 +93,42 @@ namespace WatanyaPingTester {
             }
         }
 
+        public static void ToXmlFile2(Object obj, string filePath) {
+            XmlDocument doc = new XmlDocument();
+            XmlNode root, nodeRecordLevel, recordLevel = null;
+            XmlElement elem;
+            root = doc.CreateElement(obj.GetType().ToString());
+            //doc.AppendChild(elem);
+            //root = doc.DocumentElement;
+            AllNodes allNodes = (AllNodes)obj;
+            for (int i = 0; i < allNodes.nodeRecord.Count(); i++) {
+                // add nodeRecord Tag
+                nodeRecordLevel = doc.CreateElement("nodeRecord");
+                // add name Tag
+                elem = doc.CreateElement("name");
+                elem.InnerText = allNodes.nodeRecord[i].name;
+                nodeRecordLevel.AppendChild(elem);
+                
+                //add record tag
+                
+                for (int j = 0; j < allNodes.nodeRecord[i].record.Count(); j++) {
+                    recordLevel = doc.CreateElement("record");
+
+                    elem = doc.CreateElement("status");
+                    elem.InnerText = allNodes.nodeRecord[i].record[j].status;
+                    recordLevel.AppendChild(elem);
+
+                    elem = doc.CreateElement("timeDate");
+                    elem.InnerText = allNodes.nodeRecord[i].record[j].timeDate;
+                    recordLevel.AppendChild(elem);
+                    nodeRecordLevel.AppendChild(recordLevel);
+                }
+                root.AppendChild(nodeRecordLevel);
+            }
+            doc.AppendChild(root);
+            doc.Save(filePath);
+        }
+
         /// <summary>
         /// Deserializes an object from an XML file.
         /// </summary>
@@ -109,13 +145,17 @@ namespace WatanyaPingTester {
         }
     }
 
+    public class AllNodes {
+        public List<NodeRecord> nodeRecord = new List<NodeRecord>();
+    }
+    
     public class NodeRecord {
-        public string nodeName;
-        public List<StatusRecord> statusRecords;
+        public string name;
+        public List<Record> record;
     }
 
-    public class StatusRecord {
-        public string state;
+    public class Record {
+        public string status;
         public string timeDate;
     }
 }

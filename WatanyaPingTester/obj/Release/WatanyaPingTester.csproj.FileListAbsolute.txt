@@ -23,3 +23,16 @@ G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\bin\Release\Watanya Pinger.exe.co
 G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.csproj.ResolveComReference.cache
 G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\Watanya Pinger.exe
 G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\Watanya Pinger.pdb
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\bin\Release\Watanya Pinger.exe
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\bin\Release\Watanya Pinger.pdb
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.csprojResolveAssemblyReference.cache
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.AlexForm.resources
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.CairoAlexDiagramForm.resources
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.CairoSokhnaDiagramForm.resources
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.Cairo_Sokhna.resources
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.IPsAsListForm.resources
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.PleaseWaitForm.resources
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.SokhnaForm.resources
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.StartScreen.resources
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.Properties.Resources.resources
+G:\Fahim\C#\New folder\Pingo\WatanyaPingTester\obj\Release\WatanyaPingTester.csproj.GenerateResource.Cache

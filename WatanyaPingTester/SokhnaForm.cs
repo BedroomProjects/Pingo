@@ -94,6 +94,11 @@ namespace WatanyaPingTester {
                     reportObject.typeReport();
                 }
             }
+
+            if (pingTimerCounter == 0) {
+                pingTimerCounter = 60;
+                createXml();
+            }
         }
 
         void updateNetwork() {
@@ -353,35 +358,40 @@ namespace WatanyaPingTester {
                     }
                 }
                 reportObject.typeReport();
-
-                string nnodeName;
-                NodeRecord tempNode;
-                List<StatusRecord> tempList;
-                StatusRecord tempStatusRecords;
-                var result = "";
-                for (int i = 0; i < schemeNodes.Count(); i++) {
-                    tempNode = new NodeRecord();
-                    nnodeName = schemeNodes[i].getNodeStatusHistory().nodeName + ":     " + schemeNodes[i].getNodeStatusHistory().nodeIP;
-                    tempList = new List<StatusRecord>();
-                    for (int j = 0; j < schemeNodes[i].getNodeStatusHistory().NodeHistoryList.Count(); j++) {
-                        tempStatusRecords = new StatusRecord();
-                        tempStatusRecords.state = schemeNodes[i].getNodeStatusHistory().NodeHistoryList[j].status;
-                        tempStatusRecords.timeDate = schemeNodes[i].getNodeStatusHistory().NodeHistoryList[j].statusTimeDate;
-                        tempList.Add(tempStatusRecords);
-                    }
-                    tempNode.nodeName = nnodeName;
-                    tempNode.statusRecords = tempList;
-                    //result += XmlHelper.ToXml(tempNode);
-                    XmlHelper.ToXmlFile(tempNode, resPath + "\\zz.xml");
-                }
-                //XmlHelper.ToXmlFile(result, resPath + "\\zz.xml");
-                XmlHelper.appendOnXml(resPath + "\\zz.xml");
+                createXml();
             } else {
                 report = true;
                 reportLED.Image = Image.FromFile(greennLEDPath);
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
                 reportObject = new Reports(resPath + "\\sokhnaColorReport", collectingPortsList, schemeNodes, reportStatusLabel);
             }
+        }
+
+        private void createXml(){
+            AllNodes allNodesRecords = new AllNodes();
+            List<NodeRecord> nodeRecordsList = new List<NodeRecord>();
+            NodeRecord nodeRecord;
+            List<Record> recordList;
+            Record record;
+
+            for (int i = 0; i < schemeNodes.Count(); i++) {
+                nodeRecord = new NodeRecord();
+                recordList = new List<Record>();
+                for (int j = 0; j < schemeNodes[i].getNodeStatusHistory().NodeHistoryList.Count(); j++) {
+                    record = new Record();
+                    record.status = schemeNodes[i].getNodeStatusHistory().NodeHistoryList[j].status;
+                    record.timeDate = schemeNodes[i].getNodeStatusHistory().NodeHistoryList[j].statusTimeDate;
+                    recordList.Add(record);
+                }
+                nodeRecord.name = schemeNodes[i].getNodeStatusHistory().nodeName + ": " + schemeNodes[i].getNodeStatusHistory().nodeIP;
+                nodeRecord.record = recordList;
+                nodeRecordsList.Add(nodeRecord);
+            }
+            allNodesRecords.nodeRecord = nodeRecordsList;
+            XmlHelper.ToXmlFile2(allNodesRecords, resPath + "\\sokhnaXml.xml");
+            reportStatusLabel.Invoke((MethodInvoker)delegate {
+                reportStatusLabel.Text = "Xml Report is saved successfully";
+            });
         }
 
         private void updateReport(SchemeNode schNode) {

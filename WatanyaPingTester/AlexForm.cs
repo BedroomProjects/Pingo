@@ -355,12 +355,37 @@ namespace WatanyaPingTester {
                     }
                 }
                 reportObject.typeReport();
+                createXml();
             } else {
                 report = true;
                 reportLED.Image = Image.FromFile(greennLEDPath);
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
                 reportObject = new Reports(path + "\\alexColorReport", collectingPortsList, schemeNodes, reportStatusLabel);
             }
+        }
+
+        private void createXml() {
+            AllNodes allNodesRecords = new AllNodes();
+            List<NodeRecord> nodeRecordsList = new List<NodeRecord>();
+            NodeRecord nodeRecord;
+            List<Record> recordList;
+            Record record;
+
+            for (int i = 0; i < schemeNodes.Count(); i++) {
+                nodeRecord = new NodeRecord();
+                recordList = new List<Record>();
+                for (int j = 0; j < schemeNodes[i].getNodeStatusHistory().NodeHistoryList.Count(); j++) {
+                    record = new Record();
+                    record.status = schemeNodes[i].getNodeStatusHistory().NodeHistoryList[j].status;
+                    record.timeDate = schemeNodes[i].getNodeStatusHistory().NodeHistoryList[j].statusTimeDate;
+                    recordList.Add(record);
+                }
+                nodeRecord.name = schemeNodes[i].getNodeStatusHistory().nodeName + ": " + schemeNodes[i].getNodeStatusHistory().nodeIP;
+                nodeRecord.record = recordList;
+                nodeRecordsList.Add(nodeRecord);
+            }
+            allNodesRecords.nodeRecord = nodeRecordsList;
+            XmlHelper.ToXmlFile2(allNodesRecords, path + "\\alexXml.xml");
         }
 
         private void updateReport(SchemeNode schNode) {

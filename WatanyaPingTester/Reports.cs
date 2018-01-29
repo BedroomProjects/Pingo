@@ -74,7 +74,7 @@ namespace WatanyaPingTester {
             reportDate[1] = DateTime.UtcNow.Date.ToString("dd/MM/yyyy");
             tt = new Thread(createColorScaleExcel);
             tt.Start();
-            new Thread(createDetailsReport).Start();
+            //new Thread(createDetailsReport).Start();
         }
 
         public void fillNodePathInfoList() {
@@ -181,12 +181,6 @@ namespace WatanyaPingTester {
 
                 // Displays the MessageBox.
                 result = MessageBox.Show(e.Message, "Reports", buttons);
-            } finally {
-                //MessageBoxButtons buttons = MessageBoxButtons.OK;
-                //DialogResult result;
-
-                //// Displays the MessageBox.
-                //result = MessageBox.Show("تم الانتهاء من التقرير", "Reports", buttons);
             }
         }
 
