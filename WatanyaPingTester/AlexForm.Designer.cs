@@ -37,6 +37,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.guidePictureBox = new System.Windows.Forms.PictureBox();
             this.schemePanel = new System.Windows.Forms.Panel();
+            this.reportStatusLabel = new System.Windows.Forms.Label();
             this.l2 = new System.Windows.Forms.Label();
             this.l4 = new System.Windows.Forms.Label();
             this.l3 = new System.Windows.Forms.Label();
@@ -149,7 +150,7 @@
             this.p5 = new System.Windows.Forms.PictureBox();
             this.p3 = new System.Windows.Forms.PictureBox();
             this.p1 = new System.Windows.Forms.PictureBox();
-            this.reportStatusLabel = new System.Windows.Forms.Label();
+            this.DRBtn = new System.Windows.Forms.Button();
             this.rightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reportLED)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -217,6 +218,7 @@
             // 
             this.rightPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rightPanel.BackColor = System.Drawing.Color.Transparent;
+            this.rightPanel.Controls.Add(this.DRBtn);
             this.rightPanel.Controls.Add(this.reportBtn);
             this.rightPanel.Controls.Add(this.reportLED);
             this.rightPanel.Controls.Add(this.pictureBox1);
@@ -427,6 +429,16 @@
             this.schemePanel.Name = "schemePanel";
             this.schemePanel.Size = new System.Drawing.Size(924, 595);
             this.schemePanel.TabIndex = 0;
+            // 
+            // reportStatusLabel
+            // 
+            this.reportStatusLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.reportStatusLabel.AutoSize = true;
+            this.reportStatusLabel.Location = new System.Drawing.Point(4, 579);
+            this.reportStatusLabel.Name = "reportStatusLabel";
+            this.reportStatusLabel.Size = new System.Drawing.Size(10, 13);
+            this.reportStatusLabel.TabIndex = 246;
+            this.reportStatusLabel.Text = " ";
             // 
             // l2
             // 
@@ -1828,15 +1840,16 @@
             this.p1.TabIndex = 134;
             this.p1.TabStop = false;
             // 
-            // reportStatusLabel
+            // DRBtn
             // 
-            this.reportStatusLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.reportStatusLabel.AutoSize = true;
-            this.reportStatusLabel.Location = new System.Drawing.Point(4, 579);
-            this.reportStatusLabel.Name = "reportStatusLabel";
-            this.reportStatusLabel.Size = new System.Drawing.Size(10, 13);
-            this.reportStatusLabel.TabIndex = 246;
-            this.reportStatusLabel.Text = " ";
+            this.DRBtn.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DRBtn.Location = new System.Drawing.Point(132, 115);
+            this.DRBtn.Name = "DRBtn";
+            this.DRBtn.Size = new System.Drawing.Size(36, 23);
+            this.DRBtn.TabIndex = 10;
+            this.DRBtn.Text = "DR";
+            this.DRBtn.UseVisualStyleBackColor = true;
+            this.DRBtn.Click += new System.EventHandler(this.DRBtn_Click);
             // 
             // AlexForm
             // 
@@ -2039,5 +2052,6 @@
         private System.Windows.Forms.Button reportBtn;
         private System.Windows.Forms.PictureBox reportLED;
         private System.Windows.Forms.Label reportStatusLabel;
+        private System.Windows.Forms.Button DRBtn;
     }
 }

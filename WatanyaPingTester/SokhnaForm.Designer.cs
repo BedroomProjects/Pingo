@@ -130,6 +130,7 @@
             this.p102 = new System.Windows.Forms.PictureBox();
             this.p101 = new System.Windows.Forms.PictureBox();
             this.p100 = new System.Windows.Forms.PictureBox();
+            this.DRBtn = new System.Windows.Forms.Button();
             this.leftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reportLED)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -187,6 +188,7 @@
             // 
             this.leftPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.leftPanel.BackColor = System.Drawing.Color.Transparent;
+            this.leftPanel.Controls.Add(this.DRBtn);
             this.leftPanel.Controls.Add(this.reportBtn);
             this.leftPanel.Controls.Add(this.reportLED);
             this.leftPanel.Controls.Add(this.pictureBox1);
@@ -1581,6 +1583,16 @@
             this.p100.TabIndex = 0;
             this.p100.TabStop = false;
             // 
+            // DRBtn
+            // 
+            this.DRBtn.Location = new System.Drawing.Point(124, 125);
+            this.DRBtn.Name = "DRBtn";
+            this.DRBtn.Size = new System.Drawing.Size(37, 23);
+            this.DRBtn.TabIndex = 8;
+            this.DRBtn.Text = "DR";
+            this.DRBtn.UseVisualStyleBackColor = true;
+            this.DRBtn.Click += new System.EventHandler(this.DRBtn_Click);
+            // 
             // SokhnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1752,5 +1764,6 @@
         private System.Windows.Forms.PictureBox reportLED;
         private System.Windows.Forms.Button reportBtn;
         private System.Windows.Forms.Label reportStatusLabel;
+        private System.Windows.Forms.Button DRBtn;
     }
 }

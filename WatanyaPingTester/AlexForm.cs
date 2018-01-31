@@ -410,5 +410,10 @@ namespace WatanyaPingTester {
                 return;
             }
         }
+
+        private void DRBtn_Click(object sender, EventArgs e) {
+            List<NodeRecord> nodeRecordsList = XmlHelper.readFromXml(path + "\\alexXml.xml");
+            new Reports(path + "\\AlexReport", reportStatusLabel).createDDetailsReport(nodeRecordsList);
+        }
     }
 }

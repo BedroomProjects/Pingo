@@ -408,5 +408,10 @@ namespace WatanyaPingTester {
                 return;
             }
         }
+
+        private void DRBtn_Click(object sender, EventArgs e) {
+            List<NodeRecord> nodeRecordsList = XmlHelper.readFromXml(resPath + "\\sokhnaXml.xml");
+            new Reports(resPath + "\\SokhnaReport", reportStatusLabel).createDDetailsReport(nodeRecordsList);
+        }
     }
 }

@@ -13,23 +13,6 @@ namespace WatanyaPingTester {
             get;
             set;
         }
-        /// <summary>
-        /// Serializes an object to an XML string, using the specified namespaces.
-        /// </summary>
-        public static string ToXml(object obj, XmlSerializerNamespaces ns) {
-            Type T = obj.GetType();
-
-            var xs = new XmlSerializer(T);
-            var ws = new XmlWriterSettings {
-                Indent = true, NewLineOnAttributes = NewLineOnAttributes, OmitXmlDeclaration = true
-            };
-
-            var sb = new StringBuilder();
-            using (XmlWriter writer = XmlWriter.Create(sb, ws)) {
-                xs.Serialize(writer, obj, ns);
-            }
-            return sb.ToString();
-        }
 
         public static void appendOnXml(string filePath) {
             XmlDocument doc = new XmlDocument();
@@ -45,52 +28,6 @@ namespace WatanyaPingTester {
             root.AppendChild(elem);
 
             doc.Save(filePath);
-        }
-
-        /// <summary>
-        ///   an object to an XML string.
-        /// </summary>
-        public static string ToXml(object obj) {
-            var ns = new XmlSerializerNamespaces();
-            ns.Add("", "");
-            return ToXml(obj, ns);
-        }
-
-        /// <summary>
-        /// Deserializes an object from an XML string.
-        /// </summary>
-        public static T FromXml<T>(string xml) {
-            XmlSerializer xs = new XmlSerializer(typeof(T));
-            using (StringReader sr = new StringReader(xml)) {
-                return (T)xs.Deserialize(sr);
-            }
-        }
-
-        /// <summary>
-        /// Deserializes an object from an XML string, using the specified type name.
-        /// </summary>
-        public static object FromXml(string xml, string typeName) {
-            Type T = Type.GetType(typeName);
-            XmlSerializer xs = new XmlSerializer(T);
-            using (StringReader sr = new StringReader(xml)) {
-                return xs.Deserialize(sr);
-            }
-        }
-
-        /// <summary>
-        /// Serializes an object to an XML file.
-        /// </summary>
-        public static void ToXmlFile(Object obj, string filePath) {
-            var xs = new XmlSerializer(obj.GetType());
-            var ns = new XmlSerializerNamespaces();
-            var ws = new XmlWriterSettings {
-                Indent = true, NewLineOnAttributes = NewLineOnAttributes, OmitXmlDeclaration = true
-            };
-            ns.Add("", "");
-
-            using (XmlWriter writer = XmlWriter.Create(filePath, ws)) {
-                xs.Serialize(writer, obj);
-            }
         }
 
         public static void ToXmlFile2(Object obj, string filePath) {
@@ -129,19 +66,39 @@ namespace WatanyaPingTester {
             doc.Save(filePath);
         }
 
-        /// <summary>
-        /// Deserializes an object from an XML file.
-        /// </summary>
-        public static T FromXmlFile<T>(string filePath) {
-            StreamReader sr = new StreamReader(filePath);
-            try {
-                var result = FromXml<T>(sr.ReadToEnd());
-                return result;
-            } catch (Exception e) {
-                throw new Exception("There was an error attempting to read the file " + filePath + "\n\n" + e.InnerException.Message);
-            } finally {
-                sr.Close();
+        public static List<NodeRecord> readFromXml(string filePath) {
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.Load(filePath);
+
+            List<NodeRecord> allNodesRecords = new List<NodeRecord>();
+            Record tempRecord = new Record();
+            List<Record> recordsList = new List<Record>();
+            NodeRecord nodeRecord;
+
+            string nodeName, nodeStatus, timeDate;
+            XmlNodeList nodeRecordsList = xmlDoc.SelectNodes("/WatanyaPingTester.AllNodes/nodeRecord");
+            foreach (XmlNode xn in nodeRecordsList) {
+                nodeRecord = new NodeRecord();
+                recordsList = new List<Record>();
+                nodeName = xn["name"].InnerText;
+                nodeRecord.name = nodeName;
+
+                for (int i = 1; i < xn.ChildNodes.Count; i++) {
+                    tempRecord = new Record();
+                    nodeStatus = xn.ChildNodes.Item(i).ChildNodes.Item(0).InnerText;
+                    timeDate = xn.ChildNodes.Item(i).ChildNodes.Item(1).InnerText;
+
+                    tempRecord.status = nodeStatus;
+                    tempRecord.timeDate = timeDate;
+
+                    recordsList.Add(tempRecord);
+                }
+                
+                nodeRecord.record = recordsList;
+                allNodesRecords.Add(nodeRecord);
             }
+            //new Reports(filePath).createDDetailsReport(allNodesRecords);
+            return allNodesRecords;
         }
     }
 

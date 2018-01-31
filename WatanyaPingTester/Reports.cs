@@ -49,6 +49,11 @@ namespace WatanyaPingTester {
             reportDate[0] = DateTime.UtcNow.Date.ToString("dd/MM/yyyy");
         }
 
+        public Reports(string resPath, System.Windows.Forms.Label reportLabel) {
+            this.resPath = resPath;
+            this.reportLabel = reportLabel;
+        } 
+
         public void typeReport() {
             try {
                 reportLabel.Invoke((MethodInvoker)delegate {
@@ -230,6 +235,62 @@ namespace WatanyaPingTester {
                 reportLabel.Invoke((MethodInvoker)delegate {
                     reportLabel.Text = "Details Report is saved successfully";
                 });
+            } catch (Exception e) {
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result;
+
+                // Displays the MessageBox.
+                result = MessageBox.Show(e.Message, "Details Report", buttons);
+            }
+        }
+
+        public void createDDetailsReport(List<NodeRecord> nodeRecordsList) {
+            try {
+                //Start Excel and get Application object.
+                oXL1 = new Microsoft.Office.Interop.Excel.Application();
+                //oXL1.Visible = true;
+
+                //Get a new workbook.
+                oWB1 = (Microsoft.Office.Interop.Excel._Workbook)(oXL1.Workbooks.Add(""));
+                oSheet1 = (Microsoft.Office.Interop.Excel._Worksheet)oWB1.ActiveSheet;
+
+                oSheet1.PageSetup.Orientation = Excel.XlPageOrientation.xlPortrait;
+                int rows = 1;
+                for (int i = 0; i < nodeRecordsList.Count(); i++) {
+                    oSheet1.get_Range("A" + rows, "B" + rows).Merge();
+                    oSheet1.Cells[rows, 1].Value2 = nodeRecordsList[i].name;
+                    oSheet1.Cells[rows, 1].Font.Bold = true;
+                    oSheet1.Cells[rows++, 1].Font.Size = 15;
+                    for (int j = 0; j < nodeRecordsList[i].record.Count(); j++) {
+                        oSheet1.Cells[rows, 1].Value2 = nodeRecordsList[i].record[j].status;
+                        if (nodeRecordsList[i].record[j].status.Equals("Online")) {
+                            oSheet1.Cells[rows, 1].Font.Color = 0x22EE22;
+                        } else {
+                            oSheet1.Cells[rows, 1].Font.Color = 0x000000FF;
+                        }
+                        oSheet1.Cells[rows, 1].Font.Bold = true;
+                        oSheet1.Cells[rows, 2].Font.Bold = true;
+                        oSheet1.Cells[rows++, 2].Value2 = nodeRecordsList[i].record[j].timeDate;
+                    }
+                }
+
+                //oRng1 = oSheet.get_Range("A1", "E1");
+                //oRng1.EntireColumn.AutoFit();
+
+                //oSheet.Columns["A:F"].ColumnWidth = 18;
+
+                // oXL.Visible = false;
+                oXL1.UserControl = false;
+                oXL1.DisplayAlerts = false;
+                oWB1.SaveAs(resPath + "Details" + ".xlsx", Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing,
+                    false, false, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlNoChange,
+                    Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+
+                oWB1.Close();
+                reportLabel.Invoke((MethodInvoker)delegate {
+                    reportLabel.Text = "Details Report is saved successfully";
+                });
+                
             } catch (Exception e) {
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 DialogResult result;

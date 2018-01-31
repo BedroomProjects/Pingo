@@ -33,6 +33,30 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1529</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1529  To: 29/01/2018 At  1530</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1530  To: 29/01/2018 At  1545</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1545  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1606</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1606  To: 29/01/2018 At  1607</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Mokattam: 10.0.10.101</name>
@@ -76,6 +100,22 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1538</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1538  To: 29/01/2018 At  1539</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1539  To: 29/01/2018 At  1626</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1626  To: 29/01/2018 At  1627</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Mokattam: 10.0.10.102</name>
@@ -118,6 +158,22 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1538</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1538  To: 29/01/2018 At  1539</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1539  To: 29/01/2018 At  1628</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1628  To: 29/01/2018 At  1629</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -170,6 +226,38 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1526</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1526  To: 29/01/2018 At  1527</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1527  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1544</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1544  To: 29/01/2018 At  1550</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1550  To: 29/01/2018 At  1551</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1551  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1557</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>M1: 10.0.10.104</name>
@@ -220,6 +308,54 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1534</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1534  To: 29/01/2018 At  1535</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1535  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1544</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1544  To: 29/01/2018 At  1550</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1550  To: 29/01/2018 At  1551</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1551  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1616</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1616  To: 29/01/2018 At  1617</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -280,6 +416,78 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1527</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1527  To: 29/01/2018 At  1528</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1528  To: 29/01/2018 At  1534</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1534  To: 29/01/2018 At  1535</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1535  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1544</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1544  To: 29/01/2018 At  1545</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1545  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1550</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1550  To: 29/01/2018 At  1551</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1551  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1616</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1616  To: 29/01/2018 At  1617</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1617  To: 29/01/2018 At  1630</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1630  To: 29/01/2018 At  1631</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>M1: 192.168.1.160</name>
@@ -339,6 +547,62 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1527</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1527  To: 29/01/2018 At  1528</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1528  To: 29/01/2018 At  1536</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1536  To: 29/01/2018 At  1537</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1537  To: 29/01/2018 At  1545</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1545  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1550</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1550  To: 29/01/2018 At  1551</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1551  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1616</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1616  To: 29/01/2018 At  1617</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>M1: 192.168.1.108</name>
@@ -397,6 +661,78 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1527</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1527  To: 29/01/2018 At  1528</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1528  To: 29/01/2018 At  1534</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1534  To: 29/01/2018 At  1535</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1535  To: 29/01/2018 At  1536</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1536  To: 29/01/2018 At  1537</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1537  To: 29/01/2018 At  1545</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1545  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1550</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1550  To: 29/01/2018 At  1551</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1551  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1608</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1608  To: 29/01/2018 At  1609</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1609  To: 29/01/2018 At  1616</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1616  To: 29/01/2018 At  1617</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -465,6 +801,54 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1526</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1526  To: 29/01/2018 At  1527</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1527  To: 29/01/2018 At  1534</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1534  To: 29/01/2018 At  1535</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1535  To: 29/01/2018 At  1536</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1536  To: 29/01/2018 At  1537</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1537  To: 29/01/2018 At  1550</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1550  To: 29/01/2018 At  1551</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1551  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1557</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Cairo Lab: 192.168.1.109</name>
@@ -515,6 +899,30 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1532</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1532  To: 29/01/2018 At  1533</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1533  To: 29/01/2018 At  1555</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1555  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1558</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1558  To: 29/01/2018 At  1559</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -605,6 +1013,54 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1513</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1513  To: 29/01/2018 At  1514</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1514  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1526</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1526  To: 29/01/2018 At  1532</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1532  To: 29/01/2018 At  1533</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1533  To: 29/01/2018 At  1555</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1555  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1558</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1558  To: 29/01/2018 At  1559</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1559  To: 29/01/2018 At  1630</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1630  To: 29/01/2018 At  1631</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Degla: 192.168.1.193</name>
@@ -680,6 +1136,38 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1433  To: 29/01/2018 At  1434</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1434  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1528</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1528  To: 29/01/2018 At  1529</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1529  To: 29/01/2018 At  1555</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1555  To: 29/01/2018 At  1556</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>M2: 10.0.10.111</name>
@@ -754,6 +1242,46 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1548</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1548  To: 29/01/2018 At  1549</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1549  To: 29/01/2018 At  1555</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1555  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1630</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1630  To: 29/01/2018 At  1631</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -845,6 +1373,38 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1548</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1548  To: 29/01/2018 At  1549</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1549  To: 29/01/2018 At  1552</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1552  To: 29/01/2018 At  1553</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1553  To: 29/01/2018 At  1555</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1555  To: 29/01/2018 At  1556</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>M2: 10.0.10.114</name>
@@ -911,6 +1471,46 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1548</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1548  To: 29/01/2018 At  1549</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1549  To: 29/01/2018 At  1555</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1555  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1630</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1630  To: 29/01/2018 At  1631</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -993,6 +1593,22 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1526</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1526  To: 29/01/2018 At  1552</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1552  To: 29/01/2018 At  1553</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>M3: 10.0.10.116</name>
@@ -1060,6 +1676,30 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1526</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1526  To: 29/01/2018 At  1552</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1552  To: 29/01/2018 At  1553</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1553  To: 29/01/2018 At  1611</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1611  To: 29/01/2018 At  1612</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>M3: 10.0.10.118</name>
@@ -1118,6 +1758,22 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1526</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1526  To: 29/01/2018 At  1552</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1552  To: 29/01/2018 At  1553</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -1186,6 +1842,30 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1526</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1526  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Gendaly 1: 10.0.10.117</name>
@@ -1253,6 +1933,30 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1611</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1611  To: 29/01/2018 At  1612</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1612  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Gendaly 1: 192.168.1.184</name>
@@ -1311,6 +2015,38 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1551</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1551  To: 29/01/2018 At  1552</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1552  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -1379,6 +2115,30 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1555</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1555  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Vodafone 4253: 10.0.10.120</name>
@@ -1437,6 +2197,30 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1555</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1555  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -1511,6 +2295,30 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1433  To: 29/01/2018 At  1434</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1434  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1555</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1555  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -1621,6 +2429,22 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1433  To: 29/01/2018 At  1434</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1434  To: 29/01/2018 At  1555</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1555  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Vodafone 4254: 10.0.10.122</name>
@@ -1688,6 +2512,22 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1433  To: 29/01/2018 At  1434</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1434  To: 29/01/2018 At  1555</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1555  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Vodafone 4254: 192.168.1.164</name>
@@ -1746,6 +2586,30 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1555</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1555  To: 29/01/2018 At  1556</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -1813,6 +2677,46 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1506  To: 29/01/2018 At  1507</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1507  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1558</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1558  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -1897,6 +2801,46 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1506  To: 29/01/2018 At  1507</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1507  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1526</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1526  To: 29/01/2018 At  1527</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1527  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1558</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>M6: 10.0.10.128</name>
@@ -1963,6 +2907,38 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1506  To: 29/01/2018 At  1507</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1507  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1558</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1558  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -2039,6 +3015,46 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1506  To: 29/01/2018 At  1507</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1507  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1526</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1526  To: 29/01/2018 At  1527</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1527  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1544</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1544  To: 29/01/2018 At  1545</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1545  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1558</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Al Mosheer: 10.0.10.127</name>
@@ -2061,6 +3077,18 @@
     <record>
       <status>Offline</status>
       <timeDate>From: 29/01/2018 At  1507  To: 29/01/2018 At  1512</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1512  To: 29/01/2018 At  1620</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1620  To: 29/01/2018 At  1626</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1626  To: 29/01/2018 At  1627</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -2136,6 +3164,46 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1506  To: 29/01/2018 At  1507</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1507  To: 29/01/2018 At  1529</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1529  To: 29/01/2018 At  1530</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1530  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1544</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1544  To: 29/01/2018 At  1545</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1545  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1547</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1547  To: 29/01/2018 At  1614</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1614  To: 29/01/2018 At  1615</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>M11: 10.0.10.130</name>
@@ -2202,6 +3270,46 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1506  To: 29/01/2018 At  1507</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1507  To: 29/01/2018 At  1529</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1529  To: 29/01/2018 At  1530</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1530  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1544</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1544  To: 29/01/2018 At  1545</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1545  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1547</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1547  To: 29/01/2018 At  1614</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1614  To: 29/01/2018 At  1615</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -2270,6 +3378,70 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1506  To: 29/01/2018 At  1507</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1507  To: 29/01/2018 At  1520</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1520  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1529</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1529  To: 29/01/2018 At  1530</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1530  To: 29/01/2018 At  1537</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1537  To: 29/01/2018 At  1538</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1538  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1547</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1547  To: 29/01/2018 At  1553</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1553  To: 29/01/2018 At  1554</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1554  To: 29/01/2018 At  1614</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1614  To: 29/01/2018 At  1615</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1615  To: 29/01/2018 At  1626</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1626  To: 29/01/2018 At  1627</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>M12: 10.0.10.131</name>
@@ -2336,6 +3508,54 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1506  To: 29/01/2018 At  1507</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1507  To: 29/01/2018 At  1520</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1520  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1529</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1529  To: 29/01/2018 At  1530</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1530  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1544</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1544  To: 29/01/2018 At  1545</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1545  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1547</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1547  To: 29/01/2018 At  1614</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1614  To: 29/01/2018 At  1615</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -2412,6 +3632,62 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1506  To: 29/01/2018 At  1507</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1507  To: 29/01/2018 At  1520</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1520  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1529</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1529  To: 29/01/2018 At  1530</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1530  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1544</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1544  To: 29/01/2018 At  1545</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1545  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1547</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1547  To: 29/01/2018 At  1614</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1614  To: 29/01/2018 At  1615</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1615  To: 29/01/2018 At  1626</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1626  To: 29/01/2018 At  1627</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>M12: 192.168.1.168</name>
@@ -2479,6 +3755,70 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1520</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1520  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1529</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1529  To: 29/01/2018 At  1530</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1530  To: 29/01/2018 At  1541</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1541  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1547</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1547  To: 29/01/2018 At  1553</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1553  To: 29/01/2018 At  1554</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1554  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1614</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1614  To: 29/01/2018 At  1615</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1615  To: 29/01/2018 At  1626</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1626  To: 29/01/2018 At  1627</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Sokhna: 10.0.10.133</name>
@@ -2545,6 +3885,70 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1520</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1520  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1529</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1529  To: 29/01/2018 At  1530</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1530  To: 29/01/2018 At  1541</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1541  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1547</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1547  To: 29/01/2018 At  1548</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1548  To: 29/01/2018 At  1549</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1549  To: 29/01/2018 At  1553</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1553  To: 29/01/2018 At  1554</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1554  To: 29/01/2018 At  1614</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1614  To: 29/01/2018 At  1615</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -3573,6 +4977,314 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1511  To: 29/01/2018 At  1512</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1512  To: 29/01/2018 At  1513</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1513  To: 29/01/2018 At  1514</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1514  To: 29/01/2018 At  1515</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1515  To: 29/01/2018 At  1516</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1516  To: 29/01/2018 At  1517</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1517  To: 29/01/2018 At  1518</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1518  To: 29/01/2018 At  1519</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1519  To: 29/01/2018 At  1520</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1520  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1526</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1526  To: 29/01/2018 At  1527</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1527  To: 29/01/2018 At  1528</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1528  To: 29/01/2018 At  1529</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1529  To: 29/01/2018 At  1530</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1530  To: 29/01/2018 At  1531</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1531  To: 29/01/2018 At  1532</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1532  To: 29/01/2018 At  1533</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1533  To: 29/01/2018 At  1534</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1534  To: 29/01/2018 At  1535</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1535  To: 29/01/2018 At  1536</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1536  To: 29/01/2018 At  1537</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1537  To: 29/01/2018 At  1538</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1538  To: 29/01/2018 At  1539</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1539  To: 29/01/2018 At  1540</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1540  To: 29/01/2018 At  1541</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1541  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1544</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1544  To: 29/01/2018 At  1545</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1545  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1547</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1547  To: 29/01/2018 At  1548</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1548  To: 29/01/2018 At  1549</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1549  To: 29/01/2018 At  1550</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1550  To: 29/01/2018 At  1551</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1551  To: 29/01/2018 At  1552</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1552  To: 29/01/2018 At  1553</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1553  To: 29/01/2018 At  1554</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1554  To: 29/01/2018 At  1555</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1555  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1559</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1559  To: 29/01/2018 At  1600</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1600  To: 29/01/2018 At  1601</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1601  To: 29/01/2018 At  1602</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1602  To: 29/01/2018 At  1603</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1603  To: 29/01/2018 At  1604</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1604  To: 29/01/2018 At  1605</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1605  To: 29/01/2018 At  1606</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1606  To: 29/01/2018 At  1608</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1608  To: 29/01/2018 At  1609</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1609  To: 29/01/2018 At  1610</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1610  To: 29/01/2018 At  1611</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1611  To: 29/01/2018 At  1612</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1612  To: 29/01/2018 At  1613</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1613  To: 29/01/2018 At  1614</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1614  To: 29/01/2018 At  1615</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1615  To: 29/01/2018 At  1616</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1616  To: 29/01/2018 At  1617</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1617  To: 29/01/2018 At  1618</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1618  To: 29/01/2018 At  1619</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1619  To: 29/01/2018 At  1620</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1620  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1622  To: 29/01/2018 At  1623</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1623  To: 29/01/2018 At  1624</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1624  To: 29/01/2018 At  1625</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1625  To: 29/01/2018 At  1626</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1626  To: 29/01/2018 At  1627</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1627  To: 29/01/2018 At  1628</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1628  To: 29/01/2018 At  1629</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1629  To: 29/01/2018 At  1630</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1630  To: 29/01/2018 At  1631</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Sokhna: 10.10.10.51</name>
@@ -3664,6 +5376,70 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1341  To: 29/01/2018 At  1342</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1342  To: 29/01/2018 At  1520</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1520  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1529</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1529  To: 29/01/2018 At  1530</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1530  To: 29/01/2018 At  1541</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1541  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1547</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1547  To: 29/01/2018 At  1548</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1548  To: 29/01/2018 At  1549</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1549  To: 29/01/2018 At  1553</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1553  To: 29/01/2018 At  1554</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1554  To: 29/01/2018 At  1614</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1614  To: 29/01/2018 At  1615</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Sokhna: 10.0.10.100</name>
@@ -3706,6 +5482,38 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1544</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1544  To: 29/01/2018 At  1545</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1545  To: 29/01/2018 At  1611</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1611  To: 29/01/2018 At  1612</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -3980,6 +5788,26 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1509  To: 29/01/2018 At  1510</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1510  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1537</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1537  To: 29/01/2018 At  1559</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1559  To: 29/01/2018 At  1601</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -4967,6 +6795,290 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1512  To: 29/01/2018 At  1513</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1513  To: 29/01/2018 At  1514</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1514  To: 29/01/2018 At  1515</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1515  To: 29/01/2018 At  1516</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1516  To: 29/01/2018 At  1517</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1517  To: 29/01/2018 At  1518</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1518  To: 29/01/2018 At  1519</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1519  To: 29/01/2018 At  1520</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1520  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1526</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1526  To: 29/01/2018 At  1527</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1527  To: 29/01/2018 At  1528</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1528  To: 29/01/2018 At  1529</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1529  To: 29/01/2018 At  1530</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1530  To: 29/01/2018 At  1531</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1531  To: 29/01/2018 At  1532</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1532  To: 29/01/2018 At  1533</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1533  To: 29/01/2018 At  1534</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1534  To: 29/01/2018 At  1535</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1535  To: 29/01/2018 At  1536</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1536  To: 29/01/2018 At  1537</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1537  To: 29/01/2018 At  1538</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1538  To: 29/01/2018 At  1539</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1539  To: 29/01/2018 At  1540</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1540  To: 29/01/2018 At  1541</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1541  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1544</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1544  To: 29/01/2018 At  1545</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1545  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1547</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1547  To: 29/01/2018 At  1548</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1548  To: 29/01/2018 At  1549</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1549  To: 29/01/2018 At  1550</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1550  To: 29/01/2018 At  1552</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1552  To: 29/01/2018 At  1553</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1553  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1558</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1558  To: 29/01/2018 At  1559</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1559  To: 29/01/2018 At  1601</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1601  To: 29/01/2018 At  1602</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1602  To: 29/01/2018 At  1603</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1603  To: 29/01/2018 At  1604</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1604  To: 29/01/2018 At  1605</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1605  To: 29/01/2018 At  1606</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1606  To: 29/01/2018 At  1609</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1609  To: 29/01/2018 At  1610</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1610  To: 29/01/2018 At  1611</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1611  To: 29/01/2018 At  1612</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1612  To: 29/01/2018 At  1613</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1613  To: 29/01/2018 At  1614</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1614  To: 29/01/2018 At  1615</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1615  To: 29/01/2018 At  1616</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1616  To: 29/01/2018 At  1618</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1618  To: 29/01/2018 At  1619</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1619  To: 29/01/2018 At  1620</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1620  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1622  To: 29/01/2018 At  1623</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1623  To: 29/01/2018 At  1624</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1624  To: 29/01/2018 At  1625</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1625  To: 29/01/2018 At  1626</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1626  To: 29/01/2018 At  1627</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1627  To: 29/01/2018 At  1628</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1628  To: 29/01/2018 At  1629</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1629  To: 29/01/2018 At  1630</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1630  To: 29/01/2018 At  1631</timeDate>
     </record>
   </nodeRecord>
   <nodeRecord>
@@ -5977,6 +8089,290 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1511  To: 29/01/2018 At  1512</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1512  To: 29/01/2018 At  1513</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1513  To: 29/01/2018 At  1514</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1514  To: 29/01/2018 At  1515</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1515  To: 29/01/2018 At  1516</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1516  To: 29/01/2018 At  1517</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1517  To: 29/01/2018 At  1518</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1518  To: 29/01/2018 At  1519</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1519  To: 29/01/2018 At  1520</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1520  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1526</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1526  To: 29/01/2018 At  1527</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1527  To: 29/01/2018 At  1528</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1528  To: 29/01/2018 At  1529</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1529  To: 29/01/2018 At  1530</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1530  To: 29/01/2018 At  1531</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1531  To: 29/01/2018 At  1532</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1532  To: 29/01/2018 At  1533</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1533  To: 29/01/2018 At  1534</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1534  To: 29/01/2018 At  1535</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1535  To: 29/01/2018 At  1536</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1536  To: 29/01/2018 At  1537</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1537  To: 29/01/2018 At  1538</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1538  To: 29/01/2018 At  1539</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1539  To: 29/01/2018 At  1540</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1540  To: 29/01/2018 At  1541</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1541  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1544</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1544  To: 29/01/2018 At  1545</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1545  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1547</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1547  To: 29/01/2018 At  1548</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1548  To: 29/01/2018 At  1549</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1549  To: 29/01/2018 At  1552</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1552  To: 29/01/2018 At  1553</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1553  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1558</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1558  To: 29/01/2018 At  1559</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1559  To: 29/01/2018 At  1601</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1601  To: 29/01/2018 At  1602</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1602  To: 29/01/2018 At  1603</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1603  To: 29/01/2018 At  1604</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1604  To: 29/01/2018 At  1605</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1605  To: 29/01/2018 At  1606</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1606  To: 29/01/2018 At  1609</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1609  To: 29/01/2018 At  1610</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1610  To: 29/01/2018 At  1611</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1611  To: 29/01/2018 At  1612</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1612  To: 29/01/2018 At  1613</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1613  To: 29/01/2018 At  1614</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1614  To: 29/01/2018 At  1615</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1615  To: 29/01/2018 At  1616</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1616  To: 29/01/2018 At  1618</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1618  To: 29/01/2018 At  1619</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1619  To: 29/01/2018 At  1620</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1620  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1622  To: 29/01/2018 At  1623</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1623  To: 29/01/2018 At  1624</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1624  To: 29/01/2018 At  1625</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1625  To: 29/01/2018 At  1626</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1626  To: 29/01/2018 At  1627</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1627  To: 29/01/2018 At  1628</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1628  To: 29/01/2018 At  1629</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1629  To: 29/01/2018 At  1630</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1630  To: 29/01/2018 At  1631</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Hgoul 3: 10.0.10.139</name>
@@ -6980,6 +9376,282 @@
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1512  To: 29/01/2018 At  1513</timeDate>
     </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1513  To: 29/01/2018 At  1514</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1514  To: 29/01/2018 At  1515</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1515  To: 29/01/2018 At  1516</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1516  To: 29/01/2018 At  1517</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1517  To: 29/01/2018 At  1518</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1518  To: 29/01/2018 At  1519</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1519  To: 29/01/2018 At  1520</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1520  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1524</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1524  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1526</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1526  To: 29/01/2018 At  1527</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1527  To: 29/01/2018 At  1528</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1528  To: 29/01/2018 At  1529</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1529  To: 29/01/2018 At  1530</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1530  To: 29/01/2018 At  1531</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1531  To: 29/01/2018 At  1532</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1532  To: 29/01/2018 At  1533</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1533  To: 29/01/2018 At  1534</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1534  To: 29/01/2018 At  1535</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1535  To: 29/01/2018 At  1536</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1536  To: 29/01/2018 At  1537</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1537  To: 29/01/2018 At  1538</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1538  To: 29/01/2018 At  1539</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1539  To: 29/01/2018 At  1540</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1540  To: 29/01/2018 At  1541</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1541  To: 29/01/2018 At  1542</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1542  To: 29/01/2018 At  1543</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1543  To: 29/01/2018 At  1544</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1544  To: 29/01/2018 At  1545</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1545  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1547</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1547  To: 29/01/2018 At  1548</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1548  To: 29/01/2018 At  1549</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1549  To: 29/01/2018 At  1550</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1550  To: 29/01/2018 At  1552</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1552  To: 29/01/2018 At  1553</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1553  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1600</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1600  To: 29/01/2018 At  1601</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1601  To: 29/01/2018 At  1602</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1602  To: 29/01/2018 At  1603</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1603  To: 29/01/2018 At  1604</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1604  To: 29/01/2018 At  1605</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1605  To: 29/01/2018 At  1609</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1609  To: 29/01/2018 At  1610</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1610  To: 29/01/2018 At  1611</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1611  To: 29/01/2018 At  1612</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1612  To: 29/01/2018 At  1613</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1613  To: 29/01/2018 At  1614</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1614  To: 29/01/2018 At  1615</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1615  To: 29/01/2018 At  1616</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1616  To: 29/01/2018 At  1618</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1618  To: 29/01/2018 At  1619</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1619  To: 29/01/2018 At  1620</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1620  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1622  To: 29/01/2018 At  1623</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1623  To: 29/01/2018 At  1624</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1624  To: 29/01/2018 At  1625</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1625  To: 29/01/2018 At  1626</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1626  To: 29/01/2018 At  1627</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1627  To: 29/01/2018 At  1628</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1628  To: 29/01/2018 At  1629</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1629  To: 29/01/2018 At  1630</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1630  To: 29/01/2018 At  1631</timeDate>
+    </record>
   </nodeRecord>
   <nodeRecord>
     <name>Hgoul 3: 192.168.1.186</name>
@@ -7052,6 +9724,62 @@
     <record>
       <status>Online</status>
       <timeDate>From: 29/01/2018 At  1339  To: 29/01/2018 At  1340</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1340  To: 29/01/2018 At  1520</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1520  To: 29/01/2018 At  1521</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1521  To: 29/01/2018 At  1522</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1522  To: 29/01/2018 At  1523</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1523  To: 29/01/2018 At  1525</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1525  To: 29/01/2018 At  1526</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1526  To: 29/01/2018 At  1546</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1546  To: 29/01/2018 At  1547</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1547  To: 29/01/2018 At  1550</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1550  To: 29/01/2018 At  1551</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1551  To: 29/01/2018 At  1556</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1556  To: 29/01/2018 At  1557</timeDate>
+    </record>
+    <record>
+      <status>Offline</status>
+      <timeDate>From: 29/01/2018 At  1557  To: 29/01/2018 At  1621</timeDate>
+    </record>
+    <record>
+      <status>Online</status>
+      <timeDate>From: 29/01/2018 At  1621  To: 29/01/2018 At  1622</timeDate>
     </record>
   </nodeRecord>
 </WatanyaPingTester.AllNodes>
