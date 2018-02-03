@@ -1,0 +1,197 @@
+<WatanyaPingTester.AllNodes>
+  <nodeRecord>
+    <name>Company: 10.0.10.100</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Mokattam: 10.0.10.101</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Mokattam: 10.0.10.102</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M1: 10.0.10.103</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M1: 10.0.10.104</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M1: 10.0.10.106</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M1: 192.168.1.160</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M1: 192.168.1.108</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M1: 10.0.10.110</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Cairo Lab: 192.168.1.109</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Cairo: 10.0.10.105</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Cairo: 192.168.1.10</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Degla: 10.0.10.107</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Degla: 192.168.1.193</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M2: 10.0.10.111</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M2: 10.0.10.112</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M2: 192.168.1.161</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M2: 10.0.10.114</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Tohamy: 10.0.10.113</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Tohamy: 192.168.1.190</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M3: 10.0.10.115</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M3: 10.0.10.116</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M3: 10.0.10.118</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M3: 192.168.1.162</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Gendaly 1: 10.0.10.117</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Gendaly 1: 192.168.1.184</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4253: 10.0.10.119</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4253: 10.0.10.120</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4253: 10.0.10.140</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4253: 192.168.1.163</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4200: 10.0.10.141</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4200: 10.0.10.142</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4200: 10.0.10.137</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4200: 192.168.1.170</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Kilo 61: 10.0.10.143</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Kilo 59: 10.0.10.155</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4254: 10.0.10.152</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4254: 10.0.10.122</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4254: 192.168.1.164</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M6: 10.0.10.123</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M6: 10.0.10.126</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M6: 10.0.10.128</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M6: 192.168.1.166</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Al Mosheer: 10.0.10.127</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Al Mosheer: 192.168.1.185</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M11: 10.0.10.129</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M11: 10.0.10.130</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M11: 192.168.1.167</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M12: 10.0.10.131</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M12: 10.0.10.132</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>M12: 192.168.1.168</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Sokhna: 10.0.10.133</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Sokhna: 10.0.10.134</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Sokhna: 10.10.10.51</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Sokhna: 10.0.10.100</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Al Galalh: 10.10.10.22</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Al Galalh: 172.16.254.1</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4256: 10.0.10.135</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4256: 10.0.10.136</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4256: 10.0.10.138</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Vodafone 4256: 192.168.1.169</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Hgoul 3: 10.0.10.139</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Hgoul 3: 192.168.1.186</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Al Seneya: 10.0.10.177</name>
+  </nodeRecord>
+  <nodeRecord>
+    <name>Al Seneya: 192.168.1.187</name>
+  </nodeRecord>
+</WatanyaPingTester.AllNodes>

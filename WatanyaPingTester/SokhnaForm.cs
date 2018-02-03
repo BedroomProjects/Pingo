@@ -377,6 +377,8 @@ namespace WatanyaPingTester {
             NodeRecord nodeRecord;
             List<Record> recordList;
             Record record;
+            systemTime = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+            systemDate = DateTime.UtcNow.Date.ToString("dd-MM-yyyy");
 
             for (int i = 0; i < schemeNodes.Count(); i++) {
                 nodeRecord = new NodeRecord();
@@ -392,7 +394,7 @@ namespace WatanyaPingTester {
                 nodeRecordsList.Add(nodeRecord);
             }
             allNodesRecords.nodeRecord = nodeRecordsList;
-            XmlHelper.ToXmlFile2(allNodesRecords, resPath + "\\sokhnaXml.xml");
+            XmlHelper.ToXmlFile2(allNodesRecords, reportPath + "\\sokhnaXml " + systemDate + " " + systemTime + ".xml");
             reportStatusLabel.Invoke((MethodInvoker)delegate {
                 reportStatusLabel.Text = "Xml Report is saved successfully";
             });
