@@ -31,7 +31,8 @@ namespace WatanyaPingTester {
 
         List<NetworkNode> nodes;
         List<List<string>> reportList = new List<List<string>>();
-        string resPath, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath, greennLEDPath;
+        string resPath, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath, greennLEDPath, reportPath;
+        string systemTime, systemDate;
         ExcelToNode etn = new ExcelToNode();
         string fileName = "sokhna_scheme.xlsx";
 
@@ -55,6 +56,7 @@ namespace WatanyaPingTester {
             fillCollectingPortsList();
             try {
                 resPath = Path.Combine(Environment.CurrentDirectory, @"res");
+                reportPath = Path.Combine(Environment.CurrentDirectory, @"reports");
                 greenLEDPath = Path.Combine(resPath, @"green.png");
                 redLEDPath = Path.Combine(resPath, @"red.png");
                 yellowLEDPath = Path.Combine(resPath, @"yellow.png");
@@ -363,7 +365,9 @@ namespace WatanyaPingTester {
                 report = true;
                 reportLED.Image = Image.FromFile(greennLEDPath);
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
-                reportObject = new Reports(resPath + "\\sokhnaColorReport", collectingPortsList, schemeNodes, reportStatusLabel);
+                systemTime = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+                systemDate = DateTime.UtcNow.Date.ToString("dd-MM-yyyy");
+                reportObject = new Reports(reportPath + "\\sokhnaColorReport " + systemDate + " " + systemTime, collectingPortsList, schemeNodes, reportStatusLabel);
             }
         }
 
@@ -411,7 +415,9 @@ namespace WatanyaPingTester {
 
         private void DRBtn_Click(object sender, EventArgs e) {
             List<NodeRecord> nodeRecordsList = XmlHelper.readFromXml(resPath + "\\sokhnaXml.xml");
-            new Reports(resPath + "\\SokhnaReport", reportStatusLabel).createDDetailsReport(nodeRecordsList);
+            systemTime = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+            systemDate = DateTime.UtcNow.Date.ToString("dd-MM-yyyy");
+            new Reports(reportPath + "\\SokhnaReport " + systemDate + " " + systemTime, reportStatusLabel).createDDetailsReport(nodeRecordsList);
         }
     }
 }
