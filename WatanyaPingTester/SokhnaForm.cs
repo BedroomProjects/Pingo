@@ -29,6 +29,7 @@ namespace WatanyaPingTester {
         private string[] collectingPortArr = { "12 Degla", "9 Cairo Lab", "10 Cairo", "18 Tohamy", "24 Gendaly 1", "34 Kilo 61", "35 Kilo 59", "43 Al Mosheer", "51 Sokhna", "55 Al Galalh", "61 Hgoul 3", "63 Al Seneya" };
         private List<List<string>> collectingPortsList = new List<List<string>>();
 
+        AllNodes allNodesRecords;
         List<NetworkNode> nodes;
         List<List<string>> reportList = new List<List<string>>();
         string resPath, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath, greennLEDPath, reportPath;
@@ -367,12 +368,13 @@ namespace WatanyaPingTester {
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
                 systemTime = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
                 systemDate = DateTime.UtcNow.Date.ToString("dd-MM-yyyy");
-                reportObject = new Reports(reportPath + "\\sokhnaColorReport " + systemDate + " " + systemTime, collectingPortsList, schemeNodes, reportStatusLabel);
+                //reportObject = new Reports(reportPath + "\\sokhnaColorReport " + systemDate + " " + systemTime + " ", collectingPortsList, schemeNodes, reportStatusLabel);
+                reportObject = new Reports(reportPath + "\\sokhnaColorReport", collectingPortsList, schemeNodes, reportStatusLabel);
             }
         }
 
         private void createXml(){
-            AllNodes allNodesRecords = new AllNodes();
+            allNodesRecords = new AllNodes();
             List<NodeRecord> nodeRecordsList = new List<NodeRecord>();
             NodeRecord nodeRecord;
             List<Record> recordList;
@@ -394,7 +396,7 @@ namespace WatanyaPingTester {
                 nodeRecordsList.Add(nodeRecord);
             }
             allNodesRecords.nodeRecord = nodeRecordsList;
-            XmlHelper.ToXmlFile2(allNodesRecords, reportPath + "\\sokhnaXml " + systemDate + " " + systemTime + ".xml");
+            XmlHelper.ToXmlFile2(allNodesRecords, reportPath + "\\sokhnaXml.xml");
             reportStatusLabel.Invoke((MethodInvoker)delegate {
                 reportStatusLabel.Text = "Xml Report is saved successfully";
             });
@@ -416,10 +418,11 @@ namespace WatanyaPingTester {
         }
 
         private void DRBtn_Click(object sender, EventArgs e) {
-            List<NodeRecord> nodeRecordsList = XmlHelper.readFromXml(resPath + "\\sokhnaXml.xml");
+            List<NodeRecord> nodeRecordsList = XmlHelper.readFromXml(reportPath + "\\sokhnaXml.xml");
             systemTime = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
             systemDate = DateTime.UtcNow.Date.ToString("dd-MM-yyyy");
             new Reports(reportPath + "\\SokhnaReport " + systemDate + " " + systemTime, reportStatusLabel).createDDetailsReport(nodeRecordsList);
+            XmlHelper.ToXmlFile2(allNodesRecords, reportPath + "\\sokhnaXml " + systemDate + " " + systemTime + ".xml");
         }
     }
 }

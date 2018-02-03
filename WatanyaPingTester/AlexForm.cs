@@ -25,11 +25,13 @@ namespace WatanyaPingTester {
         bool showIPs = false, report = false;
         List<NetworkNode> nodes;
 
+        AllNodes allNodesRecords;
         private string[] collectingPortArr = { "19 El Sheikh Zaid Gate", "20 Road El Farag Gate", "21 Cairo Gate", "29 Abo Rawash Gate", "24 Chillout", "18 6 October Gate", "41 Sadat 1 Gate", "42 Sadat 2 Gate", "48 Al Alamin Gate", "35 Eqlimy Gate", "55 Alexandria Gate" };
         private List<List<string>> collectingPortsList = new List<List<string>>();
 
         List<List<string>> reportList = new List<List<string>>();
-        string path, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath, greennLEDPath;
+        string path, greenLEDPath, redLEDPath, yellowLEDPath, greyLEDPath, greennLEDPath, reportPath;
+        string systemTime, systemDate;
         ExcelToNode etn = new ExcelToNode();
         string fileName = "alex_scheme_updated_Copy.xlsx";
         //bool running = false;
@@ -53,6 +55,7 @@ namespace WatanyaPingTester {
             fillCollectingPortsList();
             try {
                 path = Path.Combine(Environment.CurrentDirectory, @"res");
+                reportPath = Path.Combine(Environment.CurrentDirectory, @"reports");
                 greenLEDPath = Path.Combine(path, @"green.png");
                 redLEDPath = Path.Combine(path, @"red.png");
                 yellowLEDPath = Path.Combine(path, @"yellow.png");
@@ -365,17 +368,22 @@ namespace WatanyaPingTester {
                 report = true;
                 reportLED.Image = Image.FromFile(greennLEDPath);
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
-                reportObject = new Reports(path + "\\alexColorReport", collectingPortsList, schemeNodes, reportStatusLabel);
+                systemTime = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+                systemDate = DateTime.UtcNow.Date.ToString("dd-MM-yyyy");
+                //reportObject = new Reports(reportPath + "\\alexColorReport " + systemDate + " " + systemTime + " ", collectingPortsList, schemeNodes, reportStatusLabel);
+                reportObject = new Reports(reportPath + "\\alexColorReport", collectingPortsList, schemeNodes, reportStatusLabel);
             }
         }
 
         private void createXml() {
-            AllNodes allNodesRecords = new AllNodes();
+            allNodesRecords = new AllNodes();
             List<NodeRecord> nodeRecordsList = new List<NodeRecord>();
             NodeRecord nodeRecord;
             List<Record> recordList;
             Record record;
 
+            systemTime = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+            systemDate = DateTime.UtcNow.Date.ToString("dd-MM-yyyy");
             for (int i = 0; i < schemeNodes.Count(); i++) {
                 nodeRecord = new NodeRecord();
                 recordList = new List<Record>();
@@ -390,7 +398,7 @@ namespace WatanyaPingTester {
                 nodeRecordsList.Add(nodeRecord);
             }
             allNodesRecords.nodeRecord = nodeRecordsList;
-            XmlHelper.ToXmlFile2(allNodesRecords, path + "\\alexXml.xml");
+            XmlHelper.ToXmlFile2(allNodesRecords, reportPath + "\\alexXml.xml");
             reportStatusLabel.Invoke((MethodInvoker)delegate {
                 reportStatusLabel.Text = "Xml Report is saved successfully";
             });
@@ -412,8 +420,11 @@ namespace WatanyaPingTester {
         }
 
         private void DRBtn_Click(object sender, EventArgs e) {
-            List<NodeRecord> nodeRecordsList = XmlHelper.readFromXml(path + "\\alexXml.xml");
-            new Reports(path + "\\AlexReport", reportStatusLabel).createDDetailsReport(nodeRecordsList);
+            List<NodeRecord> nodeRecordsList = XmlHelper.readFromXml(reportPath + "\\alexXml.xml");
+            systemTime = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+            systemDate = DateTime.UtcNow.Date.ToString("dd-MM-yyyy");
+            new Reports(reportPath + "\\AlexReport " + systemDate + " " + systemTime, reportStatusLabel).createDDetailsReport(nodeRecordsList);
+            XmlHelper.ToXmlFile2(allNodesRecords, reportPath + "\\alexXml " + systemDate + " " + systemTime + ".xml");
         }
     }
 }
