@@ -369,7 +369,7 @@ namespace WatanyaPingTester {
                 reportLED.Image = Image.FromFile(greennLEDPath);
                 reportLED.SizeMode = PictureBoxSizeMode.Zoom;
                 systemTime = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
-                systemDate = DateTime.UtcNow.Date.ToString("dd-MM-yyyy");
+                systemDate = DateTime.Now.Date.ToString("dd-MM-yyyy");
                 //reportObject = new Reports(reportPath + "\\alexColorReport " + systemDate + " " + systemTime + " ", collectingPortsList, schemeNodes, reportStatusLabel);
                 reportObject = new Reports(reportPath + "\\alexColorReport", collectingPortsList, schemeNodes, reportStatusLabel);
             }
@@ -383,7 +383,7 @@ namespace WatanyaPingTester {
             Record record;
 
             systemTime = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
-            systemDate = DateTime.UtcNow.Date.ToString("dd-MM-yyyy");
+            systemDate = DateTime.Now.Date.ToString("dd-MM-yyyy");
             for (int i = 0; i < schemeNodes.Count(); i++) {
                 nodeRecord = new NodeRecord();
                 recordList = new List<Record>();
@@ -422,7 +422,7 @@ namespace WatanyaPingTester {
         private void DRBtn_Click(object sender, EventArgs e) {
             List<NodeRecord> nodeRecordsList = XmlHelper.readFromXml(reportPath + "\\alexXml.xml");
             systemTime = DateTime.Now.ToString("HHmm", System.Globalization.DateTimeFormatInfo.InvariantInfo);
-            systemDate = DateTime.UtcNow.Date.ToString("dd-MM-yyyy");
+            systemDate = DateTime.Now.Date.ToString("dd-MM-yyyy");
             new Reports(reportPath + "\\AlexReport " + systemDate + " " + systemTime, reportStatusLabel).createDDetailsReport(nodeRecordsList);
             XmlHelper.ToXmlFile2(allNodesRecords, reportPath + "\\alexXml " + systemDate + " " + systemTime + ".xml");
         }
